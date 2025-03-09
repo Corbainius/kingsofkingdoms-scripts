@@ -9,6 +9,8 @@ use Time::HiRes qw(sleep);
 use WWW::Mechanize;
 use POSIX qw(strftime);
 
+no warnings 'uninitialized';
+
 # find and print all the links on the page
 #my @links = $mech->links();
 #	for my $link ( @links ) {printf "%s, %s\n", $link->text, $link->url;}
@@ -445,54 +447,7 @@ sub MergeId{
 		
 		print "MergeId\n";
 	}
-	$a =~ s/lady//sgi;
-	$a =~ s/dame//sgi;
-	$a =~ s/masteries//sgi;
-	$a =~ s/judgette//sgi;
-	$a =~ s/cannoness//sgi;
-	$a =~ s/counsel//sgi;
-	$a =~ s/baroness//sgi;
-	$a =~ s/mayoress//sgi;
-	$a =~ s/viscountess//sgi;
-	$a =~ s/earless//sgi;
-	$a =~ s/countess//sgi;
-	$a =~ s/marchioness//sgi;
-	$a =~ s/generalia//sgi;
-	$a =~ s/duchess//sgi;
-	$a =~ s/princess//sgi;
-	$a =~ s/queen//sgi;
-	$a =~ s/lord//sgi;
-	$a =~ s/sir//sgi;
-	$a =~ s/master//sgi;
-	$a =~ s/judge//sgi;
-	$a =~ s/cannoner//sgi;
-	$a =~ s/council//sgi;
-	$a =~ s/baron//sgi;	
-	$a =~ s/major//sgi;
-	$a =~ s/viscount//sgi;
-	$a =~ s/earl//sgi;
-	$a =~ s/count//sgi;	
-	$a =~ s/marquess//sgi;
-	$a =~ s/general//sgi;
-	$a =~ s/duke//sgi;
-	$a =~ s/prince//sgi;
-	if ($a !~ m/viking/i){
-        $a =~ s/king//sgi;
-    }
-	$a =~ s/admin//sgi;
-	$a =~ s/cop//sgi;
-	$a =~ s/mod//sgi;
-	$a =~ s/support//sgi;
-	$a =~ s/demon//sgi;
-	$a =~ s/danger//sgi;
-	$a =~ s/untrust//sgi;
-	$a =~ s/beggar//sgi;
-	$a =~ s/criminal//sgi;
-	$a =~ s/stealer//sgi;
-	$a =~ s/helper//sgi;
-	$a =~ s/sir//sgi;
-	$a =~ s/heir//sgi;
-	$a =~ s/Merger//sgi;
+
 	$a =~ s/<option value="/~/sgi;
 	$a =~ s/\s//sgi;
 	$b = $a;
@@ -507,38 +462,126 @@ sub MergeId{
 		print "MergeId\n";
 	}
 	$b =~ s/,//sgi;
+	$b =~ s/><\/select><\/td><tdcolspan=2><inputtype="submit"name="action"value="//;
 	my $countit = 0;
+	my $continue = 1;
 	my $grab = "not empty";
-		until ($grab eq ""){
+	my @mergelevel2;
+		do {
 			@mergelevel = split(/<\/option/, $b);
 			$grab = $mergelevel[$countit];
-			$countit++;
-		}
-	if($debug == 1){
+			if($debug == 1){
+				print $countit.$grab."\n";
+			}
+			if($grab ne ""){		
+				$grab =~ s/Lady//s;
+				$grab =~ s/Dame//s;
+				$grab =~ s/Masteries//s;
+				$grab =~ s/Judgette//s;
+				$grab =~ s/Cannoness//s;
+				$grab =~ s/Counsel//s;
+				$grab =~ s/Baroness//s;
+				$grab =~ s/Mayoress//s;
+				$grab =~ s/Viscountess//s;
+				$grab =~ s/Earless//s;
+				$grab =~ s/Countess//s;
+				$grab =~ s/Marchioness//s;
+				$grab =~ s/Generalia//s;
+				$grab =~ s/Duchess//s;
+				$grab =~ s/Princess//s;
+				$grab =~ s/Queen//s;
+				$grab =~ s/Lord//s;
+				$grab =~ s/Sir//s;
+				$grab =~ s/Master//s;
+				$grab =~ s/Judge//s;
+				$grab =~ s/Cannoner//s;
+				$grab =~ s/Council//s;
+				$grab =~ s/Baron//s;	
+				$grab =~ s/Major//s;
+				$grab =~ s/Viscount//s;
+				$grab =~ s/Earl//s;
+				$grab =~ s/Count//s;	
+				$grab =~ s/Marquess//s;
+				$grab =~ s/General//s;
+				$grab =~ s/Duke//s;
+				$grab =~ s/Prince//s;
+				$grab =~ s/King//s;
+				$grab =~ s/Admin//s;
+				$grab =~ s/Cop//s;
+				$grab =~ s/Mod//s;
+				$grab =~ s/Support//s;
+				$grab =~ s/Demon//s;
+				$grab =~ s/Danger//s;
+				$grab =~ s/Untrust//s;
+				$grab =~ s/Beggar//s;
+				$grab =~ s/Criminal//s;
+				$grab =~ s/Stealer//s;
+				$grab =~ s/Helper//s;
+				$grab =~ s/Sir//s;
+				$grab =~ s/Heir//s;
+				$grab =~ s/Merger//s;
+				push(@mergelevel2,$grab);
+				if($debug == 1){
+					print $countit.$grab."\n";
+				}
+				$countit++;
+			}else{
+				if($debug == 1){
+					#print"There's none left ya cunt. \n";
+				}
+				$continue = 0;
+			}
+		} while($continue != 0);
+		
+	
 
+	if($debug == 1){
+		#foreach (@mergelevel2) {
+		#	print "$_\n";
+		#}
 	}
 	my $mergelevel;
-	foreach $mergelevel (@mergelevel){
+	my $mergernameandlevel = 'NO MERGER';
+	foreach $mergelevel (@mergelevel2){
 		$mergelevel =~ m/(\[Level:.*\])/s;
 		my $mlevel = $1;
 		$mlevel =~ s/\[Level://sgi;
 		$mlevel =~ s/\]//sgi;
-		if($mlevel >= $mergermax){$mergelevel = "";}
+			if($debug == 1){
+				print"mlevel = ".$mlevel.".\n";
+				print"mergermax = ".$mergermax.".\n";
+			}
+		if($mlevel > $mergermax){$mergelevel = "";}
+			if($debug == 1){
+				print"mergelevel = ".$mergelevel.".\n";		
+				print"mergername = ".$mergername.".\n\n";
+			}		
 		if($mergelevel ne ""){
 			if($mergelevel =~ m/.*$mergername.*/i){
-				$a = $mergelevel;
+				$mergernameandlevel = $mergelevel;
+					if($debug == 1){
+						print"found merger = ".$mergelevel.".\n\n";		
+					}
 				last;
 			}
 		}
 	}
-	$a =~ s/$mergername.*/@/sgi;;
-	$a =~ s/"//sgi;
-	$a =~ s/>//sgi;
-	$a =~ s/(.*)(~)//sg; #remove before
-	$a =~ s/@.*//sg; #remove after
-	$a =~ s/\s*$//;
-	$MergeId = "\"".$a."\"";
-	&MergeName;
+	if($mergernameandlevel ne 'NO MERGER'){
+		$mergernameandlevel =~ s/$mergername.*/@/sgi;;
+		$mergernameandlevel =~ s/"//sgi;
+		$mergernameandlevel =~ s/>//sgi;
+		$mergernameandlevel =~ s/(.*)(~)//sg; #remove before
+		$mergernameandlevel =~ s/@.*//sg; #remove after
+		$mergernameandlevel =~ s/\s*$//;
+		$MergeId = "\"".$mergernameandlevel."\"";
+		if($debug == 1){
+			print"MergeId = ".$MergeId.".\n\n";	
+		}	
+		&MergeName;
+	}else{
+		print"No Merger with level below ".$mergermax." and a name that includes ".$mergername. " available.\n\n";
+		goto GOTO;
+	}
 }
 
 sub MergeName{
@@ -736,6 +779,7 @@ sub Merge {
 		or die "failed to open file!!!!";
 		print FILE "$a\n";
 		close(FILE);
+		goto GOTO;
 }
 
 sub Steal {
