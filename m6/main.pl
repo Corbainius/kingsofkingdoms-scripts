@@ -196,6 +196,11 @@ my $persist = 0;
 my $levelfilename = '';
 my $filelevel = '';
 my $path = Cwd::cwd();
+my $won = 0;
+my $levmulti;
+my $reps = 0;
+my $setlev = 0;
+my $tied = 0;
 
 if($debug == 1){print"\n Debug mode active.\n";}
 
@@ -1034,6 +1039,9 @@ sub CPMlevel {
 }
 
 sub leveltestworld {
+	if($debug == 1){
+		print"Arrived at leveltestworld\n";
+	}
 	$parsed = 0; 
 	while ($parsed == 0){
 		sleep($stime);
@@ -1052,7 +1060,9 @@ sub leveltestworld {
 	}
 
 	my $fname = $levelfilename;
-	print $fname."\n";
+	if($debug == 1){
+		print $fname."\n";
+	}
 	if(-e $fname){
 		if($debug == 1){
 			print("File $fname exists\n");
@@ -1079,7 +1089,140 @@ sub leveltestworld {
 		$filelevel = 1;
 	}
 
+	$won = 1;
+
+	if(!$levmulti){$levmulti = 1;}
+
+	while($won == 1){
+		if(!$levmulti){$levmulti = 1;}else{
+			$levmulti = $levmulti*10;}
+		if($debug == 1){
+			print "levmulti = ".$levmulti."\n";
+		}
+		$level = $levmulti;
+		$mech->form_number(2);
+		$mech->field("Difficulty", $level);
+		$mech->click();
+		sleep($stime);
+		$a = $mech->content();
+		$a =~ m/(<select name="Monster">.*<\/body><\/html>)/s;
+		$a = $1;
+		$mech->click_button(value => $fmodeval);
+		sleep($loopwait); 
+		$b = $mech->content();
+		$b =~ m/(<\/head>.*<\/body><\/html>)/s;
+		$b = $1;
+
+		open(FILE, ">>TESTINFO1.txt")
+		or die "failed to open file!!!!";		
+		print FILE "\nTHIS IS A\nTHIS IS A\n";
+		print FILE $a;
+		print FILE "\nTHIS IS B\nTHIS IS B\n";
+		print FILE $b;
+		print FILE "\n";
+		close(FILE);
+		if ($b =~ m/You win/) {
+			print "You won at level ".$level."\n";
+			$won = 1;
+		}		
+		if ($b =~ m/battle tied/) {
+			print "You tied at level ".$level."\n";
+			$won = 1;
+			if($tied == 4){
+				$won = 0;
+			}
+			if($debug == 1){
+				print "levmulti = ".$levmulti."\n";
+			}
+			$tied++;
+		}
+		if ($b =~ m/stunned/) {
+			print "You lost at level ".$level."\n";
+			print "Waiting 5 seconds before continuing \n";
+			$won = 0;
+			sleep(6);
+		}
+	}
+	$level = $level/10;
+	$level = int($level);
+	if($debug == 1){
+		print "base level is".$level."\n";
+	}
 	
+	until ($setlev == 1){
+		$level = $level;
+		$mech->form_number(2);
+		$mech->field("Difficulty", $level);
+		$mech->click();
+		sleep($stime);
+		$a = $mech->content();
+		$a =~ m/(<select name="Monster">.*<\/body><\/html>)/s;
+		$a = $1;
+		$mech->click_button(value => $fmodeval);
+		sleep($loopwait); 
+		$b = $mech->content();
+		$b =~ m/(<\/head>.*<\/body><\/html>)/s;
+		$b = $1;
+		open(FILE, ">>TESTINFO2.txt")
+		or die "failed to open file!!!!";		
+		print FILE "\nTHIS IS A\nTHIS IS A\n";
+		print FILE $a;
+		print FILE "\nTHIS IS B\nTHIS IS B\n";
+		print FILE $b;
+		print FILE "\n";
+		close(FILE);
+		if ($b =~ m/You win/) {
+			print "You won at level".$level."\n";
+			$reps++;
+		}
+		if ($b =~ m/battle tied/) {
+			print "You tied at level ".$level."\n";
+			$reps++;
+		}
+		if ($b =~ m/stunned/) {
+			print "You lost at level".$level."\n";
+			print "Waiting 5 seconds before continuing \n";
+			$reps++;
+			sleep(6);
+		}
+		until(($won == 0)or($reps == 9)){
+			sleep($loopwait); 
+			$mech->reload();
+			$a = $mech->content();
+			$b = $a;
+			open(FILE, ">>TESTINFO2.txt")
+			or die "failed to open file!!!!";		
+			print FILE "\nTHIS IS A\nTHIS IS A\n";
+			print FILE $a;
+			print FILE "\nTHIS IS B\nTHIS IS B\n";
+			print FILE $b;
+			print FILE "\n";
+			close(FILE);
+			if ($b =~ m/You win/) {
+				print "You won at level".$level."\n";
+				$won = 1;
+				$reps++;
+
+			}
+			if ($b =~ m/battle tied/) {
+				print "You tied at level ".$level."\n";
+				$won = 1;
+				$reps++;
+			}
+			if ($b =~ m/stunned/) {
+				print "You lost at level".$level."\n";
+				print "Waiting 5 seconds before continuing \n";
+				$won = 0;
+				$reps++;
+				sleep(6);
+			}
+			if($debug == 1){
+				print "reps = ".$reps."\n";
+			}
+		}
+	}
+
+
 	#open(FILE, ">>CPMlevel.txt")
 	#or die "failed to open file!!!!";
 	#print FILE "CPMlevel\n\n";
@@ -1632,7 +1775,7 @@ sub MaxWD{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1671,7 +1814,7 @@ sub MaxAS{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1711,7 +1854,7 @@ sub MaxHS{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1750,7 +1893,7 @@ sub MaxHE{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1789,7 +1932,7 @@ sub MaxSH{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1828,7 +1971,7 @@ sub MaxAM{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1867,7 +2010,7 @@ sub MaxRI{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1906,7 +2049,7 @@ sub MaxAR{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1945,7 +2088,7 @@ sub MaxBE{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -1984,7 +2127,7 @@ sub MaxPA{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -2023,7 +2166,7 @@ sub MaxHA{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
@@ -2062,7 +2205,7 @@ sub MaxFE{
 			print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
-		if ($a =~ m/Total/){
+		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;

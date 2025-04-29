@@ -1,0 +1,1530 @@
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 50.</td> <td valign=top>Gold : 50.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0013</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 3,240.</td> <td valign=top>Gold : 1,210.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0058</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 3,240.</td> <td valign=top>Gold : 1,210.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0054</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 3,350.</td> <td valign=top>Gold : 1,250.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0015</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 3,560.</td> <td valign=top>Gold : 1,320.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0041</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 4,190.</td> <td valign=top>Gold : 1,530.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0032</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 12,510.</td> <td valign=top>Gold : 4,330.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0066</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 16,670.</td> <td valign=top>Gold : 5,730.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0017</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 19,790.</td> <td valign=top>Gold : 6,780.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0019</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 24,640.</td> <td valign=top>Gold : 8,530.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0018</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 32,480.</td> <td valign=top>Gold : 11,330.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0430</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 38,720.</td> <td valign=top>Gold : 13,430.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0011</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 46,000.</td> <td valign=top>Gold : 15,880.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0016</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 51,200.</td> <td valign=top>Gold : 17,630.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0022</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 56,400.</td> <td valign=top>Gold : 19,380.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 25)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Fly bat</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Ice Wind</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Minor Rest</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Silk Cap</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Broken buckler</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Iron Amulet</td>
+<td>25</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Leather Jacket</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Damage belt</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Damage tight</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Damage handshoes</td>
+<td>100</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Broken shoes</td>
+<td>50</td><td>
+$0</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0013</b> seconds.</font></body></html>
+
