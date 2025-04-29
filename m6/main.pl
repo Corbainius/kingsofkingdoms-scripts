@@ -1105,12 +1105,12 @@ sub leveltestworld {
 		$mech->click();
 		sleep($stime);
 		$a = $mech->content();
-		$a =~ m/(<select name="Monster">.*<\/body><\/html>)/s;
+		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
 		$mech->click_button(value => $fmodeval);
 		sleep($loopwait); 
 		$b = $mech->content();
-		$b =~ m/(<\/head>.*<\/body><\/html>)/s;
+		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 
 		open(FILE, ">>TESTINFO1.txt")
@@ -1124,13 +1124,14 @@ sub leveltestworld {
 		if ($b =~ m/You win/) {
 			print "You won at level ".$level."\n";
 			$won = 1;
+			if($debug == 1){
+				print "levmulti = ".$levmulti."\n";
+			}
 		}		
 		if ($b =~ m/battle tied/) {
 			print "You tied at level ".$level."\n";
-			$won = 1;
-			if($tied == 4){
-				$won = 0;
-			}
+			$won = 0;
+			$level = $level;
 			if($debug == 1){
 				print "levmulti = ".$levmulti."\n";
 			}
@@ -1140,13 +1141,16 @@ sub leveltestworld {
 			print "You lost at level ".$level."\n";
 			print "Waiting 5 seconds before continuing \n";
 			$won = 0;
+			$level = $level;
+			if($debug == 1){
+				print "levmulti = ".$levmulti."\n";
+			}
 			sleep(6);
 		}
 	}
-	$level = $level/10;
-	$level = int($level);
+
 	if($debug == 1){
-		print "base level is".$level."\n";
+		print "base level is ".$level."\n";
 	}
 	
 	until ($setlev == 1){
@@ -1156,12 +1160,12 @@ sub leveltestworld {
 		$mech->click();
 		sleep($stime);
 		$a = $mech->content();
-		$a =~ m/(<select name="Monster">.*<\/body><\/html>)/s;
+		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
 		$mech->click_button(value => $fmodeval);
 		sleep($loopwait); 
 		$b = $mech->content();
-		$b =~ m/(<\/head>.*<\/body><\/html>)/s;
+		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 		open(FILE, ">>TESTINFO2.txt")
 		or die "failed to open file!!!!";		
