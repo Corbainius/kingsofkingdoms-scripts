@@ -274,3 +274,141 @@ textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; borde
 
 </body></html>
 
+LowFight
+
+content
+
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="fight.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top>
+<select name="Monster">
+<option>1 - Skeleton - 3,100</option><option>2 - Zombie - 3,534</option><option>3 - Undead - 4,464</option><option>4 - Snake Eye - 6,076</option><option>5 - Attack Dog - 8,556</option><option>6 - Guard Soldier - 12,090</option><option>7 - Sword Man - 16,864</option><option>8 - Gate Keeper - 23,064</option><option>9 - Necro - 30,876</option><option>10 - Barbarian - 40,486</option><option>11 - Paladin - 52,080</option><option>12 - Skeleton King - 65,844</option><option>13 - Undead Emperor - 81,964</option><option>14 - Evil Magician - 100,626</option><option>15 - Thunder Spectre - 122,016</option><option>16 - Emo Kids - 146,320</option><option>17 - Hardcore Emo - 173,724</option><option>18 - Victrolahead - 204,414</option><option>19 - Baby Dragon - 238,576</option><option>20 - Giant Worm - 276,396</option><option>21 - Hulk - 318,060</option><option>22 - Archer Tell - 363,754</option><option>23 - Beastmaster - 413,664</option><option>24 - Terminator - 467,976</option><option>25 - Amazon - 526,876</option><option>26 - Dragon Rider - 590,550</option><option>27 - Wild Bill Havoc - 659,184</option><option>28 - Bat Fasterman - 732,964</option><option>29 - Soul Breaker - 812,076</option><option>30 - Diablos Knight - 896,706</option><option>31 - Memphista - 987,040</option><option>32 - Fire Dragon - 1,083,264</option><option>33 - Hell Knight - 1,185,564</option><option>34 - Fatal Chick - 1,294,126</option><option>35 - Disaster Master - 1,409,136</option><option>36 - Troll Vampire - 1,530,780</option><option>37 - Mind Reader - 1,659,244</option><option>38 - Robo Dracula - 1,794,714</option><option>39 - Chemical Ogre - 1,937,376</option><option>40 - Gorilla - 2,087,416</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="31"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="31"></td><td width="5%" valign=top><input type=submit name="Action" value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+
+LowFight
+
+content
+
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="fight.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top>
+<select name="Monster">
+<option>1 - Skeleton - 2,900</option><option>2 - Zombie - 3,306</option><option>3 - Undead - 4,176</option><option>4 - Snake Eye - 5,684</option><option>5 - Attack Dog - 8,004</option><option>6 - Guard Soldier - 11,310</option><option>7 - Sword Man - 15,776</option><option>8 - Gate Keeper - 21,576</option><option>9 - Necro - 28,884</option><option>10 - Barbarian - 37,874</option><option>11 - Paladin - 48,720</option><option>12 - Skeleton King - 61,596</option><option>13 - Undead Emperor - 76,676</option><option>14 - Evil Magician - 94,134</option><option>15 - Thunder Spectre - 114,144</option><option>16 - Emo Kids - 136,880</option><option>17 - Hardcore Emo - 162,516</option><option>18 - Victrolahead - 191,226</option><option>19 - Baby Dragon - 223,184</option><option>20 - Giant Worm - 258,564</option><option>21 - Hulk - 297,540</option><option>22 - Archer Tell - 340,286</option><option>23 - Beastmaster - 386,976</option><option>24 - Terminator - 437,784</option><option>25 - Amazon - 492,884</option><option>26 - Dragon Rider - 552,450</option><option>27 - Wild Bill Havoc - 616,656</option><option>28 - Bat Fasterman - 685,676</option><option>29 - Soul Breaker - 759,684</option><option>30 - Diablos Knight - 838,854</option><option>31 - Memphista - 923,360</option><option>32 - Fire Dragon - 1,013,376</option><option>33 - Hell Knight - 1,109,076</option><option>34 - Fatal Chick - 1,210,634</option><option>35 - Disaster Master - 1,318,224</option><option>36 - Troll Vampire - 1,432,020</option><option>37 - Mind Reader - 1,552,196</option><option>38 - Robo Dracula - 1,678,926</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="29"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="29"></td><td width="5%" valign=top><input type=submit name="Action" value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+
+LowFight
+
+content
+
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="fight.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top>
+<select name="Monster">
+<option>1 - Skeleton - 2,300</option><option>2 - Zombie - 2,622</option><option>3 - Undead - 3,312</option><option>4 - Snake Eye - 4,508</option><option>5 - Attack Dog - 6,348</option><option>6 - Guard Soldier - 8,970</option><option>7 - Sword Man - 12,512</option><option>8 - Gate Keeper - 17,112</option><option>9 - Necro - 22,908</option><option>10 - Barbarian - 30,038</option><option>11 - Paladin - 38,640</option><option>12 - Skeleton King - 48,852</option><option>13 - Undead Emperor - 60,812</option><option>14 - Evil Magician - 74,658</option><option>15 - Thunder Spectre - 90,528</option><option>16 - Emo Kids - 108,560</option><option>17 - Hardcore Emo - 128,892</option><option>18 - Victrolahead - 151,662</option><option>19 - Baby Dragon - 177,008</option><option>20 - Giant Worm - 205,068</option><option>21 - Hulk - 235,980</option><option>22 - Archer Tell - 269,882</option><option>23 - Beastmaster - 306,912</option><option>24 - Terminator - 347,208</option><option>25 - Amazon - 390,908</option><option>26 - Dragon Rider - 438,150</option><option>27 - Wild Bill Havoc - 489,072</option><option>28 - Bat Fasterman - 543,812</option><option>29 - Soul Breaker - 602,508</option><option>30 - Diablos Knight - 665,298</option><option>31 - Memphista - 732,320</option><option>32 - Fire Dragon - 803,712</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="23"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="23"></td><td width="5%" valign=top><input type=submit name="Action" value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+

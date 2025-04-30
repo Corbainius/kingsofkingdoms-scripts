@@ -1098,7 +1098,10 @@ sub leveltestworld {
 	#if(!$levmulti){$levmulti = 1;}
 
 	while($won == 1){
-		if(!$levmulti){$levmulti = 1;}else{
+		if(!$levmulti and $filelevel!=1){$levmulti = $filelevel;}
+		elsif(!$levmulti){
+			$levmulti = $filelevel;
+		}else{
 			$levmulti = $levmulti*2;}
 		if($debug == 1){
 			print "levmulti = ".$levmulti."\n";
@@ -1107,7 +1110,6 @@ sub leveltestworld {
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
-		sleep($stime);
 		$a = $mech->content();
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
@@ -1230,10 +1232,6 @@ sub leveltestworld {
 				print "Waiting 5 seconds before continuing \n";
 				sleep(6);
 			}
-
-			if($debug == 1){
-				
-			}
 		}
 
 		@outcomes = ($won, $tied, $lost);
@@ -1244,14 +1242,25 @@ sub leveltestworld {
 			$i++;
 		}
 
-		if($outcomes[0] >=8 ){ 
+		if($outcomes[0] >=8){ 
 			print "Won 9 or more times.\n\n";
 			$newlevel = $level;
+			$setlev = 1;
 		}elsif($outcomes[0] <=7 ){
 			print "Won fewer than 9 times out of 10.\n\n";
 			print "level = ".$level."\n";
 			my $div10 = Math::BigFloat->new($level);
 			$div10->bdiv(10);
+			print "div10 = ".$div10."\n";
+			$div10->bfround(1);
+			print "rounded div10 = ".$div10."\n";
+			$newlevel = $level - $div10;
+			print "newlevel = ".$newlevel."\n";
+		}elsif($outcomes[2] == 10){
+			print "Drew more 9 or more times.\n\n";
+			print "level = ".$level."\n";
+			my $div10 = Math::BigFloat->new($level);
+			$div10->bdiv(5);
 			print "div10 = ".$div10."\n";
 			$div10->bfround(1);
 			print "rounded div10 = ".$div10."\n";
@@ -1266,35 +1275,20 @@ sub leveltestworld {
 		$level = $newlevel;
 	}
 
+	if($setlev == 1){
+		if($debug == 1){
+			print"newlevel = ".$newlevel."\n";
+		}
+		open(FILE, "+>".$fname)
+		or die "failed to open file!!!!";
+		print FILE "$newlevel";
+		close(FILE);
+		if($debug == 1){
+			print"filelevel updated sucessfully\n";
+		}
+	}
 
-	#open(FILE, ">>CPMlevel.txt")
-	#or die "failed to open file!!!!";
-	#print FILE "CPMlevel\n\n";
-	#print FILE "content\n\n";
-	#print FILE "$a\n\n";
-	#close(FILE);
-	
-	#print "CPMlevel\n";
-
-	#	my $addir = "AD";
-	#	my $apdir = "AP";
-	#	my $spdir = "SP";
-
-	#	my $fileend = "level.txt";
-	#if($fmode == 1){		
-	#	$levelfilename = "\\".$addir."\\".$name.$fileend;
-	#}elsif($fmode == 2){
-	#	$levelfilename = "\\".$apdir."\\".$name.$fileend;
-	#}elsif($fmode == 3){
-	#	$levelfilename = "\\".$spdir."\\".$name.$fileend;
-	#}
-	#
-	#if($debug == 1){
-	#	print $levelfilename."\n";
-	#}
-	#$levelfilename
-	$level = $filelevel;
-	return($level);
+	return($newlevel);
 }
 
 sub Fight {
