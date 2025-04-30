@@ -201,6 +201,7 @@ my $levmulti;
 my $reps = 0;
 my $setlev = 0;
 my $tied = 0;
+my $newlevel;
 
 if($debug == 1){print"\n Debug mode active.\n";}
 
@@ -1155,6 +1156,7 @@ sub leveltestworld {
 	
 	until ($setlev == 1){
 		$level = $level;
+		$reps = 0;
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
@@ -1184,11 +1186,12 @@ sub leveltestworld {
 			$reps++;
 		}
 		if ($b =~ m/stunned/) {
-			print "You lost at level".$level."\n";
-			print "Waiting 5 seconds before continuing \n";
 			$reps++;
+			print "rep no. ".$reps." You lost at level".$level."\n";
+			print "Waiting 5 seconds before continuing \n";
 			sleep(6);
 		}
+		
 		until(($won == 0)or($reps == 9)){
 			sleep($loopwait); 
 			$mech->reload();
@@ -1223,6 +1226,7 @@ sub leveltestworld {
 			if($debug == 1){
 				print "reps = ".$reps."\n";
 			}
+			$level = $newlevel;
 		}
 	}
 
