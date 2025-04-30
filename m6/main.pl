@@ -6,6 +6,7 @@ use integer;
 use Carp;
 use Math::BigFloat;
 use Math::BigInt;
+use Math::Round;
 use Time::HiRes qw(sleep);
 use WWW::Mechanize;
 use POSIX qw(strftime);
@@ -83,6 +84,7 @@ my($all, $stat);
 my(@stats);
 my(@logins);
 my(@users);
+my(@outcomes);
 my($parsed,$tmp,$mech);
 my($a,$b,$c,$d);
 my($c0,$c1,$c2,$c3,$c4,$c5,$c6,$c7,$c8,$c9);
@@ -202,6 +204,7 @@ my $reps = 0;
 my $setlev = 0;
 my $tied = 0;
 my $newlevel;
+my $lost = 0;
 
 if($debug == 1){print"\n Debug mode active.\n";}
 
@@ -1092,11 +1095,11 @@ sub leveltestworld {
 
 	$won = 1;
 
-	if(!$levmulti){$levmulti = 1;}
+	#if(!$levmulti){$levmulti = 1;}
 
 	while($won == 1){
 		if(!$levmulti){$levmulti = 1;}else{
-			$levmulti = $levmulti*10;}
+			$levmulti = $levmulti*2;}
 		if($debug == 1){
 			print "levmulti = ".$levmulti."\n";
 		}
@@ -1155,8 +1158,10 @@ sub leveltestworld {
 	}
 	
 	until ($setlev == 1){
-		$level = $level;
 		$reps = 0;
+		$won = 0;
+		$tied = 0;
+		$lost = 0;
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
@@ -1178,21 +1183,24 @@ sub leveltestworld {
 		print FILE "\n";
 		close(FILE);
 		if ($b =~ m/You win/) {
-			print "You won at level".$level."\n";
-			$reps++;
+			$won++;
+			$reps++; 
+			print "rep no. ".$reps." You won at level ".$level."\n";
 		}
 		if ($b =~ m/battle tied/) {
-			print "You tied at level ".$level."\n";
+			$tied++;
 			$reps++;
+			print "rep no. ".$reps." You tied at level ".$level."\n";
 		}
 		if ($b =~ m/stunned/) {
+			$lost++;
 			$reps++;
-			print "rep no. ".$reps." You lost at level".$level."\n";
+			print "rep no. ".$reps." You lost at level ".$level."\n";
 			print "Waiting 5 seconds before continuing \n";
 			sleep(6);
 		}
 		
-		until(($won == 0)or($reps == 9)){
+		until($reps == 10){
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
@@ -1206,28 +1214,56 @@ sub leveltestworld {
 			print FILE "\n";
 			close(FILE);
 			if ($b =~ m/You win/) {
-				print "You won at level".$level."\n";
-				$won = 1;
+				$won++;
 				$reps++;
-
+				print "rep no. ".$reps." You won at level ".$level."\n";
 			}
 			if ($b =~ m/battle tied/) {
-				print "You tied at level ".$level."\n";
-				$won = 1;
+				$tied++;
 				$reps++;
+				print "rep no. ".$reps." You tied at level ".$level."\n";
 			}
 			if ($b =~ m/stunned/) {
-				print "You lost at level".$level."\n";
-				print "Waiting 5 seconds before continuing \n";
-				$won = 0;
+				$lost++;
 				$reps++;
+				print "rep no. ".$reps." You lost at level ".$level."\n";
+				print "Waiting 5 seconds before continuing \n";
 				sleep(6);
 			}
+
 			if($debug == 1){
-				print "reps = ".$reps."\n";
+				
 			}
-			$level = $newlevel;
 		}
+
+		@outcomes = ($won, $tied, $lost);
+		my $i = 0;
+		foreach(@outcomes) {
+			if($i == 0){print"\nWon ";}elsif($i == 1){print"Tied ";}else{print"Lost ";}
+			print "$_\n\n";
+			$i++;
+		}
+
+		if($outcomes[0] >=8 ){ 
+			print "Won 9 or more times.\n\n";
+			$newlevel = $level;
+		}elsif($outcomes[0] <=7 ){
+			print "Won fewer than 9 times out of 10.\n\n";
+			print "level = ".$level."\n";
+			my $div10 = Math::BigFloat->new($level);
+			$div10->bdiv(10);
+			print "div10 = ".$div10."\n";
+			$div10->bfround(1);
+			print "rounded div10 = ".$div10."\n";
+			$newlevel = $level - $div10;
+			print "newlevel = ".$newlevel."\n";
+		}else{
+ 			print "Wins error. Something is wrong\n";
+		}
+		if($debug == 1){
+			print"newlevel = ".$newlevel."\n";	
+		}
+		$level = $newlevel;
 	}
 
 
