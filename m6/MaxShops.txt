@@ -5508,6 +5508,7 @@ $0</td>
 <br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0169</b> seconds.</font></body></html>
 
+<<<<<<< HEAD
 MaxShops
 
 content
@@ -7246,3 +7247,5 @@ Parsed in <b>0.0015</b> seconds.</font></body></html>
 >>>>>>> parent of c7741c1 (working but raw.)
 =======
 >>>>>>> parent of c7741c1 (working but raw.)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
