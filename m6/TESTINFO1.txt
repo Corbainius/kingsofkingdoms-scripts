@@ -6,7 +6,11 @@ THIS IS A
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <option>1 - Skeleton - 2,400</option><option>2 - Zombie - 2,736</option><option>3 - Undead - 3,456</option><option>4 - Snake Eye - 4,704</option><option>5 - Attack Dog - 6,624</option><option>6 - Guard Soldier - 9,360</option><option>7 - Sword Man - 13,056</option><option>8 - Gate Keeper - 17,856</option><option>9 - Necro - 23,904</option><option>10 - Barbarian - 31,344</option><option>11 - Paladin - 40,320</option><option>12 - Skeleton King - 50,976</option><option>13 - Undead Emperor - 63,456</option><option>14 - Evil Magician - 77,904</option><option>15 - Thunder Spectre - 94,464</option><option>16 - Emo Kids - 113,280</option><option>17 - Hardcore Emo - 134,496</option><option>18 - Victrolahead - 158,256</option><option>19 - Baby Dragon - 184,704</option><option>20 - Giant Worm - 213,984</option><option>21 - Hulk - 246,240</option><option>22 - Archer Tell - 281,616</option><option>23 - Beastmaster - 320,256</option><option>24 - Terminator - 362,304</option><option>25 - Amazon - 407,904</option><option>26 - Dragon Rider - 457,200</option><option>27 - Wild Bill Havoc - 510,336</option><option>28 - Bat Fasterman - 567,456</option><option>29 - Soul Breaker - 628,704</option><option>30 - Diablos Knight - 694,224</option><option>31 - Memphista - 764,160</option><option>32 - Fire Dragon - 838,656</option><option>33 - Hell Knight - 917,856</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="24"></form><form method=post>
+=======
+<option>1 - Thief - 105</option><option>2 - Five leg Eddy - 120</option><option>3 - Rioting Rat - 151</option><option>4 - Town Madman - 204</option><option>5 - Town Demon - 285</option><option>6 - Pub Destroyer - 400</option><option>7 - Firestarter - 555</option><option>8 - Mad Dog - 756</option><option>9 - Sinner - 1,009</option><option>10 - Corupted Cops - 1,320</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="1"></form><form method=post>
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 <option>1 - Thief - 105</option><option>2 - Five leg Eddy - 120</option><option>3 - Rioting Rat - 151</option><option>4 - Town Madman - 204</option><option>5 - Town Demon - 285</option><option>6 - Pub Destroyer - 400</option><option>7 - Firestarter - 555</option><option>8 - Mad Dog - 756</option><option>9 - Sinner - 1,009</option><option>10 - Corupted Cops - 1,320</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="1"></form><form method=post>
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -22,6 +26,7 @@ THIS IS B
 <td align=right valign=top width=20%><a name=monster>Min<br>14<br>15<br>20<br>33<br>57<br>23<br>29<br>49<br>104<br>50</a></td><td align=right valign=top width=20%><a name=monster>Max<br>42<br>84<br>96<br>109<br>158<br>57<br>72<br>126<br>267<br>128</a></td></tr></table>
 <table border=0 width=100%>
 <tr><th colspan=4>Monster Stats</th></tr>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <tr><td>Level : 1</td><td>Life : 10,694</td><td>Exp : 2,400</td><td>Gold : 800</td></tr>
@@ -75,10 +80,16 @@ THIS IS B
 </table><b>Round 1</b><br><font color="#888888">You special ability for 90.016!<font size=-1>His countered for 157.</font></font><br><br><b>Killing spree of 8!</b><br><b>You have slain Thief. You win 880 exp and 320 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 244 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 35:23.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>
 <form method=post
 >>>>>>> parent of 5cde5de (DELETE ME)
+=======
+<tr><td>Level : 10</td><td>Life : 447</td><td>Exp : 105</td><td>Gold : 35</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 90.016!<font size=-1>His countered for 157.</font></font><br><br><b>Killing spree of 8!</b><br><b>You have slain Thief. You win 880 exp and 320 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 244 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 35:23.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>
+<form method=post
+>>>>>>> parent of 5cde5de (DELETE ME)
 
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,11 +142,16 @@ textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; borde
 =======
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 209</option><option>2 - Five leg Eddy - 238</option><option>3 - Rioting Rat - 299</option><option>4 - Town Madman - 404</option><option>5 - Town Demon - 565</option><option>6 - Pub Destroyer - 794</option><option>7 - Firestarter - 1,103</option><option>8 - Mad Dog - 1,504</option><option>9 - Sinner - 2,009</option><option>10 - Corupted Cops - 2,630</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="2"></form><form method=post>
 THIS IS B
 THIS IS B
 <td valign=top>Level : 1.</td> <td valign=top>Exp : 3,631,820.</td> <td valign=top>Gold : 1,256,450.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -232,6 +248,7 @@ THIS IS B
 <tr><th colspan=4>Monster Stats</th></tr>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <tr><td>Level : 1</td><td>Life : 21,389</td><td>Exp : 4,800</td><td>Gold : 1,600</td></tr>
 </table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 4</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 5</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
         Level up      <a href="stats.php">HERE!</a>
@@ -279,11 +296,16 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 447</td><td>Exp : 105</td><td>Gold : 35</td></tr>
 </table><b>Round 1</b><br><font color="#888888">You special ability for 62.589!<font size=-1>His countered for 140.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 110 exp and 40 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 486 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 35:23.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>
 >>>>>>> parent of 5cde5de (DELETE ME)
+=======
+<tr><td>Level : 10</td><td>Life : 447</td><td>Exp : 105</td><td>Gold : 35</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 62.589!<font size=-1>His countered for 140.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 110 exp and 40 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 486 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 35:23.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>
+>>>>>>> parent of 5cde5de (DELETE ME)
 <form method=post
 
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
@@ -401,6 +423,8 @@ THIS IS B
 =======
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 209</option><option>2 - Five leg Eddy - 238</option><option>3 - Rioting Rat - 299</option><option>4 - Town Madman - 404</option><option>5 - Town Demon - 565</option><option>6 - Pub Destroyer - 794</option><option>7 - Firestarter - 1,103</option><option>8 - Mad Dog - 1,504</option><option>9 - Sinner - 2,009</option><option>10 - Corupted Cops - 2,630</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="2"></form><form method=post>
 THIS IS B
 THIS IS B
@@ -415,6 +439,9 @@ THIS IS B
 </table><b>Round 1</b><br><font color="#888888">You special ability for 130.847!<font size=-1>His countered for 314.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 210 exp and 70 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 487 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 35:23.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>
 <form method=post
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -422,6 +449,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -452,6 +480,8 @@ THIS IS B
 =======
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 417</option><option>2 - Five leg Eddy - 474</option><option>3 - Rioting Rat - 595</option><option>4 - Town Madman - 804</option><option>5 - Town Demon - 1,125</option><option>6 - Pub Destroyer - 1,582</option><option>7 - Firestarter - 2,199</option><option>8 - Mad Dog - 3,000</option><option>9 - Sinner - 4,009</option><option>10 - Corupted Cops - 5,250</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="4"></form><form method=post>
 THIS IS B
 THIS IS B
@@ -465,6 +495,9 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 1,786</td><td>Exp : 417</td><td>Gold : 139</td></tr>
 </table><b>Round 1</b><br><font color="#888888">You special ability for 130.717!<font size=-1>His countered for 444.</font></font><br><br><b>Killing spree of 7!</b><br><b>You have slain Thief. You win 2,940 exp and 980 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 488 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 35:23.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -473,6 +506,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
@@ -491,6 +525,8 @@ THIS IS B
 <tr><th colspan=4>Monster Stats</th></tr>
 <tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
 =======
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 833</option><option>2 - Five leg Eddy - 946</option><option>3 - Rioting Rat - 1,187</option><option>4 - Town Madman - 1,604</option><option>5 - Town Demon - 2,245</option><option>6 - Pub Destroyer - 3,158</option><option>7 - Firestarter - 4,391</option><option>8 - Mad Dog - 5,992</option><option>9 - Sinner - 8,009</option><option>10 - Corupted Cops - 10,490</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="8"></form><form method=post>
@@ -556,6 +592,9 @@ THIS IS B
 <tr><th colspan=4>Monster Stats</th></tr>
 <tr><td>Level : 10</td><td>Life : 28,570</td><td>Exp : 6,657</td><td>Gold : 2,219</td></tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -565,6 +604,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
@@ -590,6 +630,8 @@ THIS IS B
 =======
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 105</option><option>2 - Five leg Eddy - 120</option><option>3 - Rioting Rat - 151</option><option>4 - Town Madman - 204</option><option>5 - Town Demon - 285</option><option>6 - Pub Destroyer - 400</option><option>7 - Firestarter - 555</option><option>8 - Mad Dog - 756</option><option>9 - Sinner - 1,009</option><option>10 - Corupted Cops - 1,320</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="1"></form><form method=post>
 THIS IS B
 THIS IS B
@@ -603,6 +645,9 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 447</td><td>Exp : 105</td><td>Gold : 35</td></tr>
 </table><b>Round 1</b><br><font color="#888888">You special ability for 120.040!<font size=-1>His countered for 190.</font></font><br><br><b>Killing spree of 8!</b><br><b>You have slain Thief. You win 880 exp and 320 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 514 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 35:23.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -611,6 +656,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
@@ -631,6 +677,8 @@ THIS IS B
 <<<<<<< HEAD
 =======
 =======
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 209</option><option>2 - Five leg Eddy - 238</option><option>3 - Rioting Rat - 299</option><option>4 - Town Madman - 404</option><option>5 - Town Demon - 565</option><option>6 - Pub Destroyer - 794</option><option>7 - Firestarter - 1,103</option><option>8 - Mad Dog - 1,504</option><option>9 - Sinner - 2,009</option><option>10 - Corupted Cops - 2,630</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="2"></form><form method=post>
@@ -934,6 +982,9 @@ THIS IS B
 <tr><th colspan=4>Monster Stats</th></tr>
 <tr><td>Level : 10</td><td>Life : 28,570</td><td>Exp : 6,657</td><td>Gold : 2,219</td></tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -943,6 +994,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
@@ -958,6 +1010,8 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 4,464</td><td>Exp : 1,041</td><td>Gold : 347</td></tr>
 </table><b>Round 1</b><br><font color="#888888">You special ability for 64.370!<font size=-1>His countered for 1.211.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 1,040 exp and 350 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 39 of 600</p>
 =======
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 105</option><option>2 - Five leg Eddy - 120</option><option>3 - Rioting Rat - 151</option><option>4 - Town Madman - 204</option><option>5 - Town Demon - 285</option><option>6 - Pub Destroyer - 400</option><option>7 - Firestarter - 555</option><option>8 - Mad Dog - 756</option><option>9 - Sinner - 1,009</option><option>10 - Corupted Cops - 1,320</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="1"></form><form method=post>
@@ -982,6 +1036,9 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 447</td><td>Exp : 105</td><td>Gold : 35</td></tr>
 </table><b>Round 1</b><br><font color="#888888">You special ability for 62.608!<font size=-1>His countered for 121.</font></font><br><br><b>Killing spree of 7!</b><br><b>You have slain Thief. You win 770 exp and 280 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 2 of 600</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -990,6 +1047,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
@@ -1004,6 +1062,8 @@ THIS IS B
 <tr><th colspan=4>Monster Stats</th></tr>
 <tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
 =======
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 209</option><option>2 - Five leg Eddy - 238</option><option>3 - Rioting Rat - 299</option><option>4 - Town Madman - 404</option><option>5 - Town Demon - 565</option><option>6 - Pub Destroyer - 794</option><option>7 - Firestarter - 1,103</option><option>8 - Mad Dog - 1,504</option><option>9 - Sinner - 2,009</option><option>10 - Corupted Cops - 2,630</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="2"></form><form method=post>
@@ -1103,6 +1163,9 @@ THIS IS B
 <tr><th colspan=4>Monster Stats</th></tr>
 <tr><td>Level : 10</td><td>Life : 28,570</td><td>Exp : 6,657</td><td>Gold : 2,219</td></tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -1112,6 +1175,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
@@ -1129,6 +1193,8 @@ THIS IS B
 =======
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 105</option><option>2 - Five leg Eddy - 120</option><option>3 - Rioting Rat - 151</option><option>4 - Town Madman - 204</option><option>5 - Town Demon - 285</option><option>6 - Pub Destroyer - 400</option><option>7 - Firestarter - 555</option><option>8 - Mad Dog - 756</option><option>9 - Sinner - 1,009</option><option>10 - Corupted Cops - 1,320</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="1"></form><form method=post>
 THIS IS B
 THIS IS B
@@ -1142,6 +1208,9 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 447</td><td>Exp : 105</td><td>Gold : 35</td></tr>
 </table><b>Round 1</b><br><font color="#FF0000">You hit him for 1.836.522.727! <font size=-1>He blocked for 63.</font></font><br><br><b>Killing spree of 4!</b><br><b>You have slain Thief. You win 440 exp and 160 gold.</b><br><br> Bonus gold and exp gain from power z +25.01%<p style="color:DodgerBlue;">Currently fought 1 of 600</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -1150,6 +1219,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
@@ -1165,6 +1235,8 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
 >>>>>>> parent of c7741c1 (working but raw.)
 =======
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 209</option><option>2 - Five leg Eddy - 238</option><option>3 - Rioting Rat - 299</option><option>4 - Town Madman - 404</option><option>5 - Town Demon - 565</option><option>6 - Pub Destroyer - 794</option><option>7 - Firestarter - 1,103</option><option>8 - Mad Dog - 1,504</option><option>9 - Sinner - 2,009</option><option>10 - Corupted Cops - 2,630</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="2"></form><form method=post>
@@ -1349,6 +1421,9 @@ THIS IS B
 <tr><th colspan=4>Monster Stats</th></tr>
 <tr><td>Level : 10</td><td>Life : 28,570</td><td>Exp : 6,657</td><td>Gold : 2,219</td></tr>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -1358,6 +1433,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
@@ -1375,6 +1451,8 @@ THIS IS B
 =======
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 105</option><option>2 - Five leg Eddy - 120</option><option>3 - Rioting Rat - 151</option><option>4 - Town Madman - 204</option><option>5 - Town Demon - 285</option><option>6 - Pub Destroyer - 400</option><option>7 - Firestarter - 555</option><option>8 - Mad Dog - 756</option><option>9 - Sinner - 1,009</option><option>10 - Corupted Cops - 1,320</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="1"></form><form method=post>
 THIS IS B
 THIS IS B
@@ -1388,6 +1466,9 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 447</td><td>Exp : 105</td><td>Gold : 35</td></tr>
 </table><b>Round 1</b><br><font color="#888888">You special ability for 120.115!<font size=-1>His countered for 116.</font></font><br><br><b>Killing spree of 4!</b><br><b>You have slain Thief. You win 440 exp and 160 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 338 of 600</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
@@ -1396,6 +1477,7 @@ THIS IS B
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
@@ -1413,6 +1495,8 @@ THIS IS B
 <form method=post
 >>>>>>> parent of c7741c1 (working but raw.)
 =======
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 <option>1 - Thief - 209</option><option>2 - Five leg Eddy - 238</option><option>3 - Rioting Rat - 299</option><option>4 - Town Madman - 404</option><option>5 - Town Demon - 565</option><option>6 - Pub Destroyer - 794</option><option>7 - Firestarter - 1,103</option><option>8 - Mad Dog - 1,504</option><option>9 - Sinner - 2,009</option><option>10 - Corupted Cops - 2,630</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="2"></form><form method=post>
@@ -2262,6 +2346,9 @@ THIS IS B
 </table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
 <form method=post
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 5cde5de (DELETE ME)
+=======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)

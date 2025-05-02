@@ -8666,6 +8666,7 @@ status
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 all errors and returns from login
 
 content
@@ -11254,6 +11255,8 @@ status
 >>>>>>> parent of c7741c1 (working but raw.)
 =======
 >>>>>>> parent of c7741c1 (working but raw.)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 =======

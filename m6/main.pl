@@ -6,6 +6,7 @@ use integer;
 use Carp;
 use Math::BigFloat;
 use Math::BigInt;
+use Math::Round;
 use Time::HiRes qw(sleep);
 use WWW::Mechanize;
 use POSIX qw(strftime);
@@ -83,6 +84,7 @@ my($all, $stat);
 my(@stats);
 my(@logins);
 my(@users);
+my(@outcomes);
 my($parsed,$tmp,$mech);
 my($a,$b,$c,$d);
 my($c0,$c1,$c2,$c3,$c4,$c5,$c6,$c7,$c8,$c9);
@@ -202,6 +204,7 @@ my $reps = 0;
 my $setlev = 0;
 my $tied = 0;
 my $newlevel;
+my $lost = 0;
 
 if($debug == 1){print"\n Debug mode active.\n";}
 
@@ -265,179 +268,6 @@ if($Month == 1){
 
 $temploop = $loopwait * 10;
 #---------------------
-
-sub Lowlevel {
-	$parsed = 0; 
-	while ($parsed == 0){
-		sleep($stime);
-		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
-		$a = $mech->content();
-		if ($a =~ m/Thief/){
-		$parsed = 1;
-		}else{
-			sleep(10);
-			goto RETRY;
-		}
-	}
-	if($debug == 1){
-		open(FILE, ">>LowLevel.txt")
-		or die "failed to open file!!!!";
-		print FILE "LowLevel\n\n";
-		print FILE "content\n\n";
-		print FILE "$a\n\n";
-		close(FILE);
-		
-		print "LowLevel\n";
-	}
-	$mech->form_number(1);
-	$mech->click();
-	$all = $mech->content();
-	$all =~ m/(Min<br>.*monster)/s;
-	$stat = $1;
-	$stat =~ m/(\<br.*td\>)/;
-	$stat = $1;
-	$stat =~ s/<.*?>/:/sg;
-	$stat =~ s/\.//g;
-	#print $stat;
-	@stats = split(/:/, $stat);
-	$stats[1] =~ s/,//sg;
-	$stats[2] =~ s/,//sg;
-	$stats[4] =~ s/,//sg;
-	$stats[5] =~ s/,//sg;
-	$stats[6] =~ s/,//sg;
-	$stats[7] =~ s/,//sg;
-	$stats[8] =~ s/,//sg;
-	$stats[9] =~ s/,//sg;
-	$stats[10] =~ s/,//sg;
-
-	$wdlevel = new Math::BigFloat $stats[1];
-	$aslevel = new Math::BigFloat $stats[2];
-	$mslevel = new Math::BigFloat $stats[4];
-	$deflevel = new Math::BigFloat $stats[5];
-	$arlevel = new Math::BigFloat $stats[6];
-	$mrlevel = new Math::BigFloat $stats[7];
-	$sdlevel = new Math::BigFloat $stats[8];
-	$sslevel = new Math::BigFloat $stats[9];
-	$srlevel = new Math::BigFloat $stats[10];
-
-	$wdlevel->bdiv('603'); 
-	$aslevel->bdiv('554'); 
-	$mslevel->bdiv('84'); 
-	$deflevel->bdiv('42'); 
-	$arlevel->bdiv('57'); 
-	$mrlevel->bdiv('72');
-	$sdlevel->bdiv('711');
-	$sslevel->bdiv('124');
-	$srlevel->bdiv('129');
-
-	$wdlevel->bfround(1);
-	$aslevel->bfround(1);
-	$mslevel->bfround(1);
-	$deflevel->bfround(1);
-	$arlevel->bfround(1);
-	$mrlevel->bfround(1);
-	$sdlevel->bfround(1);
-	$sslevel->bfround(1);
-	$srlevel->bfround(1);
-
-	$aslevel->bmul('2.5'); # multiplier for correct AS
-	$wdlevel->bmul('2.5'); #multiplier for correct WD
-	$sdlevel->bmul('2.5'); #multiplier for correct SD
-
-	if($chartype ==4){
-		$wdlevel->bdiv('2.5');
-	}
-	if($chartype ==5){
-		$aslevel->bdiv('2.5');
-	}
-	if($chartype ==14){
-		$sdlevel->bdiv('2.5');
-	}
-
-	if($chartype == 1) {
-		printf "ASlevel: %.3e", $aslevel->bstr();
-		printf ", DEFlevel: %.3e", $deflevel->bstr();
-		printf ", MRlevel: %.3e", $mrlevel->bstr();
-	}
-	if($chartype == 2) {
-		printf "WDlevel: %.3e", $wdlevel->bstr();
-		printf ", ARlevel: %.3e", $arlevel->bstr();
-		printf ", MRlevel: %.3e", $mrlevel->bstr();
-	}
-	if($chartype == 3) {
-		printf "ASlevel: %.3e", $aslevel->bstr();
-		printf ", ARlevel: %.3e", $arlevel->bstr();
-		printf ", MRlevel: %.3e", $mrlevel->bstr();
-	}
-	if($chartype == 4) {
-		printf "WDlevel: %.3e", $wdlevel->bstr();
-		printf ", ARlevel: %.3e", $arlevel->bstr();
-	}
-	if($chartype == 5) {
-		printf "ASlevel: %.3e", $aslevel->bstr();
-		printf ", MRlevel: %.3e", $mrlevel->bstr();
-	}
-	if($chartype == 6) {
-		printf "WDlevel: %.3e", $wdlevel->bstr();
-		printf ", MSlevel: %.3e", $mslevel->bstr();
-		printf ", ARlevel: %.3e", $arlevel->bstr();
-	}
-	if($chartype == 13) {
-		printf "SDlevel: %.3e", $sdlevel->bstr();
-		printf ", SSlevel: %.3e", $sslevel->bstr();
-		printf ", SRlevel: %.3e", $srlevel->bstr();
-	}
-	if($chartype == 14) {
-		printf "SDlevel: %.3e", $sdlevel->bstr();
-		printf ", SRlevel: %.3e", $srlevel->bstr();
-	}
-
-	# for agi mage:
-	if ($chartype == 1) {
-		$level = $aslevel->copy();
-		if ($level >= $deflevel) {$level = $deflevel->copy();}
-		if ($level >= $mrlevel) {$level = $mrlevel->copy();}
-	}
-	# for fighter
-	if ($chartype == 2) {
-		$level = $wdlevel->copy();
-		if ($level >= $arlevel) {$level = $arlevel->copy();}
-		if ($level >= $mrlevel) {$level = $mrlevel->copy();}
-	}
-	# for mage
-	if ($chartype == 3) {
-		$level = $aslevel->copy();
-		if ($level >= $arlevel) {$level = $arlevel->copy();}
-		if ($level >= $mrlevel) {$level = $mrlevel->copy();}
-	}
-	# for pure fighter
-	if ($chartype == 4) {
-		$level = $wdlevel->copy();
-		if ($level >= $arlevel) {$level = $arlevel->copy();}
-	}
-	# for pure mage
-	if ($chartype == 5) {
-		$level = $aslevel->copy();
-		if ($level >= $mrlevel) {$level = $mrlevel->copy();}
-	}
-	if ($chartype == 6) {
-		$level = $wdlevel->copy();
-		if ($level >= $mslevel) {$level = $mslevel->copy();}
-		if ($level >= $arlevel) {$level = $arlevel->copy();}
-	}
-	if ($chartype == 13) {
-		$level = $sdlevel->copy();
-		if ($level >= $sslevel) {$level = $sslevel->copy();}
-		if ($level >= $srlevel) {$level = $srlevel->copy();}
-	}
-	if ($chartype == 14) {
-		$level = $sdlevel->copy();
-		if ($level >= $srlevel) {$level = $srlevel->copy();}
-	}
-
-	printf " --> Skeleton level: %.3e\n", $level->bstr();
-	return();
-}
 
 sub LowFight {
 
@@ -1043,18 +873,31 @@ sub leveltestworld {
 	if($debug == 1){
 		print"Arrived at leveltestworld\n";
 	}
-	$parsed = 0; 
+
+	$parsed = 0;
 	while ($parsed == 0){
 		sleep($stime);
-		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
-		if ($a =~ m/Thief/){
-		$parsed = 1;
+		if ($a =~ m/Skeleton/){
+			$parsed = 1;
 		}else{
 			sleep(10);
 			goto RETRY;
 		}
 	}
+	#$parsed = 0; 
+	#while ($parsed == 0){
+	#	sleep($stime);
+	#	$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
+	#	$a = $mech->content();
+	#	if ($a =~ m/Thief/){
+	#	$parsed = 1;
+	#	}else{
+	#		sleep(10);
+	#		goto RETRY;
+	#	}
+	#}
 
 	if($debug == 1){
 			print $levelfilename."\n";
@@ -1092,12 +935,9 @@ sub leveltestworld {
 
 	$won = 1;
 
-	if(!$levmulti){$levmulti = 1;}
+	#if(!$levmulti){$levmulti = 1;}
 
 	while($won == 1){
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 		if(!$levmulti and $filelevel != 1){
 			$levmulti = $filelevel;}
 		elsif(!$levmulti){
@@ -1105,31 +945,13 @@ sub leveltestworld {
 		}else{
 			$levmulti = $levmulti*2;
 		}
-=======
-		if(!$levmulti){$levmulti = 1;}else{
-			$levmulti = $levmulti*10;}
-<<<<<<< HEAD
->>>>>>> parent of c7741c1 (working but raw.)
-=======
->>>>>>> parent of c7741c1 (working but raw.)
-=======
-		if(!$levmulti and $filelevel!=1){$levmulti = $filelevel;}
-		elsif(!$levmulti){
-			$levmulti = $filelevel;
-		}else{
-			$levmulti = $levmulti*2;}
->>>>>>> parent of 5cde5de (DELETE ME)
-=======
-		if(!$levmulti and $filelevel!=1){$levmulti = $filelevel;}
-		elsif(!$levmulti){
-			$levmulti = $filelevel;
-		}else{
-			$levmulti = $levmulti*2;}
->>>>>>> parent of 5cde5de (DELETE ME)
 		if($debug == 1){
 			print "levmulti = ".$levmulti."\n";
 		}
 		$level = $levmulti;
+		sleep($stime);
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+		$a = $mech->content();
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
@@ -1139,17 +961,19 @@ sub leveltestworld {
 		$mech->click_button(value => $fmodeval);
 		sleep($loopwait); 
 		$b = $mech->content();
-		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
+		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$b = $1;
+		if($debug == 1){
+			open(FILE, ">>TESTINFO1.txt")
+			or die "failed to open file!!!!";		
+			print FILE "\nTHIS IS A\nTHIS IS A\n";
+			print FILE $a;
+			print FILE "\nTHIS IS C\nTHIS IS C\n";
+			print FILE $b;
+			print FILE "\n";
+			close(FILE);
+		}
 
-		open(FILE, ">>TESTINFO1.txt")
-		or die "failed to open file!!!!";		
-		print FILE "\nTHIS IS A\nTHIS IS A\n";
-		print FILE $a;
-		print FILE "\nTHIS IS B\nTHIS IS B\n";
-		print FILE $b;
-		print FILE "\n";
-		close(FILE);
 		if ($b =~ m/You win/) {
 			print "You won at level ".$level."\n";
 			$won = 1;
@@ -1183,26 +1007,13 @@ sub leveltestworld {
 	}
 	
 	until ($setlev == 1){
-		$level = $level;
 		$reps = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
 		$won = 0;
 		$tied = 0;
 		$lost = 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
-=======
->>>>>>> parent of c7741c1 (working but raw.)
-=======
->>>>>>> parent of c7741c1 (working but raw.)
-=======
->>>>>>> parent of 5cde5de (DELETE ME)
-=======
->>>>>>> parent of 5cde5de (DELETE ME)
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
@@ -1215,46 +1026,7 @@ sub leveltestworld {
 		$b = $mech->content();
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 		if($debug == 1){
-=======
-=======
->>>>>>> parent of 5cde5de (DELETE ME)
-=======
->>>>>>> parent of 5cde5de (DELETE ME)
-		open(FILE, ">>TESTINFO2.txt")
-		or die "failed to open file!!!!";		
-		print FILE "\nTHIS IS A\nTHIS IS A\n";
-		print FILE $a;
-		print FILE "\nTHIS IS B\nTHIS IS B\n";
-		print FILE $b;
-		print FILE "\n";
-		close(FILE);
-<<<<<<< HEAD
-<<<<<<< HEAD
-		if ($b =~ m/You win/) {
-			print "You won at level".$level."\n";
-			$reps++;
-		}
-		if ($b =~ m/battle tied/) {
-			print "You tied at level ".$level."\n";
-			$reps++;
-		}
-		if ($b =~ m/stunned/) {
-			$reps++;
-			print "rep no. ".$reps." You lost at level".$level."\n";
-			print "Waiting 5 seconds before continuing \n";
-			sleep(6);
-		}
-		
-		until(($won == 0)or($reps == 9)){
-			sleep($loopwait); 
-			$mech->reload();
-			$a = $mech->content();
-			$b = $a;
->>>>>>> parent of c7741c1 (working but raw.)
 			open(FILE, ">>TESTINFO2.txt")
 			or die "failed to open file!!!!";		
 			print FILE "\nTHIS IS A\nTHIS IS A\n";
@@ -1264,58 +1036,56 @@ sub leveltestworld {
 			print FILE "\n";
 			close(FILE);
 		}
-=======
->>>>>>> parent of 5cde5de (DELETE ME)
-=======
->>>>>>> parent of 5cde5de (DELETE ME)
 		if ($b =~ m/You win/) {
-			print "You won at level".$level."\n";
-			$reps++;
+			$won++;
+			$reps++; 
+			print "rep no. ".$reps." You won at level ".$level."\n";
 		}
 		if ($b =~ m/battle tied/) {
-			print "You tied at level ".$level."\n";
+			$tied++;
 			$reps++;
+			print "rep no. ".$reps." You tied at level ".$level."\n";
 		}
 		if ($b =~ m/stunned/) {
+			$lost++;
 			$reps++;
-			print "rep no. ".$reps." You lost at level".$level."\n";
+			print "rep no. ".$reps." You lost at level ".$level."\n";
 			print "Waiting 5 seconds before continuing \n";
 			sleep(6);
 		}
 		
-		until(($won == 0)or($reps == 9)){
+		until($reps == 10){
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
 			$b = $a;
-			open(FILE, ">>TESTINFO2.txt")
-			or die "failed to open file!!!!";		
-			print FILE "\nTHIS IS A\nTHIS IS A\n";
-			print FILE $a;
-			print FILE "\nTHIS IS B\nTHIS IS B\n";
-			print FILE $b;
-			print FILE "\n";
-			close(FILE);
+			if($debug == 1){
+				open(FILE, ">>TESTINFO2.txt")
+				or die "failed to open file!!!!";		
+				print FILE "\nTHIS IS A\nTHIS IS A\n";
+				print FILE $a;
+				print FILE "\nTHIS IS B\nTHIS IS B\n";
+				print FILE $b;
+				print FILE "\n";
+				close(FILE);
+			}
 			if ($b =~ m/You win/) {
-				print "You won at level".$level."\n";
-				$won = 1;
+				$won++;
 				$reps++;
-
+				print "rep no. ".$reps." You won at level ".$level."\n";
 			}
 			if ($b =~ m/battle tied/) {
-				print "You tied at level ".$level."\n";
-				$won = 1;
+				$tied++;
 				$reps++;
+				print "rep no. ".$reps." You tied at level ".$level."\n";
 			}
 			if ($b =~ m/stunned/) {
-				print "You lost at level".$level."\n";
-				print "Waiting 5 seconds before continuing \n";
-				$won = 0;
+				$lost++;
 				$reps++;
+				print "rep no. ".$reps." You lost at level ".$level."\n";
+				print "Waiting 5 seconds before continuing \n";
 				sleep(6);
 			}
-<<<<<<< HEAD
-<<<<<<< HEAD
 		}
 
 		@outcomes = ($won, $tied, $lost);
@@ -1340,7 +1110,7 @@ sub leveltestworld {
 			print "rounded div10 = ".$div10."\n";
 			$newlevel = $level - $div10;
 			print "newlevel = ".$newlevel."\n";
-		}elsif($outcomes[2] == 10){
+		}elsif($outcomes[1] == 9){
 			print "Drew more 9 or more times.\n\n";
 			print "level = ".$level."\n";
 			my $div10 = Math::BigFloat->new($level);
@@ -1357,20 +1127,6 @@ sub leveltestworld {
 			print"newlevel = ".$newlevel."\n";	
 		}
 		$level = $newlevel;
-=======
-			if($debug == 1){
-				print "reps = ".$reps."\n";
-			}
-			$level = $newlevel;
-		}
->>>>>>> parent of c7741c1 (working but raw.)
-=======
-			if($debug == 1){
-				print "reps = ".$reps."\n";
-			}
-			$level = $newlevel;
-		}
->>>>>>> parent of c7741c1 (working but raw.)
 	}
 
 	if($setlev == 1){
@@ -2704,7 +2460,6 @@ until($levels == 0){
 	}
 	if($cpmready == 0){
 		&leveltestworld;
-		#&Lowlevel;
 		&LowFight;	
 	}else{
 		&leveltestfight;
