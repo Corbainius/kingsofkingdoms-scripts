@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-#print "Perl version: $^V\n";
+#s1(); print "Perl version: $^V\n";
 use integer;
 use Carp;
 use Math::BigFloat;
@@ -12,6 +12,27 @@ use WWW::Mechanize;
 use POSIX qw(strftime);
 use feature 'try';
 use Cwd qw();
+use Term::ANSIColor;
+print color('bright_red');
+print "COLOUR TEST HERE 1234567890\n";
+print color('ON_green');
+print "COLOUR TEST HERE 1234567890\n";
+print color('blink blue');
+print "COLOUR TEST HERE 1234567890\n";
+print color('underline blue');
+print "COLOUR TEST HERE 1234567890\n";
+print color('underscore blue');
+print "COLOUR TEST HERE 1234567890\n";
+#print color('italic blue');
+#print "COLOUR TEST HERE 1234567890\n";
+print color('faint blue');
+print "COLOUR TEST HERE 1234567890\n";
+print color('bold blue');
+print "COLOUR TEST HERE 1234567890\n";
+print color('bold blue');
+print "COLOUR TEST HERE 1234567890\n";
+print color('bold blue');
+print "COLOUR TEST HERE 1234567890\n";
 
 #sub divide {
 #    my ($numerator, $denominator) = @_;
@@ -23,14 +44,14 @@ use Cwd qw();
 #    $result = divide(10, 0);
 #}
 #catch ($e) {
-#   print "Caught an error: $e\n";  # This will catch the division by zero error
+#   s1(); print "Caught an error: $e\n";  # This will catch the division by zero error
 #};
 
-#print "Result: $result\n";  # $result will be undef as an exception was thrown
+#s1(); print "Result: $result\n";  # $result will be undef as an exception was thrown
 
-# find and print all the links on the page
+# find and s1(); print all the links on the page
 #my @links = $mech->links();
-#	for my $link ( @links ) {printf "%s, %s\n", $link->text, $link->url;}
+#	for my $link ( @links ) {s1(); printf "%s, %s\n", $link->text, $link->url;}
 
 #open STDOUT, '>>', 'output.txt' or die $!;
 
@@ -205,17 +226,18 @@ my $setlev = 0;
 my $tied = 0;
 my $newlevel;
 my $lost = 0;
+my $tietrig = 0;
 
-if($debug == 1){print"\n Debug mode active.\n";}
+if($debug == 1){s1(); print"\n Debug mode active.\n";}
 
 if($chartype == 7 or $chartype == 8 or $chartype == 9 or $chartype == 10 or $chartype == 11 or $chartype == 12){
-	print "SINGLE STAT MODE, make sure you have selected the right stat.\n";
+	s1(); print "SINGLE STAT MODE, make sure you have selected the right stat.\n";
 	$Alternate = 180;
 	$shopyesno = 2;
 }
 
 if($chartype == 13 or $chartype == 14){
-	print "Custom Stats build mode.\n";
+	s1(); print "Custom Stats build mode.\n";
 	$Alternate = 100;
 }
 
@@ -240,34 +262,299 @@ $Year = $Year + 1900;
 $Month = $Month + 1;
 my $MonthName;
 
-if($Month == 1){
-	$MonthName = "January";
-}elsif($Month == 2){
-	$MonthName = "February";
-}elsif($Month == 3){
-	$MonthName = "March";
-}elsif($Month == 4){
-	$MonthName = "April";
-}elsif($Month == 5){
-	$MonthName = "May";
-}elsif($Month == 6){
-	$MonthName = "June";
-}elsif($Month == 7){
-	$MonthName = "July";
-}elsif($Month == 8){
-	$MonthName = "August";
-}elsif($Month == 9){
-	$MonthName = "September";
-}elsif($Month == 10){
-	$MonthName = "October";
-}elsif($Month == 11){
-	$MonthName = "November";
-}elsif($Month == 12){
-	$MonthName = "December";
+if($Month == 1){$MonthName = "January";
+}elsif($Month == 2){$MonthName = "February";
+}elsif($Month == 3){$MonthName = "March";
+}elsif($Month == 4){$MonthName = "April";
+}elsif($Month == 5){$MonthName = "May";
+}elsif($Month == 6){$MonthName = "June";
+}elsif($Month == 7){$MonthName = "July";
+}elsif($Month == 8){$MonthName = "August";
+}elsif($Month == 9){$MonthName = "September";
+}elsif($Month == 10){$MonthName = "October";
+}elsif($Month == 11){$MonthName = "November";
+}elsif($Month == 12){$MonthName = "December";
 }
 
 $temploop = $loopwait * 10;
 #---------------------
+sub s1 {
+	print " ";
+}
+sub s2 {
+	print " " x 2;
+}
+sub s3 {
+	print " " x 3;
+}
+
+sub leveltestworld {
+	if($debug == 1){
+		s1(); print"Arrived at leveltestworld\n";
+	}
+
+	$parsed = 0; 
+	while ($parsed == 0){
+		sleep($stime);
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
+		$a = $mech->content();
+		if ($a =~ m/Thief/){
+		$parsed = 1;
+		}else{
+			sleep(10);
+			goto RETRY;
+		}
+	}
+
+	if($debug == 1){
+			s1(); print $levelfilename."\n";
+	}
+
+	my $fname = $levelfilename;
+	if($debug == 1){
+		s1(); print $fname."\n";
+	}
+	if(-e $fname){
+		if($debug == 1){
+			s1(); print("File $fname exists\n");
+		}
+		open(FILE, "<".$fname)
+		or die "failed to open file!!!!";
+			while (my $line = <FILE>) {
+				chomp $line;
+				$filelevel = $line;
+			}
+		close(FILE);
+		
+		if($debug == 1){
+			s1(); print "filelevel = ".$filelevel.".\n";
+		}
+	}else{
+		if($debug == 1){
+			s1(); print("File $fname does not exists\n");
+		}
+		open(FILE, "+>".$fname)
+		or die "failed to open file!!!!";
+		print FILE "1";
+		close(FILE);
+		$filelevel = 1;
+	}
+
+	$won = 1;
+
+	while($won == 1){
+		if(!$levmulti and $filelevel != 1){
+			$levmulti = $filelevel;}
+		elsif(!$levmulti){
+			$levmulti = $filelevel;
+		}else{
+			$levmulti = $levmulti*2;
+		}
+		if($debug == 1){
+			s1(); print "levmulti = ".$levmulti."\n";
+		}
+		$level = $levmulti;
+		$mech->form_number(2);
+		$mech->field("Difficulty", $level);
+		$mech->click();
+		$a = $mech->content();
+		$c = $a;
+		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
+		$a = $1;
+		$mech->click_button(value => $fmodeval);
+		sleep($loopwait); 
+		$b = $mech->content();
+		$d = $b;
+		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
+		$b = $1;
+		if($debug == 1){
+			open(FILE, ">>TESTINFO1.txt")
+			or die "failed to open file!!!!";		
+			print FILE "\nTHIS IS A\nTHIS IS A\n";
+			print FILE $a;
+			print FILE "\nTHIS IS C\nTHIS IS C\n";
+			print FILE $c;
+			print FILE "\nTHIS IS B\nTHIS IS B\n";
+			print FILE $b;
+			print FILE "\nTHIS IS D\nTHIS IS D\n";
+			print FILE $d;
+			print FILE "\n";
+			close(FILE);
+		}
+
+		if ($b =~ m/You win/) {
+			s1(); print "You won at level ".$level."\n";
+			$won = 1;
+			if($debug == 1){
+				s1(); print "levmulti = ".$levmulti."\n";
+			}
+		}		
+		if ($b =~ m/battle tied/) {
+			s1(); print "You tied at level ".$level."\n";
+			$won = 0;
+			$level = $level;
+			if($debug == 1){
+				s1(); print "levmulti = ".$levmulti."\n";
+			}
+			$tied++;
+		}
+		if ($b =~ m/stunned/) {
+			s1(); print "You lost at level ".$level."\n";
+			s1(); print "Waiting 5 seconds before continuing \n";
+			$won = 0;
+			$level = $level;
+			if($debug == 1){
+				s1(); print "levmulti = ".$levmulti."\n";
+			}
+			sleep(6);
+		}
+	}
+
+	if($debug == 1){
+		s1(); print "base level is ".$level."\n";
+	}
+	
+	until ($setlev == 1){
+		$reps = 0;
+		$won = 0;
+		$tied = 0;
+		$lost = 0;
+		sleep($stime);
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
+		$a = $mech->content();
+		$mech->form_number(2);
+		$mech->field("Difficulty", $level);
+		$mech->click();
+		sleep($stime);
+		$a = $mech->content();
+		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
+		$a = $1;
+		$mech->click_button(value => $fmodeval);
+		sleep($loopwait); 
+		$b = $mech->content();
+		$b =~ m/(<tr><td>Level.*<form method=post)/s;
+		$b = $1;
+		if($debug == 1){
+			open(FILE, ">>TESTINFO1.txt")
+			or die "failed to open file!!!!";		
+			print FILE "\nTHIS IS A\nTHIS IS A\n";
+			print FILE $a;
+			print FILE "\nTHIS IS B\nTHIS IS B\n";
+			print FILE $b;
+			print FILE "\n";
+			close(FILE);
+		}
+		if ($b =~ m/You win/) {
+			$won++;
+			$reps++; 
+			s1(); print "rep no. ".$reps." You won at level ".$level."\n";
+		}
+		if ($b =~ m/battle tied/) {
+			$tied++;
+			$reps++;
+			s1(); print "rep no. ".$reps." You tied at level ".$level."\n";
+		}
+		if ($b =~ m/stunned/) {
+			$lost++;
+			$reps++;
+			s1(); print "rep no. ".$reps." You lost at level ".$level."\n";
+			s1(); print "Waiting 5 seconds before continuing \n";
+			sleep(6);
+		}
+		
+		until($reps == 10){
+			sleep($loopwait); 
+			$mech->reload();
+			$a = $mech->content();
+			$b = $a;
+			if($debug == 1){
+				open(FILE, ">>TESTINFO2.txt")
+				or die "failed to open file!!!!";		
+				print FILE "\nTHIS IS A\nTHIS IS A\n";
+				print FILE $a;
+				print FILE "\nTHIS IS B\nTHIS IS B\n";
+				print FILE $b;
+				print FILE "\n";
+				close(FILE);
+			}
+			if ($b =~ m/You win/) {
+				$won++;
+				$reps++;
+				s1(); print "rep no. ".$reps." You won at level ".$level."\n";
+			}
+			if ($b =~ m/battle tied/) {
+				$tied++;
+				$reps++;
+				s1(); print "rep no. ".$reps." You tied at level ".$level."\n";
+				if($tied >= 3){$tietrig = 1; last;}
+			}
+			if ($b =~ m/stunned/) {
+				$lost++;
+				$reps++;
+				s1(); print "rep no. ".$reps." You lost at level ".$level."\n";
+				s1(); print "Waiting 5 seconds before continuing \n";
+				sleep(6);
+				last;
+			}
+		}
+
+		@outcomes = ($won, $tied, $lost);
+		my $i = 0;
+		foreach(@outcomes) {
+			if($i == 0){s1(); print"\nWon ";}elsif($i == 1){s1(); print"Tied ";}else{s1(); print"Lost ";}
+			s1(); print "$_\n\n";
+			$i++;
+		}
+
+		if($outcomes[0] >=8){ 
+			s1(); print "Won 8 or more times.\n\n";
+			$newlevel = $level;
+			$setlev = 1;
+		}elsif($outcomes[0] <=7 ){
+			s1(); print "Won fewer than 8 times out of 10.\n\n";
+			s1(); print "level = ".$level."\n";
+			my $div10 = Math::BigFloat->new($level);
+			$div10->bdiv(10);
+			s1(); print "div10 = ".$div10."\n";
+			$div10->bfround(1);
+			s1(); print "rounded div10 = ".$div10."\n";
+			$newlevel = $level - $div10;
+			s1(); print "newlevel = ".$newlevel."\n";
+		}elsif($tietrig == 1){
+			s1(); print "Tied too many times.\n\n";
+			s1(); print "level = ".$level."\n";
+			my $div10 = Math::BigFloat->new($level);
+			$div10->bdiv(5);
+			s1(); print "div10 = ".$div10."\n";
+			$div10->bfround(1);
+			s1(); print "rounded div10 = ".$div10."\n";
+			$newlevel = $level - $div10;
+			s1(); print "newlevel = ".$newlevel."\n";
+			$tietrig = 0;
+		}else{
+ 			s1(); print "Wins error. Something is wrong\n";
+		}
+		if($debug == 1){
+			s1(); print"newlevel = ".$newlevel."\n";	
+		}
+		$level = $newlevel;
+	}
+
+	if($setlev == 1){
+		if($debug == 1){
+			s1(); print"newlevel = ".$newlevel."\n";
+		}
+		open(FILE, "+>".$fname)
+		or die "failed to open file!!!!";
+		print FILE "$newlevel";
+		close(FILE);
+		if($debug == 1){
+			s1(); print"filelevel updated sucessfully\n";
+		}
+	}
+
+	return($newlevel);
+}
 
 sub LowFight {
 
@@ -285,7 +572,7 @@ sub LowFight {
 		}
 	}
 
-	print"this is low fight\n";
+	s1(); print"this is low fight\n";
 
 	if($debug == 1){
 		open(FILE, ">>LowFight.txt")
@@ -295,7 +582,7 @@ sub LowFight {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		print "LowFight\n";
+		s1(); print "LowFight\n";
 	}
 	sleep(10);
 	exit();
@@ -313,7 +600,7 @@ sub LowFight {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		print "LowFight2\n";
+		s1(); print "LowFight2\n";
 	}
 	
 	$ant = 1800;
@@ -348,7 +635,7 @@ sub LowFight {
 			print FILE "$a\n\n";
 			close(FILE);
 			
-			print "LowFight3\n";
+			s1(); print "LowFight3\n";
 		}
 		$b = $a;
 		$c = $a;
@@ -356,9 +643,9 @@ sub LowFight {
 		if($d == 500 or $d == 400){
 			if($retries == 0){
 				if($d == 400){
-					print"400 error";
+					s1(); print"400 error";
 				}else{
-					print "Trouble Connecting to internet....Probably.\n";
+					s1(); print "Trouble Connecting to internet....Probably.\n";
 				}
 			}
 			until ($d == 200){
@@ -373,20 +660,20 @@ sub LowFight {
 			
 	#KILLED
 		if($a =~ m/(been.*slain)/) {
-			print "ERROR - TOO HIGH MONSTER LEVEL! - you were slain!\n";exit(0);
+			s1(); print "ERROR - TOO HIGH MONSTER LEVEL! - you were slain!\n";exit(0);
 		}
 	#LOGGED OUT
 		if ($a =~ m/logged/) {
-			print "LOGGED OUT! sleeping for 5 seconds before restart!\n";
+			s1(); print "LOGGED OUT! sleeping for 5 seconds before restart!\n";
 			sleep(5);
 			goto START;
 		}
 		if ($antal <= 0) {
 			sleep(3);
-			print "Waiting last few seconds before restarting\n";
+			s1(); print "Waiting last few seconds before restarting\n";
 			goto START;
 		}
-		if ($a =~ m/(400 Bad Request)/){print"400 error restarting.";
+		if ($a =~ m/(400 Bad Request)/){s1(); print"400 error restarting.";
 			goto START;
 		}
 
@@ -395,7 +682,7 @@ sub LowFight {
 		if($b =~ m/(You win .*? exp)/){$output = $1;}
 		if($b =~ m/(The battle tied.)/){$output = $1;}
 		if($b =~ m/jail time.*?!/){$output = $1;}
-		print "$antal: [$Hour:$Minute:$Second]: " . $output . "\n";
+		s1(); print "$antal: [$Hour:$Minute:$Second]: " . $output . "\n";
 
 		$levelnow = $levelnow+1;
 		$persist++;
@@ -426,7 +713,7 @@ sub Autolevelup {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		print "Autolevelup\n";
+		s1(); print "Autolevelup\n";
 	}
 	$a = $mech->content();
 	$b = $mech->content();
@@ -591,7 +878,7 @@ sub Autolevelup {
 				$conc = $perstat*$ratio4;
 				$contra = $perstat*$ratio5;
 			}else{
-				print"Skipping autolevel because there are less than 100 levels to level.\n";
+				s1(); print"Skipping autolevel because there are less than 100 levels to level.\n";
 				return();
 			}
 
@@ -680,15 +967,15 @@ sub Autolevelup {
 		}
 	
 		if($c >= 1){
-			if($str>=1){print "[Level : $FormatedLev] You Auto-Leveled ".$forstr ." Strength\n\n";}
-			if($dex>=1){print "[Level : $FormatedLev] You Auto-Leveled ".$fordex ." Dexterity\n\n";}
-			if($agil>=1){print "[Level : $FormatedLev] You Auto-Leveled ".$foragil ." Agility\n\n";}
-			if($int>=1){print "[Level : $FormatedLev] You Auto-Leveled ".$forint ." Intelligence\n\n";}
-			if($conc>=1){print "[Level : $FormatedLev] You Auto-Leveled ".$forconc ." Concentration\n\n";}
-			if($contra>=1){print "[Level : $FormatedLev] You Auto-Leveled ".$forcontra ." Contravention\n\n";}
+			if($str>=1){s1(); print "[Level : $FormatedLev] You Auto-Leveled ".$forstr ." Strength\n\n";}
+			if($dex>=1){s1(); print "[Level : $FormatedLev] You Auto-Leveled ".$fordex ." Dexterity\n\n";}
+			if($agil>=1){s1(); print "[Level : $FormatedLev] You Auto-Leveled ".$foragil ." Agility\n\n";}
+			if($int>=1){s1(); print "[Level : $FormatedLev] You Auto-Leveled ".$forint ." Intelligence\n\n";}
+			if($conc>=1){s1(); print "[Level : $FormatedLev] You Auto-Leveled ".$forconc ." Concentration\n\n";}
+			if($contra>=1){s1(); print "[Level : $FormatedLev] You Auto-Leveled ".$forcontra ." Contravention\n\n";}
 			&CheckShop;
 		}else{
-			print "Did not auto level.\n";
+			s1(); print "Did not auto level.\n";
 		}
 	}
 	return();
@@ -715,7 +1002,7 @@ sub CPMlevel {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		print "CPMlevel\n";
+		s1(); print "CPMlevel\n";
 	}
 	$mech->form_number(1);
 	$mech->click();
@@ -726,7 +1013,7 @@ sub CPMlevel {
 	$stat = $1;
 	$stat =~ s/<.*?>/:/sg;
 	$stat =~ s/\.//g;
-	#print $stat;
+	#s1(); print $stat;
 	@stats = split(/:/, $stat);
 	$stats[1] =~ s/,//sg;
 	$stats[2] =~ s/,//sg;
@@ -785,41 +1072,41 @@ sub CPMlevel {
 	}
 
 	if($chartype == 1) {
-		printf "ASlevel: %.3e", $aslevel->bstr();
-		printf ", DEFlevel: %.3e", $deflevel->bstr();
-		printf ", MRlevel: %.3e", $mrlevel->bstr();
+		s1(); printf "ASlevel: %.3e", $aslevel->bstr();
+		s1(); printf ", DEFlevel: %.3e", $deflevel->bstr();
+		s1(); printf ", MRlevel: %.3e", $mrlevel->bstr();
 	}
 	if($chartype == 2) {
-		printf "WDlevel: %.3e", $wdlevel->bstr();
-		printf ", ARlevel: %.3e", $arlevel->bstr();
-		printf ", MRlevel: %.3e", $mrlevel->bstr();
+		s1(); printf "WDlevel: %.3e", $wdlevel->bstr();
+		s1(); printf ", ARlevel: %.3e", $arlevel->bstr();
+		s1(); printf ", MRlevel: %.3e", $mrlevel->bstr();
 	}
 	if($chartype == 3) {
-		printf "ASlevel: %.3e", $aslevel->bstr();
-		printf ", ARlevel: %.3e", $arlevel->bstr();
-		printf ", MRlevel: %.3e", $mrlevel->bstr();
+		s1(); printf "ASlevel: %.3e", $aslevel->bstr();
+		s1(); printf ", ARlevel: %.3e", $arlevel->bstr();
+		s1(); printf ", MRlevel: %.3e", $mrlevel->bstr();
 	}
 	if($chartype == 4) {
-		printf "WDlevel: %.3e", $wdlevel->bstr();
-		printf ", ARlevel: %.3e", $arlevel->bstr();
+		s1(); printf "WDlevel: %.3e", $wdlevel->bstr();
+		s1(); printf ", ARlevel: %.3e", $arlevel->bstr();
 	}
 	if($chartype == 5) {
-		printf "ASlevel: %.3e", $aslevel->bstr();
-		printf ", MRlevel: %.3e", $mrlevel->bstr();
+		s1(); printf "ASlevel: %.3e", $aslevel->bstr();
+		s1(); printf ", MRlevel: %.3e", $mrlevel->bstr();
 	}
 	if($chartype == 6) {
-		printf "WDlevel: %.3e", $wdlevel->bstr();
-		printf ", MSlevel: %.3e", $mslevel->bstr();
-		printf ", ARlevel: %.3e", $arlevel->bstr();
+		s1(); printf "WDlevel: %.3e", $wdlevel->bstr();
+		s1(); printf ", MSlevel: %.3e", $mslevel->bstr();
+		s1(); printf ", ARlevel: %.3e", $arlevel->bstr();
 	}	
 	if($chartype == 13) {
-			printf "SDlevel: %.3e", $sdlevel->bstr();
-			printf ", SSlevel: %.3e", $sslevel->bstr();
-			printf ", SRlevel: %.3e", $srlevel->bstr();
+			s1(); printf "SDlevel: %.3e", $sdlevel->bstr();
+			s1(); printf ", SSlevel: %.3e", $sslevel->bstr();
+			s1(); printf ", SRlevel: %.3e", $srlevel->bstr();
 	}
 	if($chartype == 14) {
-			printf "SDlevel: %.3e", $sdlevel->bstr();
-			printf ", SRlevel: %.3e", $srlevel->bstr();
+			s1(); printf "SDlevel: %.3e", $sdlevel->bstr();
+			s1(); printf ", SRlevel: %.3e", $srlevel->bstr();
 	}
 	
 	# for agi mage:
@@ -865,13 +1152,13 @@ sub CPMlevel {
 		if ($level >= $srlevel) {$level = $srlevel->copy();}
 	}
 
-	printf " --> CPM level: %.3e\n", $level->bstr();
+	s1(); printf " --> CPM level: %.3e\n", $level->bstr();
 	return();
 }
 
-sub leveltestworld {
+sub leveltestfight {
 	if($debug == 1){
-		print"Arrived at leveltestworld\n";
+		s1(); print"Arrived at leveltestfight\n";
 	}
 
 	$parsed = 0;
@@ -886,30 +1173,18 @@ sub leveltestworld {
 			goto RETRY;
 		}
 	}
-	#$parsed = 0; 
-	#while ($parsed == 0){
-	#	sleep($stime);
-	#	$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
-	#	$a = $mech->content();
-	#	if ($a =~ m/Thief/){
-	#	$parsed = 1;
-	#	}else{
-	#		sleep(10);
-	#		goto RETRY;
-	#	}
-	#}
 
 	if($debug == 1){
-			print $levelfilename."\n";
+			s1(); print $levelfilename."\n";
 	}
 
 	my $fname = $levelfilename;
 	if($debug == 1){
-		print $fname."\n";
+		s1(); print $fname."\n";
 	}
 	if(-e $fname){
 		if($debug == 1){
-			print("File $fname exists\n");
+			s1(); print("File $fname exists\n");
 		}
 		open(FILE, "<".$fname)
 		or die "failed to open file!!!!";
@@ -920,11 +1195,11 @@ sub leveltestworld {
 		close(FILE);
 		
 		if($debug == 1){
-			print "filelevel = ".$filelevel.".\n";
+			s1(); print "filelevel = ".$filelevel.".\n";
 		}
 	}else{
 		if($debug == 1){
-			print("File $fname does not exists\n");
+			s1(); print("File $fname does not exists\n");
 		}
 		open(FILE, "+>".$fname)
 		or die "failed to open file!!!!";
@@ -946,7 +1221,7 @@ sub leveltestworld {
 			$levmulti = $levmulti*2;
 		}
 		if($debug == 1){
-			print "levmulti = ".$levmulti."\n";
+			s1(); print "levmulti = ".$levmulti."\n";
 		}
 		$level = $levmulti;
 		sleep($stime);
@@ -968,42 +1243,42 @@ sub leveltestworld {
 			or die "failed to open file!!!!";		
 			print FILE "\nTHIS IS A\nTHIS IS A\n";
 			print FILE $a;
-			print FILE "\nTHIS IS C\nTHIS IS C\n";
+			print FILE "\nTHIS IS B\nTHIS IS B\n";
 			print FILE $b;
 			print FILE "\n";
 			close(FILE);
 		}
 
 		if ($b =~ m/You win/) {
-			print "You won at level ".$level."\n";
+			s1(); print "You won at level ".$level."\n";
 			$won = 1;
 			if($debug == 1){
-				print "levmulti = ".$levmulti."\n";
+				s1(); print "levmulti = ".$levmulti."\n";
 			}
 		}		
 		if ($b =~ m/battle tied/) {
-			print "You tied at level ".$level."\n";
+			s1(); print "You tied at level ".$level."\n";
 			$won = 0;
 			$level = $level;
 			if($debug == 1){
-				print "levmulti = ".$levmulti."\n";
+				s1(); print "levmulti = ".$levmulti."\n";
 			}
 			$tied++;
 		}
 		if ($b =~ m/stunned/) {
-			print "You lost at level ".$level."\n";
-			print "Waiting 5 seconds before continuing \n";
+			s1(); print "You lost at level ".$level."\n";
+			s1(); print "Waiting 5 seconds before continuing \n";
 			$won = 0;
 			$level = $level;
 			if($debug == 1){
-				print "levmulti = ".$levmulti."\n";
+				s1(); print "levmulti = ".$levmulti."\n";
 			}
 			sleep(6);
 		}
 	}
 
 	if($debug == 1){
-		print "base level is ".$level."\n";
+		s1(); print "base level is ".$level."\n";
 	}
 	
 	until ($setlev == 1){
@@ -1039,18 +1314,18 @@ sub leveltestworld {
 		if ($b =~ m/You win/) {
 			$won++;
 			$reps++; 
-			print "rep no. ".$reps." You won at level ".$level."\n";
+			s1(); print "rep no. ".$reps." You won at level ".$level."\n";
 		}
 		if ($b =~ m/battle tied/) {
 			$tied++;
 			$reps++;
-			print "rep no. ".$reps." You tied at level ".$level."\n";
+			s1(); print "rep no. ".$reps." You tied at level ".$level."\n";
 		}
 		if ($b =~ m/stunned/) {
 			$lost++;
 			$reps++;
-			print "rep no. ".$reps." You lost at level ".$level."\n";
-			print "Waiting 5 seconds before continuing \n";
+			s1(); print "rep no. ".$reps." You lost at level ".$level."\n";
+			s1(); print "Waiting 5 seconds before continuing \n";
 			sleep(6);
 		}
 		
@@ -1072,18 +1347,18 @@ sub leveltestworld {
 			if ($b =~ m/You win/) {
 				$won++;
 				$reps++;
-				print "rep no. ".$reps." You won at level ".$level."\n";
+				s1(); print "rep no. ".$reps." You won at level ".$level."\n";
 			}
 			if ($b =~ m/battle tied/) {
 				$tied++;
 				$reps++;
-				print "rep no. ".$reps." You tied at level ".$level."\n";
+				s1(); print "rep no. ".$reps." You tied at level ".$level."\n";
 			}
 			if ($b =~ m/stunned/) {
 				$lost++;
 				$reps++;
-				print "rep no. ".$reps." You lost at level ".$level."\n";
-				print "Waiting 5 seconds before continuing \n";
+				s1(); print "rep no. ".$reps." You lost at level ".$level."\n";
+				s1(); print "Waiting 5 seconds before continuing \n";
 				sleep(6);
 			}
 		}
@@ -1091,54 +1366,54 @@ sub leveltestworld {
 		@outcomes = ($won, $tied, $lost);
 		my $i = 0;
 		foreach(@outcomes) {
-			if($i == 0){print"\nWon ";}elsif($i == 1){print"Tied ";}else{print"Lost ";}
-			print "$_\n\n";
+			if($i == 0){s1(); print"\nWon ";}elsif($i == 1){s1(); print"Tied ";}else{s1(); print"Lost ";}
+			s1(); print "$_\n\n";
 			$i++;
 		}
 
 		if($outcomes[0] >=8){ 
-			print "Won 9 or more times.\n\n";
+			s1(); print "Won 9 or more times.\n\n";
 			$newlevel = $level;
 			$setlev = 1;
 		}elsif($outcomes[0] <=7 ){
-			print "Won fewer than 9 times out of 10.\n\n";
-			print "level = ".$level."\n";
+			s1(); print "Won fewer than 9 times out of 10.\n\n";
+			s1(); print "level = ".$level."\n";
 			my $div10 = Math::BigFloat->new($level);
 			$div10->bdiv(10);
-			print "div10 = ".$div10."\n";
+			s1(); print "div10 = ".$div10."\n";
 			$div10->bfround(1);
-			print "rounded div10 = ".$div10."\n";
+			s1(); print "rounded div10 = ".$div10."\n";
 			$newlevel = $level - $div10;
-			print "newlevel = ".$newlevel."\n";
+			s1(); print "newlevel = ".$newlevel."\n";
 		}elsif($outcomes[1] == 9){
-			print "Drew more 9 or more times.\n\n";
-			print "level = ".$level."\n";
+			s1(); print "Drew more 9 or more times.\n\n";
+			s1(); print "level = ".$level."\n";
 			my $div10 = Math::BigFloat->new($level);
 			$div10->bdiv(5);
-			print "div10 = ".$div10."\n";
+			s1(); print "div10 = ".$div10."\n";
 			$div10->bfround(1);
-			print "rounded div10 = ".$div10."\n";
+			s1(); print "rounded div10 = ".$div10."\n";
 			$newlevel = $level - $div10;
-			print "newlevel = ".$newlevel."\n";
+			s1(); print "newlevel = ".$newlevel."\n";
 		}else{
- 			print "Wins error. Something is wrong\n";
+ 			s1(); print "Wins error. Something is wrong\n";
 		}
 		if($debug == 1){
-			print"newlevel = ".$newlevel."\n";	
+			s1(); print"newlevel = ".$newlevel."\n";	
 		}
 		$level = $newlevel;
 	}
 
 	if($setlev == 1){
 		if($debug == 1){
-			print"newlevel = ".$newlevel."\n";
+			s1(); print"newlevel = ".$newlevel."\n";
 		}
 		open(FILE, "+>".$fname)
 		or die "failed to open file!!!!";
 		print FILE "$newlevel";
 		close(FILE);
 		if($debug == 1){
-			print"filelevel updated sucessfully\n";
+			s1(); print"filelevel updated sucessfully\n";
 		}
 	}
 
@@ -1167,7 +1442,7 @@ sub Fight {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		print "Fight\n";
+		s1(); print "Fight\n";
 	}
 	$mech->form_number(2);
 	$mech->field("Difficulty", $level);
@@ -1179,14 +1454,14 @@ sub Fight {
 		print FILE "Fightlevel\n\n";
 		print FILE "$cpm\n\n";
 		close(FILE);
-		print "Fightlevel\n";
+		s1(); print "Fightlevel\n";
 	}
 	$cpm =~ m/(<option>208.*<\/option><option>209)/;
     $cpm = $1;
     $cpm =~ s/ - Shadowlord Duke//g;
     $cpm =~ s/\>209/\>/;
     $cpm =~ s/<.*?>//g;
-	print $cpm . "\n";
+	s1(); print $cpm . "\n";
 	$mech->form_number(1);
 	$mech->select("Monster", $cpm);
 	$mech->click_button(value => $fmodeval);
@@ -1199,7 +1474,7 @@ sub Fight {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		print "Fight2\n";
+		s1(); print "Fight2\n";
 	}
 
 	$ant = 1800;
@@ -1233,7 +1508,7 @@ sub Fight {
 			print FILE "$a\n\n";
 			close(FILE);
 			
-			print "Fight3\n";
+			s1(); print "Fight3\n";
 		}
 		$b = $a;
 		$c = $a;
@@ -1241,9 +1516,9 @@ sub Fight {
 		if($d == 500 or $d == 400){
 			if($retries == 0){
 				if($d == 400){
-					print"more 400 error's";
+					s1(); print"more 400 error's";
 				}else{
-					print "Trouble Connecting to internet....Probably.\n";
+					s1(); print "Trouble Connecting to internet....Probably.\n";
 				}
 			}
 			until ($d == 200){
@@ -1258,22 +1533,22 @@ sub Fight {
 	
 	#KILLED
 		if($a =~ m/(been.*slain)/) {
-			print "ERROR - TOO HIGH MONSTER LEVEL! - you were slain!\n";
+			s1(); print "ERROR - TOO HIGH MONSTER LEVEL! - you were slain!\n";
 			exit(0);
 		}
 	#LOGGED OUT
 
 		if ($a =~ m/logged/) {
-			print "LOGGED OUT! sleeping for 5 seconds before restart!\n";
+			s1(); print "LOGGED OUT! sleeping for 5 seconds before restart!\n";
 			sleep(5);
 			goto START;
 		}
 		if ($antal <= 0) {
 			sleep(3);
-			print "Waiting last few seconds before restarting\n";
+			s1(); print "Waiting last few seconds before restarting\n";
 			goto START;
 		}
-		if ($b =~ m/(400 Bad Request)/) {print"400 error restarting.";
+		if ($b =~ m/(400 Bad Request)/) {s1(); print"400 error restarting.";
 			goto START;
 		}
 		
@@ -1282,7 +1557,7 @@ sub Fight {
 		if($b =~ m/(You win .*? exp)/){$output = $1;}
 		if($b =~ m/(The battle tied.)/){$output = $1;}
 		if($b =~ m/jail time.*?!/){$output = $1;}
-		print "$antal: [$Hour:$Minute:$Second]: " . $output . "\n";
+		s1(); print "$antal: [$Hour:$Minute:$Second]: " . $output . "\n";
 
 		$levelnow = $levelnow+1;
 	#level up if necessary
@@ -1309,7 +1584,7 @@ sub Levelup{
 			print FILE "$a\n\n";
 			close(FILE);
 			
-			print "Levelup\n";
+			s1(); print "Levelup\n";
 		}
 		$b = $a;
 		$a =~ m/(You have .* levels available)/;
@@ -1369,84 +1644,84 @@ sub Levelup{
 					$mech->form_number(1);
 					$mech->field("Intelligence", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "You Leveled "."$numlevs1"." Intelligence\n";
+					s1(); print "You Leveled "."$numlevs1"." Intelligence\n";
 					&CheckShop;
 				}
 				if(($deflevel <= $aslevel) && ($deflevel <= $mrlevel)) {
 					$mech->form_number(1);
 					$mech->field("Agility", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "You Leveled "."$numlevs1"." Agility\n";
+					s1(); print "You Leveled "."$numlevs1"." Agility\n";
 				}
 
 				if(($mrlevel <= $deflevel) && ($mrlevel <= $aslevel)) {
 					$mech->form_number(1);
 					$mech->field("Concentration", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "You Leveled "."$numlevs1"." Concentration\n";
+					s1(); print "You Leveled "."$numlevs1"." Concentration\n";
 				}
 			}elsif($chartype == 2){
 				if(($wdlevel <= $mrlevel) && ($wdlevel <= $arlevel)) {
 					$mech->form_number(1);
 					$mech->field("Strength", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "You Leveled "."$numlevs1"." Strength\n";
+					s1(); print "You Leveled "."$numlevs1"." Strength\n";
 					&CheckShop;
 				}
 				if(($arlevel <= $wdlevel) && ($arlevel <= $mrlevel)) {
 					$mech->form_number(1);
 					$mech->field("Dexterity", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "You Leveled "."$numlevs1"." Dexterity\n";
+					s1(); print "You Leveled "."$numlevs1"." Dexterity\n";
 				}
 
 				if(($mrlevel <= $wdlevel) && ($mrlevel <= $arlevel)) {
 					$mech->form_number(1);
 					$mech->field("Concentration", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "You Leveled "."$numlevs1"." Concentration\n";
+					s1(); print "You Leveled "."$numlevs1"." Concentration\n";
 				}
 			}elsif($chartype == 3){
 				if(($aslevel <= $arlevel) && ($aslevel <= $mrlevel)) {
 					$mech->form_number(1);
 					$mech->field("Intelligence", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Intelligence\n";
+					s1(); print "Leveled up "."$numlevs1"." Intelligence\n";
 					&CheckShop;
 				}
 				if(($arlevel <= $aslevel) && ($arlevel <= $mrlevel)) {
 					$mech->form_number(1);
 					$mech->field("Dexterity", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Dexterity\n";
+					s1(); print "Leveled up "."$numlevs1"." Dexterity\n";
 				}
 
 				if(($mrlevel <= $arlevel) && ($mrlevel <= $aslevel)) {
 					$mech->form_number(1);
 					$mech->field("Concentration", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Concentration\n";
+					s1(); print "Leveled up "."$numlevs1"." Concentration\n";
 				}
 			}elsif($chartype == 4){
 				if($wdlevel <= $arlevel) {
 				$mech->form_number(1);
 				$mech->field("Strength", $numlevs);
 				$mech->click_button('value' => 'Level Up!!!');
-				print "Leveled up "."$numlevs1"." Strength\n";
+				s1(); print "Leveled up "."$numlevs1"." Strength\n";
 				&CheckShop;
 				}		
 				if($arlevel <= $wdlevel) {
 					$mech->form_number(1);
 					$mech->field("Dexterity", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Dexterity\n";
+					s1(); print "Leveled up "."$numlevs1"." Dexterity\n";
 				}
 			}elsif($chartype == 5){
 				if($mrlevel >= $aslevel) {
 					$mech->form_number(1);	
 					$mech->field("Intelligence", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Intelligence\n";
+					s1(); print "Leveled up "."$numlevs1"." Intelligence\n";
 					&CheckShop;
 				}
 
@@ -1454,53 +1729,53 @@ sub Levelup{
 					$mech->form_number(1);
 					$mech->field("Concentration", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Concentration\n";
+					s1(); print "Leveled up "."$numlevs1"." Concentration\n";
 				}
 			}elsif($chartype == 6){
 				if(($wdlevel <= $mslevel) && ($wdlevel <= $arlevel)) {
 					$mech->form_number(1);
 					$mech->field("Strength", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Strength\n";
+					s1(); print "Leveled up "."$numlevs1"." Strength\n";
 					&CheckShop;
 				}
 				if(($mslevel <= $wdlevel) && ($mslevel <= $arlevel)) {
 					$mech->form_number(1);
 					$mech->field("Contravention", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Contravention\n";
+					s1(); print "Leveled up "."$numlevs1"." Contravention\n";
 				}
 				if(($arlevel <= $mslevel) && ($arlevel <= $wdlevel)) {
 					$mech->form_number(1);
 					$mech->field("Dexterity", $numlevs);
 					$mech->click_button('value' => 'Level Up!!!');
-					print "Leveled up "."$numlevs1"." Dexterity\n";
+					s1(); print "Leveled up "."$numlevs1"." Dexterity\n";
 				}
 			}elsif($chartype == 13 or $chartype == 14){
 				if($numlevs>6){
 					$mech->form_number(1);
 					$mech->field("Strength", $strlevs);
-					print "Leveled up "."$strlevs"." Strength\n";
+					s1(); print "Leveled up "."$strlevs"." Strength\n";
 					$mech->field("Dexterity", $dexlevs);
-					print "Leveled up "."$dexlevs"." Dexterity\n";
+					s1(); print "Leveled up "."$dexlevs"." Dexterity\n";
 					$mech->field("Agility", $agillevs);
-					print "Leveled up "."$agillevs"." Agility\n";
+					s1(); print "Leveled up "."$agillevs"." Agility\n";
 					$mech->field("Intelligence", $intlevs);
-					print "Leveled up "."$intlevs"." Intelligence\n";
+					s1(); print "Leveled up "."$intlevs"." Intelligence\n";
 					$mech->field("Concentration", $conclevs);
-					print "Leveled up "."$conclevs"." Concentration\n";
+					s1(); print "Leveled up "."$conclevs"." Concentration\n";
 					$mech->field("Contravention", $contralevs);
-					print "Leveled up "."$contralevs"." Contravention\n";
+					s1(); print "Leveled up "."$contralevs"." Contravention\n";
 					$mech->click_button('value' => 'Level Up!!!');
 					&CheckShop;
 				}else{
-					print"Skipping levelup because there are less than 6 levels to level.\n";
+					s1(); print"Skipping levelup because there are less than 6 levels to level.\n";
 					goto START;
 
 				}
 			}
 		}else{
-			print"Did not level, Max level reached.";
+			s1(); print"Did not level, Max level reached.";
 			$indefcont = 1;
 		}
 	goto START;
@@ -1523,13 +1798,13 @@ sub CheckShop{
 		print FILE "content\n\n";
 		print FILE "$a\n\n";
 		close(FILE);	
-		print "Checkshop\n";
+		s1(); print "Checkshop\n";
 	}
 
 	if($shopyesno == 1){
 		&MaxShops;
 	}else{
-		print "Shops were not bought this time\n";
+		s1(); print "Shops were not bought this time\n";
 	}
 }
 
@@ -1550,7 +1825,7 @@ sub MaxShops{
 				print FILE "content\n\n";
 				print FILE "$a\n\n";
 				close(FILE);
-				print "MaxShops\n";
+				s1(); print "MaxShops\n";
 	}
 	
 	my $shop1 = $a;
@@ -1647,7 +1922,7 @@ sub MaxShops{
 sub MaxWD{	
 	$Sname = "Weapon";
     my ($shop1) = @_;
-	if($$shop1 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop1 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(1);
 		$mech->click_button('name' => $Sname);
@@ -1661,21 +1936,21 @@ sub MaxWD{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxWD\n";
+			s1(); print "MaxWD\n";
 		}
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Weapon<\/td>.*?<\/form>)/s;
 		$b = $1;
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1686,7 +1961,7 @@ sub MaxWD{
 sub MaxAS{	
 	$Sname = "Attackspell";
     my ($shop2) = @_;
-	if($$shop2 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop2 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(2);
 		$mech->click_button('name' => $Sname);
@@ -1700,21 +1975,21 @@ sub MaxAS{
 				print FILE "content\n\n";
 				print FILE "$a\n\n";
 				close(FILE);
-				print "MaxAS\n";
+				s1(); print "MaxAS\n";
 			}
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Attackspell<\/td>.*?<\/form>)/s;
 		$b = $1;
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1725,7 +2000,7 @@ sub MaxAS{
 sub MaxHS{
 	$Sname = "Healspell";
     my ($shop3) = @_;
-	if($$shop3 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop3 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(3);
 		$mech->click_button('name' => $Sname);
@@ -1740,21 +2015,21 @@ sub MaxHS{
 			print FILE "$a\n\n";
 			close(FILE);
 			
-			print "MaxHS\n";
+			s1(); print "MaxHS\n";
 		}
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Healspell<\/td>.*?<\/form>)/s;
 		$b = $1;
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1765,7 +2040,7 @@ sub MaxHS{
 sub MaxHE{
 	$Sname = "Helmet";
     my ($shop4) = @_;
-	if($$shop4 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop4 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(4);
 		$mech->click_button('name' => $Sname);
@@ -1779,21 +2054,21 @@ sub MaxHE{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);
-			print "MaxHE\n";
+			s1(); print "MaxHE\n";
 		}		
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Helmet<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1804,7 +2079,7 @@ sub MaxHE{
 sub MaxSH{
 	$Sname = "Shield";
     my ($shop5) = @_;
-	if($$shop5 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop5 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(5);
 		$mech->click_button('name' => $Sname);
@@ -1818,21 +2093,21 @@ sub MaxSH{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxSH\n";
+			s1(); print "MaxSH\n";
 		}		
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Shield<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1843,7 +2118,7 @@ sub MaxSH{
 sub MaxAM{		
 	$Sname = "Amulet";
     my ($shop6) = @_;	
-	if($$shop6 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop6 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(6);
 		$mech->click_button('name' => $Sname);
@@ -1857,21 +2132,21 @@ sub MaxAM{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxAM\n";
+			s1(); print "MaxAM\n";
 		}		
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Amulet<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1882,7 +2157,7 @@ sub MaxAM{
 sub MaxRI{
 	$Sname = "Ring";
     my ($shop7) = @_;
-	if($$shop7 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop7 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(7);
 		$mech->click_button('name' => $Sname);
@@ -1896,21 +2171,21 @@ sub MaxRI{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxRI\n";
+			s1(); print "MaxRI\n";
 		}			
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Ring<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1921,7 +2196,7 @@ sub MaxRI{
 sub MaxAR{
 	$Sname = "Armor";
     my ($shop8) = @_;
-	if($$shop8 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop8 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(8);
 		$mech->click_button('name' => $Sname);
@@ -1935,21 +2210,21 @@ sub MaxAR{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxAR\n";
+			s1(); print "MaxAR\n";
 		}		
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Armor<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1960,7 +2235,7 @@ sub MaxAR{
 sub MaxBE{
 	$Sname = "Belt";
 	my ($shop9) = @_;
-	if($$shop9 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop9 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(9);
 		$mech->click_button('name' => $Sname);
@@ -1974,21 +2249,21 @@ sub MaxBE{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxBE\n";
+			s1(); print "MaxBE\n";
 		}
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Belt<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -1999,7 +2274,7 @@ sub MaxBE{
 sub MaxPA{
 	$Sname = "Pants";
     my ($shop10) = @_;
-	if($$shop10 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop10 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(10);
 		$mech->click_button('name' => $Sname);
@@ -2013,21 +2288,21 @@ sub MaxPA{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxPA\n";
+			s1(); print "MaxPA\n";
 		}
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Pants<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}	
 	$a = "";
 	$b = "";
@@ -2038,7 +2313,7 @@ sub MaxPA{
 sub MaxHA{
 	$Sname = "Hand";
     my ($shop11) = @_;
-	if($$shop11 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop11 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(11);
 		$mech->click_button('name' => $Sname);
@@ -2052,21 +2327,21 @@ sub MaxHA{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxHA\n";
+			s1(); print "MaxHA\n";
 		}
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Hand<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -2077,7 +2352,7 @@ sub MaxHA{
 sub MaxFE{	
 	$Sname = "Feet";
     my ($shop12) = @_;	
-	if($$shop12 =~ "Maxed"){$proceed = 0;print $Sname." Maxed\n";}else{$proceed = 1;}
+	if($$shop12 =~ "Maxed"){$proceed = 0;s1(); print $Sname." Maxed\n";}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(12);
 		$mech->click_button('name' => $Sname);
@@ -2091,21 +2366,21 @@ sub MaxFE{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			print "MaxFE\n";
+			s1(); print "MaxFE\n";
 		}
 		if ($a =~ m/Not enough gold!/){
-			print "You did not have enough Gold in your hand to max all your shops.\n";
+			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
 		}
 		if ($a =~ m/Bought/){
 			$a =~ m/(Bought.*gold\.<br>)/s;
 			$a = $1;
 			$a =~ s/<br>//sg;
-			print "$a\n";
+			s1(); print "$a\n";
 		}
 		$b =~ m/(<td>Feet<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; print $Sname." shops Maxed.\n";}
+		if($b =~ "Maxed"){$proceed = 0; s1(); print $Sname." shops Maxed.\n";}
 	}
 	$a = "";
 	$b = "";
@@ -2131,7 +2406,7 @@ sub MyLevel{
 					print FILE "$a\n\n";
 					close(FILE);
 					
-					print "Mylevel\n";
+					s1(); print "Mylevel\n";
 	}
 	$a = $mech->content();
 	$a =~ s/<.*?>//sg;
@@ -2146,10 +2421,10 @@ sub MyLevel{
 		$temp1 =~ s/(?<=(\d\d\d))(?=(\d))/,/;
 		$Forlev = reverse $temp1;
 	}
-	print "Your Level is : $Forlev\n";
+	s1(); print "Your Level is : $Forlev\n";
 	
 	if($maxlev <= $MyLev){
-		print "You have reached the desired level. Continuing without leveling\n";
+		s1(); print "You have reached the desired level. Continuing without leveling\n";
 	}
 }	
 
@@ -2171,7 +2446,7 @@ sub Charname{
 				print FILE "$a\n\n";
 				close(FILE);
 				
-				print "Charname\n";
+				s1(); print "Charname\n";
 	}
 	$a = $mech->content();
 	$b = $mech->content();
@@ -2195,7 +2470,7 @@ sub Charname{
 	$name = $2;
 	$title =~ s/ //sgi;
 	$name =~ s/ //sgi;
-	print "\nSuccessfully logged into $title $name at $Hour:$Minute:$Second\n\n";
+	s1(); print "\nSuccessfully logged into $title $name at $Hour:$Minute:$Second\n\n";
 	
 	$b =~ m/(You need.*exp )/;
 	$b = $1;
@@ -2226,77 +2501,77 @@ sub Charname{
 	$c =~ s/\///i;
 	$c =~ s/<td align=right valign=//i;
 	if($debug == 1){
-		print"c =".$c."\n";
+		s1(); print"c =".$c."\n";
 	}
 		$c =~ m/(a.*b)/;
 			$c0 = $1;
 				$c0 =~ s/[a-z]//ig;
 				$c0= new Math::BigFloat $c0;
 		if($debug == 1){
-			print"c0 =".$c0."\n";
+			s1(); print"c0 =".$c0."\n";
 		}
 		$c =~ m/(b.*c)/;
 			$c1 = $1;
 				$c1 =~ s/[a-z]//ig;
 				$c1= new Math::BigFloat $c1;
 		if($debug == 1){
-			print"c1 =".$c1."\n";
+			s1(); print"c1 =".$c1."\n";
 		}
 		$c =~ m/(c.*d)/;
 			$c2 = $1;
 				$c2 =~ s/[a-z]//ig;
 				$c2= new Math::BigFloat $c2;
 		if($debug == 1){
-			print"c2 =".$c2."\n";
+			s1(); print"c2 =".$c2."\n";
 		}
 		$c =~ m/(d.*e)/;
 			$c3 = $1;
 				$c3 =~ s/[a-z]//ig;
 				$c3= new Math::BigFloat $c3;
 		if($debug == 1){
-			print"c3 =".$c3."\n";
+			s1(); print"c3 =".$c3."\n";
 		}
 		$c =~ m/(e.*f)/;
 			$c4 = $1;
 				$c4 =~ s/[a-z]//ig;
 				$c4= new Math::BigFloat $c4;
 		if($debug == 1){
-			print"c4 =".$c4."\n";
+			s1(); print"c4 =".$c4."\n";
 		}
 		$c =~ m/(f.*g)/;
 			$c5 = $1;
 				$c5 =~ s/[a-z]//ig;
 				$c5= new Math::BigFloat $c5;
 		if($debug == 1){
-			print"c5 =".$c5."\n";
+			s1(); print"c5 =".$c5."\n";
 		}
 		$c =~ m/(g.*h)/;
 			$c6 = $1;
 				$c6 =~ s/[a-z]//ig;
 				$c6= new Math::BigFloat $c6;
 		if($debug == 1){
-			print"c6 =".$c6."\n";
+			s1(); print"c6 =".$c6."\n";
 		}
 		$c =~ m/(h.*i)/;
 			$c7 = $1;
 				$c7 =~ s/[a-z]//ig;
 				$c7= new Math::BigFloat $c7;
 		if($debug == 1){
-			print"c7 =".$c7."\n";
+			s1(); print"c7 =".$c7."\n";
 		}
    		$c =~ m/(i.*j)/;
 			$c8 = $1;
 				$c8 =~ s/[a-z]//ig;
 				$c8= new Math::BigFloat $c8;
 		if($debug == 1){
-			print"c8 =".$c8."\n";
+			s1(); print"c8 =".$c8."\n";
 		}
 		$c =~ m/(j.*k)/;
 			$c9 = $1;
 				$c9 =~ s/[a-z]//ig;
 				$c9= new Math::BigFloat $c9;
 		if($debug == 1){
-			print"c9 =".$c9."\n";
+			s1(); print"c9 =".$c9."\n";
 		}
 
 		if(($c0 >= "731420819") or ($c1 >= "734691740") or ($c7 >= "921382475")){
@@ -2324,7 +2599,7 @@ sub Charname{
 	}
 	
 	if($debug == 1){
-		print $levelfilename."\n";
+		s1(); print $levelfilename."\n";
 	}
 }
 
@@ -2336,7 +2611,7 @@ sub Charname{
 $mech = WWW::Mechanize->new(autocheck => 0, stack_depth => 1, onerror => \&Carp::croak);
 $mech->agent_alias( 'Windows Mozilla' );
 
-print " 
+s1(); print " 
           \\\\\\///
          / _  _ \\\
        (| (.)(.) |)
@@ -2350,7 +2625,7 @@ print "
        \\\_)    ) /
              (_/
 \n";
-
+print color('reset');
 #Login
 open(LOGINS, "m6logins.txt")
 	or die "failed to open Logins file!!!!";
@@ -2368,13 +2643,13 @@ if ($trigger == 1){
 }
 
 if($username eq ""){
-	print"No logins found.";
+	s1(); print"No logins found.";
 	sleep($stime);
 	goto RETRY;
 }
 RETRY:
 if($trycounter == 0){$trycounter = 1;}
-print"\n\nConnection attempt ".$trycounter.".\n\n";
+s1(); print"\n\nConnection attempt ".$trycounter.".\n\n";
 $parsed = 0; 
 while ($parsed == 0){
 sleep($stime);
@@ -2398,16 +2673,16 @@ $d = $mech->status();
 						print FILE "$d\n\n";
 						close(FILE);
 
-						print "login\n";
+						s1(); print "login\n";
 					if($requests==1){
-						$mech->add_handler("request_preprepare",  sub {print"\n\n PREPREPARE \n\n"; shift->dump; return });
-						$mech->add_handler("request_prepare",  sub {print"\n\n PREPARE \n\n"; shift->dump; return });
-						$mech->add_handler("response_header",  sub {print"\n\n RESPONSE HEADER \n\n"; shift->dump; return });
-						$mech->add_handler("request_send",  sub {print"\n\n REQUEST \n\n"; shift->dump; return });
-						$mech->add_handler("response_done", sub {print"\n\n RESPONSE \n\n"; shift->dump; return });
+						$mech->add_handler("request_preprepare",  sub {s1(); print"\n\n PREPREPARE \n\n"; shift->dump; return });
+						$mech->add_handler("request_prepare",  sub {s1(); print"\n\n PREPARE \n\n"; shift->dump; return });
+						$mech->add_handler("response_header",  sub {s1(); print"\n\n RESPONSE HEADER \n\n"; shift->dump; return });
+						$mech->add_handler("request_send",  sub {s1(); print"\n\n REQUEST \n\n"; shift->dump; return });
+						$mech->add_handler("response_done", sub {s1(); print"\n\n RESPONSE \n\n"; shift->dump; return });
 					}
 				}
-print "SUCCESS: $b\nSTATUS: $d\n\n";
+s1(); print "SUCCESS: $b\nSTATUS: $d\n\n";
 	if($d == 200){
 		if($a =~ m/Enter Lol!/){
 			$parsed = 1;
@@ -2417,7 +2692,7 @@ print "SUCCESS: $b\nSTATUS: $d\n\n";
 			goto RETRY;
 		}
 	}elsif(($d == 500) || ($d == 523)){
-		print "Trouble Connecting to internet....Probably\n";
+		s1(); print "Trouble Connecting to internet....Probably\n";
 		#change back to 30 after test
 		sleep(3);
 		$trycounter++;
@@ -2431,9 +2706,9 @@ if($a =~ m/Username/){
 	$mech->click_button('value' => 'Enter Lol!');
 	$a = $mech->content();
 	($Second, $Minute, $Hour, $Day, $Month, $Year, $WeekDay, $DayOfYear, $IsDST) = localtime(time);
-	#print "[$Hour:$Minute:$Second] - logged in Successfully to : \n";
+	#s1(); print "[$Hour:$Minute:$Second] - logged in Successfully to : \n";
 	if($a =~ m/Login failed/){
-		print"Login failed.\n";
+		s1(); print"Login failed.\n";
 		sleep(30);
 		goto RETRY;
 	}
@@ -2454,9 +2729,9 @@ until($levels == 0){
 	&CheckShop;
 	GOTO:
 	if($cpmready == 0){
-		print "\nLow Level Fight mode\n\n";
+		s1(); print "\nLow Level Fight mode\n\n";
 	}else{
-		print "\nHigh Level Fight mode\n\n";
+		s1(); print "\nHigh Level Fight mode\n\n";
 	}
 	if($cpmready == 0){
 		&leveltestworld;
