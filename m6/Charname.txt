@@ -6737,6 +6737,7 @@ You have 78 levels available.
 Parsed in <b>0.0056</b> seconds.</font></body></html>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Charname
 
 content
@@ -8798,5 +8799,7 @@ Parsed in <b>0.0415</b> seconds.</font></body></html>
 >>>>>>> parent of c7741c1 (working but raw.)
 =======
 >>>>>>> parent of c7741c1 (working but raw.)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)

@@ -1097,6 +1097,7 @@ sub leveltestworld {
 	while($won == 1){
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if(!$levmulti and $filelevel != 1){
 			$levmulti = $filelevel;}
 		elsif(!$levmulti){
@@ -1111,6 +1112,13 @@ sub leveltestworld {
 >>>>>>> parent of c7741c1 (working but raw.)
 =======
 >>>>>>> parent of c7741c1 (working but raw.)
+=======
+		if(!$levmulti and $filelevel!=1){$levmulti = $filelevel;}
+		elsif(!$levmulti){
+			$levmulti = $filelevel;
+		}else{
+			$levmulti = $levmulti*2;}
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 		if(!$levmulti and $filelevel!=1){$levmulti = $filelevel;}
 		elsif(!$levmulti){
@@ -1183,6 +1191,7 @@ sub leveltestworld {
 		$tied = 0;
 		$lost = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
@@ -1190,6 +1199,8 @@ sub leveltestworld {
 >>>>>>> parent of c7741c1 (working but raw.)
 =======
 >>>>>>> parent of c7741c1 (working but raw.)
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 		$mech->form_number(2);
@@ -1206,8 +1217,11 @@ sub leveltestworld {
 		$b = $1;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if($debug == 1){
 =======
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 		open(FILE, ">>TESTINFO2.txt")
@@ -1218,6 +1232,7 @@ sub leveltestworld {
 		print FILE $b;
 		print FILE "\n";
 		close(FILE);
+<<<<<<< HEAD
 <<<<<<< HEAD
 		if ($b =~ m/You win/) {
 			print "You won at level".$level."\n";
@@ -1249,6 +1264,8 @@ sub leveltestworld {
 			print FILE "\n";
 			close(FILE);
 		}
+=======
+>>>>>>> parent of 5cde5de (DELETE ME)
 =======
 >>>>>>> parent of 5cde5de (DELETE ME)
 		if ($b =~ m/You win/) {
