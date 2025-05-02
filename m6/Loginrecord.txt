@@ -3495,6 +3495,7 @@ status
 200
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 all errors and returns from login
 
 content
@@ -11247,5 +11248,7 @@ status
 
 200
 
+=======
+>>>>>>> parent of c7741c1 (working but raw.)
 =======
 >>>>>>> parent of c7741c1 (working but raw.)

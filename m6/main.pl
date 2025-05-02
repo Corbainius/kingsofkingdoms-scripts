@@ -946,6 +946,9 @@ sub leveltestworld {
 =======
 		if(!$levmulti){$levmulti = 1;}else{
 			$levmulti = $levmulti*10;}
+<<<<<<< HEAD
+>>>>>>> parent of c7741c1 (working but raw.)
+=======
 >>>>>>> parent of c7741c1 (working but raw.)
 		if($debug == 1){
 			print "levmulti = ".$levmulti."\n";
@@ -1012,12 +1015,15 @@ sub leveltestworld {
 		$level = $level;
 		$reps = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 		$won = 0;
 		$tied = 0;
 		$lost = 0;
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
+=======
+>>>>>>> parent of c7741c1 (working but raw.)
 =======
 >>>>>>> parent of c7741c1 (working but raw.)
 		$mech->form_number(2);
@@ -1032,7 +1038,38 @@ sub leveltestworld {
 		$b = $mech->content();
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
+<<<<<<< HEAD
 		if($debug == 1){
+=======
+		open(FILE, ">>TESTINFO2.txt")
+		or die "failed to open file!!!!";		
+		print FILE "\nTHIS IS A\nTHIS IS A\n";
+		print FILE $a;
+		print FILE "\nTHIS IS B\nTHIS IS B\n";
+		print FILE $b;
+		print FILE "\n";
+		close(FILE);
+		if ($b =~ m/You win/) {
+			print "You won at level".$level."\n";
+			$reps++;
+		}
+		if ($b =~ m/battle tied/) {
+			print "You tied at level ".$level."\n";
+			$reps++;
+		}
+		if ($b =~ m/stunned/) {
+			$reps++;
+			print "rep no. ".$reps." You lost at level".$level."\n";
+			print "Waiting 5 seconds before continuing \n";
+			sleep(6);
+		}
+		
+		until(($won == 0)or($reps == 9)){
+			sleep($loopwait); 
+			$mech->reload();
+			$a = $mech->content();
+			$b = $a;
+>>>>>>> parent of c7741c1 (working but raw.)
 			open(FILE, ">>TESTINFO2.txt")
 			or die "failed to open file!!!!";		
 			print FILE "\nTHIS IS A\nTHIS IS A\n";
@@ -1091,6 +1128,7 @@ sub leveltestworld {
 				sleep(6);
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 		}
 
 		@outcomes = ($won, $tied, $lost);
@@ -1132,6 +1170,13 @@ sub leveltestworld {
 			print"newlevel = ".$newlevel."\n";	
 		}
 		$level = $newlevel;
+=======
+			if($debug == 1){
+				print "reps = ".$reps."\n";
+			}
+			$level = $newlevel;
+		}
+>>>>>>> parent of c7741c1 (working but raw.)
 =======
 			if($debug == 1){
 				print "reps = ".$reps."\n";

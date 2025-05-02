@@ -2742,6 +2742,7 @@ You have 18 levels available.
 Parsed in <b>0.0034</b> seconds.</font></body></html>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Charname
 
 content
@@ -8792,5 +8793,7 @@ You have 84 levels available.
 </form><br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0415</b> seconds.</font></body></html>
 
+=======
+>>>>>>> parent of c7741c1 (working but raw.)
 =======
 >>>>>>> parent of c7741c1 (working but raw.)
