@@ -8662,3 +8662,2587 @@ status
 
 200
 
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x28d1a4a5018)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x19d098b7918)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x2481bab18b0)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x1c278135d60)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x272046a78b0)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x21e4db24850)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 1 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x21c01958d20)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x217365497b0)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x139985bae28)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x124595a85c0)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x24719703e90)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x1d4b0165f18)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 1 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x2c4e88109f0)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x13dc7c23608)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x220e71337d0)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>1</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 8 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x2611e5f1c98)
+
+status
+
+200
+
+all errors and returns from login
+
+content
+
+ <!DOCTYPE html><html><head>
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>Kingdoms m6</title><!-- mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lords of Lords is a free online text-based role playing game (RPG) that can be played on any computer with a browser and web access."><meta name="keywords" content="free online RPG, text based RPG, lords of lords, browser rpg"><link rel="stylesheet" type="text/css" href="/lol.css">
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  const button = new Crate({
+    server: '1027893612639436820',
+    channel: '1027893613440532502',
+    glyph: ['https://www.kingsofkingdoms.com/images/kingsblack.gif','100%']
+  })
+      button.notify({
+      content: 'Questions? Community chat is Here!',
+      timeout: 30000
+    })
+</script>
+</head>
+
+<body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
+
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+
+
+
+
+<table width=100%><tr><td valign=top width=100 align=center><table width=100%><tr><th>Worlds</th></tr><tr><td valign=top class=navy>
+<a href="/m3/" title="Open M3!">M3</a><br><a href="/M3Test/" title="Open M3Test!">M3Test</a><br><a href="/nativeauto/" title="Open Nativeauto!">Nativeauto</a><br>M6<br><ul id="inav"><li><a href="/m6/index.php">Index</a></li><li><a href="/m6/signup.php">Signup</a></li><li>Login</li><li><a href="/m6/ladder.php">Ladder</a></li><li><a href="/m6/guilds.php">Guilds</a></li><li><a href="/m6/faq.php">Faq</a></li><li><a href="/m6/rules.php">Rules</a></li><li><a href="/m6/guide.php">Guide</a></li></ul><br>
+<a href="https://www.kingsofkingdoms.com" title="Go to www.kingsofkingdoms.com!">.NET</a></td></tr><tr><th><b>Tools</b></th></tr><tr><td valign=top class=navy width=120>
+<a href="/chatpeek.php" title="Peek in the chat.">Chat peek</a><br>
+
+<a href="/hof.php" title="The world ladder, Hall of Fame, The best of the best.">Hall of Fame</a><br>
+<a href="/first.php" title="The oldest and the youngest chars of this game!">First</a><br>
+<a href="/hcm.php" title="The High Council Members(HCM) of Lords of Lords">High Council</a><br>
+<br>
+
+<a href="/credits.php" title="Credits calculator.">Credits</a><br>
+<a href="/gps.php" title="Global Player Seeker.">GPS</a><br>
+<!--<a href="/gts.php" title="Global Teleportation Service.">GTS</a><br>-->
+<br>
+<a href="/footprint.php" title="Our other Domains">Footprinting</a><br>
+<a href="/linkus.php" title="Banners for making a link to us!">Linkus</a><br>
+<a href="/cookies.php" title="Cookie information, delete your cookies.">Cookies</a><br>
+<a href="/changelog.php" title="Change log.">Change Log</a><br>
+
+</td></tr></table>
+</td><td align=center valign=top>You currently have 0 chars logged in.<br><form method=post enctype="application/x-www-form-urlencoded" target="_top">
+<table border=0 cellpadding=0 cellspacing=1 width="50%">
+<tr>
+<th colspan=2>Account Information</th>
+<input type=hidden size=25 name="sessionid" value=>
+</tr>
+<tr>
+<td width="50%">Username</td><td width="50%"><input type=text size=25 name="Username" maxlength=10></td>
+</tr>
+<tr>
+<td>Password</td><td><input type=password size=25 name="Password" maxlength=50> </td>
+</tr>
+<tr>
+<td>Layout</td><td><select name=layout>
+<option value="">Default</option>
+<option value="1">Advanced</option>
+<option value="2">Expert</option>
+<option value="3">Grouped Menu</option>
+<option value="4">Chat only</option>
+<option value="5">Menu right</option>
+</select>
+</td>
+</tr>
+<tr>
+<th colspan=2> <input type=submit value="Enter Lol!" Submit name=Action></th>
+</tr>
+</table>
+</form>
+<b><a href="retrieve.php">Forget your password?</a></b><hr>
+
+<style>
+    .table td, .table th { 
+        padding: 0; 
+    }
+    .table td{
+        border:none;
+    }
+    p{
+        margin-bottom:0px;
+    }
+    #number{
+        padding-left:3px;
+    }
+	#letter{
+		padding-right:3px;
+	}
+    #optop{
+        margin-top:4px;
+        margin-bottom:2px;
+    }
+    #opworld{
+        margin-bottom:2px;
+    }
+    #opplayer{
+        margin-bottom:2px;
+    }
+    .col#opw{
+        padding-right:1px;
+    }
+    .col#opp{
+        padding-left:1px;
+    }
+    .col#opw2{
+        margin-left:2px;
+        margin-right:1px;
+    }
+    .col#opp2{
+        margin-left:1px;
+        margin-right:1px;
+    }
+    .row#opwprow{
+        padding-bottom:2px;
+    }
+</style>
+
+<table cellpadding=2 cellspacing=2 border=0 width=450>
+<tr><th colspan=2>Games with at least 3 active players now!</th></tr>
+<tr><th>World</th><th>Players Online</th></tr>
+
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>7</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>0</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 7 players online.</a></th></tr>
+</table>
+</div>
+</div>
+</td></tr></table></center></body></html>
+
+
+sucess
+
+1
+
+response
+
+HTTP::Response=HASH(0x2a377d3e8d0)
+
+status
+
+200
+
