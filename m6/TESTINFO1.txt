@@ -2,6 +2,7 @@
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <option>1 - Skeleton - 2,400</option><option>2 - Zombie - 2,736</option><option>3 - Undead - 3,456</option><option>4 - Snake Eye - 4,704</option><option>5 - Attack Dog - 6,624</option><option>6 - Guard Soldier - 9,360</option><option>7 - Sword Man - 13,056</option><option>8 - Gate Keeper - 17,856</option><option>9 - Necro - 23,904</option><option>10 - Barbarian - 31,344</option><option>11 - Paladin - 40,320</option><option>12 - Skeleton King - 50,976</option><option>13 - Undead Emperor - 63,456</option><option>14 - Evil Magician - 77,904</option><option>15 - Thunder Spectre - 94,464</option><option>16 - Emo Kids - 113,280</option><option>17 - Hardcore Emo - 134,496</option><option>18 - Victrolahead - 158,256</option><option>19 - Baby Dragon - 184,704</option><option>20 - Giant Worm - 213,984</option><option>21 - Hulk - 246,240</option><option>22 - Archer Tell - 281,616</option><option>23 - Beastmaster - 320,256</option><option>24 - Terminator - 362,304</option><option>25 - Amazon - 407,904</option><option>26 - Dragon Rider - 457,200</option><option>27 - Wild Bill Havoc - 510,336</option><option>28 - Bat Fasterman - 567,456</option><option>29 - Soul Breaker - 628,704</option><option>30 - Diablos Knight - 694,224</option><option>31 - Memphista - 764,160</option><option>32 - Fire Dragon - 838,656</option><option>33 - Hell Knight - 917,856</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="24"></form><form method=post>
 THIS IS B
 THIS IS B
@@ -106,6 +107,21 @@ THIS IS B
      <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
      <br><br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0104</b> seconds.</font></body></html>
+=======
+<option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 64,720.</td> <td valign=top>Gold : 22,180.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>136<br>148<br>203<br>332<br>568<br>226<br>286<br>492<br>1,042<br>501</a></td><td align=right valign=top width=20%><a name=monster>Max<br>416<br>840<br>960<br>1,087<br>1,577<br>566<br>715<br>1,257<br>2,664<br>1,281</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 4,464</td><td>Exp : 1,041</td><td>Gold : 347</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 94.705!<font size=-1>His countered for 1.480.</font></font><br><br><b>Killing spree of 8!</b><br><b>You have slain Thief. You win 8,320 exp and 2,800 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 227 of 600</p>
+<form method=post
+>>>>>>> parent of c7741c1 (working but raw.)
 
 THIS IS D
 THIS IS D
@@ -153,6 +169,7 @@ textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; borde
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <option>1 - Skeleton - 2,400</option><option>2 - Zombie - 2,736</option><option>3 - Undead - 3,456</option><option>4 - Snake Eye - 4,704</option><option>5 - Attack Dog - 6,624</option><option>6 - Guard Soldier - 9,360</option><option>7 - Sword Man - 13,056</option><option>8 - Gate Keeper - 17,856</option><option>9 - Necro - 23,904</option><option>10 - Barbarian - 31,344</option><option>11 - Paladin - 40,320</option><option>12 - Skeleton King - 50,976</option><option>13 - Undead Emperor - 63,456</option><option>14 - Evil Magician - 77,904</option><option>15 - Thunder Spectre - 94,464</option><option>16 - Emo Kids - 113,280</option><option>17 - Hardcore Emo - 134,496</option><option>18 - Victrolahead - 158,256</option><option>19 - Baby Dragon - 184,704</option><option>20 - Giant Worm - 213,984</option><option>21 - Hulk - 246,240</option><option>22 - Archer Tell - 281,616</option><option>23 - Beastmaster - 320,256</option><option>24 - Terminator - 362,304</option><option>25 - Amazon - 407,904</option><option>26 - Dragon Rider - 457,200</option><option>27 - Wild Bill Havoc - 510,336</option><option>28 - Bat Fasterman - 567,456</option><option>29 - Soul Breaker - 628,704</option><option>30 - Diablos Knight - 694,224</option><option>31 - Memphista - 764,160</option><option>32 - Fire Dragon - 838,656</option><option>33 - Hell Knight - 917,856</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="24"></form><form method=post>
 THIS IS C
 THIS IS C
@@ -778,10 +795,111 @@ THIS IS B
      <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
      <br><br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0080</b> seconds.</font></body></html>
+=======
+<option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 73,040.</td> <td valign=top>Gold : 24,980.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,360<br>1,480<br>2,027<br>3,320<br>5,680<br>2,262<br>2,861<br>4,915<br>10,424<br>5,012</a></td><td align=right valign=top width=20%><a name=monster>Max<br>4,160<br>8,400<br>9,600<br>10,867<br>15,772<br>5,656<br>7,152<br>12,561<br>26,638<br>12,808</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
 
 THIS IS A
 THIS IS A
 <select name="Monster">
+<option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 73,040.</td> <td valign=top>Gold : 24,980.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>136<br>148<br>203<br>332<br>568<br>226<br>286<br>492<br>1,042<br>501</a></td><td align=right valign=top width=20%><a name=monster>Max<br>416<br>840<br>960<br>1,087<br>1,577<br>566<br>715<br>1,257<br>2,664<br>1,281</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 4,464</td><td>Exp : 1,041</td><td>Gold : 347</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 78.943!<font size=-1>His countered for 1.211.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 1,040 exp and 350 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 1 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 74,080.</td> <td valign=top>Gold : 25,330.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,360<br>1,480<br>2,027<br>3,320<br>5,680<br>2,262<br>2,861<br>4,915<br>10,424<br>5,012</a></td><td align=right valign=top width=20%><a name=monster>Max<br>4,160<br>8,400<br>9,600<br>10,867<br>15,772<br>5,656<br>7,152<br>12,561<br>26,638<br>12,808</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 74,080.</td> <td valign=top>Gold : 25,330.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>136<br>148<br>203<br>332<br>568<br>226<br>286<br>492<br>1,042<br>501</a></td><td align=right valign=top width=20%><a name=monster>Max<br>416<br>840<br>960<br>1,087<br>1,577<br>566<br>715<br>1,257<br>2,664<br>1,281</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 4,464</td><td>Exp : 1,041</td><td>Gold : 347</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 82.649!<font size=-1>His countered for 2.220.</font></font><br><br><b>Killing spree of 2!</b><br><b>You have slain Thief. You win 2,000 exp and 700 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 7 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 76,080.</td> <td valign=top>Gold : 26,030.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,360<br>1,480<br>2,027<br>3,320<br>5,680<br>2,262<br>2,861<br>4,915<br>10,424<br>5,012</a></td><td align=right valign=top width=20%><a name=monster>Max<br>4,160<br>8,400<br>9,600<br>10,867<br>15,772<br>5,656<br>7,152<br>12,561<br>26,638<br>12,808</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 76,080.</td> <td valign=top>Gold : 26,030.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>136<br>148<br>203<br>332<br>568<br>226<br>286<br>492<br>1,042<br>501</a></td><td align=right valign=top width=20%><a name=monster>Max<br>416<br>840<br>960<br>1,087<br>1,577<br>566<br>715<br>1,257<br>2,664<br>1,281</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 4,464</td><td>Exp : 1,041</td><td>Gold : 347</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 101.152!<font size=-1>His countered for 1.903.</font></font><br><br><b>Killing spree of 4!</b><br><b>You have slain Thief. You win 4,160 exp and 1,400 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 11 of 600</p>
+<form method=post
+>>>>>>> parent of c7741c1 (working but raw.)
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<<<<<<< HEAD
 <option>1 - Skeleton - 2,800</option><option>2 - Zombie - 3,192</option><option>3 - Undead - 4,032</option><option>4 - Snake Eye - 5,488</option><option>5 - Attack Dog - 7,728</option><option>6 - Guard Soldier - 10,920</option><option>7 - Sword Man - 15,232</option><option>8 - Gate Keeper - 20,832</option><option>9 - Necro - 27,888</option><option>10 - Barbarian - 36,568</option><option>11 - Paladin - 47,040</option><option>12 - Skeleton King - 59,472</option><option>13 - Undead Emperor - 74,032</option><option>14 - Evil Magician - 90,888</option><option>15 - Thunder Spectre - 110,208</option><option>16 - Emo Kids - 132,160</option><option>17 - Hardcore Emo - 156,912</option><option>18 - Victrolahead - 184,632</option><option>19 - Baby Dragon - 215,488</option><option>20 - Giant Worm - 249,648</option><option>21 - Hulk - 287,280</option><option>22 - Archer Tell - 328,552</option><option>23 - Beastmaster - 373,632</option><option>24 - Terminator - 422,688</option><option>25 - Amazon - 475,888</option><option>26 - Dragon Rider - 533,400</option><option>27 - Wild Bill Havoc - 595,392</option><option>28 - Bat Fasterman - 662,032</option><option>29 - Soul Breaker - 733,488</option><option>30 - Diablos Knight - 809,928</option><option>31 - Memphista - 891,520</option><option>32 - Fire Dragon - 978,432</option><option>33 - Hell Knight - 1,070,832</option><option>34 - Fatal Chick - 1,168,888</option><option>35 - Disaster Master - 1,272,768</option><option>36 - Troll Vampire - 1,382,640</option><option>37 - Mind Reader - 1,498,672</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="28"></form><form method=post>
 THIS IS C
 THIS IS C
@@ -791,10 +909,26 @@ THIS IS C
      <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
      <br><br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0050</b> seconds.</font></body></html>
+=======
+<option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 80,240.</td> <td valign=top>Gold : 27,430.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,360<br>1,480<br>2,027<br>3,320<br>5,680<br>2,262<br>2,861<br>4,915<br>10,424<br>5,012</a></td><td align=right valign=top width=20%><a name=monster>Max<br>4,160<br>8,400<br>9,600<br>10,867<br>15,772<br>5,656<br>7,152<br>12,561<br>26,638<br>12,808</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+>>>>>>> parent of c7741c1 (working but raw.)
 
 THIS IS A
 THIS IS A
 <select name="Monster">
+<<<<<<< HEAD
 <option>1 - Skeleton - 5,600</option><option>2 - Zombie - 6,384</option><option>3 - Undead - 8,064</option><option>4 - Snake Eye - 10,976</option><option>5 - Attack Dog - 15,456</option><option>6 - Guard Soldier - 21,840</option><option>7 - Sword Man - 30,464</option><option>8 - Gate Keeper - 41,664</option><option>9 - Necro - 55,776</option><option>10 - Barbarian - 73,136</option><option>11 - Paladin - 94,080</option><option>12 - Skeleton King - 118,944</option><option>13 - Undead Emperor - 148,064</option><option>14 - Evil Magician - 181,776</option><option>15 - Thunder Spectre - 220,416</option><option>16 - Emo Kids - 264,320</option><option>17 - Hardcore Emo - 313,824</option><option>18 - Victrolahead - 369,264</option><option>19 - Baby Dragon - 430,976</option><option>20 - Giant Worm - 499,296</option><option>21 - Hulk - 574,560</option><option>22 - Archer Tell - 657,104</option><option>23 - Beastmaster - 747,264</option><option>24 - Terminator - 845,376</option><option>25 - Amazon - 951,776</option><option>26 - Dragon Rider - 1,066,800</option><option>27 - Wild Bill Havoc - 1,190,784</option><option>28 - Bat Fasterman - 1,324,064</option><option>29 - Soul Breaker - 1,466,976</option><option>30 - Diablos Knight - 1,619,856</option><option>31 - Memphista - 1,783,040</option><option>32 - Fire Dragon - 1,956,864</option><option>33 - Hell Knight - 2,141,664</option><option>34 - Fatal Chick - 2,337,776</option><option>35 - Disaster Master - 2,545,536</option><option>36 - Troll Vampire - 2,765,280</option><option>37 - Mind Reader - 2,997,344</option><option>38 - Robo Dracula - 3,242,064</option><option>39 - Chemical Ogre - 3,499,776</option><option>40 - Gorilla - 3,770,816</option><option>41 - Spider Alfs - 4,055,520</option><option>42 - King Kong - 4,354,224</option><option>43 - Summo Rat - 4,667,264</option><option>44 - Ninja Snurtle - 4,994,976</option><option>45 - Diablo - 5,337,696</option><option>46 - Sheba Joker - 5,695,760</option><option>47 - Shako Zulu - 6,069,504</option><option>48 - Quanta Kinta - 6,459,264</option><option>49 - Immortal Sil - 6,865,376</option><option>50 - Demon Magician - 7,288,176</option><option>51 - Fearless Orc - 7,728,000</option><option>52 - Chem Alien - 8,185,184</option><option>53 - Soul Taker - 8,660,064</option><option>54 - Mighty Oro - 9,152,976</option><option>55 - Da Intruder - 9,664,256</option><option>56 - King Shredder - 10,194,240</option><option>57 - Shinto Kan - 10,743,264</option><option>58 - Laughing Demon - 11,311,664</option><option>59 - Wilders Slayer - 11,899,776</option><option>60 - Bush Basher - 12,507,936</option><option>61 - Satans Knight - 13,136,480</option><option>62 - Demon Dundee - 13,785,744</option><option>63 - Mighty Cat - 14,456,064</option><option>64 - Triad Momoe - 15,147,776</option><option>65 - Ancient Mummy - 15,861,216</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="56"></form><form method=post>
 THIS IS C
 THIS IS C
@@ -804,3 +938,103 @@ THIS IS C
      <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
      <br><br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0038</b> seconds.</font></body></html>
+=======
+<option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 80,240.</td> <td valign=top>Gold : 27,430.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>136<br>148<br>203<br>332<br>568<br>226<br>286<br>492<br>1,042<br>501</a></td><td align=right valign=top width=20%><a name=monster>Max<br>416<br>840<br>960<br>1,087<br>1,577<br>566<br>715<br>1,257<br>2,664<br>1,281</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 4,464</td><td>Exp : 1,041</td><td>Gold : 347</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 70.980!<font size=-1>His countered for 1.158.</font></font><br><br><b>Killing spree of 6!</b><br><b>You have slain Thief. You win 6,060 exp and 2,100 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 23 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 86,300.</td> <td valign=top>Gold : 29,530.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,360<br>1,480<br>2,027<br>3,320<br>5,680<br>2,262<br>2,861<br>4,915<br>10,424<br>5,012</a></td><td align=right valign=top width=20%><a name=monster>Max<br>4,160<br>8,400<br>9,600<br>10,867<br>15,772<br>5,656<br>7,152<br>12,561<br>26,638<br>12,808</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 86,300.</td> <td valign=top>Gold : 29,530.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>136<br>148<br>203<br>332<br>568<br>226<br>286<br>492<br>1,042<br>501</a></td><td align=right valign=top width=20%><a name=monster>Max<br>416<br>840<br>960<br>1,087<br>1,577<br>566<br>715<br>1,257<br>2,664<br>1,281</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 4,464</td><td>Exp : 1,041</td><td>Gold : 347</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 64.370!<font size=-1>His countered for 1.211.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 1,040 exp and 350 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 39 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 87,340.</td> <td valign=top>Gold : 29,880.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,360<br>1,480<br>2,027<br>3,320<br>5,680<br>2,262<br>2,861<br>4,915<br>10,424<br>5,012</a></td><td align=right valign=top width=20%><a name=monster>Max<br>4,160<br>8,400<br>9,600<br>10,867<br>15,772<br>5,656<br>7,152<br>12,561<br>26,638<br>12,808</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 1,041</option><option>2 - Five leg Eddy - 1,182</option><option>3 - Rioting Rat - 1,483</option><option>4 - Town Madman - 2,004</option><option>5 - Town Demon - 2,805</option><option>6 - Pub Destroyer - 3,946</option><option>7 - Firestarter - 5,487</option><option>8 - Mad Dog - 7,488</option><option>9 - Sinner - 10,009</option><option>10 - Corupted Cops - 13,110</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="10"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 87,340.</td> <td valign=top>Gold : 29,880.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>136<br>148<br>203<br>332<br>568<br>226<br>286<br>492<br>1,042<br>501</a></td><td align=right valign=top width=20%><a name=monster>Max<br>416<br>840<br>960<br>1,087<br>1,577<br>566<br>715<br>1,257<br>2,664<br>1,281</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 4,464</td><td>Exp : 1,041</td><td>Gold : 347</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 78.996!<font size=-1>His countered for 1.158.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 1,040 exp and 350 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 55 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 10,401</option><option>2 - Five leg Eddy - 11,802</option><option>3 - Rioting Rat - 14,803</option><option>4 - Town Madman - 20,004</option><option>5 - Town Demon - 28,005</option><option>6 - Pub Destroyer - 39,406</option><option>7 - Firestarter - 54,807</option><option>8 - Mad Dog - 74,808</option><option>9 - Sinner - 100,009</option><option>10 - Corupted Cops - 131,010</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="100"></form><form method=post>
+THIS IS B
+THIS IS B
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 88,380.</td> <td valign=top>Gold : 30,230.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,360<br>1,480<br>2,027<br>3,320<br>5,680<br>2,262<br>2,861<br>4,915<br>10,424<br>5,012</a></td><td align=right valign=top width=20%><a name=monster>Max<br>4,160<br>8,400<br>9,600<br>10,867<br>15,772<br>5,656<br>7,152<br>12,561<br>26,638<br>12,808</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 44,640</td><td>Exp : 10,401</td><td>Gold : 3,467</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+>>>>>>> parent of c7741c1 (working but raw.)

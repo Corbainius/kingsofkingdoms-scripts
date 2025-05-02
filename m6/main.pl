@@ -6,7 +6,6 @@ use integer;
 use Carp;
 use Math::BigFloat;
 use Math::BigInt;
-use Math::Round;
 use Time::HiRes qw(sleep);
 use WWW::Mechanize;
 use POSIX qw(strftime);
@@ -84,7 +83,6 @@ my($all, $stat);
 my(@stats);
 my(@logins);
 my(@users);
-my(@outcomes);
 my($parsed,$tmp,$mech);
 my($a,$b,$c,$d);
 my($c0,$c1,$c2,$c3,$c4,$c5,$c6,$c7,$c8,$c9);
@@ -204,7 +202,6 @@ my $reps = 0;
 my $setlev = 0;
 my $tied = 0;
 my $newlevel;
-my $lost = 0;
 
 if($debug == 1){print"\n Debug mode active.\n";}
 
@@ -935,9 +932,10 @@ sub leveltestworld {
 
 	$won = 1;
 
-	#if(!$levmulti){$levmulti = 1;}
+	if(!$levmulti){$levmulti = 1;}
 
 	while($won == 1){
+<<<<<<< HEAD
 		if(!$levmulti and $filelevel != 1){
 			$levmulti = $filelevel;}
 		elsif(!$levmulti){
@@ -945,6 +943,10 @@ sub leveltestworld {
 		}else{
 			$levmulti = $levmulti*2;
 		}
+=======
+		if(!$levmulti){$levmulti = 1;}else{
+			$levmulti = $levmulti*10;}
+>>>>>>> parent of c7741c1 (working but raw.)
 		if($debug == 1){
 			print "levmulti = ".$levmulti."\n";
 		}
@@ -1007,13 +1009,17 @@ sub leveltestworld {
 	}
 	
 	until ($setlev == 1){
+		$level = $level;
 		$reps = 0;
+<<<<<<< HEAD
 		$won = 0;
 		$tied = 0;
 		$lost = 0;
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
+=======
+>>>>>>> parent of c7741c1 (working but raw.)
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
@@ -1037,24 +1043,21 @@ sub leveltestworld {
 			close(FILE);
 		}
 		if ($b =~ m/You win/) {
-			$won++;
-			$reps++; 
-			print "rep no. ".$reps." You won at level ".$level."\n";
+			print "You won at level".$level."\n";
+			$reps++;
 		}
 		if ($b =~ m/battle tied/) {
-			$tied++;
+			print "You tied at level ".$level."\n";
 			$reps++;
-			print "rep no. ".$reps." You tied at level ".$level."\n";
 		}
 		if ($b =~ m/stunned/) {
-			$lost++;
 			$reps++;
-			print "rep no. ".$reps." You lost at level ".$level."\n";
+			print "rep no. ".$reps." You lost at level".$level."\n";
 			print "Waiting 5 seconds before continuing \n";
 			sleep(6);
 		}
 		
-		until($reps == 10){
+		until(($won == 0)or($reps == 9)){
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
@@ -1070,22 +1073,24 @@ sub leveltestworld {
 				close(FILE);
 			}
 			if ($b =~ m/You win/) {
-				$won++;
+				print "You won at level".$level."\n";
+				$won = 1;
 				$reps++;
-				print "rep no. ".$reps." You won at level ".$level."\n";
+
 			}
 			if ($b =~ m/battle tied/) {
-				$tied++;
+				print "You tied at level ".$level."\n";
+				$won = 1;
 				$reps++;
-				print "rep no. ".$reps." You tied at level ".$level."\n";
 			}
 			if ($b =~ m/stunned/) {
-				$lost++;
-				$reps++;
-				print "rep no. ".$reps." You lost at level ".$level."\n";
+				print "You lost at level".$level."\n";
 				print "Waiting 5 seconds before continuing \n";
+				$won = 0;
+				$reps++;
 				sleep(6);
 			}
+<<<<<<< HEAD
 		}
 
 		@outcomes = ($won, $tied, $lost);
@@ -1127,6 +1132,13 @@ sub leveltestworld {
 			print"newlevel = ".$newlevel."\n";	
 		}
 		$level = $newlevel;
+=======
+			if($debug == 1){
+				print "reps = ".$reps."\n";
+			}
+			$level = $newlevel;
+		}
+>>>>>>> parent of c7741c1 (working but raw.)
 	}
 
 	if($setlev == 1){

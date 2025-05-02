@@ -2055,6 +2055,7 @@ You have 18 levels available.
 </form><br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0045</b> seconds.</font></body></html>
 
+<<<<<<< HEAD
 Autolevelup
 
 content
@@ -7984,3 +7985,5 @@ You have 84 levels available.
 </form><br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0063</b> seconds.</font></body></html>
 
+=======
+>>>>>>> parent of c7741c1 (working but raw.)
