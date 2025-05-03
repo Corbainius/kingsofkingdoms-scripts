@@ -13,26 +13,6 @@ use POSIX qw(strftime);
 use feature 'try';
 use Cwd qw();
 use Term::ANSIColor;
-print color('bright_red');
-print "COLOUR TEST HERE 1234567890\n";
-print color('ON_green');
-print "COLOUR TEST HERE 1234567890\n";
-print color('blink blue');
-print "COLOUR TEST HERE 1234567890\n";
-print color('underline blue');
-print "COLOUR TEST HERE 1234567890\n";
-print color('underscore blue');
-print "COLOUR TEST HERE 1234567890\n";
-#print color('italic blue');
-#print "COLOUR TEST HERE 1234567890\n";
-print color('faint blue');
-print "COLOUR TEST HERE 1234567890\n";
-print color('bold blue');
-print "COLOUR TEST HERE 1234567890\n";
-print color('bold blue');
-print "COLOUR TEST HERE 1234567890\n";
-print color('bold blue');
-print "COLOUR TEST HERE 1234567890\n";
 
 #sub divide {
 #    my ($numerator, $denominator) = @_;
@@ -287,10 +267,82 @@ sub s2 {
 sub s3 {
 	print " " x 3;
 }
+sub s4 {
+	print " " x 4;
+}
+sub debug{
+	print color('BLUE ON_YELLOW ITALIC'), @_, color('reset');print "\n";
+}
+sub red{
+	print color('bold red'), @_, color('reset');
+}
+sub black{
+	print color('black on_white'), @_, color('reset');print "\n";
+}
+sub green{
+	print color('bold green'), @_, color('reset');
+}
+sub blue{
+	print color('bold blue'), @_, color('reset');
+}
+sub yellow{
+	print color('bold yellow'), @_, color('reset');
+}
+sub magenta{
+	print color('bold magenta'), @_, color('reset');
+}
+sub cyan{
+	print color('bold cyan'), @_, color('reset');
+}
+sub white{
+	print color('bold white'), @_, color('reset');
+}
+
+
+sub bold{
+	print color('bold'), @_, color('reset');
+}
+sub faint{
+	print color('faint'), @_, color('reset');
+}
+sub blink{
+	print color('blink'), @_, color('reset');
+}
+sub underline{
+	print color('underline'), @_, color('reset');
+}
+sub underscore{
+	print color('underscore'), @_, color('reset');
+}
+sub italic{
+	print color('italic'), @_, color('reset');
+}
+sub reset{
+	print color('reset'), @_, color('reset');
+}
+sub bright_red{
+	print color('bright_red'), @_, color('reset');
+}	
+sub bright_green{
+	print color('bright_green'), @_, color('reset');
+}	
+sub bright_blue{
+	print color('bright_blue'), @_, color('reset');
+}
+sub bright_yellow{
+	print color('bright_yellow'), @_, color('reset');
+}
+sub bright_magenta{
+	print color('bright_magenta'), @_, color('reset');
+}
+sub bright_cyan{
+	print color('bright_cyan'), @_, color('reset');
+}
 
 sub leveltestworld {
 	if($debug == 1){
-		s1(); print"Arrived at leveltestworld\n";
+		s1(); black("Arrived at leveltestworld");
+		s1(); red("Arrived at leveltestworld\n");
 	}
 
 	$parsed = 0; 
@@ -307,16 +359,16 @@ sub leveltestworld {
 	}
 
 	if($debug == 1){
-			s1(); print $levelfilename."\n";
+			s1(); debug($levelfilename);
 	}
 
 	my $fname = $levelfilename;
 	if($debug == 1){
-		s1(); print $fname."\n";
+		s1();debug($fname);
 	}
 	if(-e $fname){
 		if($debug == 1){
-			s1(); print("File $fname exists\n");
+			s1(); debug("File $fname exists");
 		}
 		open(FILE, "<".$fname)
 		or die "failed to open file!!!!";
@@ -327,11 +379,11 @@ sub leveltestworld {
 		close(FILE);
 		
 		if($debug == 1){
-			s1(); print "filelevel = ".$filelevel.".\n";
+			s1(); debug("filelevel = ".$filelevel.".");
 		}
 	}else{
 		if($debug == 1){
-			s1(); print("File $fname does not exists\n");
+			s1(); debug("File $fname does not exists");
 		}
 		open(FILE, "+>".$fname)
 		or die "failed to open file!!!!";
@@ -351,7 +403,7 @@ sub leveltestworld {
 			$levmulti = $levmulti*2;
 		}
 		if($debug == 1){
-			s1(); print "levmulti = ".$levmulti."\n";
+			s1(); debug("levmulti = ".$levmulti);
 		}
 		$level = $levmulti;
 		$mech->form_number(2);
@@ -386,7 +438,7 @@ sub leveltestworld {
 			s1(); print "You won at level ".$level."\n";
 			$won = 1;
 			if($debug == 1){
-				s1(); print "levmulti = ".$levmulti."\n";
+				s1(); debug("levmulti = ".$levmulti);
 			}
 		}		
 		if ($b =~ m/battle tied/) {
@@ -394,7 +446,7 @@ sub leveltestworld {
 			$won = 0;
 			$level = $level;
 			if($debug == 1){
-				s1(); print "levmulti = ".$levmulti."\n";
+				s1(); debug("levmulti = ".$levmulti);
 			}
 			$tied++;
 		}
@@ -404,14 +456,14 @@ sub leveltestworld {
 			$won = 0;
 			$level = $level;
 			if($debug == 1){
-				s1(); print "levmulti = ".$levmulti."\n";
+				s1(); debug("levmulti = ".$levmulti);
 			}
 			sleep(6);
 		}
 	}
 
 	if($debug == 1){
-		s1(); print "base level is ".$level."\n";
+		s1(); debug("base level is ".$level);
 	}
 	
 	until ($setlev == 1){
@@ -535,21 +587,21 @@ sub leveltestworld {
  			s1(); print "Wins error. Something is wrong\n";
 		}
 		if($debug == 1){
-			s1(); print"newlevel = ".$newlevel."\n";	
+			s1(); debug("newlevel = ".$newlevel);	
 		}
 		$level = $newlevel;
 	}
 
 	if($setlev == 1){
 		if($debug == 1){
-			s1(); print"newlevel = ".$newlevel."\n";
+			s1(); debug("newlevel = ".$newlevel);
 		}
 		open(FILE, "+>".$fname)
 		or die "failed to open file!!!!";
 		print FILE "$newlevel";
 		close(FILE);
 		if($debug == 1){
-			s1(); print"filelevel updated sucessfully\n";
+			s1(); debug("filelevel updated sucessfully");
 		}
 	}
 
@@ -572,7 +624,7 @@ sub LowFight {
 		}
 	}
 
-	s1(); print"this is low fight\n";
+	s1(); debug("this is low fight");
 
 	if($debug == 1){
 		open(FILE, ">>LowFight.txt")
@@ -582,7 +634,7 @@ sub LowFight {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		s1(); print "LowFight\n";
+		s1(); debug("LowFight");
 	}
 	sleep(10);
 	exit();
@@ -600,7 +652,7 @@ sub LowFight {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		s1(); print "LowFight2\n";
+		s1(); debug("LowFight2");
 	}
 	
 	$ant = 1800;
@@ -635,7 +687,7 @@ sub LowFight {
 			print FILE "$a\n\n";
 			close(FILE);
 			
-			s1(); print "LowFight3\n";
+			s1(); debug("LowFight3");
 		}
 		$b = $a;
 		$c = $a;
@@ -713,7 +765,7 @@ sub Autolevelup {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		s1(); print "Autolevelup\n";
+		s1(); debug("Autolevelup");
 	}
 	$a = $mech->content();
 	$b = $mech->content();
@@ -1002,7 +1054,7 @@ sub CPMlevel {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		s1(); print "CPMlevel\n";
+		s1(); debug("CPMlevel");
 	}
 	$mech->form_number(1);
 	$mech->click();
@@ -1175,12 +1227,12 @@ sub leveltestfight {
 	}
 
 	if($debug == 1){
-			s1(); print $levelfilename."\n";
+			s1(); debug($levelfilename);
 	}
 
 	my $fname = $levelfilename;
 	if($debug == 1){
-		s1(); print $fname."\n";
+		s1(); debug($fname);
 	}
 	if(-e $fname){
 		if($debug == 1){
@@ -1195,7 +1247,7 @@ sub leveltestfight {
 		close(FILE);
 		
 		if($debug == 1){
-			s1(); print "filelevel = ".$filelevel.".\n";
+			s1(); debug("filelevel = ".$filelevel);
 		}
 	}else{
 		if($debug == 1){
@@ -1221,7 +1273,7 @@ sub leveltestfight {
 			$levmulti = $levmulti*2;
 		}
 		if($debug == 1){
-			s1(); print "levmulti = ".$levmulti."\n";
+			s1(); debug("levmulti = ".$levmulti);
 		}
 		$level = $levmulti;
 		sleep($stime);
@@ -1253,7 +1305,7 @@ sub leveltestfight {
 			s1(); print "You won at level ".$level."\n";
 			$won = 1;
 			if($debug == 1){
-				s1(); print "levmulti = ".$levmulti."\n";
+				s1(); debug("levmulti = ".$levmulti);
 			}
 		}		
 		if ($b =~ m/battle tied/) {
@@ -1261,7 +1313,7 @@ sub leveltestfight {
 			$won = 0;
 			$level = $level;
 			if($debug == 1){
-				s1(); print "levmulti = ".$levmulti."\n";
+				s1(); debug("levmulti = ".$levmulti);
 			}
 			$tied++;
 		}
@@ -1271,14 +1323,14 @@ sub leveltestfight {
 			$won = 0;
 			$level = $level;
 			if($debug == 1){
-				s1(); print "levmulti = ".$levmulti."\n";
+				s1(); debug("levmulti = ".$levmulti);
 			}
 			sleep(6);
 		}
 	}
 
 	if($debug == 1){
-		s1(); print "base level is ".$level."\n";
+		s1(); debug("base level is ".$level);
 	}
 	
 	until ($setlev == 1){
@@ -1406,14 +1458,14 @@ sub leveltestfight {
 
 	if($setlev == 1){
 		if($debug == 1){
-			s1(); print"newlevel = ".$newlevel."\n";
+			s1(); debug("newlevel = ".$newlevel);
 		}
 		open(FILE, "+>".$fname)
 		or die "failed to open file!!!!";
 		print FILE "$newlevel";
 		close(FILE);
 		if($debug == 1){
-			s1(); print"filelevel updated sucessfully\n";
+			s1(); debug("filelevel updated sucessfully");
 		}
 	}
 
@@ -1442,7 +1494,7 @@ sub Fight {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		s1(); print "Fight\n";
+		s1(); debug("Fight");
 	}
 	$mech->form_number(2);
 	$mech->field("Difficulty", $level);
@@ -1454,7 +1506,7 @@ sub Fight {
 		print FILE "Fightlevel\n\n";
 		print FILE "$cpm\n\n";
 		close(FILE);
-		s1(); print "Fightlevel\n";
+		s1(); debug("Fightlevel");
 	}
 	$cpm =~ m/(<option>208.*<\/option><option>209)/;
     $cpm = $1;
@@ -1474,7 +1526,7 @@ sub Fight {
 		print FILE "$a\n\n";
 		close(FILE);
 		
-		s1(); print "Fight2\n";
+		s1(); debug("Fight2");
 	}
 
 	$ant = 1800;
@@ -1508,7 +1560,7 @@ sub Fight {
 			print FILE "$a\n\n";
 			close(FILE);
 			
-			s1(); print "Fight3\n";
+			s1(); debug("Fight3");
 		}
 		$b = $a;
 		$c = $a;
@@ -1584,7 +1636,7 @@ sub Levelup{
 			print FILE "$a\n\n";
 			close(FILE);
 			
-			s1(); print "Levelup\n";
+			s1(); debug("Levelup");
 		}
 		$b = $a;
 		$a =~ m/(You have .* levels available)/;
@@ -1798,7 +1850,7 @@ sub CheckShop{
 		print FILE "content\n\n";
 		print FILE "$a\n\n";
 		close(FILE);	
-		s1(); print "Checkshop\n";
+		s1(); debug("Checkshop");
 	}
 
 	if($shopyesno == 1){
@@ -1825,7 +1877,7 @@ sub MaxShops{
 				print FILE "content\n\n";
 				print FILE "$a\n\n";
 				close(FILE);
-				s1(); print "MaxShops\n";
+				s1(); debug("MaxShops");
 	}
 	
 	my $shop1 = $a;
@@ -1936,7 +1988,7 @@ sub MaxWD{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxWD\n";
+			s1(); debug("MaxWD");
 		}
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -1975,7 +2027,7 @@ sub MaxAS{
 				print FILE "content\n\n";
 				print FILE "$a\n\n";
 				close(FILE);
-				s1(); print "MaxAS\n";
+				s1(); debug("MaxAS");
 			}
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2015,7 +2067,7 @@ sub MaxHS{
 			print FILE "$a\n\n";
 			close(FILE);
 			
-			s1(); print "MaxHS\n";
+			s1(); debug("MaxHS");
 		}
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2054,7 +2106,7 @@ sub MaxHE{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);
-			s1(); print "MaxHE\n";
+			s1(); debug("MaxHE");
 		}		
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2093,7 +2145,7 @@ sub MaxSH{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxSH\n";
+			s1(); debug("MaxSH");
 		}		
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2132,7 +2184,7 @@ sub MaxAM{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxAM\n";
+			s1(); debug("MaxAM");
 		}		
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2171,7 +2223,7 @@ sub MaxRI{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxRI\n";
+			s1(); debug("MaxRI");
 		}			
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2210,7 +2262,7 @@ sub MaxAR{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxAR\n";
+			s1(); debug("MaxAR");
 		}		
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2249,7 +2301,7 @@ sub MaxBE{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxBE\n";
+			s1(); debug("MaxBE");
 		}
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2288,7 +2340,7 @@ sub MaxPA{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxPA\n";
+			s1(); debug("MaxPA");
 		}
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2327,7 +2379,7 @@ sub MaxHA{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxHA\n";
+			s1(); debug("MaxHA");
 		}
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2366,7 +2418,7 @@ sub MaxFE{
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
-			s1(); print "MaxFE\n";
+			s1(); debug("MaxFE");
 		}
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
@@ -2406,7 +2458,7 @@ sub MyLevel{
 					print FILE "$a\n\n";
 					close(FILE);
 					
-					s1(); print "Mylevel\n";
+					s1(); debug("Mylevel");
 	}
 	$a = $mech->content();
 	$a =~ s/<.*?>//sg;
@@ -2446,7 +2498,7 @@ sub Charname{
 				print FILE "$a\n\n";
 				close(FILE);
 				
-				s1(); print "Charname\n";
+				s1(); debug("Charname");
 	}
 	$a = $mech->content();
 	$b = $mech->content();
@@ -2470,8 +2522,11 @@ sub Charname{
 	$name = $2;
 	$title =~ s/ //sgi;
 	$name =~ s/ //sgi;
-	s1(); print "\nSuccessfully logged into $title $name at $Hour:$Minute:$Second\n\n";
 	
+	s1(); print "\nSuccessfully logged into $title $name at $Hour:$Minute:$Second\n\n";
+	 
+	print "\033]0;$title $name at $Hour:$Minute:$Second\007";
+	 
 	$b =~ m/(You need.*exp )/;
 	$b = $1;
 	$b =~ s/you//i;
@@ -2599,7 +2654,7 @@ sub Charname{
 	}
 	
 	if($debug == 1){
-		s1(); print $levelfilename."\n";
+		s1(); debug($levelfilename);
 	}
 }
 
@@ -2673,7 +2728,7 @@ $d = $mech->status();
 						print FILE "$d\n\n";
 						close(FILE);
 
-						s1(); print "login\n";
+						s1(); debug("login");
 					if($requests==1){
 						$mech->add_handler("request_preprepare",  sub {s1(); print"\n\n PREPREPARE \n\n"; shift->dump; return });
 						$mech->add_handler("request_prepare",  sub {s1(); print"\n\n PREPARE \n\n"; shift->dump; return });
