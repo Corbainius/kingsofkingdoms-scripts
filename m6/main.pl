@@ -208,16 +208,16 @@ my $newlevel;
 my $lost = 0;
 my $tietrig = 0;
 
-if($debug == 1){s1(); print"\n Debug mode active.\n";}
+if($debug == 1){s1(); debug("\n Debug mode active.");}
 
 if($chartype == 7 or $chartype == 8 or $chartype == 9 or $chartype == 10 or $chartype == 11 or $chartype == 12){
-	s1(); print "SINGLE STAT MODE, make sure you have selected the right stat.\n";
+	s1(); general("SINGLE STAT MODE, make sure you have selected the right stat.");
 	$Alternate = 180;
 	$shopyesno = 2;
 }
 
 if($chartype == 13 or $chartype == 14){
-	s1(); print "Custom Stats build mode.\n";
+	s1(); general("Custom Stats build mode.");
 	$Alternate = 100;
 }
 
@@ -270,8 +270,20 @@ sub s3 {
 sub s4 {
 	print " " x 4;
 }
-sub debug{
+sub debug {
 	print color('BLUE ON_YELLOW ITALIC'), @_, color('reset');print "\n";
+}
+sub general {
+	print color('BLACK ON_WHITE'), @_, color('reset');print "\n";
+}
+sub won {
+	print color('GREEN ON_BLUE'), @_, color('reset');print "\n";
+}
+sub draw {
+	print color('YELLOW ON_BLUE'), @_, color('reset');print "\n";
+}
+sub lost {
+	print color('RED ON_BLUE'), @_, color('reset');print "\n";
 }
 sub red{
 	print color('bold red'), @_, color('reset');
@@ -435,24 +447,24 @@ sub leveltestworld {
 		}
 
 		if ($b =~ m/You win/) {
-			s1(); print "You won at level ".$level."\n";
+			s1(); won("You won at level ".$level);
 			$won = 1;
 			if($debug == 1){
 				s1(); debug("levmulti = ".$levmulti);
 			}
 		}		
 		if ($b =~ m/battle tied/) {
-			s1(); print "You tied at level ".$level."\n";
+			s1(); draw("You tied at level ".$level);
 			$won = 0;
-			$level = $level;
+			$level = $level; 
 			if($debug == 1){
 				s1(); debug("levmulti = ".$levmulti);
 			}
 			$tied++;
 		}
 		if ($b =~ m/stunned/) {
-			s1(); print "You lost at level ".$level."\n";
-			s1(); print "Waiting 5 seconds before continuing \n";
+			s1(); lost("You lost at level ".$level);
+			s1(); general("Waiting 5 seconds before continuing");
 			$won = 0;
 			$level = $level;
 			if($debug == 1){
@@ -499,18 +511,18 @@ sub leveltestworld {
 		if ($b =~ m/You win/) {
 			$won++;
 			$reps++; 
-			s1(); print "rep no. ".$reps." You won at level ".$level."\n";
+			s1(); won("Test fight ".$reps." You won at level ".$level);
 		}
 		if ($b =~ m/battle tied/) {
 			$tied++;
 			$reps++;
-			s1(); print "rep no. ".$reps." You tied at level ".$level."\n";
+			s1(); draw("Test fight ".$reps." You tied at level ".$level);
 		}
 		if ($b =~ m/stunned/) {
 			$lost++;
 			$reps++;
-			s1(); print "rep no. ".$reps." You lost at level ".$level."\n";
-			s1(); print "Waiting 5 seconds before continuing \n";
+			s1(); lost("Test fight ".$reps." You lost at level ".$level);
+			s1(); general("Waiting 5 seconds before continuing");
 			sleep(6);
 		}
 		
@@ -532,19 +544,19 @@ sub leveltestworld {
 			if ($b =~ m/You win/) {
 				$won++;
 				$reps++;
-				s1(); print "rep no. ".$reps." You won at level ".$level."\n";
+				s1(); won("Test fight ".$reps." You won at level ".$level);
 			}
 			if ($b =~ m/battle tied/) {
 				$tied++;
 				$reps++;
-				s1(); print "rep no. ".$reps." You tied at level ".$level."\n";
+				s1(); draw("Test fight ".$reps." You tied at level ".$level);
 				if($tied >= 3){$tietrig = 1; last;}
 			}
 			if ($b =~ m/stunned/) {
 				$lost++;
 				$reps++;
-				s1(); print "rep no. ".$reps." You lost at level ".$level."\n";
-				s1(); print "Waiting 5 seconds before continuing \n";
+				s1(); lost("Test fight ".$reps." You lost at level ".$level);
+				s1(); general("Waiting 5 seconds before continuing");
 				sleep(6);
 				last;
 			}

@@ -13360,3 +13360,1392 @@ THIS IS B
 <tr><td>Level : 10</td><td>Life : 11,607</td><td>Exp : 2,705</td><td>Gold : 902</td></tr>
 </table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">You special ability for 92.722!<font size=-1>His countered for 3.463.</font></font><br><br><b>Killing spree of 5!</b><br><b>You have slain Thief. You win 13,550 exp and 4,500 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 329 of 600</p>
 <form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,705</option><option>2 - Five leg Eddy - 3,070</option><option>3 - Rioting Rat - 3,851</option><option>4 - Town Madman - 5,204</option><option>5 - Town Demon - 7,285</option><option>6 - Pub Destroyer - 10,250</option><option>7 - Firestarter - 14,255</option><option>8 - Mad Dog - 19,456</option><option>9 - Sinner - 26,009</option><option>10 - Corupted Cops - 34,070</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="26"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 2,705</option><option>2 - Five leg Eddy - 3,070</option><option>3 - Rioting Rat - 3,851</option><option>4 - Town Madman - 5,204</option><option>5 - Town Demon - 7,285</option><option>6 - Pub Destroyer - 10,250</option><option>7 - Firestarter - 14,255</option><option>8 - Mad Dog - 19,456</option><option>9 - Sinner - 26,009</option><option>10 - Corupted Cops - 34,070</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="26"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="26"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 11,607</td><td>Exp : 2,705</td><td>Gold : 902</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 92.722!<font size=-1>His countered for 3.463.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 2,710 exp and 900 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 340 of 600</p>
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0078</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 18,959,810.</td> <td valign=top>Gold : 6,620,840.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>354<br>385<br>527<br>863<br>1,477<br>588<br>744<br>1,278<br>2,710<br>1,303</a></td><td align=right valign=top width=20%><a name=monster>Max<br>1,082<br>2,184<br>2,496<br>2,826<br>4,101<br>1,471<br>1,860<br>3,266<br>6,926<br>3,330</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 11,607</td><td>Exp : 2,705</td><td>Gold : 902</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 92.722!<font size=-1>His countered for 3.463.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 2,710 exp and 900 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 340 of 600</p>
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0078</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 5,409</option><option>2 - Five leg Eddy - 6,138</option><option>3 - Rioting Rat - 7,699</option><option>4 - Town Madman - 10,404</option><option>5 - Town Demon - 14,565</option><option>6 - Pub Destroyer - 20,494</option><option>7 - Firestarter - 28,503</option><option>8 - Mad Dog - 38,904</option><option>9 - Sinner - 52,009</option><option>10 - Corupted Cops - 68,130</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="52"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 5,409</option><option>2 - Five leg Eddy - 6,138</option><option>3 - Rioting Rat - 7,699</option><option>4 - Town Madman - 10,404</option><option>5 - Town Demon - 14,565</option><option>6 - Pub Destroyer - 20,494</option><option>7 - Firestarter - 28,503</option><option>8 - Mad Dog - 38,904</option><option>9 - Sinner - 52,009</option><option>10 - Corupted Cops - 68,130</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="52"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="52"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 23,213</td><td>Exp : 5,409</td><td>Gold : 1,803</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0034</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 18,962,520.</td> <td valign=top>Gold : 6,621,740.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>707<br>770<br>1,054<br>1,726<br>2,954<br>1,176<br>1,488<br>2,556<br>5,420<br>2,606</a></td><td align=right valign=top width=20%><a name=monster>Max<br>2,163<br>4,368<br>4,992<br>5,651<br>8,201<br>2,941<br>3,719<br>6,532<br>13,852<br>6,660</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 23,213</td><td>Exp : 5,409</td><td>Gold : 1,803</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0034</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 5,409</option><option>2 - Five leg Eddy - 6,138</option><option>3 - Rioting Rat - 7,699</option><option>4 - Town Madman - 10,404</option><option>5 - Town Demon - 14,565</option><option>6 - Pub Destroyer - 20,494</option><option>7 - Firestarter - 28,503</option><option>8 - Mad Dog - 38,904</option><option>9 - Sinner - 52,009</option><option>10 - Corupted Cops - 68,130</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="52"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 23,213</td><td>Exp : 5,409</td><td>Gold : 1,803</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,889</option><option>2 - Five leg Eddy - 5,548</option><option>3 - Rioting Rat - 6,959</option><option>4 - Town Madman - 9,404</option><option>5 - Town Demon - 13,165</option><option>6 - Pub Destroyer - 18,524</option><option>7 - Firestarter - 25,763</option><option>8 - Mad Dog - 35,164</option><option>9 - Sinner - 47,009</option><option>10 - Corupted Cops - 61,580</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="47"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 20,981</td><td>Exp : 4,889</td><td>Gold : 1,630</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,369</option><option>2 - Five leg Eddy - 4,958</option><option>3 - Rioting Rat - 6,219</option><option>4 - Town Madman - 8,404</option><option>5 - Town Demon - 11,765</option><option>6 - Pub Destroyer - 16,554</option><option>7 - Firestarter - 23,023</option><option>8 - Mad Dog - 31,424</option><option>9 - Sinner - 42,009</option><option>10 - Corupted Cops - 55,030</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="42"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 18,749</td><td>Exp : 4,369</td><td>Gold : 1,456</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,953</option><option>2 - Five leg Eddy - 4,486</option><option>3 - Rioting Rat - 5,627</option><option>4 - Town Madman - 7,604</option><option>5 - Town Demon - 10,645</option><option>6 - Pub Destroyer - 14,978</option><option>7 - Firestarter - 20,831</option><option>8 - Mad Dog - 28,432</option><option>9 - Sinner - 38,009</option><option>10 - Corupted Cops - 49,790</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="38"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 16,963</td><td>Exp : 3,953</td><td>Gold : 1,318</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,537</option><option>2 - Five leg Eddy - 4,014</option><option>3 - Rioting Rat - 5,035</option><option>4 - Town Madman - 6,804</option><option>5 - Town Demon - 9,525</option><option>6 - Pub Destroyer - 13,402</option><option>7 - Firestarter - 18,639</option><option>8 - Mad Dog - 25,440</option><option>9 - Sinner - 34,009</option><option>10 - Corupted Cops - 44,550</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="34"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 15,178</td><td>Exp : 3,537</td><td>Gold : 1,179</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,225</option><option>2 - Five leg Eddy - 3,660</option><option>3 - Rioting Rat - 4,591</option><option>4 - Town Madman - 6,204</option><option>5 - Town Demon - 8,685</option><option>6 - Pub Destroyer - 12,220</option><option>7 - Firestarter - 16,995</option><option>8 - Mad Dog - 23,196</option><option>9 - Sinner - 31,009</option><option>10 - Corupted Cops - 40,620</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="31"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 13,839</td><td>Exp : 3,225</td><td>Gold : 1,075</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,913</option><option>2 - Five leg Eddy - 3,306</option><option>3 - Rioting Rat - 4,147</option><option>4 - Town Madman - 5,604</option><option>5 - Town Demon - 7,845</option><option>6 - Pub Destroyer - 11,038</option><option>7 - Firestarter - 15,351</option><option>8 - Mad Dog - 20,952</option><option>9 - Sinner - 28,009</option><option>10 - Corupted Cops - 36,690</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="28"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 12,499</td><td>Exp : 2,913</td><td>Gold : 971</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">You special ability for 138.949!<font size=-1>His countered for 5.328.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 2,910 exp and 970 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 367 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,913</option><option>2 - Five leg Eddy - 3,306</option><option>3 - Rioting Rat - 4,147</option><option>4 - Town Madman - 5,604</option><option>5 - Town Demon - 7,845</option><option>6 - Pub Destroyer - 11,038</option><option>7 - Firestarter - 15,351</option><option>8 - Mad Dog - 20,952</option><option>9 - Sinner - 28,009</option><option>10 - Corupted Cops - 36,690</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="28"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 2,913</option><option>2 - Five leg Eddy - 3,306</option><option>3 - Rioting Rat - 4,147</option><option>4 - Town Madman - 5,604</option><option>5 - Town Demon - 7,845</option><option>6 - Pub Destroyer - 11,038</option><option>7 - Firestarter - 15,351</option><option>8 - Mad Dog - 20,952</option><option>9 - Sinner - 28,009</option><option>10 - Corupted Cops - 36,690</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="28"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="28"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 12,499</td><td>Exp : 2,913</td><td>Gold : 971</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 140.725!<font size=-1>His countered for 3.552.</font></font><br><br><b>Killing spree of 3!</b><br><b>You have slain Thief. You win 8,730 exp and 2,910 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 377 of 600</p>
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0060</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 19,083,230.</td> <td valign=top>Gold : 6,665,330.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>381<br>414<br>568<br>930<br>1,590<br>633<br>801<br>1,376<br>2,919<br>1,403</a></td><td align=right valign=top width=20%><a name=monster>Max<br>1,165<br>2,352<br>2,688<br>3,043<br>4,416<br>1,584<br>2,003<br>3,517<br>7,459<br>3,586</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 12,499</td><td>Exp : 2,913</td><td>Gold : 971</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 140.725!<font size=-1>His countered for 3.552.</font></font><br><br><b>Killing spree of 3!</b><br><b>You have slain Thief. You win 8,730 exp and 2,910 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 377 of 600</p>
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0060</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 5,825</option><option>2 - Five leg Eddy - 6,610</option><option>3 - Rioting Rat - 8,291</option><option>4 - Town Madman - 11,204</option><option>5 - Town Demon - 15,685</option><option>6 - Pub Destroyer - 22,070</option><option>7 - Firestarter - 30,695</option><option>8 - Mad Dog - 41,896</option><option>9 - Sinner - 56,009</option><option>10 - Corupted Cops - 73,370</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="56"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 5,825</option><option>2 - Five leg Eddy - 6,610</option><option>3 - Rioting Rat - 8,291</option><option>4 - Town Madman - 11,204</option><option>5 - Town Demon - 15,685</option><option>6 - Pub Destroyer - 22,070</option><option>7 - Firestarter - 30,695</option><option>8 - Mad Dog - 41,896</option><option>9 - Sinner - 56,009</option><option>10 - Corupted Cops - 73,370</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="56"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="56"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 24,999</td><td>Exp : 5,825</td><td>Gold : 1,942</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell got contravented! </font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0043</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 19,091,960.</td> <td valign=top>Gold : 6,668,240.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>762<br>829<br>1,135<br>1,859<br>3,181<br>1,267<br>1,602<br>2,752<br>5,837<br>2,807</a></td><td align=right valign=top width=20%><a name=monster>Max<br>2,330<br>4,704<br>5,376<br>6,086<br>8,832<br>3,167<br>4,005<br>7,034<br>14,918<br>7,173</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 24,999</td><td>Exp : 5,825</td><td>Gold : 1,942</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell got contravented! </font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0043</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 5,825</option><option>2 - Five leg Eddy - 6,610</option><option>3 - Rioting Rat - 8,291</option><option>4 - Town Madman - 11,204</option><option>5 - Town Demon - 15,685</option><option>6 - Pub Destroyer - 22,070</option><option>7 - Firestarter - 30,695</option><option>8 - Mad Dog - 41,896</option><option>9 - Sinner - 56,009</option><option>10 - Corupted Cops - 73,370</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="56"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 24,999</td><td>Exp : 5,825</td><td>Gold : 1,942</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 5,201</option><option>2 - Five leg Eddy - 5,902</option><option>3 - Rioting Rat - 7,403</option><option>4 - Town Madman - 10,004</option><option>5 - Town Demon - 14,005</option><option>6 - Pub Destroyer - 19,706</option><option>7 - Firestarter - 27,407</option><option>8 - Mad Dog - 37,408</option><option>9 - Sinner - 50,009</option><option>10 - Corupted Cops - 65,510</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="50"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 22,320</td><td>Exp : 5,201</td><td>Gold : 1,734</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,681</option><option>2 - Five leg Eddy - 5,312</option><option>3 - Rioting Rat - 6,663</option><option>4 - Town Madman - 9,004</option><option>5 - Town Demon - 12,605</option><option>6 - Pub Destroyer - 17,736</option><option>7 - Firestarter - 24,667</option><option>8 - Mad Dog - 33,668</option><option>9 - Sinner - 45,009</option><option>10 - Corupted Cops - 58,960</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="45"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 20,088</td><td>Exp : 4,681</td><td>Gold : 1,560</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,265</option><option>2 - Five leg Eddy - 4,840</option><option>3 - Rioting Rat - 6,071</option><option>4 - Town Madman - 8,204</option><option>5 - Town Demon - 11,485</option><option>6 - Pub Destroyer - 16,160</option><option>7 - Firestarter - 22,475</option><option>8 - Mad Dog - 30,676</option><option>9 - Sinner - 41,009</option><option>10 - Corupted Cops - 53,720</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="41"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 18,303</td><td>Exp : 4,265</td><td>Gold : 1,422</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">You special ability for 138.209!<font size=-1>His countered for 6.068.</font></font><br><br><b>Killing spree of 6!</b><br><b>You have slain Thief. You win 21,180 exp and 8,520 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 388 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,849</option><option>2 - Five leg Eddy - 4,368</option><option>3 - Rioting Rat - 5,479</option><option>4 - Town Madman - 7,404</option><option>5 - Town Demon - 10,365</option><option>6 - Pub Destroyer - 14,584</option><option>7 - Firestarter - 20,283</option><option>8 - Mad Dog - 27,684</option><option>9 - Sinner - 37,009</option><option>10 - Corupted Cops - 48,480</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="37"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 16,517</td><td>Exp : 3,849</td><td>Gold : 1,283</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,433</option><option>2 - Five leg Eddy - 3,896</option><option>3 - Rioting Rat - 4,887</option><option>4 - Town Madman - 6,604</option><option>5 - Town Demon - 9,245</option><option>6 - Pub Destroyer - 13,008</option><option>7 - Firestarter - 18,091</option><option>8 - Mad Dog - 24,692</option><option>9 - Sinner - 33,009</option><option>10 - Corupted Cops - 43,240</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="33"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 14,731</td><td>Exp : 3,433</td><td>Gold : 1,144</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">You special ability for 106.986!<font size=-1>His countered for 3.996.</font></font><br><br><b>Killing spree of 5!</b><br><b>You have slain Thief. You win 17,150 exp and 5,700 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 403 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,121</option><option>2 - Five leg Eddy - 3,542</option><option>3 - Rioting Rat - 4,443</option><option>4 - Town Madman - 6,004</option><option>5 - Town Demon - 8,405</option><option>6 - Pub Destroyer - 11,826</option><option>7 - Firestarter - 16,447</option><option>8 - Mad Dog - 22,448</option><option>9 - Sinner - 30,009</option><option>10 - Corupted Cops - 39,310</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="30"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 13,392</td><td>Exp : 3,121</td><td>Gold : 1,040</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,809</option><option>2 - Five leg Eddy - 3,188</option><option>3 - Rioting Rat - 3,999</option><option>4 - Town Madman - 5,404</option><option>5 - Town Demon - 7,565</option><option>6 - Pub Destroyer - 10,644</option><option>7 - Firestarter - 14,803</option><option>8 - Mad Dog - 20,204</option><option>9 - Sinner - 27,009</option><option>10 - Corupted Cops - 35,380</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="27"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 12,053</td><td>Exp : 2,809</td><td>Gold : 936</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">You special ability for 141.280!<font size=-1>His countered for 2.997.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 2,810 exp and 940 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 416 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,497</option><option>2 - Five leg Eddy - 2,834</option><option>3 - Rioting Rat - 3,555</option><option>4 - Town Madman - 4,804</option><option>5 - Town Demon - 6,725</option><option>6 - Pub Destroyer - 9,462</option><option>7 - Firestarter - 13,159</option><option>8 - Mad Dog - 17,960</option><option>9 - Sinner - 24,009</option><option>10 - Corupted Cops - 31,450</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="24"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 10,714</td><td>Exp : 2,497</td><td>Gold : 832</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 126.243!<font size=-1>His countered for 4.918.</font></font><br><br><b>Killing spree of 5!</b><br><b>You have slain Thief. You win 12,500 exp and 4,150 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 423 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,497</option><option>2 - Five leg Eddy - 2,834</option><option>3 - Rioting Rat - 3,555</option><option>4 - Town Madman - 4,804</option><option>5 - Town Demon - 6,725</option><option>6 - Pub Destroyer - 9,462</option><option>7 - Firestarter - 13,159</option><option>8 - Mad Dog - 17,960</option><option>9 - Sinner - 24,009</option><option>10 - Corupted Cops - 31,450</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="24"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 2,497</option><option>2 - Five leg Eddy - 2,834</option><option>3 - Rioting Rat - 3,555</option><option>4 - Town Madman - 4,804</option><option>5 - Town Demon - 6,725</option><option>6 - Pub Destroyer - 9,462</option><option>7 - Firestarter - 13,159</option><option>8 - Mad Dog - 17,960</option><option>9 - Sinner - 24,009</option><option>10 - Corupted Cops - 31,450</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="24"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="24"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 10,714</td><td>Exp : 2,497</td><td>Gold : 832</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0157</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 19,463,750.</td> <td valign=top>Gold : 6,802,830.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>326<br>355<br>486<br>797<br>1,363<br>543<br>687<br>1,180<br>2,502<br>1,203</a></td><td align=right valign=top width=20%><a name=monster>Max<br>999<br>2,016<br>2,304<br>2,608<br>3,785<br>1,357<br>1,717<br>3,015<br>6,393<br>3,074</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 10,714</td><td>Exp : 2,497</td><td>Gold : 832</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0157</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,497</option><option>2 - Five leg Eddy - 2,834</option><option>3 - Rioting Rat - 3,555</option><option>4 - Town Madman - 4,804</option><option>5 - Town Demon - 6,725</option><option>6 - Pub Destroyer - 9,462</option><option>7 - Firestarter - 13,159</option><option>8 - Mad Dog - 17,960</option><option>9 - Sinner - 24,009</option><option>10 - Corupted Cops - 31,450</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="24"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 10,714</td><td>Exp : 2,497</td><td>Gold : 832</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,289</option><option>2 - Five leg Eddy - 2,598</option><option>3 - Rioting Rat - 3,259</option><option>4 - Town Madman - 4,404</option><option>5 - Town Demon - 6,165</option><option>6 - Pub Destroyer - 8,674</option><option>7 - Firestarter - 12,063</option><option>8 - Mad Dog - 16,464</option><option>9 - Sinner - 22,009</option><option>10 - Corupted Cops - 28,830</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="22"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 9,821</td><td>Exp : 2,289</td><td>Gold : 763</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 73.387!<font size=-1>His countered for 2.548.</font></font><br><br><b>Killing spree of 2!</b><br><b>You have slain Thief. You win 4,580 exp and 1,520 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 442 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,289</option><option>2 - Five leg Eddy - 2,598</option><option>3 - Rioting Rat - 3,259</option><option>4 - Town Madman - 4,404</option><option>5 - Town Demon - 6,165</option><option>6 - Pub Destroyer - 8,674</option><option>7 - Firestarter - 12,063</option><option>8 - Mad Dog - 16,464</option><option>9 - Sinner - 22,009</option><option>10 - Corupted Cops - 28,830</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="22"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 2,289</option><option>2 - Five leg Eddy - 2,598</option><option>3 - Rioting Rat - 3,259</option><option>4 - Town Madman - 4,404</option><option>5 - Town Demon - 6,165</option><option>6 - Pub Destroyer - 8,674</option><option>7 - Firestarter - 12,063</option><option>8 - Mad Dog - 16,464</option><option>9 - Sinner - 22,009</option><option>10 - Corupted Cops - 28,830</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="22"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="22"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 9,821</td><td>Exp : 2,289</td><td>Gold : 763</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">You special ability for 60.287!<font size=-1>His countered for 2.442.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 2,290 exp and 760 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 452 of 600</p>
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0071</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 19,591,730.</td> <td valign=top>Gold : 6,846,300.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>299<br>326<br>446<br>730<br>1,250<br>498<br>629<br>1,081<br>2,293<br>1,103</a></td><td align=right valign=top width=20%><a name=monster>Max<br>915<br>1,848<br>2,112<br>2,391<br>3,470<br>1,244<br>1,573<br>2,764<br>5,861<br>2,818</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 9,821</td><td>Exp : 2,289</td><td>Gold : 763</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">You special ability for 60.287!<font size=-1>His countered for 2.442.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 2,290 exp and 760 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 452 of 600</p>
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0071</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,577</option><option>2 - Five leg Eddy - 5,194</option><option>3 - Rioting Rat - 6,515</option><option>4 - Town Madman - 8,804</option><option>5 - Town Demon - 12,325</option><option>6 - Pub Destroyer - 17,342</option><option>7 - Firestarter - 24,119</option><option>8 - Mad Dog - 32,920</option><option>9 - Sinner - 44,009</option><option>10 - Corupted Cops - 57,650</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="44"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 4,577</option><option>2 - Five leg Eddy - 5,194</option><option>3 - Rioting Rat - 6,515</option><option>4 - Town Madman - 8,804</option><option>5 - Town Demon - 12,325</option><option>6 - Pub Destroyer - 17,342</option><option>7 - Firestarter - 24,119</option><option>8 - Mad Dog - 32,920</option><option>9 - Sinner - 44,009</option><option>10 - Corupted Cops - 57,650</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="44"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="44"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 19,642</td><td>Exp : 4,577</td><td>Gold : 1,526</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0043</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 19,594,020.</td> <td valign=top>Gold : 6,847,060.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>598<br>651<br>892<br>1,461<br>2,499<br>995<br>1,259<br>2,163<br>4,587<br>2,205</a></td><td align=right valign=top width=20%><a name=monster>Max<br>1,831<br>3,696<br>4,224<br>4,782<br>6,940<br>2,489<br>3,147<br>5,527<br>11,721<br>5,636</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 19,642</td><td>Exp : 4,577</td><td>Gold : 1,526</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0043</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,577</option><option>2 - Five leg Eddy - 5,194</option><option>3 - Rioting Rat - 6,515</option><option>4 - Town Madman - 8,804</option><option>5 - Town Demon - 12,325</option><option>6 - Pub Destroyer - 17,342</option><option>7 - Firestarter - 24,119</option><option>8 - Mad Dog - 32,920</option><option>9 - Sinner - 44,009</option><option>10 - Corupted Cops - 57,650</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="44"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 19,642</td><td>Exp : 4,577</td><td>Gold : 1,526</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 139.181!<font size=-1>His countered for 5.096.</font></font><br><br><b>Killing spree of 4!</b><br><b>You have slain Thief. You win 14,040 exp and 6,120 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 454 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,161</option><option>2 - Five leg Eddy - 4,722</option><option>3 - Rioting Rat - 5,923</option><option>4 - Town Madman - 8,004</option><option>5 - Town Demon - 11,205</option><option>6 - Pub Destroyer - 15,766</option><option>7 - Firestarter - 21,927</option><option>8 - Mad Dog - 29,928</option><option>9 - Sinner - 40,009</option><option>10 - Corupted Cops - 52,410</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="40"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 17,856</td><td>Exp : 4,161</td><td>Gold : 1,387</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 106.350!<font size=-1>His countered for 4.633.</font></font><br><br><b>Killing spree of 4!</b><br><b>You have slain Thief. You win 16,640 exp and 5,560 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 458 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,745</option><option>2 - Five leg Eddy - 4,250</option><option>3 - Rioting Rat - 5,331</option><option>4 - Town Madman - 7,204</option><option>5 - Town Demon - 10,085</option><option>6 - Pub Destroyer - 14,190</option><option>7 - Firestarter - 19,735</option><option>8 - Mad Dog - 26,936</option><option>9 - Sinner - 36,009</option><option>10 - Corupted Cops - 47,170</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="36"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 16,071</td><td>Exp : 3,745</td><td>Gold : 1,248</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 98.885!<font size=-1>His countered for 4.170.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 3,690 exp and 1,250 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 464 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,329</option><option>2 - Five leg Eddy - 3,778</option><option>3 - Rioting Rat - 4,739</option><option>4 - Town Madman - 6,404</option><option>5 - Town Demon - 8,965</option><option>6 - Pub Destroyer - 12,614</option><option>7 - Firestarter - 17,543</option><option>8 - Mad Dog - 23,944</option><option>9 - Sinner - 32,009</option><option>10 - Corupted Cops - 41,930</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="32"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 14,285</td><td>Exp : 3,329</td><td>Gold : 1,110</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,017</option><option>2 - Five leg Eddy - 3,424</option><option>3 - Rioting Rat - 4,295</option><option>4 - Town Madman - 5,804</option><option>5 - Town Demon - 8,125</option><option>6 - Pub Destroyer - 11,432</option><option>7 - Firestarter - 15,899</option><option>8 - Mad Dog - 21,700</option><option>9 - Sinner - 29,009</option><option>10 - Corupted Cops - 38,000</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="29"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 12,946</td><td>Exp : 3,017</td><td>Gold : 1,006</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,705</option><option>2 - Five leg Eddy - 3,070</option><option>3 - Rioting Rat - 3,851</option><option>4 - Town Madman - 5,204</option><option>5 - Town Demon - 7,285</option><option>6 - Pub Destroyer - 10,250</option><option>7 - Firestarter - 14,255</option><option>8 - Mad Dog - 19,456</option><option>9 - Sinner - 26,009</option><option>10 - Corupted Cops - 34,070</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="26"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 11,607</td><td>Exp : 2,705</td><td>Gold : 902</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 93.173!<font size=-1>His countered for 3.011.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 2,710 exp and 900 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 483 of 600</p>
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 2,705</option><option>2 - Five leg Eddy - 3,070</option><option>3 - Rioting Rat - 3,851</option><option>4 - Town Madman - 5,204</option><option>5 - Town Demon - 7,285</option><option>6 - Pub Destroyer - 10,250</option><option>7 - Firestarter - 14,255</option><option>8 - Mad Dog - 19,456</option><option>9 - Sinner - 26,009</option><option>10 - Corupted Cops - 34,070</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="26"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 2,705</option><option>2 - Five leg Eddy - 3,070</option><option>3 - Rioting Rat - 3,851</option><option>4 - Town Madman - 5,204</option><option>5 - Town Demon - 7,285</option><option>6 - Pub Destroyer - 10,250</option><option>7 - Firestarter - 14,255</option><option>8 - Mad Dog - 19,456</option><option>9 - Sinner - 26,009</option><option>10 - Corupted Cops - 34,070</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="26"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="26"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 11,607</td><td>Exp : 2,705</td><td>Gold : 902</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 92.539!<font size=-1>His countered for 3.645.</font></font><br><br><b>Killing spree of 7!</b><br><b>You have slain Thief. You win 15,610 exp and 6,300 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 493 of 600</p>
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0099</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 19,882,110.</td> <td valign=top>Gold : 6,946,940.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>354<br>385<br>527<br>863<br>1,477<br>588<br>744<br>1,278<br>2,710<br>1,303</a></td><td align=right valign=top width=20%><a name=monster>Max<br>1,082<br>2,184<br>2,496<br>2,826<br>4,101<br>1,471<br>1,860<br>3,266<br>6,926<br>3,330</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 11,607</td><td>Exp : 2,705</td><td>Gold : 902</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 92.539!<font size=-1>His countered for 3.645.</font></font><br><br><b>Killing spree of 7!</b><br><b>You have slain Thief. You win 15,610 exp and 6,300 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 493 of 600</p>
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0099</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 5,409</option><option>2 - Five leg Eddy - 6,138</option><option>3 - Rioting Rat - 7,699</option><option>4 - Town Madman - 10,404</option><option>5 - Town Demon - 14,565</option><option>6 - Pub Destroyer - 20,494</option><option>7 - Firestarter - 28,503</option><option>8 - Mad Dog - 38,904</option><option>9 - Sinner - 52,009</option><option>10 - Corupted Cops - 68,130</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="52"></form><form method=post>
+THIS IS C
+THIS IS C
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="world.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top><select name="Monster">
+<option>1 - Thief - 5,409</option><option>2 - Five leg Eddy - 6,138</option><option>3 - Rioting Rat - 7,699</option><option>4 - Town Madman - 10,404</option><option>5 - Town Demon - 14,565</option><option>6 - Pub Destroyer - 20,494</option><option>7 - Firestarter - 28,503</option><option>8 - Mad Dog - 38,904</option><option>9 - Sinner - 52,009</option><option>10 - Corupted Cops - 68,130</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="52"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="52"></td><td width="10%" valign=top><input type=submit name=Action value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 23,213</td><td>Exp : 5,409</td><td>Gold : 1,803</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0046</b> seconds.</font></body></html>
+THIS IS D
+THIS IS D
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 1.</td> <td valign=top>Exp : 19,897,720.</td> <td valign=top>Gold : 6,953,240.</td></tr></table><table border=0 width=100%><tr><th colspan=6>Lord Ctest1 vs <a name=monster>Thief</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>3,181<br>53,275<br>1,400<br>21,310<br>5,275 <br>410<br>762<br>56,456<br>26,585<br>1,146</td>
+<td valign=top align=right width=20%> Max<br>8,130<br>136,147<br>3,578<br>54,459<br>13,481 <br>1,024<br>1,905<br>144,277<br>67,939<br>2,929</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>707<br>770<br>1,054<br>1,726<br>2,954<br>1,176<br>1,488<br>2,556<br>5,420<br>2,606</a></td><td align=right valign=top width=20%><a name=monster>Max<br>2,163<br>4,368<br>4,992<br>5,651<br>8,201<br>2,941<br>3,719<br>6,532<br>13,852<br>6,660</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 10</td><td>Life : 23,213</td><td>Exp : 5,409</td><td>Gold : 1,803</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post target="lol_fcontrol" action="world_control.php">
+<table width=100%>
+</table>
+</form>
+        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0046</b> seconds.</font></body></html>
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 5,409</option><option>2 - Five leg Eddy - 6,138</option><option>3 - Rioting Rat - 7,699</option><option>4 - Town Madman - 10,404</option><option>5 - Town Demon - 14,565</option><option>6 - Pub Destroyer - 20,494</option><option>7 - Firestarter - 28,503</option><option>8 - Mad Dog - 38,904</option><option>9 - Sinner - 52,009</option><option>10 - Corupted Cops - 68,130</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="52"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 23,213</td><td>Exp : 5,409</td><td>Gold : 1,803</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,889</option><option>2 - Five leg Eddy - 5,548</option><option>3 - Rioting Rat - 6,959</option><option>4 - Town Madman - 9,404</option><option>5 - Town Demon - 13,165</option><option>6 - Pub Destroyer - 18,524</option><option>7 - Firestarter - 25,763</option><option>8 - Mad Dog - 35,164</option><option>9 - Sinner - 47,009</option><option>10 - Corupted Cops - 61,580</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="47"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 20,981</td><td>Exp : 4,889</td><td>Gold : 1,630</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 4,369</option><option>2 - Five leg Eddy - 4,958</option><option>3 - Rioting Rat - 6,219</option><option>4 - Town Madman - 8,404</option><option>5 - Town Demon - 11,765</option><option>6 - Pub Destroyer - 16,554</option><option>7 - Firestarter - 23,023</option><option>8 - Mad Dog - 31,424</option><option>9 - Sinner - 42,009</option><option>10 - Corupted Cops - 55,030</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="42"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 18,749</td><td>Exp : 4,369</td><td>Gold : 1,456</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell got contravented! </font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,953</option><option>2 - Five leg Eddy - 4,486</option><option>3 - Rioting Rat - 5,627</option><option>4 - Town Madman - 7,604</option><option>5 - Town Demon - 10,645</option><option>6 - Pub Destroyer - 14,978</option><option>7 - Firestarter - 20,831</option><option>8 - Mad Dog - 28,432</option><option>9 - Sinner - 38,009</option><option>10 - Corupted Cops - 49,790</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="38"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 16,963</td><td>Exp : 3,953</td><td>Gold : 1,318</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,537</option><option>2 - Five leg Eddy - 4,014</option><option>3 - Rioting Rat - 5,035</option><option>4 - Town Madman - 6,804</option><option>5 - Town Demon - 9,525</option><option>6 - Pub Destroyer - 13,402</option><option>7 - Firestarter - 18,639</option><option>8 - Mad Dog - 25,440</option><option>9 - Sinner - 34,009</option><option>10 - Corupted Cops - 44,550</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="34"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 15,178</td><td>Exp : 3,537</td><td>Gold : 1,179</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +5.50%
+<form method=post
+
+THIS IS A
+THIS IS A
+<select name="Monster">
+<option>1 - Thief - 3,225</option><option>2 - Five leg Eddy - 3,660</option><option>3 - Rioting Rat - 4,591</option><option>4 - Town Madman - 6,204</option><option>5 - Town Demon - 8,685</option><option>6 - Pub Destroyer - 12,220</option><option>7 - Firestarter - 16,995</option><option>8 - Mad Dog - 23,196</option><option>9 - Sinner - 31,009</option><option>10 - Corupted Cops - 40,620</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="31"></form><form method=post>
+THIS IS B
+THIS IS B
+<tr><td>Level : 10</td><td>Life : 13,839</td><td>Exp : 3,225</td><td>Gold : 1,075</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities countered! </font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell fizzles!</font><br><font color="#88FF88">His heal spell got contravented! </font><br><b>Round 3</b><br><font color="#888888">You special ability for 107.050!<font size=-1>His countered for 3.932.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Thief. You win 2,910 exp and 1,080 gold.</b><br><br> Bonus gold and exp gain from power z +5.50%<p style="color:DodgerBlue;">Currently fought 511 of 600</p>
+<form method=post
