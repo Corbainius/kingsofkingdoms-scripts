@@ -37,6 +37,21 @@ use Term::ANSIColor;
 
 #open STDERR, '>>', 'Errorlog.txt' or die $!;
 
+
+logo("                                           
+        www.kingsofkingdoms.com            
+                                           
+        888b     d888  .d8888b.            
+        8888b   d8888 d88P  Y88b           
+        88888b.d88888 888                  
+        888Y88888P888 888d888b.            
+        888 Y888P 888 888P \"Y88b           
+        888  Y8P  888 888    888           
+        888   \"   888 Y88b  d88P           
+        888       888  \"Y8888P\"            
+                                           
+");
+
 my $trigger = 0;
 
 if ($#ARGV+1 < 19){
@@ -207,6 +222,8 @@ my $tied = 0;
 my $newlevel;
 my $lost = 0;
 my $tietrig = 0;
+my $filename = '';
+my $happened;
 
 if($debug == 1){s1(); debug("\n Debug mode active.");}
 
@@ -270,44 +287,60 @@ sub s3 {
 sub s4 {
 	print " " x 4;
 }
+sub nl {
+	print "\n";
+}
+sub errorformat {
+	print color('RED ON_YELLOW')," ", @_," ", color('reset');print "\n";
+}
+sub warnformat {
+	print color('YELLOW ON_BLUE')," ", @_," ", color('reset');print "\n";
+}
+sub infoformat {
+	print color('YELLOW ON_BLUE')," ", @_," ", color('reset');print "\n";
+}
+
 sub debug {
-	print color('BLUE ON_YELLOW ITALIC'), @_, color('reset');print "\n";
+	print color('BLUE ON_YELLOW ITALIC')," ", @_," ", color('reset');print "\n";
+}
+sub logo {
+	print color('BOLD BRIGHT_BLUE ON_YELLOW'), @_, color('reset');print "\n";
 }
 sub general {
-	print color('BLACK ON_WHITE'), @_, color('reset');print "\n";
+	print color('BLACK ON_WHITE')," ", @_," ", color('reset');print "\n";
 }
 sub won {
-	print color('GREEN ON_BLUE'), @_, color('reset');print "\n";
+	print color('GREEN ON_BLUE')," ", @_," ", color('reset');print "\n";
 }
 sub draw {
-	print color('YELLOW ON_BLUE'), @_, color('reset');print "\n";
+	print color('YELLOW ON_BLUE')," ", @_," ", color('reset');print "\n";
 }
 sub lost {
-	print color('RED ON_BLUE'), @_, color('reset');print "\n";
+	print color('RED ON_BLUE')," ", @_," ", color('reset');print "\n";
 }
 sub red{
-	print color('bold red'), @_, color('reset');
+	print color('bold red')," ", @_," ", color('reset');
 }
 sub black{
-	print color('black on_white'), @_, color('reset');print "\n";
+	print color('black on_white')," ", @_," ", color('reset');print "\n";
 }
 sub green{
-	print color('bold green'), @_, color('reset');
+	print color('bold green')," ", @_," ", color('reset');
 }
 sub blue{
-	print color('bold blue'), @_, color('reset');
+	print color('bold blue')," ", @_," ", color('reset');
 }
 sub yellow{
-	print color('bold yellow'), @_, color('reset');
+	print color('bold yellow')," ", @_," ", color('reset');
 }
 sub magenta{
-	print color('bold magenta'), @_, color('reset');
+	print color('bold magenta')," ", @_," ", color('reset');
 }
 sub cyan{
-	print color('bold cyan'), @_, color('reset');
+	print color('bold cyan')," ", @_," ", color('reset');
 }
 sub white{
-	print color('bold white'), @_, color('reset');
+	print color('bold white')," ", @_," ", color('reset');
 }
 
 
@@ -353,8 +386,7 @@ sub bright_cyan{
 
 sub leveltestworld {
 	if($debug == 1){
-		s1(); black("Arrived at leveltestworld");
-		s1(); red("Arrived at leveltestworld\n");
+		s1(); debug("Arrived at leveltestworld");
 	}
 
 	$parsed = 0; 
@@ -406,6 +438,8 @@ sub leveltestworld {
 
 	$won = 1;
 
+	s1(); general("Basic level test starting at level ".$filelevel); nl();
+
 	while($won == 1){
 		if(!$levmulti and $filelevel != 1){
 			$levmulti = $filelevel;}
@@ -422,28 +456,33 @@ sub leveltestworld {
 		$mech->field("Difficulty", $level);
 		$mech->click();
 		$a = $mech->content();
-		$c = $a;
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
 		$mech->click_button(value => $fmodeval);
 		sleep($loopwait); 
 		$b = $mech->content();
-		$d = $b;
 		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$b = $1;
+
+		$filename = "TESTINFO1.txt";
 		if($debug == 1){
-			open(FILE, ">>TESTINFO1.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";		
 			print FILE "\nTHIS IS A\nTHIS IS A\n";
 			print FILE $a;
-			print FILE "\nTHIS IS C\nTHIS IS C\n";
-			print FILE $c;
 			print FILE "\nTHIS IS B\nTHIS IS B\n";
 			print FILE $b;
-			print FILE "\nTHIS IS D\nTHIS IS D\n";
-			print FILE $d;
 			print FILE "\n";
 			close(FILE);
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
 
 		if ($b =~ m/You win/) {
@@ -473,6 +512,8 @@ sub leveltestworld {
 			sleep(6);
 		}
 	}
+	
+	nl();s1(); general("Advanced level test starting at level ".$level); nl();
 
 	if($debug == 1){
 		s1(); debug("base level is ".$level);
@@ -498,8 +539,10 @@ sub leveltestworld {
 		$b = $mech->content();
 		$b =~ m/(<tr><td>Level.*<form method=post)/s;
 		$b = $1;
+
+		$filename = "TESTINFO1.txt";
 		if($debug == 1){
-			open(FILE, ">>TESTINFO1.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";		
 			print FILE "\nTHIS IS A\nTHIS IS A\n";
 			print FILE $a;
@@ -507,7 +550,17 @@ sub leveltestworld {
 			print FILE $b;
 			print FILE "\n";
 			close(FILE);
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		if ($b =~ m/You win/) {
 			$won++;
 			$reps++; 
@@ -522,7 +575,7 @@ sub leveltestworld {
 			$lost++;
 			$reps++;
 			s1(); lost("Test fight ".$reps." You lost at level ".$level);
-			s1(); general("Waiting 5 seconds before continuing");
+			nl(); s1(); general("Waiting 5 seconds before continuing");
 			sleep(6);
 		}
 		
@@ -531,8 +584,10 @@ sub leveltestworld {
 			$mech->reload();
 			$a = $mech->content();
 			$b = $a;
+
+			$filename = "TESTINFO2.txt";
 			if($debug == 1){
-				open(FILE, ">>TESTINFO2.txt")
+				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";		
 				print FILE "\nTHIS IS A\nTHIS IS A\n";
 				print FILE $a;
@@ -540,7 +595,17 @@ sub leveltestworld {
 				print FILE $b;
 				print FILE "\n";
 				close(FILE);
+			}elsif($debug != 1){
+				if(-e $filename){
+					unlink($filename)or die "Can't delete $filename: $!\n";
+					$filename = "";
+				}else{
+					$filename = "";
+				}
+			}else{
+				warnformat("error in debug.");
 			}
+
 			if ($b =~ m/You win/) {
 				$won++;
 				$reps++;
@@ -562,51 +627,67 @@ sub leveltestworld {
 			}
 		}
 
+		nl(); 
 		@outcomes = ($won, $tied, $lost);
 		my $i = 0;
 		foreach(@outcomes) {
-			if($i == 0){s1(); print"\nWon ";}elsif($i == 1){s1(); print"Tied ";}else{s1(); print"Lost ";}
-			s1(); print "$_\n\n";
+			if($i == 0){s1(); general("Won    "."$_");}elsif($i == 1){s1(); general("Tied   "."$_");}else{s1(); general("Lost   "."$_");}
 			$i++;
 		}
+		nl(); 
 
-		if($outcomes[0] >=8){ 
-			s1(); print "Won 8 or more times.\n\n";
-			$newlevel = $level;
-			$setlev = 1;
-		}elsif($outcomes[0] <=7 ){
-			s1(); print "Won fewer than 8 times out of 10.\n\n";
-			s1(); print "level = ".$level."\n";
-			my $div10 = Math::BigFloat->new($level);
-			$div10->bdiv(10);
-			s1(); print "div10 = ".$div10."\n";
-			$div10->bfround(1);
-			s1(); print "rounded div10 = ".$div10."\n";
-			$newlevel = $level - $div10;
-			s1(); print "newlevel = ".$newlevel."\n";
-		}elsif($tietrig == 1){
-			s1(); print "Tied too many times.\n\n";
-			s1(); print "level = ".$level."\n";
+		if($tietrig !=1){
+			if($outcomes[0] >=8){ 
+				s1(); general("Won 8 or more times."); nl();
+				$newlevel = $level;
+				$setlev = 1;
+			}elsif($outcomes[0] <=7 ){
+				s1(); general("Won fewer than 8 times out of 10."); nl();
+				if($debug == 1){
+					s1(); debug("level = ".$level);
+				}
+				my $div10 = Math::BigFloat->new($level);
+				$div10->bdiv(10);
+				if($debug == 1){
+					s1(); debug("div10 = ".$div10);
+				}
+				$div10->bfround(1);
+				if($debug == 1){
+					s1(); debug("rounded div10 = ".$div10);
+				}
+				$newlevel = $level - $div10;
+				s1(); general("Trying level ".$newlevel); nl();
+			}else{
+				s1(); general("Wins error. Something is wrong\n");
+			}
+		}else{
+			if($debug == 1){
+				s1(); debug("TIETRIG TRIGGERED");nl();
+				s1(); debug("level = ".$level);
+			}
+			s1(); general("Tied more than twice.");nl();
 			my $div10 = Math::BigFloat->new($level);
 			$div10->bdiv(5);
-			s1(); print "div10 = ".$div10."\n";
+			if($debug == 1){
+				s1(); debug("div10 = ".$div10);
+			}
 			$div10->bfround(1);
-			s1(); print "rounded div10 = ".$div10."\n";
+			if($debug == 1){
+				s1(); debug("rounded div10 = ".$div10);
+			}
 			$newlevel = $level - $div10;
-			s1(); print "newlevel = ".$newlevel."\n";
+			s1(); general("Trying level ".$newlevel); nl();
 			$tietrig = 0;
-		}else{
- 			s1(); print "Wins error. Something is wrong\n";
 		}
 		if($debug == 1){
-			s1(); debug("newlevel = ".$newlevel);	
+			s1(); debug("Trying level ".$newlevel); nl();	
 		}
 		$level = $newlevel;
 	}
 
 	if($setlev == 1){
 		if($debug == 1){
-			s1(); debug("newlevel = ".$newlevel);
+			s1(); debug("Trying level ".$newlevel); nl();
 		}
 		open(FILE, "+>".$fname)
 		or die "failed to open file!!!!";
@@ -615,12 +696,337 @@ sub leveltestworld {
 		if($debug == 1){
 			s1(); debug("filelevel updated sucessfully");
 		}
+		$setlev = 0;
+	}
+
+	return($newlevel);
+}
+
+sub leveltestfight {
+	if($debug == 1){
+		s1(); debug("Arrived at leveltestfight");
+	}
+
+	$parsed = 0;
+	while ($parsed == 0){
+		sleep($stime);
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+		$a = $mech->content();
+		if ($a =~ m/Skeleton/){
+			$parsed = 1;
+		}else{
+			sleep(10);
+			goto RETRY;
+		}
+	}
+
+	if($debug == 1){
+			s1(); debug($levelfilename);
+	}
+
+	my $fname = $levelfilename;
+	if($debug == 1){
+		s1(); debug($fname);
+	}
+	if(-e $fname){
+		if($debug == 1){
+			s1(); debug("File $fname exists");
+		}
+		open(FILE, "<".$fname)
+		or die "failed to open file!!!!";
+			while (my $line = <FILE>) {
+				chomp $line;
+				$filelevel = $line;
+			}
+		close(FILE);
+		
+		if($debug == 1){
+			s1(); debug("filelevel = ".$filelevel);
+		}
+	}else{
+		if($debug == 1){
+			s1(); debug("File $fname does not exists");
+		}
+		open(FILE, "+>".$fname)
+		or die "failed to open file!!!!";
+		print FILE "1";
+		close(FILE);
+		$filelevel = 1;
+	}
+
+	$won = 1;
+
+	s1(); general("Basic level test starting at level ".$filelevel); nl();
+
+	while($won == 1){
+		if(!$levmulti and $filelevel != 1){
+			$levmulti = $filelevel;}
+		elsif(!$levmulti){
+			$levmulti = $filelevel;
+		}else{
+			$levmulti = $levmulti*2;
+		}
+		if($debug == 1){
+			s1(); debug("levmulti = ".$levmulti);
+		}
+		$level = $levmulti;
+		sleep($stime);
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+		$a = $mech->content();
+		$mech->form_number(2);
+		$mech->field("Difficulty", $level);
+		$mech->click();
+		$a = $mech->content();
+		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
+		$a = $1;
+		$mech->click_button(value => $fmodeval);
+		sleep($loopwait); 
+		$b = $mech->content();
+		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
+		$b = $1;
+
+		$filename = "TESTINFO1.txt";
+		if($debug == 1){
+			open(FILE, ">>".$filename)
+			or die "failed to open file!!!!";		
+			print FILE "\nTHIS IS A\nTHIS IS A\n";
+			print FILE $a;
+			print FILE "\nTHIS IS B\nTHIS IS B\n";
+			print FILE $b;
+			print FILE "\n";
+			close(FILE);
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
+		}
+
+		if ($b =~ m/You win/) {
+			s1(); won("You won at level ".$level);
+			$won = 1;
+			if($debug == 1){
+				s1(); debug("levmulti = ".$levmulti);
+			}
+		}		
+		if ($b =~ m/battle tied/) {
+			s1(); draw("You tied at level ".$level);
+			$won = 0;
+			$level = $level;
+			if($debug == 1){
+				s1(); debug("levmulti = ".$levmulti);
+			}
+			$tied++;
+		}
+		if ($b =~ m/stunned/) {
+			s1(); lost("You lost at level ".$level);
+			s1(); general("Waiting 5 seconds before continuing");
+			$won = 0;
+			$level = $level;
+			if($debug == 1){
+				s1(); debug("levmulti = ".$levmulti);
+			}
+			sleep(6);
+		}
+	}
+
+	nl();s1(); general("Advanced level test starting at level ".$level); nl();
+
+	if($debug == 1){
+		s1(); debug("base level is ".$level);
+	}
+	
+	until ($setlev == 1){
+		$reps = 0;
+		$won = 0;
+		$tied = 0;
+		$lost = 0;
+		sleep($stime);
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+		$a = $mech->content();
+		$mech->form_number(2);
+		$mech->field("Difficulty", $level);
+		$mech->click();
+		sleep($stime);
+		$a = $mech->content();
+		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
+		$a = $1;
+		$mech->click_button(value => $fmodeval);
+		sleep($loopwait); 
+		$b = $mech->content();
+		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
+		$b = $1;
+
+		$filename = "TESTINFO2.txt";
+		if($debug == 1){
+			open(FILE, ">>".$filename)
+			or die "failed to open file!!!!";		
+			print FILE "\nTHIS IS A\nTHIS IS A\n";
+			print FILE $a;
+			print FILE "\nTHIS IS B\nTHIS IS B\n";
+			print FILE $b;
+			print FILE "\n";
+			close(FILE);
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
+		}
+
+		if ($b =~ m/You win/) {
+			$won++;
+			$reps++; 
+			s1(); won("Test fight ".$reps." You won at level ".$level)
+		}
+		if ($b =~ m/battle tied/) {
+			$tied++;
+			$reps++;
+			s1(); draw("Test fight ".$reps." You tied at level ".$level);
+		}
+		if ($b =~ m/stunned/) {
+			$lost++;
+			$reps++;
+			s1(); lost("Test fight ".$reps." You lost at level ".$level);
+			s1(); general("Waiting 5 seconds before continuing");
+			sleep(6);
+		}
+		
+		until($reps == 10){
+			sleep($loopwait); 
+			$mech->reload();
+			$a = $mech->content();
+			$b = $a;
+
+			$filename = "TESTINFO2.txt";
+			if($debug == 1){
+				open(FILE, ">>".$filename)
+				or die "failed to open file!!!!";		
+				print FILE "\nTHIS IS A\nTHIS IS A\n";
+				print FILE $a;
+				print FILE "\nTHIS IS B\nTHIS IS B\n";
+				print FILE $b;
+				print FILE "\n";
+				close(FILE);
+			}elsif($debug != 1){
+				if(-e $filename){
+					unlink($filename)or die "Can't delete $filename: $!\n";
+					$filename = "";
+				}else{
+					$filename = "";
+				}
+			}else{
+				warnformat("error in debug.");
+			}
+
+			if ($b =~ m/You win/) {
+				$won++;
+				$reps++;
+				s1(); won("Test fight ".$reps." You won at level ".$level);
+			}
+			if ($b =~ m/battle tied/) {
+				$tied++;
+				$reps++;
+				s1(); draw("Test fight ".$reps." You tied at level ".$level);
+				if($tied >= 3){$tietrig = 1; last;}
+			}
+			if ($b =~ m/stunned/) {
+				$lost++;
+				$reps++;
+				s1(); lost("Test fight ".$reps." You lost at level ".$level);
+				s1(); general("Waiting 5 seconds before continuing");
+				sleep(6);
+				last;
+			}
+		}
+
+		nl(); 
+		@outcomes = ($won, $tied, $lost);
+		my $i = 0;
+		foreach(@outcomes) {
+			if($i == 0){s1(); general("Won    "."$_");}elsif($i == 1){s1(); general("Tied   "."$_");}else{s1(); general("Lost   "."$_");}
+			$i++;
+		}
+		nl(); 
+
+		if($tietrig !=1){
+			if($outcomes[0] >=8){ 
+				s1(); general("Won 8 or more times."); nl();
+				$newlevel = $level;
+				$setlev = 1;
+			}elsif($outcomes[0] <=7 ){
+				s1(); general("Won fewer than 8 times out of 10."); nl();
+				if($debug == 1){
+					s1(); debug("level = ".$level);
+				}
+				my $div10 = Math::BigFloat->new($level);
+				$div10->bdiv(10);
+				if($debug == 1){
+					s1(); debug("div10 = ".$div10);
+				}
+				$div10->bfround(1);
+				if($debug == 1){
+					s1(); debug("rounded div10 = ".$div10);
+				}
+				$newlevel = $level - $div10;
+				s1(); general("Trying level ".$newlevel); nl();
+			}else{
+				s1(); general("Wins error. Something is wrong\n");
+			}
+		}else{
+			if($debug == 1){
+				s1(); debug("TIETRIG TRIGGERED");nl();
+				s1(); debug("level = ".$level);
+			}
+			s1(); general("Tied more than twice.");nl();
+			my $div10 = Math::BigFloat->new($level);
+			$div10->bdiv(5);
+			if($debug == 1){
+				s1(); debug("div10 = ".$div10);
+			}
+			$div10->bfround(1);
+			if($debug == 1){
+				s1(); debug("rounded div10 = ".$div10);
+			}
+			$newlevel = $level - $div10;
+			s1(); general("Trying level ".$newlevel); nl();
+			$tietrig = 0;
+		}
+		if($debug == 1){
+			s1(); debug("Trying level ".$newlevel); nl();	
+		}
+		$level = $newlevel;
+	}
+
+	if($setlev == 1){
+		if($debug == 1){
+			s1(); debug("Trying level ".$newlevel); nl();
+		}
+		open(FILE, "+>".$fname)
+		or die "failed to open file!!!!";
+		print FILE "$newlevel";
+		close(FILE);
+		if($debug == 1){
+			s1(); debug("filelevel updated sucessfully");
+		}
+		$setlev = 0;
 	}
 
 	return($newlevel);
 }
 
 sub LowFight {
+	if($debug == 1){
+		s1(); debug("Arrived at LowFight");
+	}
 
 	my($cpm);
 	$parsed = 0;
@@ -635,38 +1041,53 @@ sub LowFight {
 			goto RETRY;
 		}
 	}
-
-	s1(); debug("this is low fight");
-
+	
+	$filename = "LowFight.txt";
 	if($debug == 1){
-		open(FILE, ">>LowFight.txt")
+		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
 		print FILE "LowFight\n\n";
 		print FILE "content\n\n";
 		print FILE "$a\n\n";
 		close(FILE);
-		
 		s1(); debug("LowFight");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
-	sleep(10);
-	exit();
 
 	$mech->form_number(2);
-	$mech->field("Difficulty", $level);
+	$mech->field("Difficulty", $newlevel);
 	$mech->click();
 	$mech->click_button(value => $fmodeval);
 	$a = $mech->content();
+
+	$filename = "LowFight2.txt";
 	if($debug == 1){
-		open(FILE, ">>LowFight2.txt")
+		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
 		print FILE "LowFight2\n\n";
 		print FILE "content\n\n";
 		print FILE "$a\n\n";
 		close(FILE);
-		
 		s1(); debug("LowFight2");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
-	
+
 	$ant = 1800;
 	$ant1 = new Math::BigFloat $ant;
 	my$divided = new Math::BigFloat $loopwait;
@@ -691,8 +1112,10 @@ sub LowFight {
 		retry:
 		$mech->reload();
 		$a = $mech->content();
+
+		$filename = "LowFight3";
 		if($debug == 1){
-		open(FILE, ">>LowFight3.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "LowFight3\n\n";
 			print FILE "content\n\n";
@@ -700,16 +1123,26 @@ sub LowFight {
 			close(FILE);
 			
 			s1(); debug("LowFight3");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		$b = $a;
 		$c = $a;
 		$d = $mech->status();
 		if($d == 500 or $d == 400){
 			if($retries == 0){
 				if($d == 400){
-					s1(); print"400 error";
+					s1(); errorformat("400 error");
 				}else{
-					s1(); print "Trouble Connecting to internet....Probably.\n";
+					s1(); infoformat("Trouble Connecting to internet....Probably.");
 				}
 			}
 			until ($d == 200){
@@ -724,30 +1157,43 @@ sub LowFight {
 			
 	#KILLED
 		if($a =~ m/(been.*slain)/) {
-			s1(); print "ERROR - TOO HIGH MONSTER LEVEL! - you were slain!\n";exit(0);
+			s1(); lost( "You were slain!");exit(0);
 		}
 	#LOGGED OUT
 		if ($a =~ m/logged/) {
-			s1(); print "LOGGED OUT! sleeping for 5 seconds before restart!\n";
+			s1(); infoformat("LOGGED OUT! sleeping for 5 seconds before restart!");
 			sleep(5);
 			goto START;
 		}
 		if ($antal <= 0) {
 			sleep(3);
-			s1(); print "Waiting last few seconds before restarting\n";
+			s1(); infoformat("Waiting last few seconds before restarting");
 			goto START;
 		}
-		if ($a =~ m/(400 Bad Request)/){s1(); print"400 error restarting.";
+		if ($a =~ m/(400 Bad Request)/){s1(); errorformat("400 error restarting.");
 			goto START;
 		}
 
 		($Second, $Minute, $Hour, $Day, $Month, $Year, $WeekDay, $DayOfYear, $IsDST) = localtime(time);
 		$output = "Output was not set";
-		if($b =~ m/(You win .*? exp)/){$output = $1;}
-		if($b =~ m/(The battle tied.)/){$output = $1;}
-		if($b =~ m/jail time.*?!/){$output = $1;}
-		s1(); print "$antal: [$Hour:$Minute:$Second]: " . $output . "\n";
+		if($b =~ m/(You win .*? exp)/){$output = $1;
+		$happened = 1;}
+		if($b =~ m/(The battle tied)/){$output = $1;$happened = 2;}
+		if($b =~ m/jail time.*?!/){$output = $1;$happened = 3;}
 
+		if($happened == 1){
+			s1(); won("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
+		}elsif($happened == 2){
+			s1(); draw("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
+		}elsif($happened == 3){
+			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
+		}else{
+			s1(); errorformat($antal.":"."[".$Hour.":".$Minute.":".$Second."] : Something isn't right with output in lowfight");
+		}
+		
 		$levelnow = $levelnow+1;
 		$persist++;
 	# level up if necessary
@@ -759,6 +1205,10 @@ sub LowFight {
 }
 
 sub Autolevelup {
+	if($debug == 1){
+		s1(); debug("Arrived at Autolevelup");
+	}
+
 	$parsed = 0; while ($parsed == 0) {sleep($stime);
 	$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."stats.php");
 	$a = $mech->content();
@@ -769,8 +1219,10 @@ sub Autolevelup {
 			goto RETRY;
 		}
 	}
+
+	$filename = "Autolevelup.txt";
 	if($debug == 1){
-		open(FILE, ">>Autolevelup.txt")
+		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
 		print FILE "Autolevelup\n\n";
 		print FILE "content\n\n";
@@ -778,7 +1230,16 @@ sub Autolevelup {
 		close(FILE);
 		
 		s1(); debug("Autolevelup");
-	}
+	}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
+		}
 	$a = $mech->content();
 	$b = $mech->content();
 	
@@ -1058,8 +1519,10 @@ sub CPMlevel {
 			goto RETRY;
 		}
 	}
+
+	$filename = "CPMlevel.txt";
 	if($debug == 1){
-		open(FILE, ">>CPMlevel.txt")
+		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
 		print FILE "CPMlevel\n\n";
 		print FILE "content\n\n";
@@ -1067,7 +1530,17 @@ sub CPMlevel {
 		close(FILE);
 		
 		s1(); debug("CPMlevel");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
+
 	$mech->form_number(1);
 	$mech->click();
 	$all = $mech->content();
@@ -1220,269 +1693,6 @@ sub CPMlevel {
 	return();
 }
 
-sub leveltestfight {
-	if($debug == 1){
-		s1(); print"Arrived at leveltestfight\n";
-	}
-
-	$parsed = 0;
-	while ($parsed == 0){
-		sleep($stime);
-		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
-		$a = $mech->content();
-		if ($a =~ m/Skeleton/){
-			$parsed = 1;
-		}else{
-			sleep(10);
-			goto RETRY;
-		}
-	}
-
-	if($debug == 1){
-			s1(); debug($levelfilename);
-	}
-
-	my $fname = $levelfilename;
-	if($debug == 1){
-		s1(); debug($fname);
-	}
-	if(-e $fname){
-		if($debug == 1){
-			s1(); print("File $fname exists\n");
-		}
-		open(FILE, "<".$fname)
-		or die "failed to open file!!!!";
-			while (my $line = <FILE>) {
-				chomp $line;
-				$filelevel = $line;
-			}
-		close(FILE);
-		
-		if($debug == 1){
-			s1(); debug("filelevel = ".$filelevel);
-		}
-	}else{
-		if($debug == 1){
-			s1(); print("File $fname does not exists\n");
-		}
-		open(FILE, "+>".$fname)
-		or die "failed to open file!!!!";
-		print FILE "1";
-		close(FILE);
-		$filelevel = 1;
-	}
-
-	$won = 1;
-
-	#if(!$levmulti){$levmulti = 1;}
-
-	while($won == 1){
-		if(!$levmulti and $filelevel != 1){
-			$levmulti = $filelevel;}
-		elsif(!$levmulti){
-			$levmulti = $filelevel;
-		}else{
-			$levmulti = $levmulti*2;
-		}
-		if($debug == 1){
-			s1(); debug("levmulti = ".$levmulti);
-		}
-		$level = $levmulti;
-		sleep($stime);
-		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
-		$a = $mech->content();
-		$mech->form_number(2);
-		$mech->field("Difficulty", $level);
-		$mech->click();
-		$a = $mech->content();
-		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
-		$a = $1;
-		$mech->click_button(value => $fmodeval);
-		sleep($loopwait); 
-		$b = $mech->content();
-		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
-		$b = $1;
-		if($debug == 1){
-			open(FILE, ">>TESTINFO1.txt")
-			or die "failed to open file!!!!";		
-			print FILE "\nTHIS IS A\nTHIS IS A\n";
-			print FILE $a;
-			print FILE "\nTHIS IS B\nTHIS IS B\n";
-			print FILE $b;
-			print FILE "\n";
-			close(FILE);
-		}
-
-		if ($b =~ m/You win/) {
-			s1(); print "You won at level ".$level."\n";
-			$won = 1;
-			if($debug == 1){
-				s1(); debug("levmulti = ".$levmulti);
-			}
-		}		
-		if ($b =~ m/battle tied/) {
-			s1(); print "You tied at level ".$level."\n";
-			$won = 0;
-			$level = $level;
-			if($debug == 1){
-				s1(); debug("levmulti = ".$levmulti);
-			}
-			$tied++;
-		}
-		if ($b =~ m/stunned/) {
-			s1(); print "You lost at level ".$level."\n";
-			s1(); print "Waiting 5 seconds before continuing \n";
-			$won = 0;
-			$level = $level;
-			if($debug == 1){
-				s1(); debug("levmulti = ".$levmulti);
-			}
-			sleep(6);
-		}
-	}
-
-	if($debug == 1){
-		s1(); debug("base level is ".$level);
-	}
-	
-	until ($setlev == 1){
-		$reps = 0;
-		$won = 0;
-		$tied = 0;
-		$lost = 0;
-		sleep($stime);
-		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
-		$a = $mech->content();
-		$mech->form_number(2);
-		$mech->field("Difficulty", $level);
-		$mech->click();
-		sleep($stime);
-		$a = $mech->content();
-		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
-		$a = $1;
-		$mech->click_button(value => $fmodeval);
-		sleep($loopwait); 
-		$b = $mech->content();
-		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
-		$b = $1;
-		if($debug == 1){
-			open(FILE, ">>TESTINFO2.txt")
-			or die "failed to open file!!!!";		
-			print FILE "\nTHIS IS A\nTHIS IS A\n";
-			print FILE $a;
-			print FILE "\nTHIS IS B\nTHIS IS B\n";
-			print FILE $b;
-			print FILE "\n";
-			close(FILE);
-		}
-		if ($b =~ m/You win/) {
-			$won++;
-			$reps++; 
-			s1(); print "rep no. ".$reps." You won at level ".$level."\n";
-		}
-		if ($b =~ m/battle tied/) {
-			$tied++;
-			$reps++;
-			s1(); print "rep no. ".$reps." You tied at level ".$level."\n";
-		}
-		if ($b =~ m/stunned/) {
-			$lost++;
-			$reps++;
-			s1(); print "rep no. ".$reps." You lost at level ".$level."\n";
-			s1(); print "Waiting 5 seconds before continuing \n";
-			sleep(6);
-		}
-		
-		until($reps == 10){
-			sleep($loopwait); 
-			$mech->reload();
-			$a = $mech->content();
-			$b = $a;
-			if($debug == 1){
-				open(FILE, ">>TESTINFO2.txt")
-				or die "failed to open file!!!!";		
-				print FILE "\nTHIS IS A\nTHIS IS A\n";
-				print FILE $a;
-				print FILE "\nTHIS IS B\nTHIS IS B\n";
-				print FILE $b;
-				print FILE "\n";
-				close(FILE);
-			}
-			if ($b =~ m/You win/) {
-				$won++;
-				$reps++;
-				s1(); print "rep no. ".$reps." You won at level ".$level."\n";
-			}
-			if ($b =~ m/battle tied/) {
-				$tied++;
-				$reps++;
-				s1(); print "rep no. ".$reps." You tied at level ".$level."\n";
-			}
-			if ($b =~ m/stunned/) {
-				$lost++;
-				$reps++;
-				s1(); print "rep no. ".$reps." You lost at level ".$level."\n";
-				s1(); print "Waiting 5 seconds before continuing \n";
-				sleep(6);
-			}
-		}
-
-		@outcomes = ($won, $tied, $lost);
-		my $i = 0;
-		foreach(@outcomes) {
-			if($i == 0){s1(); print"\nWon ";}elsif($i == 1){s1(); print"Tied ";}else{s1(); print"Lost ";}
-			s1(); print "$_\n\n";
-			$i++;
-		}
-
-		if($outcomes[0] >=8){ 
-			s1(); print "Won 9 or more times.\n\n";
-			$newlevel = $level;
-			$setlev = 1;
-		}elsif($outcomes[0] <=7 ){
-			s1(); print "Won fewer than 9 times out of 10.\n\n";
-			s1(); print "level = ".$level."\n";
-			my $div10 = Math::BigFloat->new($level);
-			$div10->bdiv(10);
-			s1(); print "div10 = ".$div10."\n";
-			$div10->bfround(1);
-			s1(); print "rounded div10 = ".$div10."\n";
-			$newlevel = $level - $div10;
-			s1(); print "newlevel = ".$newlevel."\n";
-		}elsif($outcomes[1] == 9){
-			s1(); print "Drew more 9 or more times.\n\n";
-			s1(); print "level = ".$level."\n";
-			my $div10 = Math::BigFloat->new($level);
-			$div10->bdiv(5);
-			s1(); print "div10 = ".$div10."\n";
-			$div10->bfround(1);
-			s1(); print "rounded div10 = ".$div10."\n";
-			$newlevel = $level - $div10;
-			s1(); print "newlevel = ".$newlevel."\n";
-		}else{
- 			s1(); print "Wins error. Something is wrong\n";
-		}
-		if($debug == 1){
-			s1(); print"newlevel = ".$newlevel."\n";	
-		}
-		$level = $newlevel;
-	}
-
-	if($setlev == 1){
-		if($debug == 1){
-			s1(); debug("newlevel = ".$newlevel);
-		}
-		open(FILE, "+>".$fname)
-		or die "failed to open file!!!!";
-		print FILE "$newlevel";
-		close(FILE);
-		if($debug == 1){
-			s1(); debug("filelevel updated sucessfully");
-		}
-	}
-
-	return($newlevel);
-}
 
 sub Fight {
 	my($cpm);
@@ -1498,8 +1708,10 @@ sub Fight {
 			goto RETRY;
 		}
 	}
+
+	$filename = "Fight.txt";
 	if($debug == 1){
-		open(FILE, ">>Fight.txt")
+		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
 		print FILE "Fight\n\n";
 		print FILE "content\n\n";
@@ -1507,19 +1719,41 @@ sub Fight {
 		close(FILE);
 		
 		s1(); debug("Fight");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
+	
 	$mech->form_number(2);
 	$mech->field("Difficulty", $level);
 	$mech->click();
 	$cpm = $mech->content();
+
+	$filename = "Fightlevel.txt";
 	if($debug == 1){
-		open(FILE, ">>Fightlevel.txt")
+		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
 		print FILE "Fightlevel\n\n";
 		print FILE "$cpm\n\n";
 		close(FILE);
 		s1(); debug("Fightlevel");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
+
 	$cpm =~ m/(<option>208.*<\/option><option>209)/;
     $cpm = $1;
     $cpm =~ s/ - Shadowlord Duke//g;
@@ -1530,8 +1764,10 @@ sub Fight {
 	$mech->select("Monster", $cpm);
 	$mech->click_button(value => $fmodeval);
 	$a = $mech->content();
+
+	$filename = "Fight2.txt";
 	if($debug == 1){
-		open(FILE, ">>Fight2.txt")
+		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
 		print FILE "Fight2\n\n";
 		print FILE "content\n\n";
@@ -1539,6 +1775,15 @@ sub Fight {
 		close(FILE);
 		
 		s1(); debug("Fight2");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
 
 	$ant = 1800;
@@ -1564,8 +1809,10 @@ sub Fight {
 		retry:
 		$mech->reload();
 		$a = $mech->content();
+
+		$filename = "Fight3.txt";
 		if($debug == 1){
-			open(FILE, ">>Fight3.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "Fight3\n\n";
 			print FILE "content\n\n";
@@ -1573,7 +1820,17 @@ sub Fight {
 			close(FILE);
 			
 			s1(); debug("Fight3");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		$b = $a;
 		$c = $a;
 		$d = $mech->status();
@@ -1619,7 +1876,7 @@ sub Fight {
 		($Second, $Minute, $Hour, $Day, $Month, $Year, $WeekDay, $DayOfYear, $IsDST) = localtime(time);
 		$output = "Output was not set";
 		if($b =~ m/(You win .*? exp)/){$output = $1;}
-		if($b =~ m/(The battle tied.)/){$output = $1;}
+		if($b =~ m/(The battle tied)/){$output = $1;}
 		if($b =~ m/jail time.*?!/){$output = $1;}
 		s1(); print "$antal: [$Hour:$Minute:$Second]: " . $output . "\n";
 
@@ -1632,6 +1889,10 @@ sub Fight {
 }
 
 sub Levelup{
+	if($debug == 1){
+		s1(); debug("Arrived at Levelup");
+	}
+
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."stats.php");
 		$a = $mech->content();
@@ -1640,8 +1901,10 @@ sub Levelup{
 			$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."stats.php");
 			$a = $mech->content();
 		}
+
+		$filename = "Levelup.txt";
 		if($debug == 1){
-			open(FILE, ">>Levelup.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "Levelup\n\n";
 			print FILE "content\n\n";
@@ -1649,7 +1912,18 @@ sub Levelup{
 			close(FILE);
 			
 			s1(); debug("Levelup");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
+
 		$b = $a;
 		$a =~ m/(You have .* levels available)/;
 		my $numlevs = $1;
@@ -1855,14 +2129,25 @@ sub CheckShop{
 			$parsed = 1;
 		}
 	}
+
+	$filename = "CheckShop.txt";
 	if($debug == 1){
-		open(FILE, ">>CheckShop.txt")
+		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
 		print FILE "Checkshop\n\n";
 		print FILE "content\n\n";
 		print FILE "$a\n\n";
 		close(FILE);	
 		s1(); debug("Checkshop");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
 
 	if($shopyesno == 1){
@@ -1882,14 +2167,26 @@ sub MaxShops{
 			$parsed = 1;
 		}
 	}
+
+	$filename = "MaxShops.txt";
 	if($debug == 1){
-				open(FILE, ">>MaxShops.txt")
-				or die "failed to open file!!!!";
-				print FILE "MaxShops\n\n";
-				print FILE "content\n\n";
-				print FILE "$a\n\n";
-				close(FILE);
-				s1(); debug("MaxShops");
+		open(FILE, ">>".$filename)
+		or die "failed to open file!!!!";
+		print FILE "MaxShops\n\n";
+		print FILE "content\n\n";
+		print FILE "$a\n\n";
+		close(FILE);
+		s1(); debug("MaxShops");
+		
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
 	
 	my $shop1 = $a;
@@ -1993,15 +2290,26 @@ sub MaxWD{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;			
+		$filename = "MaxWD.txt";
 		if($debug == 1){
-			open(FILE, ">MaxWD.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxWD\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxWD");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2032,15 +2340,27 @@ sub MaxAS{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;
-			if($debug == 1){
-				open(FILE, ">MaxAS.txt")
-				or die "failed to open file!!!!";
-				print FILE "MaxAS\n\n";
-				print FILE "content\n\n";
-				print FILE "$a\n\n";
-				close(FILE);
-				s1(); debug("MaxAS");
+
+		$filename = "MaxAS.txt";
+		if($debug == 1){
+			open(FILE, ">>".$filename)
+			or die "failed to open file!!!!";
+			print FILE "MaxAS\n\n";
+			print FILE "content\n\n";
+			print FILE "$a\n\n";
+			close(FILE);
+			s1(); debug("MaxAS");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
 			}
+		}else{
+			warnformat("error in debug.");
+		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2071,8 +2391,10 @@ sub MaxHS{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;
+
+		$filename = "MaxHS.txt";
 		if($debug == 1){
-			open(FILE, ">MaxHS.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxHS\n\n";
 			print FILE "content\n\n";
@@ -2080,7 +2402,17 @@ sub MaxHS{
 			close(FILE);
 			
 			s1(); debug("MaxHS");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2111,15 +2443,26 @@ sub MaxHE{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;		
+
+		$filename = "MaxHE.txt";
 		if($debug == 1){
-			open(FILE, ">MaxHE.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxHE\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);
 			s1(); debug("MaxHE");
-		}		
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
+		}	
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2150,15 +2493,27 @@ sub MaxSH{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;
+
+		$filename = "MaxSH.txt";
 		if($debug == 1){
-			open(FILE, ">MaxSH.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxSH\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxSH");
-		}		
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
+		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2189,15 +2544,27 @@ sub MaxAM{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;		
+
+		$filename = "MaxAM.txt";
 		if($debug == 1){
-			open(FILE, ">MaxAM.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxAM\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxAM");
-		}		
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
+		}	
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2228,15 +2595,27 @@ sub MaxRI{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;		
+		
+		$filename = "MaxRI.txt";
 		if($debug == 1){
-			open(FILE, ">MaxRI.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxRI\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxRI");
-		}			
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
+		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2266,16 +2645,28 @@ sub MaxAR{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
-		$b = $a;		
+		$b = $a;	
+
+		$filename = "MaxAR.txt";	
 		if($debug == 1){
-			open(FILE, ">MaxAR.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxAR\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxAR");
-		}		
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
+		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2305,16 +2696,28 @@ sub MaxBE{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
-		$b = $a;		
+		$b = $a;
+
+		$filename = "MaxBE.txt";		
 		if($debug == 1){
-			open(FILE, ">MaxBE.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxBE\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxBE");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2345,15 +2748,27 @@ sub MaxPA{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;
+
+		$filename = "MaxPA.txt";
 		if($debug == 1){
-			open(FILE, ">MaxPA.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxPA\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxPA");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2384,15 +2799,27 @@ sub MaxHA{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;
+
+		$filename = "MaxHA.txt";
 		if($debug == 1){
-			open(FILE, ">MaxHA.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxHA\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxHA");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2423,15 +2850,27 @@ sub MaxFE{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;
+
+		$filename = "MaxFE.txt";
 		if($debug == 1){
-			open(FILE, ">MaxFE.txt")
+			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
 			print FILE "MaxFE\n\n";
 			print FILE "content\n\n";
 			print FILE "$a\n\n";
 			close(FILE);			
 			s1(); debug("MaxFE");
+		}elsif($debug != 1){
+			if(-e $filename){
+				unlink($filename)or die "Can't delete $filename: $!\n";
+				$filename = "";
+			}else{
+				$filename = "";
+			}
+		}else{
+			warnformat("error in debug.");
 		}
+
 		if ($a =~ m/Not enough gold!/){
 			s1(); print "You did not have enough Gold in your hand to max all your shops.\n";
 			return();
@@ -2462,16 +2901,28 @@ sub MyLevel{
 			$parsed = 1;
 		}
 	}
+
+	$filename = "MyLevel.txt";
 	if($debug == 1){
-					open(FILE, ">>MyLevel.txt")
-					or die "failed to open file!!!!";
-					print FILE "Mylevel\n\n";
-					print FILE "content\n\n";
-					print FILE "$a\n\n";
-					close(FILE);
-					
-					s1(); debug("Mylevel");
+		open(FILE, ">>".$filename)
+		or die "failed to open file!!!!";
+		print FILE "Mylevel\n\n";
+		print FILE "content\n\n";
+		print FILE "$a\n\n";
+		close(FILE);
+		
+		s1(); debug("Mylevel");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
+
 	$a = $mech->content();
 	$a =~ s/<.*?>//sg;
     $a =~ m/(Level : .* Exp)/s;
@@ -2502,16 +2953,28 @@ sub Charname{
 			$parsed = 1;
 		}
 	}
+
+	$filename = "Charname.txt";
 	if($debug == 1){
-				open(FILE, ">>Charname.txt")
-				or die "failed to open file!!!!";
-				print FILE "Charname\n\n";
-				print FILE "content\n\n";
-				print FILE "$a\n\n";
-				close(FILE);
-				
-				s1(); debug("Charname");
+		open(FILE, ">>".$filename)
+		or die "failed to open file!!!!";
+		print FILE "Charname\n\n";
+		print FILE "content\n\n";
+		print FILE "$a\n\n";
+		close(FILE);
+		
+		s1(); debug("Charname");
+	}elsif($debug != 1){
+		if(-e $filename){
+			unlink($filename)or die "Can't delete $filename: $!\n";
+			$filename = "";
+		}else{
+			$filename = "";
+		}
+	}else{
+		warnformat("error in debug.");
 	}
+
 	$a = $mech->content();
 	$b = $mech->content();
 	$c = $mech->content();
@@ -2678,21 +3141,6 @@ sub Charname{
 $mech = WWW::Mechanize->new(autocheck => 0, stack_depth => 1, onerror => \&Carp::croak);
 $mech->agent_alias( 'Windows Mozilla' );
 
-s1(); print " 
-          \\\\\\///
-         / _  _ \\\
-       (| (.)(.) |)
-.----.OOOo--()--oOOO.----.
-|                        |
-|www.kingsofkingdoms.com |
-|                        |
-'----.oooO---------------'
-     (   )   Oooo.
-      \\\ (    (   )
-       \\\_)    ) /
-             (_/
-\n";
-print color('reset');
 #Login
 open(LOGINS, "m6logins.txt")
 	or die "failed to open Logins file!!!!";
@@ -2726,21 +3174,22 @@ $b = $mech->success();
 $c = $mech->response();
 $d = $mech->status();
 
+				$filename = "login.txt";
 				if($debug == 1){
-						open(FILE, ">>Loginrecord.txt")
-						or die "failed to open file!!!!";
-						print FILE "all errors and returns from login\n\n";
-						print FILE "content\n\n";
-						print FILE "$a\n\n";
-						print FILE "sucess\n\n";
-						print FILE "$b\n\n";
-						print FILE "response\n\n";
-						print FILE "$c\n\n";
-						print FILE "status\n\n";
-						print FILE "$d\n\n";
-						close(FILE);
+					open(FILE, ">>".$filename)
+					or die "failed to open file!!!!";
+					print FILE "all errors and returns from login\n\n";
+					print FILE "content\n\n";
+					print FILE "$a\n\n";
+					print FILE "sucess\n\n";
+					print FILE "$b\n\n";
+					print FILE "response\n\n";
+					print FILE "$c\n\n";
+					print FILE "status\n\n";
+					print FILE "$d\n\n";
+					close(FILE);
 
-						s1(); debug("login");
+					s1(); debug("login");
 					if($requests==1){
 						$mech->add_handler("request_preprepare",  sub {s1(); print"\n\n PREPREPARE \n\n"; shift->dump; return });
 						$mech->add_handler("request_prepare",  sub {s1(); print"\n\n PREPARE \n\n"; shift->dump; return });
@@ -2748,7 +3197,17 @@ $d = $mech->status();
 						$mech->add_handler("request_send",  sub {s1(); print"\n\n REQUEST \n\n"; shift->dump; return });
 						$mech->add_handler("response_done", sub {s1(); print"\n\n RESPONSE \n\n"; shift->dump; return });
 					}
+				}elsif($debug != 1){
+					if(-e $filename){
+						unlink($filename)or die "Can't delete $filename: $!\n";
+						$filename = "";
+					}else{
+						$filename = "";
+					}
+				}else{
+					warnformat("error in debug.");
 				}
+
 s1(); print "SUCCESS: $b\nSTATUS: $d\n\n";
 	if($d == 200){
 		if($a =~ m/Enter Lol!/){
@@ -2801,7 +3260,8 @@ until($levels == 0){
 		s1(); print "\nHigh Level Fight mode\n\n";
 	}
 	if($cpmready == 0){
-		&leveltestworld;
+		#&leveltestworld; Written but not used yet
+		&leveltestfight;
 		&LowFight;	
 	}else{
 		&leveltestfight;
