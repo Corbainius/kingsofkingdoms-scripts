@@ -13,6 +13,7 @@ use POSIX qw(strftime);
 use feature 'try';
 use Cwd qw();
 use Term::ANSIColor;
+use threads;
 
 #sub divide {
 #    my ($numerator, $denominator) = @_;
@@ -62,37 +63,37 @@ if ($#ARGV+1 < 19){
 }	
 
 my $debug = $ARGV[0]
-or die "debug error in .bat";
+or die errorformat("debug error in .bat");
 my $requests = $ARGV[1]
-or die "requests error in .bat";
+or die errorformat("requests error in .bat");
 my $username = $ARGV[2]
-or die "username error in .bat";
+or die errorformat("username error in .bat");
 my $password = $ARGV[3]
-or die "password error in .bat";
+or die errorformat("password error in .bat");
 my $stime = $ARGV[4]
-or die "standard wait time in .bat";
+or die errorformat("standard wait time in .bat");
 my $loopwait = $ARGV[5]
-or die "loopwait error in .bat";
+or die errorformat("loopwait error in .bat");
 my $fmode = $ARGV[6]
-or die "fmode error in .bat";
+or die errorformat("fmode error in .bat");
 my $chartype = $ARGV[7]
-or die "chartype error in .bat";
+or die errorformat("chartype error in .bat");
 my $shopyesno = $ARGV[8]
-or die "Shops on or off in .bat";
+or die errorformat("Shops on or off in .bat");
 my $maxlev = $ARGV[9] 
-or die "maxlev error in .bat";
+or die errorformat("maxlev error in .bat");
 my $ratio0 = $ARGV[10] 
-or die "maxlev error in .bat";
+or die errorformat("maxlev error in .bat");
 my $ratio1 = $ARGV[11] 
-or die "maxlev error in .bat";
+or die errorformat("maxlev error in .bat");
 my $ratio2 = $ARGV[12] 
-or die "maxlev error in .bat";
+or die errorformat("maxlev error in .bat");
 my $ratio3 = $ARGV[13] 
-or die "maxlev error in .bat";
+or die errorformat("maxlev error in .bat");
 my $ratio4 = $ARGV[14] 
-or die "maxlev error in .bat";
+or die errorformat("maxlev error in .bat");
 my $ratio5 = $ARGV[15] 
-or die "maxlev error in .bat";
+or die errorformat("maxlev error in .bat");
 
 
 # Global variables
@@ -225,7 +226,17 @@ my $tietrig = 0;
 my $filename = '';
 my $happened;
 
-if($debug == 1){s1(); debug("\n Debug mode active.");}
+if($debug == 1){
+	s1();debug("Debug mode active.");nl();
+}elsif($debug != 1){
+	my @files_to_delete = ('TESTINFO1.txt','TESTINFO2.txt','LowFight.txt','LowFight2.txt','LowFight3.txt','Autolevelup.txt','CPMlevel.txt','Fight.txt','Fightlevel.txt','Fight2.txt','Fight3.txt','Levelup.txt','CheckShop.txt','MaxShops.txt','MaxWD.txt','MaxAS.txt','MaxHS.txt','MaxHE.txt','MaxSH.txt','MaxAM.txt','MaxRI.txt','MaxAR.txt','MaxBE.txt','MaxPA.txt','MaxHA.txt','MaxFE.txt','MyLevel.txt','Charname.txt','Loginrecord.txt');
+
+	foreach my $file (@files_to_delete) {
+		if (-e $file) {
+			unlink($file) or warn "Could not delete $file: $!\n";
+		}
+	}
+}
 
 if($chartype == 7 or $chartype == 8 or $chartype == 9 or $chartype == 10 or $chartype == 11 or $chartype == 12){
 	s1(); general("SINGLE STAT MODE, make sure you have selected the right stat.");
@@ -1113,7 +1124,7 @@ sub LowFight {
 		$mech->reload();
 		$a = $mech->content();
 
-		$filename = "LowFight3";
+		$filename = "LowFight3.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2998,10 +3009,26 @@ sub Charname{
 	$title =~ s/ //sgi;
 	$name =~ s/ //sgi;
 	
-	s1(); print "\nSuccessfully logged into $title $name at $Hour:$Minute:$Second\n\n";
-	 
-	print "\033]0;$title $name at $Hour:$Minute:$Second\007";
-	 
+	nl(); s1(); general("Successfully logged into $title $name at $Hour:$Minute:$Second");nl();
+
+	#title updater thread
+	sub update_title {
+		my ($title, $name) = @_;
+		while (1) {
+			my ($Second, $Minute, $Hour) = localtime(time);
+			title("$title $name @ $Hour:$Minute:$Second");
+			sleep(1); 
+		}
+	}
+	sub title {
+		my ($new_title) = @_;
+		print "\033]0;$new_title\007";
+		STDOUT->flush(); 
+	}
+	my $title_thread = threads->create(\&update_title, $title, $name);
+	$title_thread->detach();
+	#title updater thread
+
 	$b =~ m/(You need.*exp )/;
 	$b = $1;
 	$b =~ s/you//i;
@@ -3164,7 +3191,7 @@ if($username eq ""){
 }
 RETRY:
 if($trycounter == 0){$trycounter = 1;}
-s1(); print"\n\nConnection attempt ".$trycounter.".\n\n";
+nl();s1(); infoformat("Connection attempt ".$trycounter);nl();
 $parsed = 0; 
 while ($parsed == 0){
 sleep($stime);
@@ -3174,7 +3201,7 @@ $b = $mech->success();
 $c = $mech->response();
 $d = $mech->status();
 
-				$filename = "login.txt";
+				$filename = "Loginrecord.txt";
 				if($debug == 1){
 					open(FILE, ">>".$filename)
 					or die "failed to open file!!!!";
@@ -3189,13 +3216,13 @@ $d = $mech->status();
 					print FILE "$d\n\n";
 					close(FILE);
 
-					s1(); debug("login");
+					s1(); debug("login"); nl();
 					if($requests==1){
-						$mech->add_handler("request_preprepare",  sub {s1(); print"\n\n PREPREPARE \n\n"; shift->dump; return });
-						$mech->add_handler("request_prepare",  sub {s1(); print"\n\n PREPARE \n\n"; shift->dump; return });
-						$mech->add_handler("response_header",  sub {s1(); print"\n\n RESPONSE HEADER \n\n"; shift->dump; return });
-						$mech->add_handler("request_send",  sub {s1(); print"\n\n REQUEST \n\n"; shift->dump; return });
-						$mech->add_handler("response_done", sub {s1(); print"\n\n RESPONSE \n\n"; shift->dump; return });
+						$mech->add_handler("request_preprepare",  sub {s1(); nl();nl();infoformat("PREPREPARE");nl(); warnformat(shift->dump); return });
+						$mech->add_handler("request_prepare",  sub {s1(); nl();nl();infoformat("PREPARE");nl(); warnformat(shift->dump); return });
+						$mech->add_handler("response_header",  sub {s1();nl();nl();infoformat("RESPONSE HEADER");nl(); warnformat(shift->dump); return });
+						$mech->add_handler("request_send",  sub {s1(); nl();nl();infoformat("REQUEST");nl(); warnformat(shift->dump); return });
+						$mech->add_handler("response_done", sub {s1(); nl();nl();infoformat("RESPONSE");nl(); warnformat(shift->dump); return });
 					}
 				}elsif($debug != 1){
 					if(-e $filename){
@@ -3208,7 +3235,8 @@ $d = $mech->status();
 					warnformat("error in debug.");
 				}
 
-s1(); print "SUCCESS: $b\nSTATUS: $d\n\n";
+s1(); infoformat("SUCCESS: $b");
+s1(); infoformat("STATUS: $d");nl();
 	if($d == 200){
 		if($a =~ m/Enter Lol!/){
 			$parsed = 1;
@@ -3234,7 +3262,7 @@ if($a =~ m/Username/){
 	($Second, $Minute, $Hour, $Day, $Month, $Year, $WeekDay, $DayOfYear, $IsDST) = localtime(time);
 	#s1(); print "[$Hour:$Minute:$Second] - logged in Successfully to : \n";
 	if($a =~ m/Login failed/){
-		s1(); print"Login failed.\n";
+		s1(); errorformat("Login failed.");
 		sleep(30);
 		goto RETRY;
 	}
