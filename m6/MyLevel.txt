@@ -42,8 +42,8 @@ textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; borde
 <body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
 <center>
 <table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
-<td valign=top>Level : 883.</td> <td valign=top>Exp : 20,821,485,030.</td> <td valign=top>Gold : 7,272,567,656.</td><td valign=top>Life : 132,450.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>883</td><td>Race</td><td>Elves</td>
-<tr><td>Exp</td><td>20,821,485,030</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>7,272,567,656</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>132,450</td></tr><tr><td>Monsters Killed</td><td>11,443</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>119</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>11,562</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+<td valign=top>Level : 898.</td> <td valign=top>Exp : 821,548,743,661.</td> <td valign=top>Gold : 274,321,699,738.</td><td valign=top>Life : 134,700.</td><td valign=top>Freeplay : 49,917,510</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>898</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>821,548,743,661</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>274,321,699,738</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>134,700</td></tr><tr><td>Monsters Killed</td><td>17,579</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>160</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>17,739</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
 
 </table>
 
@@ -60,5 +60,5 @@ This will allow account recovery.
 <b>Please always include this information when you contact Admin Corbainius</b><br>
 <a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
 <hr><br><font size=1>Lol Version 2.5.
-Parsed in <b>0.0188</b> seconds.</font></body></html>
+Parsed in <b>0.0027</b> seconds.</font></body></html>
 

@@ -1,4 +1,4 @@
-Charname
+Autolevelup
 
 content
 
@@ -43,7 +43,7 @@ textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; borde
 <body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
 <center>
 <table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
-<td valign=top>Level : 898.</td> <td valign=top>Exp : 821,548,743,661.</td> <td valign=top>Gold : 274,321,699,738.</td><td valign=top>Freeplay : 49,917,512.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<td valign=top>Level : 898.</td> <td valign=top>Exp : 821,548,743,661.</td> <td valign=top>Gold : 274,321,699,738.</td><td valign=top>Freeplay : 49,917,508.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
 <th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
 <tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
 <td align=right valign="top">
@@ -117,5 +117,5 @@ You have 4,365 levels available.
 </td></tr>
 </table>
 </form><br><font size=1>Lol Version 2.5.
-Parsed in <b>0.0349</b> seconds.</font></body></html>
+Parsed in <b>0.0047</b> seconds.</font></body></html>
 

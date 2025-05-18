@@ -31,45 +31,37 @@ logo("
 
 my $trigger = 0;
 
-if ($#ARGV+1 < 19){
-	if ($ARGV[1] >= 1 && $ARGV[1] <= 999999){
+if ($#ARGV < 19){
+	if ($ARGV[2] >= 1 && $ARGV[2] <= 999999){
 		splice(@ARGV, 3, 0, ('password'));
 		$trigger = 1;
 	}
 }	
 
-my $debug = $ARGV[0]
-or die errorformat("debug error in .bat");
-my $requests = $ARGV[1]
-or die errorformat("requests error in .bat");
-my $username = $ARGV[2]
-or die errorformat("username error in .bat");
-my $password = $ARGV[3]
-or die errorformat("password error in .bat");
-my $stime = $ARGV[4]
-or die errorformat("standard wait time in .bat");
-my $loopwait = $ARGV[5]
-or die errorformat("loopwait error in .bat");
-my $fmode = $ARGV[6]
-or die errorformat("fmode error in .bat");
-my $chartype = $ARGV[7]
-or die errorformat("chartype error in .bat");
-my $shopyesno = $ARGV[8]
-or die errorformat("Shops on or off in .bat");
-my $maxlev = $ARGV[9] 
-or die errorformat("maxlev error in .bat");
-my $ratio0 = $ARGV[10] 
-or die errorformat("maxlev error in .bat");
-my $ratio1 = $ARGV[11] 
-or die errorformat("maxlev error in .bat");
-my $ratio2 = $ARGV[12] 
-or die errorformat("maxlev error in .bat");
-my $ratio3 = $ARGV[13] 
-or die errorformat("maxlev error in .bat");
-my $ratio4 = $ARGV[14] 
-or die errorformat("maxlev error in .bat");
-my $ratio5 = $ARGV[15] 
-or die errorformat("maxlev error in .bat");
+if($ARGV[0] == 1){
+	nl();s1();debug("Arguments:");
+	foreach my $i (0..$#ARGV) {
+		s1();debug("ARGV[$i] = $ARGV[$i]");
+	}
+	nl();
+}
+
+my $debug = defined $ARGV[0] ? $ARGV[0] : die errorformat("debug error in .bat");
+my $requests = defined $ARGV[1] ? $ARGV[1] : die errorformat("requests error in .bat");
+my $username = defined $ARGV[2] ? $ARGV[2] : die errorformat("username error in .bat");
+my $password = defined $ARGV[3] ? $ARGV[3] : die errorformat("password error in .bat");
+my $stime = defined $ARGV[4] ? $ARGV[4] : die errorformat("standard wait time in .bat");
+my $loopwait = defined $ARGV[5] ? $ARGV[5] : die errorformat("loopwait error in .bat");
+my $fmode = defined $ARGV[6] ? $ARGV[6] : die errorformat("fmode error in .bat");
+my $chartype = defined $ARGV[7] ? $ARGV[7] : die errorformat("chartype error in .bat");
+my $shopyesno = defined $ARGV[8] ? $ARGV[8] : die errorformat("Shops on or off in .bat");
+my $maxlev = defined $ARGV[9] ? $ARGV[9] : die errorformat("maxlev error in .bat");
+my $ratio0 = defined $ARGV[10] ? $ARGV[10] : die errorformat("ratio0 error in .bat");
+my $ratio1 = defined $ARGV[11] ? $ARGV[11] : die errorformat("ratio1 error in .bat");
+my $ratio2 = defined $ARGV[12] ? $ARGV[12] : die errorformat("ratio2 error in .bat");
+my $ratio3 = defined $ARGV[13] ? $ARGV[13] : die errorformat("ratio3 error in .bat");
+my $ratio4 = defined $ARGV[14] ? $ARGV[14] : die errorformat("ratio4 error in .bat");
+my $ratio5 = defined $ARGV[15] ? $ARGV[15] : die errorformat("ratio5 error in .bat");
 
 
 # Global variables
@@ -202,6 +194,7 @@ my $filename = '';
 my $happened;
 my $eighttwice = 0;
 my $cpm;
+my $cpmtest;
 
 if($debug == 1){
 	s1();debug("Debug mode active.");nl();
@@ -330,6 +323,10 @@ sub reset{
 
 
 sub leveltestworld {
+	$level = 0;
+	$newlevel = 0;
+	$levmulti = 0;
+	
 	if($debug == 1){
 		s1(); debug("Arrived at leveltestworld");
 	}
@@ -361,11 +358,22 @@ sub leveltestworld {
 		}
 		open(FILE, "<".$fname)
 		or die "failed to open file!!!!";
-			while (my $line = <FILE>) {
-				chomp $line;
+		my $found_line = 0;
+		while (my $line = <FILE>) {
+			chomp $line;
+			if ($line) {
 				$filelevel = $line;
+				$found_line = 1;
 			}
+		}
 		close(FILE);
+
+		if (!$found_line) {
+			open(FILE, ">>$fname") or die "failed to open file!!!!";
+			print FILE "1\n";
+			close(FILE);
+			$filelevel = 1;
+		}
 		
 		if($debug == 1){
 			s1(); debug("filelevel = ".$filelevel.".");nl();
@@ -655,6 +663,10 @@ sub leveltestworld {
 }
 
 sub leveltestfight {
+	$level = 0;
+	$newlevel = 0;
+	$levmulti = 0;
+
 	if($debug == 1){
 		s1(); debug("Arrived at leveltestfight");
 	}
@@ -686,11 +698,22 @@ sub leveltestfight {
 		}
 		open(FILE, "<".$fname)
 		or die "failed to open file!!!!";
-			while (my $line = <FILE>) {
-				chomp $line;
+		my $found_line = 0;
+		while (my $line = <FILE>) {
+			chomp $line;
+			if ($line) {
 				$filelevel = $line;
+				$found_line = 1;
 			}
+		}
 		close(FILE);
+
+		if (!$found_line) {
+			open(FILE, ">>$fname") or die "failed to open file!!!!";
+			print FILE "1\n";
+			close(FILE);
+			$filelevel = 1;
+		}
 		
 		if($debug == 1){
 			s1(); debug("filelevel = ".$filelevel);nl();
@@ -960,6 +983,7 @@ sub leveltestfight {
 			$tietrig = 0;
 		}
 		if($debug == 1){
+			s1(); debug("level ".$level); nl();
 			s1(); debug("Trying level ".$newlevel); nl();	
 		}
 		$level = $newlevel;
@@ -2385,7 +2409,7 @@ sub MaxShops{
 		&MaxHA(\$shop11);
 		&MaxFE(\$shop12);
 	}
-	goto GOTO;
+	#goto GOTO;
 }
 
 sub MaxWD{	
@@ -2951,7 +2975,7 @@ sub MaxHA{
 sub MaxFE{	
 	$Sname = "Feet";
     my ($shop12) = @_;	
-	if($$shop12 =~ "Maxed"){$proceed = 0;s1(); general($Sname." Maxed");}else{$proceed = 1;}
+	if($$shop12 =~ "Maxed"){$proceed = 0;s1(); general($Sname." Maxed");nl();}else{$proceed = 1;}
 	while($proceed == 1){
 		$mech->form_number(12);
 		$mech->click_button('name' => $Sname);
@@ -2980,7 +3004,7 @@ sub MaxFE{
 		}
 
 		if ($a =~ m/Not enough gold!/){
-			s1(); general("You did not have enough Gold in your hand to max all your shops.");
+			s1(); general("You did not have enough Gold in your hand to max all your shops.");nl();
 			return();
 		}
 		if ($a =~ m/Bought/){
@@ -2991,7 +3015,7 @@ sub MaxFE{
 		}
 		$b =~ m/(<td>Feet<\/td>.*?<\/form>)/s;
 		$b = $1;		
-		if($b =~ "Maxed"){$proceed = 0; s1(); general($Sname." shops Maxed.");}
+		if($b =~ "Maxed"){$proceed = 0; s1(); general($Sname." shops Maxed.");nl();}
 	}
 	$a = "";
 	$b = "";
@@ -3176,15 +3200,15 @@ sub Charname{
 			s1(); debug("c9 =".$c9); nl();
 		}
 
-		if(($c0 >= "731420819") or ($c1 >= "734691740") or ($c7 >= "921382475")){
-			if(($c5 >= "73506388")or($c6 >= "74836787")or($c6 >= "144668877")){
-				$cpmready = 1;
-			}else{
-				$cpmready = 0;
-			}
-		}else{
-			$cpmready = 0;
-		}
+		#if(($c0 >= "731420819") or ($c1 >= "734691740") or ($c7 >= #"921382475")){
+		#	if(($c5 >= "73506388")or($c6 >= "74836787")or($c6 >= #"144668877")){
+		#		$cpmready = 1;
+		#	}else{
+		#		$cpmready = 0;
+		#	}
+		#}else{
+		#	$cpmready = 0;
+		#}
 		
 	my $addir = "AD";
 	my $apdir = "AP";
@@ -3257,13 +3281,14 @@ sub MyLevel{
 	}
 }	
 
-sub cpmready{
+sub Cpmready{
 	if($debug == 1){
 		s1(); debug("Arrived at cpmready");
 	}
 
-	$won = 1;
+	nl();s1(); general("Testing Chaoslord Post Mortem readiness."); nl();
 
+	$won = 1;
 	while($won == 1){
 		$parsed = 0;
 		while ($parsed == 0){
@@ -3303,13 +3328,13 @@ sub cpmready{
 			}else{
 				warnformat("error in debug.");
 			}
-		$parsed = 0;
 
 		$cpm = $a;
 		$cpm =~ m/(<option>208.*<\/option><option>209)/;
 		$cpm = $1;
-		$cpm =~ s/<option>209//g;
-		
+		$cpm =~ s/<\/option><option>209//g;
+		$cpm =~ s/<option>//;
+
 		if($debug == 1){
 			s1(); debug("cpm = ".$cpm);
 		}
@@ -3328,7 +3353,7 @@ sub cpmready{
 				print FILE "CPM OUTPUT HERE".$cpm."\n\n";
 				close(FILE);
 				
-				s1(); debug("cpmready2");
+				s1(); debug("cpmready2");nl();
 			}elsif($debug != 1){
 				if(-e $filename){
 					unlink($filename)or die "Can't delete $filename: $!\n";
@@ -3339,9 +3364,35 @@ sub cpmready{
 			}else{
 				warnformat("error in debug.");
 			}
+		
+		if($b =~ m/(You have been slain)/) {
+			s1();  lost( "You were slain!");nl();	
+			s1(); general("Waiting to recover from stun before continuing . . .");nl();			
+			s1(); general("You are not Chaoslord Post Mortem ready.");nl();
+			$cpmready = 0;
+			$cpmtest = 1;
+			sleep(5);
+			last;
+		}else{
+			$cpmtest = 0
+		}
+		$won = 0;
+	}
+#----------------------------------------------VVVVVV continue here. 
+	if($debug == 1){
+		s1(); debug("UNUSED DEBUG");
+	}
+	
+	until ($cpmtest == 1){
+		nl();s1(); general("Testing If Chaoslord Post Mortem ready."); nl();
+		$reps = 0;
+		$won = 0;
+		$tied = 0;
+		$lost = 0;
 		sleep($stime);
 		$mech->reload();
 		$c = $mech->content();
+		
 			$filename = "cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
@@ -3363,85 +3414,6 @@ sub cpmready{
 				warnformat("error in debug.");
 			}
 
-		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
-		$a = $1;
-
-
-
-		
-		sleep($loopwait); 
-		$b = $mech->content();
-		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
-		$b = $1;
-
-		$filename = "TESTINFO1.txt";
-		if($debug == 1){
-			open(FILE, ">>".$filename)
-			or die "failed to open file!!!!";		
-			print FILE "\nTHIS IS A\nTHIS IS A\n";
-			print FILE $a;
-			print FILE "\nTHIS IS B\nTHIS IS B\n";
-			print FILE $b;
-			print FILE "\n";
-			close(FILE);
-		}elsif($debug != 1){
-			if(-e $filename){
-				unlink($filename)or die "Can't delete $filename: $!\n";
-				$filename = "";
-			}else{
-				$filename = "";
-			}
-		}else{
-			warnformat("error in debug.");
-		}
-
-		if ($b =~ m/You win/) {
-			s1(); won("You won at level ".$level);
-			$won = 1;
-			if($debug == 1){
-				s1(); debug("levmulti = ".$levmulti);
-			}
-		}		
-		if ($b =~ m/battle tied/) {
-			s1(); draw("You tied at level ".$level);
-			$won = 0;
-			$level = $level;
-			if($debug == 1){
-				s1(); debug("levmulti = ".$levmulti);
-			}
-			$tied++;
-		}
-		if ($b =~ m/stunned/) {
-			s1(); lost("You lost at level ".$level);
-			s1(); general("Waiting 5 seconds before continuing");
-			$won = 0;
-			$level = $level;
-			if($debug == 1){
-				s1(); debug("levmulti = ".$levmulti);
-			}
-			sleep(6);
-		}
-	}
-
-	nl();s1(); general("Advanced level test starting at level ".$level); nl();
-
-	if($debug == 1){
-		s1(); debug("base level is ".$level);
-	}
-	
-	until ($setlev == 1){
-		$reps = 0;
-		$won = 0;
-		$tied = 0;
-		$lost = 0;
-		sleep($stime);
-		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
-		$a = $mech->content();
-		$mech->form_number(2);
-		$mech->field("Difficulty", $level);
-		$mech->click();
-		sleep($stime);
-		$a = $mech->content();
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
 		$mech->click_button(value => $fmodeval);
@@ -3553,7 +3525,7 @@ sub cpmready{
 				$newlevel = $level;
 				$eighttwice++;
 				if($eighttwice == 2){
-					$setlev = 1;
+					$cpmtest = 1;
 					s1(); general("Level ".$newlevel." is set."); nl();
 				}elsif($eighttwice == 1){
 					s1(); general("Trying again at level ".$newlevel." for accuracy."); nl();
@@ -3602,38 +3574,7 @@ sub cpmready{
 		$level = $newlevel;
 	}
 
-	return($newlevel);
-	$parsed = 0; 
-	while (!$parsed){
-		sleep($stime);
-		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."main.php");
-		$a = $mech->content();
-		if($a =~ m/Parsed/){
-			$parsed = 1;
-		}
-	}
-
-	$filename = "cpmready.txt";
-	if($debug == 1){
-		open(FILE, ">>".$filename)
-		or die "failed to open file!!!!";
-		print FILE "cpmready\n\n";
-		print FILE "content\n\n";
-		print FILE "$a\n\n";
-		close(FILE);
-		
-		s1(); debug("cpmready"); nl();
-	}elsif($debug != 1){
-		if(-e $filename){
-			unlink($filename)or die "Can't delete $filename: $!\n";
-			$filename = "";
-		}else{
-			$filename = "";
-		}
-	}else{
-		warnformat("error in debug.");
-	}
-
+	return($cpmready);
 }
 
 #---------------------
@@ -3755,9 +3696,9 @@ until($levels == 0){
 	$levels--;
 	&Charname;
 	&MyLevel;
-	&cpmready;
 	if($avlevs > $MyLev){&Autolevelup};
 	&CheckShop;
+	&Cpmready;
 	GOTO:
 	if($cpmready == 0){
 		nl(); s1(); general("Low Level Fight mode");nl();
@@ -3780,9 +3721,6 @@ goto RETRY;
 
 
 #&leveltestworld; Written but not used yet
-
-
-#s1(); print "Result: $result\n";  # $result will be undef as an exception was thrown
 
 #seperate the output and error streams
 #open STDOUT, '>>', 'output.txt' or die $!;

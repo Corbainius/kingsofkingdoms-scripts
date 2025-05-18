@@ -1,0 +1,204 @@
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 821,548,743,661.</td> <td valign=top>Gold : 274,321,699,738.</td><td valign=top>Freeplay : 49,917,503.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 6,935)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Tinny Spear</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Weapon" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Stone Crusher</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Attackspell" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Major Rest</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Healspell" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>War Helmet</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Helmet" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Bad buckler</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Shield" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Dracula Tooth</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Amulet" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Superior Shark Brains</td>
+<td>2,100</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Ring" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Devil skin Suit</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Armor" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Bad belt</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Belt" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Bad tight</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Pants" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Bad handshoes</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Hand" value="UPGRADE 1040" maxlength="7"></td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Bad shoes</td>
+<td>485</td><td>
+$288,385</td>
+<td width="100"><input type="submit" name="Feet" value="UPGRADE 1040" maxlength="7"></td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0092</b> seconds.</font></body></html>
+
+MaxShops
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 821,548,743,661.</td> <td valign=top>Gold : 252,466,439,458.</td><td valign=top>Freeplay : 49,917,350.</td></tr></table>
+<table cellpadding="1" cellspacing="1" border="0" width="100%"><tr>
+<th colspan="5">Shopping</th></tr>
+<tr><td>Equipments</td><td></td></td></td><td>Your power (max 6,935)</td><td>Price per up</td><td>Buy Up</td></tr>
+<form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Weapon</td><td>Heavens Guard sword</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Attackspell</td><td>Inferno Blast</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Healspell</td><td>Immortality</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Helmet</td><td>Winged Horn of Chaos</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Shield</td><td>Steel shield</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Amulet</td><td>Platinum Shadow of Bain</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Ring</td><td>Platinum Elemental Stone</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Armor</td><td>Drunken Caveman Skin</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Belt</td><td>Steel golden rope</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Pants</td><td>Steel jeans</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr bgcolor="#012345">
+<td>Hand</td><td>Steel gloves</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form><form method="post" action="shop.php"><tr>
+<td>Feet</td><td>Steel boots</td>
+<td>6,935</td><td>
+$288,385</td>
+<td width="100">Maxed</td></tr></form></table>
+
+<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0031</b> seconds.</font></body></html>
+

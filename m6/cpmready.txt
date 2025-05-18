@@ -89,18 +89,21 @@ textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; borde
 <body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
 <center>
 <table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
-<td valign=top>Level : 883.</td> <td valign=top>Exp : 20,821,485,030.</td> <td valign=top>Gold : 7,272,567,656.</td></tr></table><br><font size=-2><a href="https://kingsofkingdoms.com/m6/support.php">Don't show up the banners and help the webmaster.</a></font><br><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 821,548,743,661.</td> <td valign=top>Gold : 252,466,439,458.</td><td valign=top>Freeplay : 49,917,346.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
 <tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
-<td valign=top align=right width=20%> Min<br>442,515<br>1,209,350<br>443,250<br>2,290,045<br>3,349,924 <br>490,289<br>492,638<br>1,651,865<br>5,639,969<br>961,559</td>
-<td valign=top align=right width=20%> Max<br>1,130,871<br>3,090,559<br>1,132,749<br>5,852,336<br>8,560,916 <br>1,225,721<br>1,231,595<br>4,221,431<br>14,413,252<br>2,457,317</td>
-<td align=right valign=top width=20%><a name=monster>Min<br>2,680<br>2,921<br>4,020<br>6,620<br>11,363<br>4,535<br>5,737<br>9,711<br>20,854<br>10,049</a></td><td align=right valign=top width=20%><a name=monster>Max<br>8,201<br>16,616<br>19,095<br>21,708<br>31,586<br>11,336<br>14,343<br>24,817<br>53,294<br>25,680</a></td></tr></table>
+<td valign=top align=right width=20%> Min<br>449,058,358<br>11,610,293,654<br>9,074,064,458<br>676,902,254<br>2,619,033,586 <br>2,370,094,335<br>5,193,131,709<br>12,059,352,012<br>3,295,935,839<br>7,398,809,695</td>
+<td valign=top align=right width=20%> Max<br>1,147,593,333<br>29,670,743,999<br>23,189,270,795<br>1,729,860,939<br>6,693,084,375 <br>5,925,235,837<br>12,982,829,273<br>30,818,337,332<br>8,422,945,314<br>18,908,065,111</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>121,750,310<br>121,750,551<br>121,751,650<br>121,754,249<br>121,758,993<br>29,223,966<br>29,225,168<br>381,132,808<br>221,208,366<br>57,178,513</a></td><td align=right valign=top width=20%><a name=monster>Max<br>365,251,090<br>608,754,764<br>456,572,706<br>304,390,782<br>260,919,363<br>73,059,914<br>73,062,921<br>974,005,854<br>565,310,145<br>146,122,835</a></td></tr></table>
 <table border=0 width=100%>
 <tr><th colspan=4>Monster Stats</th></tr>
-<tr><td>Level : 1</td><td>Life : 89,566</td><td>Exp : 20,100</td><td>Gold : 6,700</td></tr>
-</table><b>Round 1</b><br><font color="#888888">You special ability for 1.725.621!<font size=-1>His countered for 33.309.</font></font><br><br><b>Killing spree of 2!</b><br><b>You have slain Chaoslord Post Mortem. You win 40,200 exp and 13,400 gold.</b><br><br> Bonus gold and exp gain from power z +5.99%<p style="color:DodgerBlue;">Currently fought 78 of 600</p><br><font size=1>Lol Version 2.5.
-Parsed in <b>0.0230</b> seconds.</font></body></html>
+<tr><td>Level : 208</td><td>Life : 365,332,454</td><td>Exp : 1,826,234,544</td><td>Gold : 608,744,848</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 11.892.480.975!<font size=-1>His countered for 434.853.958.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Chaoslord Post Mortem. You win 1,890,883,243 exp and 630,294,418 gold.<br>Your freeplay bonus was 53%!.</b><br><br> Bonus gold and exp gain from power z +75.34%<p style="color:DodgerBlue;">Currently fought 260 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 12:15.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0109</b> seconds.</font></body></html>
 
-CPM OUTPUT HERE<option>208 - Chaoslord Post Mortem - 1,826,234,544</option>
+CPM OUTPUT HERE208 - Chaoslord Post Mortem - 1,826,234,544
 
 cpm3
 
@@ -147,14 +150,17 @@ textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; borde
 <body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
 <center>
 <table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
-<td valign=top>Level : 883.</td> <td valign=top>Exp : 20,821,525,230.</td> <td valign=top>Gold : 7,272,581,056.</td></tr></table><br><font size=-2><a href="https://kingsofkingdoms.com/m6/support.php">Don't show up the banners and help the webmaster.</a></font><br><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 823,439,626,904.</td> <td valign=top>Gold : 253,096,733,876.</td><td valign=top>Freeplay : 49,917,344.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
 <tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
-<td valign=top align=right width=20%> Min<br>442,515<br>1,209,350<br>443,250<br>2,290,045<br>3,349,924 <br>490,289<br>492,638<br>1,651,865<br>5,639,969<br>961,559</td>
-<td valign=top align=right width=20%> Max<br>1,130,871<br>3,090,559<br>1,132,749<br>5,852,336<br>8,560,916 <br>1,225,721<br>1,231,595<br>4,221,431<br>14,413,252<br>2,457,317</td>
-<td align=right valign=top width=20%><a name=monster>Min<br>2,680<br>2,921<br>4,020<br>6,620<br>11,363<br>4,535<br>5,737<br>9,711<br>20,854<br>10,049</a></td><td align=right valign=top width=20%><a name=monster>Max<br>8,201<br>16,616<br>19,095<br>21,708<br>31,586<br>11,336<br>14,343<br>24,817<br>53,294<br>25,680</a></td></tr></table>
+<td valign=top align=right width=20%> Min<br>449,058,358<br>11,610,293,654<br>9,074,064,458<br>676,902,254<br>2,619,033,586 <br>2,370,094,335<br>5,193,131,709<br>12,059,352,012<br>3,295,935,839<br>7,398,809,695</td>
+<td valign=top align=right width=20%> Max<br>1,147,593,333<br>29,670,743,999<br>23,189,270,795<br>1,729,860,939<br>6,693,084,375 <br>5,925,235,837<br>12,982,829,273<br>30,818,337,332<br>8,422,945,314<br>18,908,065,111</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>121,750,310<br>121,750,551<br>121,751,650<br>121,754,249<br>121,758,993<br>29,223,966<br>29,225,168<br>381,132,808<br>221,208,366<br>57,178,513</a></td><td align=right valign=top width=20%><a name=monster>Max<br>365,251,090<br>608,754,764<br>456,572,706<br>304,390,782<br>260,919,363<br>73,059,914<br>73,062,921<br>974,005,854<br>565,310,145<br>146,122,835</a></td></tr></table>
 <table border=0 width=100%>
 <tr><th colspan=4>Monster Stats</th></tr>
-<tr><td>Level : 1</td><td>Life : 89,566</td><td>Exp : 20,100</td><td>Gold : 6,700</td></tr>
-</table><b>Round 1</b><br><font color="#888888">You special ability for 1.885.524!<font size=-1>His countered for 33.309.</font></font><br><br><b>Killing spree of 3!</b><br><b>You have slain Chaoslord Post Mortem. You win 60,300 exp and 20,100 gold.</b><br><br> Bonus gold and exp gain from power z +5.99%<p style="color:DodgerBlue;">Currently fought 79 of 600</p><br><font size=1>Lol Version 2.5.
-Parsed in <b>0.0334</b> seconds.</font></body></html>
+<tr><td>Level : 208</td><td>Life : 365,332,454</td><td>Exp : 1,826,234,544</td><td>Gold : 608,744,848</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 23.460.626.312!<font size=-1>His countered for 245.787.020.</font></font><br><br><b>Killing spree of 2!</b><br><b>You have slain Chaoslord Post Mortem. You win 4,464,047,710 exp and 1,488,015,911 gold.<br>Your freeplay bonus was 333%!.</b><br><br> Bonus gold and exp gain from power z +75.34%<p style="color:DodgerBlue;">Currently fought 261 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 12:15.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0051</b> seconds.</font></body></html>
 

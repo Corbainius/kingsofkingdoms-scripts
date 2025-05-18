@@ -27,7 +27,7 @@ content
 
 <body><center><table width=100%><tr><th><a href="/index.php" title="Homepage!">Home</a></th><th><a href="/stats.php" title="Server statistics.">Stats</a></th><th><a href="/server.php" title="Server health!">Server</a></th><th><a href="https://www.kingsofkingdoms.com/forum.php" title="Game forums.">Forums</a></th><th><a href="https://www.kingsofkingdoms.com">.NET</a></th></tr></table>
 
-<a href="/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
+<a href="http://www.lordsoflords.net/"><img src="/images/kingsblack.gif" width="600" height="150" border="0" title="Free online text-based RPG games" alt="Free online text-based RPG games"></a><span class=served></span><br><br>
 
 
 
@@ -131,7 +131,7 @@ content
 <tr><th colspan=2>Games with at least 3 active players now!</th></tr>
 <tr><th>World</th><th>Players Online</th></tr>
 
-<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>5</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>2</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 7 players online.</a></th></tr>
+<tr bgcolor="#012345"><td align=center nowrap><a href="https://lordsoflords.websitem3/" tile="Go to this world!">m3</a></td><td align=center><b>9</b></td></tr><tr><td align=center nowrap><b>m6<b><font size=-1 color=red><sup>You are here!</sup></font></td><td align=center><b>2</b></td></tr><tr><th nowrap colspan=2><a href="https://lordsoflords.website" title="For more game worlds, overview and stats click here.">There are 11 players online.</a></th></tr>
 </table>
 </div>
 </div>
@@ -144,7 +144,7 @@ sucess
 
 response
 
-HTTP::Response=HASH(0x23ff29116a0)
+HTTP::Response=HASH(0x2089b4941c8)
 
 status
 
