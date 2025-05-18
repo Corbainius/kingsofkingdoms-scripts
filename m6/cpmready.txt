@@ -1,0 +1,160 @@
+cpm1
+
+content
+
+<html><head><style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title></head><body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0><center><form action="fight.php" method=post target="lol_main">
+<table cellpadding=0 cellspacing="0" border=0 width=100%>
+<tr>
+<td width="60%" valign=top>
+<select name="Monster">
+<option>1 - Skeleton - 20,100</option><option>2 - Zombie - 22,914</option><option>3 - Undead - 28,944</option><option>4 - Snake Eye - 39,396</option><option>5 - Attack Dog - 55,476</option><option>6 - Guard Soldier - 78,390</option><option>7 - Sword Man - 109,344</option><option>8 - Gate Keeper - 149,544</option><option>9 - Necro - 200,196</option><option>10 - Barbarian - 262,506</option><option>11 - Paladin - 337,680</option><option>12 - Skeleton King - 426,924</option><option>13 - Undead Emperor - 531,444</option><option>14 - Evil Magician - 652,446</option><option>15 - Thunder Spectre - 791,136</option><option>16 - Emo Kids - 948,720</option><option>17 - Hardcore Emo - 1,126,404</option><option>18 - Victrolahead - 1,325,394</option><option>19 - Baby Dragon - 1,546,896</option><option>20 - Giant Worm - 1,792,116</option><option>21 - Hulk - 2,062,260</option><option>22 - Archer Tell - 2,358,534</option><option>23 - Beastmaster - 2,682,144</option><option>24 - Terminator - 3,034,296</option><option>25 - Amazon - 3,416,196</option><option>26 - Dragon Rider - 3,829,050</option><option>27 - Wild Bill Havoc - 4,274,064</option><option>28 - Bat Fasterman - 4,752,444</option><option>29 - Soul Breaker - 5,265,396</option><option>30 - Diablos Knight - 5,814,126</option><option>31 - Memphista - 6,399,840</option><option>32 - Fire Dragon - 7,023,744</option><option>33 - Hell Knight - 7,687,044</option><option>34 - Fatal Chick - 8,390,946</option><option>35 - Disaster Master - 9,136,656</option><option>36 - Troll Vampire - 9,925,380</option><option>37 - Mind Reader - 10,758,324</option><option>38 - Robo Dracula - 11,636,694</option><option>39 - Chemical Ogre - 12,561,696</option><option>40 - Gorilla - 13,534,536</option><option>41 - Spider Alfs - 14,556,420</option><option>42 - King Kong - 15,628,554</option><option>43 - Summo Rat - 16,752,144</option><option>44 - Ninja Snurtle - 17,928,396</option><option>45 - Diablo - 19,158,516</option><option>46 - Sheba Joker - 20,443,710</option><option>47 - Shako Zulu - 21,785,184</option><option>48 - Quanta Kinta - 23,184,144</option><option>49 - Immortal Sil - 24,641,796</option><option>50 - Demon Magician - 26,159,346</option><option>51 - Fearless Orc - 27,738,000</option><option>52 - Chem Alien - 29,378,964</option><option>53 - Soul Taker - 31,083,444</option><option>54 - Mighty Oro - 32,852,646</option><option>55 - Da Intruder - 34,687,776</option><option>56 - King Shredder - 36,590,040</option><option>57 - Shinto Kan - 38,560,644</option><option>58 - Laughing Demon - 40,600,794</option><option>59 - Wilders Slayer - 42,711,696</option><option>60 - Bush Basher - 44,894,556</option><option>61 - Satans Knight - 47,150,580</option><option>62 - Demon Dundee - 49,480,974</option><option>63 - Mighty Cat - 51,886,944</option><option>64 - Triad Momoe - 54,369,696</option><option>65 - Ancient Mummy - 56,930,436</option><option>66 - Eliminator Cloud - 59,570,370</option><option>67 - Undead Demon - 62,290,704</option><option>68 - Eternal Death - 65,092,644</option><option>69 - Annihilator Gator - 67,977,396</option><option>70 - T2000 - 70,946,166</option><option>71 - Evil Brain Smacker - 74,000,160</option><option>72 - Ancient Mojo - 77,140,584</option><option>73 - King Shroud - 80,368,644</option><option>74 - Evil Blow up doll - 83,685,546</option><option>75 - Mean Machine - 87,092,496</option><option>76 - Terminator Five - 90,590,700</option><option>77 - Fearless Designator - 94,181,364</option><option>78 - Mutant Bambi - 97,865,694</option><option>79 - Giant Evil Garfield - 101,644,896</option><option>80 - Katana Master - 105,520,176</option><option>81 - Supercow - 109,492,740</option><option>82 - Evil Cartman - 113,563,794</option><option>83 - Lucky Chucky - 117,734,544</option><option>84 - Devil Batman - 122,006,196</option><option>85 - Spider Feme Fatale - 126,379,956</option><option>86 - Shaba Shaman - 130,857,030</option><option>87 - Hammerfist Shogun - 135,438,624</option><option>88 - Soul of Terror - 140,125,944</option><option>89 - McDonald Evil Clown - 144,920,196</option><option>90 - Lord of Ninja clans - 149,822,586</option><option>91 - Stealth Assassin - 154,834,320</option><option>92 - Godzillas Father - 159,956,604</option><option>93 - Giant Demon Bear - 165,190,644</option><option>94 - Rock Pimp - 170,537,646</option><option>95 - Head Hunter Shaman - 175,998,816</option><option>96 - King Baba - 181,575,360</option><option>97 - Poison Ant of Chaos - 187,268,484</option><option>98 - Lightning Storm troopers - 193,079,394</option><option>99 - Beanies and Butdead - 199,009,296</option><option>100 - King of Undead Skeletons - 205,059,396</option><option>101 - Flying Banshee Ghost - 211,230,900</option><option>102 - Lord of Spirit Imperium - 217,525,014</option><option>103 - King Terminator - 223,942,944</option><option>104 - Diablos Diabolo - 230,485,896</option><option>105 - Sharon Stoned Ice Prim - 237,155,076</option><option>106 - King of Weed Smokers - 243,951,690</option><option>107 - Hells War General - 250,876,944</option><option>108 - Special Hell force - 257,932,044</option><option>109 - Hell force Captain - 265,118,196</option><option>110 - Avenging Opossum - 272,436,606</option><option>111 - Hell Bovine - 279,888,480</option><option>112 - Doom Touche - 287,475,024</option><option>113 - Scythe Flyer - 295,197,444</option><option>114 - Lord Grimshaba - 303,056,946</option><option>115 - King Godzilla - 311,054,736</option><option>116 - Shogun of Hell - 319,192,020</option><option>117 - Raving Drunken Madman - 327,470,004</option><option>118 - King Peanuts Ripper - 335,889,894</option><option>119 - Emperor Nightshade - 344,452,896</option><option>120 - King of the Shadow - 353,160,216</option><option>121 - Lord of Haunted Frog - 362,013,060</option><option>122 - Fog Master of Chaos - 371,012,634</option><option>123 - Blessed Holy Ghost - 380,160,144</option><option>124 - King Eternal Experminator - 389,456,796</option><option>125 - King Shadow beast - 398,903,796</option><option>126 - Lord of Destruction - 408,502,350</option><option>127 - Lord Demon Humiliator - 418,253,664</option><option>128 - Baroness Pain Killer - 428,158,944</option><option>129 - Lord of Elements - 438,219,396</option><option>130 - Shogun Moonshadow - 448,436,226</option><option>131 - Lord Nightflyer Vampier - 458,810,640</option><option>132 - Lord Exterminator - 469,343,844</option><option>133 - Shinny Evil Ghost - 480,037,044</option><option>134 - King Extinction - 490,891,446</option><option>135 - King of the Shadow - 501,908,256</option><option>136 - Lord of Eternal Pain - 513,088,680</option><option>137 - Lord of Eternal Suffer - 524,433,924</option><option>138 - Baron of Shamans - 535,945,194</option><option>139 - Cloaked Mind Lord - 547,623,696</option><option>140 - Countess of Insane Visions - 559,470,636</option><option>141 - Baron of Haunted Frog - 571,487,220</option><option>142 - Count Poisoned Dracula - 583,674,654</option><option>143 - Sorcerers Grim Dracula - 596,034,144</option><option>144 - King Infernal Flame - 608,566,896</option><option>145 - King the Shadowdrain - 621,274,116</option><option>146 - Count Dragon Rider - 634,157,010</option><option>147 - Lord Dino Rider - 647,216,784</option><option>148 - King T-Rex - 660,454,644</option><option>149 - Lord of Shadowlight - 673,871,796</option><option>150 - Evil Askari Knight - 687,469,446</option><option>151 - Count Pegasus Demon - 701,248,800</option><option>152 - King of Lightning Pythons - 715,211,064</option><option>153 - Lord of Earthquake Maniac - 729,357,444</option><option>154 - King Disaster Master - 743,689,146</option><option>155 - Viscountess Unreal Sheba - 758,207,376</option><option>156 - King Post Mortem - 772,913,340</option><option>157 - Marquis Duke Nuke - 787,808,244</option><option>158 - Prince of Death - 802,893,294</option><option>159 - Lords of Lords - 818,169,696</option><option>160 - Lord Eternal Devastator - 833,638,656</option><option>161 - Battlelady Nighteye - 849,301,380</option><option>162 - Battlelord Hell Bovine - 865,159,074</option><option>163 - Battlelord Doom Touche - 881,212,944</option><option>164 - Battlelord Flyer - 897,464,196</option><option>165 - Battlelord Grimshaba - 913,914,036</option><option>166 - Battlelord Godzilla - 930,563,670</option><option>167 - Battlelord Shogun - 947,414,304</option><option>168 - Battlelord Drunken Madman - 964,467,144</option><option>169 - Battlelady Peanuts Ripper - 981,723,396</option><option>170 - Battlelady Nightshade - 999,184,266</option><option>171 - Battlelady Shadowfeets - 1,016,850,960</option><option>172 - Battlelord Fog of war - 1,034,724,684</option><option>173 - Battlelord of Chaos - 1,052,806,644</option><option>174 - Battlelord Holy Ghost - 1,071,098,046</option><option>175 - Battlelord Experminator - 1,089,600,096</option><option>176 - Battlelord Shadow beast - 1,108,314,000</option><option>177 - Battlelord of Destruction - 1,127,240,964</option><option>178 - Battlelord Demon Humiliator - 1,146,382,194</option><option>179 - Battlelady Pain Killer - 1,165,738,896</option><option>180 - Battlelady of Elements - 1,185,312,276</option><option>181 - Battlelady Moonshadow - 1,205,103,540</option><option>182 - Battlelord Nightflyer - 1,225,113,894</option><option>183 - Battlelord Exterminator - 1,245,344,544</option><option>184 - Warlord Evil Ghost - 1,265,796,696</option><option>185 - Warlord Exterminator - 1,286,471,556</option><option>186 - Warlady of Shadow - 1,307,370,330</option><option>187 - Warlady of Eternal Pain - 1,328,494,224</option><option>188 - Warlady of Eternal Suffer - 1,349,844,444</option><option>189 - Warlord of Shamans - 1,371,422,196</option><option>190 - Warlord Mind Lord - 1,393,228,686</option><option>191 - Warlady of Insane Visions - 1,415,265,120</option><option>192 - Warlord of Haunted Frog - 1,437,532,704</option><option>193 - Warlord Poisoned Dracula - 1,460,032,644</option><option>194 - Warlord Grim Dracula - 1,482,766,146</option><option>195 - Warlord Infernal Flame - 1,505,734,416</option><option>196 - Warlady Shadowdrain - 1,528,938,660</option><option>197 - Warlord Dragon Rider - 1,552,380,084</option><option>198 - Warlord Dino Rider - 1,576,059,894</option><option>199 - Warlord T-Rex - 1,599,979,296</option><option>200 - Chaoslady of Shadowlight - 1,624,139,496</option><option>201 - Chaoslord Askari Knight - 1,648,541,700</option><option>202 - Chaoslord Pegasus Demon - 1,673,187,114</option><option>203 - Chaoslord Demon Pythons - 1,698,076,944</option><option>204 - Chaoslord Maniac - 1,723,212,396</option><option>205 - Chaoslord Disaster Master - 1,748,594,676</option><option>206 - Chaoslady Evil Countess - 1,774,224,990</option><option>207 - Chaoslady Unreal Sheba - 1,800,104,544</option><option>208 - Chaoslord Post Mortem - 1,826,234,544</option><option>209 - Shadowlord Duke Nuke - 1,852,616,196</option><option>210 - Shadow King of Extinction - 1,879,250,706</option></select></td><td width="10%" valign=top><input type=submit name=Action value="AD"></td><td width="10%" valign=top><input type=submit name=Action value="AP"></td><td width="10%" valign=top><input type=submit name=Action value="SP"></td><input type=hidden name="Difficulty" value="201"></form><form method=post><td width=10% valign=top><input type=text name="Difficulty" value="201"></td><td width="5%" valign=top><input type=submit name="Action" value="Level"></td><td width=5% valign=top><input type=submit name="Plus" value="+"></td><td width=5% valign=top><input type=submit name="Min" value="-"></td></form></tr></table>
+
+</body></html>
+
+cpm2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 883.</td> <td valign=top>Exp : 20,821,485,030.</td> <td valign=top>Gold : 7,272,567,656.</td></tr></table><br><font size=-2><a href="https://kingsofkingdoms.com/m6/support.php">Don't show up the banners and help the webmaster.</a></font><br><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>442,515<br>1,209,350<br>443,250<br>2,290,045<br>3,349,924 <br>490,289<br>492,638<br>1,651,865<br>5,639,969<br>961,559</td>
+<td valign=top align=right width=20%> Max<br>1,130,871<br>3,090,559<br>1,132,749<br>5,852,336<br>8,560,916 <br>1,225,721<br>1,231,595<br>4,221,431<br>14,413,252<br>2,457,317</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>2,680<br>2,921<br>4,020<br>6,620<br>11,363<br>4,535<br>5,737<br>9,711<br>20,854<br>10,049</a></td><td align=right valign=top width=20%><a name=monster>Max<br>8,201<br>16,616<br>19,095<br>21,708<br>31,586<br>11,336<br>14,343<br>24,817<br>53,294<br>25,680</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 1</td><td>Life : 89,566</td><td>Exp : 20,100</td><td>Gold : 6,700</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 1.725.621!<font size=-1>His countered for 33.309.</font></font><br><br><b>Killing spree of 2!</b><br><b>You have slain Chaoslord Post Mortem. You win 40,200 exp and 13,400 gold.</b><br><br> Bonus gold and exp gain from power z +5.99%<p style="color:DodgerBlue;">Currently fought 78 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0230</b> seconds.</font></body></html>
+
+CPM OUTPUT HERE<option>208 - Chaoslord Post Mortem - 1,826,234,544</option>
+
+cpm3
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 883.</td> <td valign=top>Exp : 20,821,525,230.</td> <td valign=top>Gold : 7,272,581,056.</td></tr></table><br><font size=-2><a href="https://kingsofkingdoms.com/m6/support.php">Don't show up the banners and help the webmaster.</a></font><br><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>442,515<br>1,209,350<br>443,250<br>2,290,045<br>3,349,924 <br>490,289<br>492,638<br>1,651,865<br>5,639,969<br>961,559</td>
+<td valign=top align=right width=20%> Max<br>1,130,871<br>3,090,559<br>1,132,749<br>5,852,336<br>8,560,916 <br>1,225,721<br>1,231,595<br>4,221,431<br>14,413,252<br>2,457,317</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>2,680<br>2,921<br>4,020<br>6,620<br>11,363<br>4,535<br>5,737<br>9,711<br>20,854<br>10,049</a></td><td align=right valign=top width=20%><a name=monster>Max<br>8,201<br>16,616<br>19,095<br>21,708<br>31,586<br>11,336<br>14,343<br>24,817<br>53,294<br>25,680</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 1</td><td>Life : 89,566</td><td>Exp : 20,100</td><td>Gold : 6,700</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 1.885.524!<font size=-1>His countered for 33.309.</font></font><br><br><b>Killing spree of 3!</b><br><b>You have slain Chaoslord Post Mortem. You win 60,300 exp and 20,100 gold.</b><br><br> Bonus gold and exp gain from power z +5.99%<p style="color:DodgerBlue;">Currently fought 79 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0334</b> seconds.</font></body></html>
+
