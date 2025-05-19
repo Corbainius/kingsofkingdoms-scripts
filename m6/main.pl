@@ -199,7 +199,7 @@ my $cpmtest;
 if($debug == 1){
 	s1();debug("Debug mode active.");nl();
 }elsif($debug != 1){
-	my @files_to_delete = ('TESTINFO1.txt','TESTINFO2.txt','LowFight.txt','LowFight2.txt','LowFight3.txt','Autolevelup.txt','CPMlevel.txt','Fight.txt','Fightlevel.txt','Fight2.txt','Fight3.txt','Levelup.txt','CheckShop.txt','MaxShops.txt','MaxWD.txt','MaxAS.txt','MaxHS.txt','MaxHE.txt','MaxSH.txt','MaxAM.txt','MaxRI.txt','MaxAR.txt','MaxBE.txt','MaxPA.txt','MaxHA.txt','MaxFE.txt','MyLevel.txt','Charname.txt','Loginrecord.txt');
+	my @files_to_delete = ('TESTINFO1.txt','TESTINFO2.txt','LowFight.txt','LowFight2.txt','LowFight3.txt','Autolevelup.txt','CPMlevel.txt','Fight.txt','Fightlevel.txt','Fight2.txt','Fight3.txt','Levelup.txt','CheckShop.txt','MaxShops.txt','MaxWD.txt','MaxAS.txt','MaxHS.txt','MaxHE.txt','MaxSH.txt','MaxAM.txt','MaxRI.txt','MaxAR.txt','MaxBE.txt','MaxPA.txt','MaxHA.txt','MaxFE.txt','MyLevel.txt','Charname.txt','Loginrecord.txt','cpmready.txt',);
 
 	foreach my $file (@files_to_delete) {
 		if (-e $file) {
@@ -348,10 +348,12 @@ sub leveltestworld {
 			s1(); debug($levelfilename);
 	}
 
-	my $fname = $levelfilename;
+	my $fname = $levelfilename."-LevTestWORLD.txt";
+
 	if($debug == 1){
 		s1();debug($fname);
 	}
+
 	if(-e $fname){
 		if($debug == 1){
 			s1(); debug("File $fname exists");
@@ -597,6 +599,7 @@ sub leveltestworld {
 				$eighttwice++;
 				if($eighttwice == 2){
 					$setlev = 1;
+					$eighttwice = 0;
 					s1(); general("Level ".$newlevel." is set."); nl();
 				}elsif($eighttwice == 1){
 					s1(); general("Trying again at level ".$newlevel." for accuracy."); nl();
@@ -688,7 +691,8 @@ sub leveltestfight {
 			s1(); debug($levelfilename);
 	}
 
-	my $fname = $levelfilename;
+	my $fname =  $levelfilename."-LevTestFIGHT.txt";
+
 	if($debug == 1){
 		s1(); debug($fname);
 	}
@@ -940,6 +944,7 @@ sub leveltestfight {
 				$eighttwice++;
 				if($eighttwice == 2){
 					$setlev = 1;
+					$eighttwice = 0;
 					s1(); general("Level ".$newlevel." is set."); nl();
 				}elsif($eighttwice == 1){
 					s1(); general("Trying again at level ".$newlevel." for accuracy."); nl();
@@ -1510,7 +1515,7 @@ sub CPMlevel {
 			s1(); debug($levelfilename);
 	}
 
-	my $fname = $levelfilename;
+	my $fname =  $levelfilename."-LevTestCPM.txt";
 	if($debug == 1){
 		s1(); debug($fname);
 	}
@@ -1520,11 +1525,22 @@ sub CPMlevel {
 		}
 		open(FILE, "<".$fname)
 		or die "failed to open file!!!!";
-			while (my $line = <FILE>) {
-				chomp $line;
+		my $found_line = 0;
+		while (my $line = <FILE>) {
+			chomp $line;
+			if ($line) {
 				$filelevel = $line;
+				$found_line = 1;
 			}
+		}
 		close(FILE);
+		
+		if (!$found_line) {
+			open(FILE, ">>$fname") or die "failed to open file!!!!";
+			print FILE "1\n";
+			close(FILE);
+			$filelevel = 1;
+		}
 		
 		if($debug == 1){
 			s1(); debug("filelevel = ".$filelevel);nl();
@@ -1537,15 +1553,20 @@ sub CPMlevel {
 		or die "failed to open file!!!!";
 		print FILE "1";
 		close(FILE);
-		$filelevel = 1;
+		$filelevel = 201;
 	}
+
+	if ($filelevel < 201){
+		$filelevel = 201;
+	}
+
 
 	$won = 1;
 
-	s1(); general("Basic level test starting at level ".$filelevel); nl();
+	s1(); general("Basic CPM level test starting at level ".$filelevel); nl();
 
 	while($won == 1){
-		if(!$levmulti and $filelevel != 1){
+		if(!$levmulti and $filelevel != 201){
 			$levmulti = $filelevel;}
 		elsif(!$levmulti){
 			$levmulti = $filelevel;
@@ -1561,45 +1582,79 @@ sub CPMlevel {
 		$a = $mech->content();
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
-		$mech->click();
+		$mech->click_button(value => "Level");
 		$a = $mech->content();
-		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
-		$a = $1;
-		$mech->click_button(value => $fmodeval);
-		sleep($loopwait); 
-		$b = $mech->content();
-		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
-		$b = $1;
 
-		$filename = "TESTINFO1.txt";
+		$cpm = $a;
+		$cpm =~ m/(<option>208.*<\/option><option>209)/;
+		$cpm = $1;
+		$cpm =~ s/<\/option><option>209//g;
+		$cpm =~ s/<option>//;
+
 		if($debug == 1){
-			open(FILE, ">>".$filename)
-			or die "failed to open file!!!!";		
-			print FILE "\nTHIS IS A\nTHIS IS A\n";
-			print FILE $a;
-			print FILE "\nTHIS IS B\nTHIS IS B\n";
-			print FILE $b;
-			print FILE "\n";
-			close(FILE);
-		}elsif($debug != 1){
-			if(-e $filename){
-				unlink($filename)or die "Can't delete $filename: $!\n";
-				$filename = "";
-			}else{
-				$filename = "";
-			}
-		}else{
-			warnformat("error in debug.");
+			s1(); debug("cpm = ".$cpm);
 		}
 
-		if ($b =~ m/You win/) {
+		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
+		$a = $1;
+		$b = $mech->content();
+		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
+		$b = $1;
+
+			$filename = "cpmINFO1.txt";
+			if($debug == 1){
+				open(FILE, ">>".$filename)
+				or die "failed to open file!!!!";		
+				print FILE "\nTHIS IS A\nTHIS IS A\n";
+				print FILE $a;
+				print FILE "\nTHIS IS B\nTHIS IS B\n";
+				print FILE $b;
+				print FILE "\n";
+				close(FILE);
+			}elsif($debug != 1){
+				if(-e $filename){
+					unlink($filename)or die "Can't delete $filename: $!\n";
+					$filename = "";
+				}else{
+					$filename = "";
+				}
+			}else{
+				warnformat("error in debug.");
+			}
+		sleep($loopwait); 
+		$mech->select("Monster", $cpm);
+		$mech->click_button(value => $fmodeval);
+		$c = $mech->content();
+		$c =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
+		$c = $1;
+
+			$filename = "cpmINFO2.txt";
+			if($debug == 1){
+				open(FILE, ">>".$filename)
+				or die "failed to open file!!!!";
+				print FILE "\nTHIS IS C\nTHIS IS C\n";
+				print FILE $c;
+				print FILE "\n";
+				close(FILE);
+			}elsif($debug != 1){
+				if(-e $filename){
+					unlink($filename)or die "Can't delete $filename: $!\n";
+					$filename = "";
+				}else{
+					$filename = "";
+				}
+			}else{
+				warnformat("error in debug.");
+			}
+
+		if ($c =~ m/You win/) {
 			s1(); won("You won at level ".$level);
 			$won = 1;
 			if($debug == 1){
 				s1(); debug("levmulti = ".$levmulti);
 			}
 		}		
-		if ($b =~ m/battle tied/) {
+		if ($c =~ m/battle tied/) {
 			s1(); draw("You tied at level ".$level);
 			$won = 0;
 			$level = $level;
@@ -1608,19 +1663,21 @@ sub CPMlevel {
 			}
 			$tied++;
 		}
-		if ($b =~ m/stunned/) {
+		if ($c =~ m/stunned/) {
 			s1(); lost("You lost at level ".$level);
 			s1(); general("Waiting 5 seconds before continuing");
 			$won = 0;
+			$lost++;
 			$level = $level;
 			if($debug == 1){
 				s1(); debug("levmulti = ".$levmulti);
 			}
 			sleep(6);
+
 		}
 	}
 
-	nl();s1(); general("Advanced level test starting at level ".$level); nl();
+	nl();s1(); general("Advanced CPM level test starting at level ".$level); nl();
 
 	if($debug == 1){
 		s1(); debug("base level is ".$level);
@@ -1631,54 +1688,69 @@ sub CPMlevel {
 		$won = 0;
 		$tied = 0;
 		$lost = 0;
-		sleep($stime);
+		sleep($loopwait);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
-		$mech->click();
-		sleep($stime);
+		$mech->click_button(value => "Level");
 		$a = $mech->content();
+		
+		$cpm = $a;
+		$cpm =~ m/(<option>208.*<\/option><option>209)/;
+		$cpm = $1;
+		$cpm =~ s/<\/option><option>209//g;
+		$cpm =~ s/<option>//;
+		
+		if($debug == 1){
+			s1(); debug("cpm = ".$cpm);
+		}
+
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
-		$mech->click_button(value => $fmodeval);
-		sleep($loopwait); 
 		$b = $mech->content();
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 
-		$filename = "TESTINFO2.txt";
-		if($debug == 1){
-			open(FILE, ">>".$filename)
-			or die "failed to open file!!!!";		
-			print FILE "\nTHIS IS A\nTHIS IS A\n";
-			print FILE $a;
-			print FILE "\nTHIS IS B\nTHIS IS B\n";
-			print FILE $b;
-			print FILE "\n";
-			close(FILE);
-		}elsif($debug != 1){
-			if(-e $filename){
-				unlink($filename)or die "Can't delete $filename: $!\n";
-				$filename = "";
+			$filename = "cpmINFO3.txt";
+			if($debug == 1){
+				open(FILE, ">>".$filename)
+				or die "failed to open file!!!!";		
+				print FILE "\nTHIS IS A\nTHIS IS A\n";
+				print FILE $a;
+				print FILE "\nTHIS IS B\nTHIS IS B\n";
+				print FILE $b;
+				print FILE "\n";
+				close(FILE);
+			}elsif($debug != 1){
+				if(-e $filename){
+					unlink($filename)or die "Can't delete $filename: $!\n";
+					$filename = "";
+				}else{
+					$filename = "";
+				}
 			}else{
-				$filename = "";
+				warnformat("error in debug.");
 			}
-		}else{
-			warnformat("error in debug.");
-		}
 
-		if ($b =~ m/You win/) {
+		sleep($loopwait); 
+		$mech->select("Monster", $cpm);
+		$mech->click_button(value => $fmodeval);
+		$c = $mech->content();
+		$c =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
+		$c = $1;
+
+		if ($c =~ m/You win/) {
 			$won++;
 			$reps++; 
 			s1(); won("Test fight ".$reps." You won at level ".$level)
 		}
-		if ($b =~ m/battle tied/) {
+		if ($c =~ m/battle tied/) {
 			$tied++;
 			$reps++;
 			s1(); draw("Test fight ".$reps." You tied at level ".$level);
 		}
-		if ($b =~ m/stunned/) {
+		if ($c =~ m/stunned/) {
 			$lost++;
 			$reps++;
 			s1(); lost("Test fight ".$reps." You lost at level ".$level);
@@ -1692,7 +1764,7 @@ sub CPMlevel {
 			$a = $mech->content();
 			$b = $a;
 
-			$filename = "TESTINFO2.txt";
+			$filename = "cpmINFO3.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";		
@@ -1744,6 +1816,8 @@ sub CPMlevel {
 		}
 		nl(); 
 
+			DEATHSKIP:
+
 		if($tietrig !=1){
 			if($outcomes[0] >=8){ 
 				s1(); general("Won 8 or more times."); nl();
@@ -1751,26 +1825,45 @@ sub CPMlevel {
 				$eighttwice++;
 				if($eighttwice == 2){
 					$setlev = 1;
+					$eighttwice = 0;
 					s1(); general("Level ".$newlevel." is set."); nl();
 				}elsif($eighttwice == 1){
 					s1(); general("Trying again at level ".$newlevel." for accuracy."); nl();
 				}
 			}elsif($outcomes[0] <=7 ){
-				s1(); general("Won fewer than 8 times out of 10."); nl();
-				if($debug == 1){
-					s1(); debug("level = ".$level);
+				if($outcomes[2] >= 1){
+					s1(); general("Lost a fight."); nl();
+					if($debug == 1){
+						s1(); debug("level = ".$level);
+					}
+					my $div10 = Math::BigFloat->new($level);
+					$div10->bdiv(10);
+					if($debug == 1){
+						s1(); debug("div10 = ".$div10);
+					}
+					$div10->bfround(1);
+					if($debug == 1){
+						s1(); debug("rounded div10 = ".$div10);
+					}
+					$newlevel = $level - $div10;
+					s1(); general("Trying level ".$newlevel); nl();
+				}else{
+					s1(); general("Won fewer than 8 times out of 10."); nl();
+					if($debug == 1){
+						s1(); debug("level = ".$level);
+					}
+					my $div10 = Math::BigFloat->new($level);
+					$div10->bdiv(10);
+					if($debug == 1){
+						s1(); debug("div10 = ".$div10);
+					}
+					$div10->bfround(1);
+					if($debug == 1){
+						s1(); debug("rounded div10 = ".$div10);
+					}
+					$newlevel = $level - $div10;
+					s1(); general("Trying level ".$newlevel); nl();
 				}
-				my $div10 = Math::BigFloat->new($level);
-				$div10->bdiv(10);
-				if($debug == 1){
-					s1(); debug("div10 = ".$div10);
-				}
-				$div10->bfround(1);
-				if($debug == 1){
-					s1(); debug("rounded div10 = ".$div10);
-				}
-				$newlevel = $level - $div10;
-				s1(); general("Trying level ".$newlevel); nl();
 			}else{
 				s1(); general("Wins error. Something is wrong\n");
 			}
@@ -3213,15 +3306,13 @@ sub Charname{
 	my $addir = "AD";
 	my $apdir = "AP";
 	my $spdir = "SP";
-
-	my $fileend = "level.txt";
 	
 	if($fmode == 1){		
-		$levelfilename = $path."/".$addir."/".$name.$fileend;
+		$levelfilename = $path."/".$addir."/".$name;
 	}elsif($fmode == 2){
-		$levelfilename = $path."/".$apdir."/".$name.$fileend;
+		$levelfilename = $path."/".$apdir."/".$name;
 	}elsif($fmode == 3){
-		$levelfilename = $path."/".$spdir."/".$name.$fileend;
+		$levelfilename = $path."/".$spdir."/".$name;
 	}
 	
 	if($debug == 1){
@@ -3378,13 +3469,10 @@ sub Cpmready{
 		}
 		$won = 0;
 	}
-#----------------------------------------------VVVVVV continue here. 
-	if($debug == 1){
-		s1(); debug("UNUSED DEBUG");
-	}
-	
+
+	nl();s1(); general("Testing If Chaoslord Post Mortem ready."); nl();
+
 	until ($cpmtest == 1){
-		nl();s1(); general("Testing If Chaoslord Post Mortem ready."); nl();
 		$reps = 0;
 		$won = 0;
 		$tied = 0;
@@ -3413,52 +3501,48 @@ sub Cpmready{
 			}else{
 				warnformat("error in debug.");
 			}
-
-		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
+		$a = $c;
+		$a =~ m/(<td valign=top>Level.*<\/font><\/body><\/html>)/s;
 		$a = $1;
-		$mech->click_button(value => $fmodeval);
-		sleep($loopwait); 
-		$b = $mech->content();
-		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
-		$b = $1;
 
-		$filename = "TESTINFO2.txt";
-		if($debug == 1){
-			open(FILE, ">>".$filename)
-			or die "failed to open file!!!!";		
-			print FILE "\nTHIS IS A\nTHIS IS A\n";
-			print FILE $a;
-			print FILE "\nTHIS IS B\nTHIS IS B\n";
-			print FILE $b;
-			print FILE "\n";
-			close(FILE);
-		}elsif($debug != 1){
-			if(-e $filename){
-				unlink($filename)or die "Can't delete $filename: $!\n";
-				$filename = "";
+			$filename = "cpmready.txt";
+			if($debug == 1){
+				open(FILE, ">>".$filename)
+				or die "failed to open file!!!!";		
+				print FILE "\ncpm4\n\n";
+				print FILE $a;
+				print FILE "\n";
+				close(FILE);
+
+				s1(); debug("cpmready4");
+			}elsif($debug != 1){
+				if(-e $filename){
+					unlink($filename)or die "Can't delete $filename: $!\n";
+					$filename = "";
+				}else{
+					$filename = "";
+				}
 			}else{
-				$filename = "";
+				warnformat("error in debug.");
 			}
-		}else{
-			warnformat("error in debug.");
-		}
 
 		if ($b =~ m/You win/) {
 			$won++;
 			$reps++; 
-			s1(); won("Test fight ".$reps." You won at level ".$level)
+			s1(); won("Cpm fight ".$reps." You won.")
 		}
 		if ($b =~ m/battle tied/) {
 			$tied++;
 			$reps++;
-			s1(); draw("Test fight ".$reps." You tied at level ".$level);
+			s1(); draw("Cpm  fight ".$reps." You tied.");
 		}
 		if ($b =~ m/stunned/) {
 			$lost++;
 			$reps++;
-			s1(); lost("Test fight ".$reps." You lost at level ".$level);
+			s1(); lost("Cpm  fight ".$reps." You lost.");
 			s1(); general("Waiting 5 seconds before continuing");
 			sleep(6);
+			$reps = 10;
 		}
 		
 		until($reps == 10){
@@ -3466,17 +3550,20 @@ sub Cpmready{
 			$mech->reload();
 			$a = $mech->content();
 			$b = $a;
+			$a =~ m/(<td valign=top>Level.*<\/font><\/body><\/html>)/s;
+			$a = $1;
 
-			$filename = "TESTINFO2.txt";
+			$filename = "cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
-				or die "failed to open file!!!!";		
-				print FILE "\nTHIS IS A\nTHIS IS A\n";
+				or die "failed to open file!!!!";	
+				print FILE "\ncpm5\n\n"; 
+				print FILE "content\n\n";	
 				print FILE $a;
-				print FILE "\nTHIS IS B\nTHIS IS B\n";
-				print FILE $b;
 				print FILE "\n";
 				close(FILE);
+				
+				s1(); debug("cpmready5");
 			}elsif($debug != 1){
 				if(-e $filename){
 					unlink($filename)or die "Can't delete $filename: $!\n";
@@ -3491,19 +3578,19 @@ sub Cpmready{
 			if ($b =~ m/You win/) {
 				$won++;
 				$reps++;
-				s1(); won("Test fight ".$reps." You won at level ".$level);
+				s1(); won("Cpm fight ".$reps." You won.");
 			}
 			if ($b =~ m/battle tied/) {
 				$tied++;
 				$reps++;
-				s1(); draw("Test fight ".$reps." You tied at level ".$level);
+				s1(); draw("Cpm fight ".$reps." You tied.");
 				if($tied >= 3){$tietrig = 1; $eighttwice = 0; last;}
 			}
 			if ($b =~ m/stunned/) {
 				$lost++;
 				$reps++;
 				$eighttwice = 0;
-				s1(); lost("Test fight ".$reps." You lost at level ".$level);
+				s1(); lost("Cpm fight ".$reps." You lost.");
 				s1(); general("Waiting 5 seconds before continuing");
 				sleep(6);
 				last;
@@ -3519,61 +3606,70 @@ sub Cpmready{
 		}
 		nl(); 
 
+			if($debug == 1){
+				s1(); debug("cpmready = ".$cpmready);
+				s1(); debug("cpmtest = ".$cpmtest);
+				s1(); debug("won = ".$won);
+				s1(); debug("tied = ".$tied);
+				s1(); debug("lost = ".$lost);
+				s1(); debug("reps = ".$reps);
+				s1(); debug("eighttwice = ".$eighttwice);	
+				s1(); debug("tietrig = ".$tietrig);
+			}	
+
 		if($tietrig !=1){
 			if($outcomes[0] >=8){ 
 				s1(); general("Won 8 or more times."); nl();
-				$newlevel = $level;
 				$eighttwice++;
 				if($eighttwice == 2){
 					$cpmtest = 1;
-					s1(); general("Level ".$newlevel." is set."); nl();
+					s1(); general("You are Chaoslord Post Mortem ready..."); 
+					$eighttwice = 0;
+					$cpmready = 1;	
+					$cpmtest = 1;
 				}elsif($eighttwice == 1){
-					s1(); general("Trying again at level ".$newlevel." for accuracy."); nl();
+					s1(); general("Trying again for accuracy."); nl();
 				}
 			}elsif($outcomes[0] <=7 ){
-				s1(); general("Won fewer than 8 times out of 10."); nl();
-				if($debug == 1){
-					s1(); debug("level = ".$level);
+				if($outcomes[2] >= 1){
+					s1(); general("Lost a fight."); nl();
+					s1(); general("You are not Chaoslord Post Mortem ready."); nl();
+					$cpmready = 0;
+					$cpmtest = 1;
+				}else{
+					s1(); general("Won fewer than 8 times out of 10."); nl();
+					if($debug == 1){
+						s1(); debug("fewer than 8 wins");nl();
+					}
+					s1(); general("You are nearly Chaoslord Post Mortem ready."); 
+					$eighttwice = 0;
+					$cpmready = 0;
+					$cpmtest = 1;
 				}
-				my $div10 = Math::BigFloat->new($level);
-				$div10->bdiv(10);
-				if($debug == 1){
-					s1(); debug("div10 = ".$div10);
-				}
-				$div10->bfround(1);
-				if($debug == 1){
-					s1(); debug("rounded div10 = ".$div10);
-				}
-				$newlevel = $level - $div10;
-				s1(); general("Trying level ".$newlevel); nl();
 			}else{
-				s1(); general("Wins error. Something is wrong\n");
+				s1(); general("cpmready error. Something is wrong\n");
 			}
 		}else{
 			if($debug == 1){
 				s1(); debug("TIETRIG TRIGGERED");nl();
-				s1(); debug("level = ".$level);
 			}
 			s1(); general("Tied more than twice.");nl();
-			my $div10 = Math::BigFloat->new($level);
-			$div10->bdiv(10);
-			if($debug == 1){
-				s1(); debug("div10 = ".$div10);
-			}
-			$div10->bfround(1);
-			if($debug == 1){
-				s1(); debug("rounded div10 = ".$div10);
-			}
-			$newlevel = $level - $div10;
-			s1(); general("Trying level ".$newlevel); nl();
+			s1(); general("You are not Chaoslord Post Mortem ready.");nl();
+			$cpmready = 0;
 			$tietrig = 0;
-		}
+			$cpmtest = 1;
+		}	
 		if($debug == 1){
-			s1(); debug("Trying level ".$newlevel); nl();	
-		}
-		$level = $newlevel;
+			s1(); debug("cpmready = ".$cpmready);
+			s1(); debug("cpmtest = ".$cpmtest);
+			s1(); debug("won = ".$won);
+			s1(); debug("tied = ".$tied);
+			s1(); debug("lost = ".$lost);
+			s1(); debug("reps = ".$reps);
+			s1(); debug("eighttwice = ".$eighttwice);	
+			s1(); debug("tietrig = ".$tietrig);
+		}	
 	}
-
 	return($cpmready);
 }
 
@@ -3709,12 +3805,10 @@ until($levels == 0){
 		&leveltestfight;
 		&LowFight;	
 	}else{
-		#adding cpm level check
 		#then cpm level subroutine
 		&CPMlevel;
 		&Fight;
 	}
-
 }
 
 goto RETRY;

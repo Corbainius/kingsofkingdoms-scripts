@@ -1,0 +1,1331 @@
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 7,721,721,325,617.</td> <td valign=top>Gold : 2,552,523,970,071.</td><td valign=top>Freeplay : 49,844,364.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>8.450<br>890<br>6.935<br>8.450<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>53.320<br>5.385<br>68.032<br>56.700<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>6.519.412<br>96.232.260<br>96.232.260<br>12.349.922<br>49.378.545<br>41.063.925<br>41.098.492<br><hr>102.751.672<br>80.376.295<br>61.728.468<br><br></td><td align=centre valign=top>Max<hr>16.660.717<br>245.926.833<br>245.926.833<br>31.560.906<br>126.189.589<br>102.659.811<br>102.746.231<br><hr>262.587.550<br>205.406.042<br>157.750.495<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>47.200.538<br>944.155.565<br>944.155.565<br>89.918.586<br>298.739.694<br>259.113.319<br>275.809.919<br><hr>991.356.104<br>523.294.586<br>388.658.280<br><br></td><td align=centre valign=top>Max<hr>120.623.572<br>2.412.841.476<br>2.412.841.476<br>229.791.893<br>763.445.719<br>647.783.298<br>689.524.796<br><hr>2.533.465.047<br>1.337.308.095<br>993.237.612<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>456.429.205<br>12.916.048.133<br>11.084.386.336<br>686.078.814<br>2.655.795.881<br>2.401.980.470<br>5.245.904.651<br><hr>13.372.477.338<br>7.481.628.375<br>3.341.874.695</td><td align=right valign=top>Max<hr>1.166.429.937<br>33.007.671.386<br>28.326.758.923<br>1.753.312.143<br>6.787.032.442<br>6.004.951.174<br>13.114.761.627<br><hr>34.174.101.324<br>19.119.712.801<br>8.540.344.585</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 2,420 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 24</td>
+<td align=center>5% or 121</td><td align=center>10% or 242</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 2420 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 2420 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 2420 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 2420 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 2420 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 2420 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0055</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 7,618.</td> <td valign=top>Exp : 12,607,752,409,252.</td> <td valign=top>Gold : 4,153,153,876,636.</td><td valign=top>Freeplay : 49,843,879.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>12.685<br>890<br>10.565<br>12.685<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>80.042<br>5.385<br>103.643<br>85.116<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>9.931.599<br>223.307.477<br>223.307.477<br>18.811.515<br>75.224.001<br>92.342.038<br>92.395.173<br><hr>233.239.076<br>180.721.225<br>94.035.516<br><br></td><td align=centre valign=top>Max<hr>25.380.747<br>570.674.540<br>570.674.540<br>48.073.861<br>192.239.072<br>230.855.096<br>230.987.934<br><hr>596.055.288<br>461.843.029<br>240.312.933<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>71.904.771<br>2.190.829.121<br>2.190.829.121<br>136.959.254<br>455.104.855<br>582.678.209<br>620.031.653<br><hr>2.262.733.892<br>1.176.564.251<br>592.064.110<br><br></td><td align=centre valign=top>Max<hr>183.756.596<br>5.598.784.315<br>5.598.784.315<br>350.006.907<br>1.163.045.489<br>1.456.695.522<br>1.550.079.132<br><hr>5.782.540.911<br>3.006.774.654<br>1.513.052.396<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>695.319.132<br>29.970.542.378<br>25.720.333.883<br>1.044.999.109<br>4.045.882.165<br>5.401.426.995<br>11.793.002.039<br><hr>30.665.861.509<br>16.820.640.755<br>5.090.881.274</td><td align=right valign=top>Max<hr>1.776.926.284<br>76.591.369.426<br>65.729.727.855<br>2.670.552.698<br>10.339.474.396<br>13.503.567.486<br>29.482.505.098<br><hr>78.368.295.710<br>42.986.072.584<br>13.010.027.094</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 886 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 9</td>
+<td align=center>5% or 44</td><td align=center>10% or 89</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 886 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 886 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 886 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 886 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 886 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 886 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0100</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,504.</td> <td valign=top>Exp : 17,609,648,990,238.</td> <td valign=top>Gold : 5,807,537,259,053.</td><td valign=top>Freeplay : 49,843,528.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>14.235<br>890<br>11.895<br>14.235<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>89.823<br>5.385<br>116.690<br>95.517<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>11.181.796<br>283.060.349<br>283.060.349<br>21.178.958<br>84.693.569<br>116.243.324<br>116.303.267<br><hr>294.242.145<br>227.491.280<br>105.872.527<br><br></td><td align=centre valign=top>Max<hr>28.575.694<br>723.376.291<br>723.376.291<br>54.123.993<br>216.439.073<br>290.608.310<br>290.758.167<br><hr>751.951.985<br>581.366.477<br>270.563.066<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>80.956.197<br>2.777.028.887<br>2.777.028.887<br>154.194.303<br>512.395.775<br>733.495.320<br>780.462.652<br><hr>2.857.985.084<br>1.481.046.164<br>666.590.079<br><br></td><td align=centre valign=top>Max<hr>206.888.015<br>7.096.850.056<br>7.096.850.056<br>394.052.023<br>1.309.455.585<br>1.833.738.299<br>1.951.156.629<br><hr>7.303.738.071<br>3.784.894.928<br>1.703.507.608<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>782.846.428<br>37.989.755.169<br>32.602.319.129<br>1.176.502.535<br>4.555.198.441<br>6.799.501.613<br>14.844.399.635<br><hr>38.772.601.596<br>21.173.386.259<br>5.731.700.976</td><td align=right valign=top>Max<hr>2.000.607.102<br>97.084.908.770<br>83.317.019.661<br>3.006.616.937<br>11.641.060.151<br>16.998.754.034<br>37.110.999.089<br><hr>99.085.515.872<br>54.109.753.122<br>14.647.677.088</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 200 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 2</td>
+<td align=center>5% or 10</td><td align=center>10% or 20</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 200 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 200 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 200 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 200 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 200 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 200 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0041</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,704.</td> <td valign=top>Exp : 50,278,125,571,062.</td> <td valign=top>Gold : 16,693,972,469,718.</td><td valign=top>Freeplay : 49,841,707.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>14.585<br>890<br>12.195<br>14.585<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>92.031<br>5.385<br>119.633<br>97.865<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>11.463.795<br>297.516.441<br>297.516.441<br>21.712.967<br>86.829.562<br>122.018.424<br>122.079.904<br><hr>308.980.236<br>238.791.895<br>108.542.529<br><br></td><td align=centre valign=top>Max<hr>29.296.359<br>760.319.628<br>760.319.628<br>55.488.681<br>221.897.722<br>305.046.061<br>305.199.761<br><hr>789.615.987<br>610.245.822<br>277.386.404<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>82.997.873<br>2.918.848.577<br>2.918.848.577<br>158.081.897<br>525.318.543<br>769.936.202<br>819.225.625<br><hr>3.001.846.450<br>1.554.615.169<br>683.400.441<br><br></td><td align=centre valign=top>Max<hr>212.105.629<br>7.459.278.076<br>7.459.278.076<br>403.986.983<br>1.342.480.430<br>1.924.840.506<br>2.048.064.062<br><hr>7.671.383.705<br>3.972.904.568<br>1.746.467.413<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>802.589.432<br>39.929.848.538<br>34.267.282.298<br>1.206.164.876<br>4.670.081.851<br>7.137.308.597<br>15.581.671.381<br><hr>40.732.437.970<br>22.225.093.940<br>5.876.246.727</td><td align=right valign=top>Max<hr>2.051.061.437<br>102.042.924.080<br>87.571.924.612<br>3.082.420.679<br>11.934.651.026<br>17.843.271.492<br>38.954.178.452<br><hr>104.093.985.517<br>56.797.449.944<br>15.017.071.704</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 6,444 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 64</td>
+<td align=center>5% or 322</td><td align=center>10% or 644</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 6444 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 6444 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 6444 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 6444 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 6444 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 6444 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0109</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 15,147.</td> <td valign=top>Exp : 135,109,574,120,410.</td> <td valign=top>Gold : 44,663,901,710,916.</td><td valign=top>Freeplay : 49,841,474.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>25.860<br>890<br>21.860<br>25.860<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>163.177<br>5.385<br>214.447<br>173.521<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>20.548.885<br>955.867.094<br>955.867.094<br>38.916.821<br>155.644.247<br>382.966.233<br>383.077.271<br><hr>976.415.979<br>749.390.546<br>194.561.068<br><br></td><td align=centre valign=top>Max<hr>52.513.805<br>2.442.770.933<br>2.442.770.933<br>99.454.077<br>397.757.433<br>957.415.581<br>957.693.177<br><hr>2.495.284.737<br>1.915.108.758<br>497.211.510<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>148.773.921<br>9.377.443.616<br>9.377.443.616<br>283.326.165<br>941.647.512<br>2.416.516.865<br>2.570.573.879<br><hr>9.526.217.537<br>4.878.676.789<br>1.224.973.677<br><br></td><td align=centre valign=top>Max<hr>380.199.938<br>23.964.572.920<br>23.964.572.920<br>724.055.596<br>2.406.432.008<br>6.041.292.163<br>6.426.434.697<br><hr>24.344.772.858<br>12.467.726.861<br>3.130.487.605<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>1.438.643.816<br>128.283.428.667<br>110.091.188.052<br>2.161.778.635<br>8.371.246.384<br>22.401.111.342<br>48.892.315.176<br><hr>129.722.072.483<br>69.743.584.581<br>10.533.025.020</td><td align=right valign=top>Max<hr>3.676.533.398<br>327.835.357.546<br>281.344.086.081<br>5.524.544.201<br>21.393.180.554<br>56.002.778.354<br>122.230.787.941<br><hr>331.511.890.944<br>178.233.566.295<br>26.917.724.755</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 11,771 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 118</td>
+<td align=center>5% or 589</td><td align=center>10% or 1,177</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 11771 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 11771 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 11771 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 11771 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 11771 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 11771 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0134</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 26,918.</td> <td valign=top>Exp : 441,350,515,754,410.</td> <td valign=top>Gold : 144,941,431,443,570.</td><td valign=top>Freeplay : 49,841,278.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>46.460<br>890<br>39.515<br>46.460<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>293.163<br>5.385<br>387.642<br>311.747<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>37.144.578<br>3.123.141.830<br>3.123.141.830<br>70.342.812<br>281.347.778<br>1.234.888.540<br>1.235.090.183<br><hr>3.160.286.408<br>2.416.284.058<br>351.690.591<br><br></td><td align=centre valign=top>Max<hr>94.925.013<br>7.981.360.719<br>7.981.360.719<br>179.764.926<br>718.999.721<br>3.087.221.351<br>3.087.725.456<br><hr>8.076.285.731<br>6.174.946.807<br>898.764.647<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>268.926.744<br>30.638.728.772<br>30.638.728.772<br>512.107.498<br>1.702.153.956<br>7.792.146.623<br>8.287.682.692<br><hr>30.907.655.517<br>15.730.271.228<br>2.214.261.454<br><br></td><td align=centre valign=top>Max<hr>687.257.086<br>78.298.956.508<br>78.298.956.508<br>1.308.718.876<br>4.349.948.053<br>19.480.366.557<br>20.719.206.730<br><hr>78.986.213.594<br>40.199.573.287<br>5.658.666.930<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>2.600.521.617<br>419.137.809.607<br>359.698.675.788<br>3.907.380.208<br>15.132.148.669<br>72.233.199.192<br>157.631.724.804<br><hr>421.738.331.224<br>224.867.909.315<br>19.039.528.877</td><td align=right valign=top>Max<hr>6.645.776.021<br>1.071.129.725.030<br>919.229.749.404<br>9.985.525.027<br>38.671.038.192<br>180.582.997.979<br>394.079.312.010<br><hr>1.077.775.501.050<br>574.662.309.989<br>48.656.563.219</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 18,731 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 187</td>
+<td align=center>5% or 937</td><td align=center>10% or 1,873</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 18731 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 18731 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 18731 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 18731 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 18731 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 18731 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0137</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 45,649.</td> <td valign=top>Exp : 1,361,108,647,474,800.</td> <td valign=top>Gold : 443,203,275,975,340.</td><td valign=top>Freeplay : 49,841,014.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>79.240<br>890<br>67.610<br>79.240<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>500.004<br>5.385<br>663.254<br>531.700<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>63.553.875<br>9.142.692.188<br>9.142.692.188<br>120.351.960<br>481.384.142<br>3.590.364.726<br>3.590.710.580<br><hr>9.206.246.063<br>7.024.966.500<br>601.736.102<br><br></td><td align=centre valign=top>Max<hr>162.415.423<br>23.364.652.734<br>23.364.652.734<br>307.566.054<br>1.230.203.651<br>8.975.911.816<br>8.976.776.449<br><hr>23.527.068.156<br>17.952.688.265<br>1.537.769.705<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>460.130.053<br>89.691.027.077<br>89.691.027.077<br>876.174.158<br>2.912.373.999<br>22.655.201.354<br>24.094.058.143<br><hr>90.151.157.130<br>45.732.981.189<br>3.788.548.157<br><br></td><td align=centre valign=top>Max<hr>1.175.887.657<br>229.210.352.703<br>229.210.352.703<br>2.239.111.250<br>7.442.731.934<br>56.638.003.384<br>60.235.145.359<br><hr>230.386.240.360<br>116.873.148.743<br>9.681.843.185<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>4.449.457.609<br>1.226.973.250.419<br>1.052.972.657.889<br>6.685.208.826<br>25.891.004.849<br>210.013.716.549<br>458.268.985.889<br><hr>1.231.422.708.028<br>653.754.959.723<br>32.576.213.675</td><td align=right valign=top>Max<hr>11.370.833.640<br>3.135.597.624.975<br>2.690.929.540.732<br>17.084.418.841<br>66.165.886.897<br>525.034.291.372<br>1.145.672.464.722<br><hr>3.146.968.458.615<br>1.670.706.756.094<br>83.250.305.739</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 8,707 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 87</td>
+<td align=center>5% or 435</td><td align=center>10% or 871</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 8707 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 8707 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 8707 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 8707 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 8707 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 8707 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0046</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 54,355.</td> <td valign=top>Exp : 2,698,269,677,781,200.</td> <td valign=top>Gold : 883,426,110,183,230.</td><td valign=top>Freeplay : 49,840,815.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>94.475<br>890<br>80.670<br>94.475<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>596.137<br>5.385<br>791.373<br>633.927<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>75.830.274<br>13.015.857.202<br>13.015.857.202<br>143.598.772<br>574.371.334<br>5.103.199.717<br>5.103.612.603<br><hr>13.091.687.476<br>9.984.927.266<br>717.970.105<br><br></td><td align=centre valign=top>Max<hr>193.788.436<br>33.262.738.953<br>33.262.738.953<br>366.974.559<br>1.467.837.534<br>12.757.999.292<br>12.759.031.508<br><hr>33.456.527.389<br>25.517.030.799<br>1.834.812.093<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>549.011.183<br>127.687.012.637<br>127.687.012.637<br>1.045.410.958<br>3.474.946.518<br>32.201.190.143<br>34.245.706.289<br><hr>128.236.023.820<br>65.002.412.815<br>4.520.357.476<br><br></td><td align=centre valign=top>Max<hr>1.403.028.274<br>326.311.183.580<br>326.311.183.580<br>2.671.605.200<br>8.880.416.949<br>80.502.975.357<br>85.614.265.724<br><hr>327.714.211.854<br>166.117.241.081<br>11.552.022.149<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>5.308.938.142<br>1.746.758.332.876<br>1.499.045.528.360<br>7.976.485.608<br>30.892.274.545<br>298.505.032.624<br>651.353.333.625<br><hr>1.752.067.271.018<br>929.209.473.333<br>38.868.760.153</td><td align=right valign=top>Max<hr>13.567.283.413<br>4.463.936.991.373<br>3.830.893.295.228<br>20.384.347.678<br>78.946.906.676<br>746.262.581.561<br>1.628.383.334.063<br><hr>4.477.504.274.786<br>2.374.645.915.624<br>99.331.254.353</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 4,279 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 43</td>
+<td align=center>5% or 214</td><td align=center>10% or 428</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 4279 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 4279 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 4279 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 4279 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 4279 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 4279 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0047</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 54,355.</td> <td valign=top>Exp : 4,541,857,557,295,900.</td> <td valign=top>Gold : 1,497,955,403,354,900.</td><td valign=top>Freeplay : 49,840,568.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>94.475<br>890<br>80.670<br>94.475<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>596.137<br>5.385<br>791.373<br>633.927<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>75.830.274<br>13.015.857.202<br>13.015.857.202<br>143.598.772<br>574.371.334<br>5.103.199.717<br>5.103.612.603<br><hr>13.091.687.476<br>9.984.927.266<br>717.970.105<br><br></td><td align=centre valign=top>Max<hr>193.788.436<br>33.262.738.953<br>33.262.738.953<br>366.974.559<br>1.467.837.534<br>12.757.999.292<br>12.759.031.508<br><hr>33.456.527.389<br>25.517.030.799<br>1.834.812.093<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>549.011.183<br>127.687.012.637<br>127.687.012.637<br>1.045.410.958<br>3.474.946.518<br>32.201.190.143<br>34.245.706.289<br><hr>128.236.023.820<br>65.002.412.815<br>4.520.357.476<br><br></td><td align=centre valign=top>Max<hr>1.403.028.274<br>326.311.183.580<br>326.311.183.580<br>2.671.605.200<br>8.880.416.949<br>80.502.975.357<br>85.614.265.724<br><hr>327.714.211.854<br>166.117.241.081<br>11.552.022.149<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>5.308.938.142<br>1.746.758.332.876<br>1.499.045.528.360<br>7.976.485.608<br>30.892.274.545<br>298.505.032.624<br>651.353.333.625<br><hr>1.752.067.271.018<br>929.209.473.333<br>38.868.760.153</td><td align=right valign=top>Max<hr>13.567.283.413<br>4.463.936.991.373<br>3.830.893.295.228<br>20.384.347.678<br>78.946.906.676<br>746.262.581.561<br>1.628.383.334.063<br><hr>4.477.504.274.786<br>2.374.645.915.624<br>99.331.254.353</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 12,912 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 129</td>
+<td align=center>5% or 646</td><td align=center>10% or 1,291</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 12912 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 12912 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 12912 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 12912 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 12912 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 12912 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0477</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 67,267.</td> <td valign=top>Exp : 8,459,409,039,217,200.</td> <td valign=top>Gold : 2,791,292,460,771,700.</td><td valign=top>Freeplay : 49,831,574.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>117.070<br>890<br>100.040<br>117.070<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>738.712<br>5.385<br>981.392<br>785.540<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>94.038.073<br>20.016.698.193<br>20.016.698.193<br>178.077.383<br>712.285.725<br>7.835.401.771<br>7.835.914.077<br><hr>20.110.736.266<br>15.330.638.402<br>890.363.108<br><br></td><td align=centre valign=top>Max<hr>240.319.468<br>51.153.773.151<br>51.153.773.151<br>455.086.546<br>1.820.285.347<br>19.588.504.428<br>19.589.785.193<br><hr>51.394.092.619<br>39.178.289.621<br>2.275.371.893<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>680.835.650<br>196.365.613.921<br>196.365.613.921<br>1.296.415.262<br>4.309.328.597<br>49.441.385.106<br>52.579.561.259<br><hr>197.046.449.571<br>99.803.121.401<br>5.605.743.859<br><br></td><td align=centre valign=top>Max<hr>1.739.912.949<br>501.823.126.485<br>501.823.126.485<br>3.313.060.506<br>11.012.726.243<br>123.603.462.765<br>131.448.903.146<br><hr>503.563.039.434<br>255.052.365.911<br>14.325.786.749<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>6.583.680.733<br>2.686.281.598.444<br>2.305.332.307.437<br>9.891.648.452<br>38.309.931.227<br>458.321.639.932<br>1.000.063.255.137<br><hr>2.692.865.279.177<br>1.426.681.185.759<br>48.201.579.679</td><td align=right valign=top>Max<hr>16.824.958.216<br>6.864.940.370.312<br>5.891.403.504.931<br>25.278.651.659<br>97.903.136.298<br>1.145.804.099.829<br>2.500.158.137.843<br><hr>6.881.765.328.528<br>3.645.962.237.672<br>123.181.787.957</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 9,501 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 95</td>
+<td align=center>5% or 475</td><td align=center>10% or 950</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 9501 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 9501 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 9501 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 9501 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 9501 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 9501 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0053</b> seconds.</font></body></html>
+
+Levelup
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 76,767.</td> <td valign=top>Exp : 10,497,915,042,470,000.</td> <td valign=top>Gold : 3,458,792,039,668,900.</td><td valign=top>Freeplay : 49,831,381.</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th width=25%>Stats</th><th>Natural</th><th>Bonus</th><th>Charmed</th></tr>
+<tr> <td valign="top">Strength<br>Dexterity<br>Agility<br>Intelligence<br>Concentration<br>Contravention</td>
+<td align=right valign="top">
+470<br>133.695<br>890<br>114.290<br>133.695<br>890</td><td align=right>+624%<br>+531%<br>+505%<br>+881%<br>+571%<br>+628%<br></td><td align=right valign=top>3.403<br>843.615<br>5.385<br>1.121.185<br>897.093<br>6.479</td></tr></table>
+
+<table style="width:100%">
+  <tr>
+    <th style="width:50%">
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Natural Stats for King Ctest1</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>107.433.073<br>26.125.202.937<br>26.125.202.937<br>203.442.389<br>813.745.721<br>10.218.202.221<br>10.218.787.675<br><hr>26.232.636.010<br>19.992.711.854<br>1.017.188.110<br><br></td><td align=centre valign=top>Max<hr>274.551.127<br>66.764.392.992<br>66.764.392.992<br>519.908.214<br>2.079.571.946<br>25.545.505.553<br>25.546.969.189<br><hr>67.038.944.119<br>51.092.474.742<br>2.599.480.160<br><br></td></tr></table>
+</th>
+    <th style="width:50%"><table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=3>Stats for King Ctest1 with primary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<br><hr>Special damage<br>Special rating<br>Special shield<br><br></td>
+<td align=centre valign="top">Min<hr>777.815.447<br>256.290.303.795<br>256.290.303.795<br>1.481.072.512<br>4.923.161.576<br>64.476.855.947<br>68.568.725.563<br><hr>257.068.119.242<br>130.153.314.554<br>6.404.234.088<br><br></td><td align=centre valign=top>Max<hr>1.987.750.154<br>654.963.967.316<br>654.963.967.316<br>3.784.962.264<br>12.581.410.180<br>161.192.139.867<br>171.421.813.908<br><hr>656.951.717.470<br>332.613.953.775<br>16.366.372.444<br><br></td></tr></table>
+</th>
+</tr>
+</table>
+<table cellpadding=0 cellspacing=1 border=0 width=100%><tr>
+<th colspan=4>Stats for King Ctest1 with secondary bonus's</th></tr>
+<tr>
+<td valign="top">Elves Stats<hr>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack rating<br>Magic rating<hr>Special damage<br>Special rating<br>Special shield</td>
+<td align=left valign="top">Bonus<hr>
++1268%<br>+1074%<br>+663%<br>+789%<br>+827%<br>+1802%<br>+1688%<br><hr>
+</td>
+
+<td align=right valign="top">Min<hr>7.521.475.372<br>3.506.051.355.922<br>3.008.848.166.558<br>11.300.583.267<br>43.766.906.408<br>597.700.454.625<br>1.304.177.160.213<br><hr>3.513.572.831.293<br>1.860.532.853.762<br>55.067.489.675</td><td align=right valign=top>Max<hr>19.221.543.994<br>8.959.907.072.882<br>7.689.276.976.289<br>28.879.262.071<br>111.848.736.504<br>1.494.251.136.563<br>3.260.442.900.533<br><hr>8.979.128.616.876<br>4.754.694.037.096<br>140.727.998.576</td></tr></table>
+<br><form method=post action="stats.php" target="lol_main">
+You have 1,631 levels available.
+<br><table width=50% align=center border=1>
+<tr><td align=center width=50%>Levels</td><td align=center width=50%></td><td align=center width=50%>1% or 16</td>
+<td align=center>5% or 82</td><td align=center>10% or 163</td></tr>
+<td align=center width=50%><center>
+<input type=number size=25 name="Strength" placeholder=0 maxlength=15 max= 1631 ><br>
+<input type=number size=25 name="Dexterity" placeholder=0 maxlength=15 max= 1631 ><br>
+<input type=number size=25 name="Agility" placeholder=0  maxlength=15 max= 1631 ><br>
+<input type=number size=25 name="Intelligence" placeholder=0  maxlength=15 max= 1631 ><br>
+<input type=number size=25 name="Concentration" placeholder=0 maxlength=15 max= 1631 ><br>
+<input type=number size=25 name="Contravention" placeholder=0 maxlength=15 max= 1631 ><br>
+</td>
+<td align=center width=50%><center>
+   <input type=submit name=Level value="Level Up!!!" >
+</td>
+<td align=center width=50%><center>
+<input type=submit name="Stats1" value="Strength"><br>
+<input type=submit name="Stats1" value="Dexterity"><br>
+<input type=submit name="Stats1" value="Agility"><br>
+<input type=submit name="Stats1" value="Intelligence"><br>
+<input type=submit name="Stats1" value="Concentration"><br>
+<input type=submit name="Stats1" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats5" value="Strength"><br>
+<input type=submit name="Stats5" value="Dexterity"><br>
+<input type=submit name="Stats5" value="Agility"><br>
+<input type=submit name="Stats5" value="Intelligence"><br>
+<input type=submit name="Stats5" value="Concentration"><br>
+<input type=submit name="Stats5" value="Contravention"><br>
+</td>
+<td align=center><center>
+<input type=submit name="Stats10" value="Strength"><br>
+<input type=submit name="Stats10" value="Dexterity"><br>
+<input type=submit name="Stats10" value="Agility"><br>
+<input type=submit name="Stats10" value="Intelligence"><br>
+<input type=submit name="Stats10" value="Concentration"><br>
+<input type=submit name="Stats10" value="Contravention"><br>
+</td></tr>
+</table>
+</form><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0321</b> seconds.</font></body></html>
+

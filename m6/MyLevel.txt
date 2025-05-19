@@ -42,8 +42,392 @@ textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; borde
 <body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
 <center>
 <table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
-<td valign=top>Level : 898.</td> <td valign=top>Exp : 821,548,743,661.</td> <td valign=top>Gold : 274,321,699,738.</td><td valign=top>Life : 134,700.</td><td valign=top>Freeplay : 49,917,510</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>898</td><td>Race</td><td>Elves</td>
-<tr><td>Exp</td><td>821,548,743,661</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>274,321,699,738</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>134,700</td></tr><tr><td>Monsters Killed</td><td>17,579</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>160</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>17,739</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 4,141,717,158,467.</td> <td valign=top>Gold : 1,359,189,246,136.</td><td valign=top>Life : 779,700.</td><td valign=top>Freeplay : 49,848,672</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>5,198</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>4,141,717,158,467</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>1,359,189,246,136</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>779,700</td></tr><tr><td>Monsters Killed</td><td>17,749</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>168</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>17,917</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0184</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 6,015,845,203,922.</td> <td valign=top>Gold : 1,983,898,594,574.</td><td valign=top>Life : 779,700.</td><td valign=top>Freeplay : 49,846,608</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>5,198</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>6,015,845,203,922</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>1,983,898,594,574</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>779,700</td></tr><tr><td>Monsters Killed</td><td>17,821</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,000</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0096</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 6,263,871,839,001.</td> <td valign=top>Gold : 2,066,574,140,054.</td><td valign=top>Life : 779,700.</td><td valign=top>Freeplay : 49,846,252</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>5,198</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>6,263,871,839,001</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>2,066,574,140,054</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>779,700</td></tr><tr><td>Monsters Killed</td><td>17,842</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,021</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0045</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 6,495,016,520,808.</td> <td valign=top>Gold : 2,143,622,367,734.</td><td valign=top>Life : 779,700.</td><td valign=top>Freeplay : 49,846,092</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>5,198</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>6,495,016,520,808</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>2,143,622,367,734</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>779,700</td></tr><tr><td>Monsters Killed</td><td>17,865</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,044</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0193</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 6,734,667,003,556.</td> <td valign=top>Gold : 2,223,505,862,425.</td><td valign=top>Life : 779,700.</td><td valign=top>Freeplay : 49,844,472</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>5,198</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>6,734,667,003,556</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>2,223,505,862,425</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>779,700</td></tr><tr><td>Monsters Killed</td><td>17,907</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,086</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0070</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 7,618.</td> <td valign=top>Exp : 7,721,721,325,617.</td> <td valign=top>Gold : 2,524,476,846,507.</td><td valign=top>Life : 1,142,700.</td><td valign=top>Freeplay : 49,844,289</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>7,618</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>7,721,721,325,617</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>2,524,476,846,507</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>1,142,700</td></tr><tr><td>Monsters Killed</td><td>17,957</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,136</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0101</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 7,618.</td> <td valign=top>Exp : 8,760,470,748,334.</td> <td valign=top>Gold : 2,870,726,655,981.</td><td valign=top>Life : 1,142,700.</td><td valign=top>Freeplay : 49,843,970</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>7,618</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>8,760,470,748,334</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>2,870,726,655,981</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>1,142,700</td></tr><tr><td>Monsters Killed</td><td>18,063</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,242</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
 
 </table>
 
@@ -61,4 +445,964 @@ This will allow account recovery.
 <a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
 <hr><br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0027</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,504.</td> <td valign=top>Exp : 12,607,752,409,252.</td> <td valign=top>Gold : 4,140,238,396,024.</td><td valign=top>Life : 1,275,600.</td><td valign=top>Freeplay : 49,843,848</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>8,504</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>12,607,752,409,252</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>4,140,238,396,024</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>1,275,600</td></tr><tr><td>Monsters Killed</td><td>18,108</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,287</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0046</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,504.</td> <td valign=top>Exp : 13,858,494,911,590.</td> <td valign=top>Gold : 4,557,152,565,755.</td><td valign=top>Life : 1,275,600.</td><td valign=top>Freeplay : 49,843,615</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>8,504</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>13,858,494,911,590</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>4,557,152,565,755</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>1,275,600</td></tr><tr><td>Monsters Killed</td><td>18,218</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,397</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0064</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,704.</td> <td valign=top>Exp : 17,609,648,990,238.</td> <td valign=top>Gold : 5,804,480,274,989.</td><td valign=top>Life : 1,305,600.</td><td valign=top>Freeplay : 49,843,498</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>8,704</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>17,609,648,990,238</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>5,804,480,274,989</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>1,305,600</td></tr><tr><td>Monsters Killed</td><td>18,263</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>179</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,442</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0033</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,704.</td> <td valign=top>Exp : 17,760,699,027,222.</td> <td valign=top>Gold : 5,854,830,287,594.</td><td valign=top>Life : 1,305,600.</td><td valign=top>Freeplay : 49,841,851</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>8,704</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>17,760,699,027,222</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>5,854,830,287,594</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>1,305,600</td></tr><tr><td>Monsters Killed</td><td>18,310</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>182</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,492</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0950</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 15,147.</td> <td valign=top>Exp : 50,278,125,571,062.</td> <td valign=top>Gold : 16,386,752,194,098.</td><td valign=top>Life : 2,272,050.</td><td valign=top>Freeplay : 49,841,606</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>15,147</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>50,278,125,571,062</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>16,386,752,194,098</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>2,272,050</td></tr><tr><td>Monsters Killed</td><td>18,357</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>186</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,543</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0227</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 26,918.</td> <td valign=top>Exp : 135,109,574,120,410.</td> <td valign=top>Gold : 42,861,117,565,560.</td><td valign=top>Life : 4,037,700.</td><td valign=top>Freeplay : 49,841,377</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>26,918</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>135,109,574,120,410</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>42,861,117,565,560</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>4,037,700</td></tr><tr><td>Monsters Killed</td><td>18,397</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>190</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,587</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0096</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 45,649.</td> <td valign=top>Exp : 441,350,515,754,410.</td> <td valign=top>Gold : 136,617,232,067,610.</td><td valign=top>Life : 6,847,350.</td><td valign=top>Freeplay : 49,841,166</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>45,649</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>441,350,515,754,410</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>136,617,232,067,610</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>6,847,350</td></tr><tr><td>Monsters Killed</td><td>18,442</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>190</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,632</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0039</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 45,649.</td> <td valign=top>Exp : 441,630,904,483,020.</td> <td valign=top>Gold : 136,710,694,977,670.</td><td valign=top>Life : 6,847,350.</td><td valign=top>Freeplay : 49,841,116</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>45,649</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>441,630,904,483,020</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>136,710,694,977,670</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>6,847,350</td></tr><tr><td>Monsters Killed</td><td>18,463</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>190</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,653</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0141</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 54,355.</td> <td valign=top>Exp : 1,361,108,647,474,800.</td> <td valign=top>Gold : 437,705,766,747,700.</td><td valign=top>Life : 8,153,250.</td><td valign=top>Freeplay : 49,840,959</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>54,355</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>1,361,108,647,474,800</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>437,705,766,747,700</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>8,153,250</td></tr><tr><td>Monsters Killed</td><td>18,505</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>190</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,695</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0543</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 54,355.</td> <td valign=top>Exp : 2,698,269,677,781,200.</td> <td valign=top>Gold : 883,426,110,183,230.</td><td valign=top>Life : 8,153,250.</td><td valign=top>Freeplay : 49,840,806</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>54,355</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>2,698,269,677,781,200</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>883,426,110,183,230</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>8,153,250</td></tr><tr><td>Monsters Killed</td><td>18,550</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>195</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,745</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0042</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 67,267.</td> <td valign=top>Exp : 4,541,857,557,295,900.</td> <td valign=top>Gold : 1,485,441,966,797,300.</td><td valign=top>Life : 10,090,050.</td><td valign=top>Freeplay : 49,840,515</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>67,267</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>4,541,857,557,295,900</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>1,485,441,966,797,300</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>10,090,050</td></tr><tr><td>Monsters Killed</td><td>18,593</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>212</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,805</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0086</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 67,267.</td> <td valign=top>Exp : 6,019,720,018,124,422.</td> <td valign=top>Gold : 1,978,062,787,073,892.</td><td valign=top>Life : 10,090,050.</td><td valign=top>Freeplay : 49,831,694</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>67,267</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>6,019,720,018,124,422</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>1,978,062,787,073,892</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>10,090,050</td></tr><tr><td>Monsters Killed</td><td>18,637</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>234</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,871</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0033</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 76,767.</td> <td valign=top>Exp : 8,459,409,039,217,200.</td> <td valign=top>Gold : 2,779,290,038,583,700.</td><td valign=top>Life : 11,515,050.</td><td valign=top>Freeplay : 49,831,543</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>76,767</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>8,459,409,039,217,200</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>2,779,290,038,583,700</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>11,515,050</td></tr><tr><td>Monsters Killed</td><td>18,686</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>236</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,922</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0036</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 78,398.</td> <td valign=top>Exp : 10,497,915,042,470,000.</td> <td valign=top>Gold : 3,456,643,931,395,300.</td><td valign=top>Life : 11,759,700.</td><td valign=top>Freeplay : 49,831,349</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>78,398</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>10,497,915,042,470,000</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>3,456,643,931,395,300</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>11,759,700</td></tr><tr><td>Monsters Killed</td><td>18,726</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>245</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>18,971</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0029</b> seconds.</font></body></html>
+
+Mylevel
+
+content
+
+<html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;}
+a:hover {text-decoration: underline; color:#FF1234}
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 78,398.</td> <td valign=top>Exp : 10,498,116,748,980,000.</td> <td valign=top>Gold : 3,456,711,166,898,800.</td><td valign=top>Life : 11,759,700.</td><td valign=top>Freeplay : 49,831,124</td></tr></table><table cellpadding=0 cellspacing=1 border=0 width=100%></tr><tr><th colspan=4>Main Overview of  King Ctest1 </th></tr><tr><td>Level</td><td>78,398</td><td>Race</td><td>Elves</td>
+<tr><td>Exp</td><td>10,498,116,748,980,000</td><td>Stealth mode</td><td>0</td></tr><tr><td>Gold</td><td>3,456,711,166,898,800</td><td>Merge Recovery</td><td>0</td></tr><tr><td>Stash</td><td>1,000</td><td>Life</td><td>11,759,700</td></tr><tr><td>Monsters Killed</td><td>18,747</td><td>Duels Won</td><td>0</td></tr><tr><td>Deads by Monsters</td><td>256</td><td>Duels Lost</td><td>0</td></tr><tr><td>Total Fights</td><td>19,003</td><td>Total Duels</td><td>0</td></tr><tr><td>Mute</td><td>0</td><td>Jail</td><td>0</td></tr><tr><td>Friend</td><td>Not Refered</td><td>Inactive</td><td>2</td></tr><tr><td>Last login ip</td><td>0</td><td>Current ip</td><td>109.234.179.81</td></tr><tr><th width=20%><a href="prefz.php">Preference</a></th><th width=20%><a href="bug.php">Bug Report</a></th><th width=20%><a href="calculator.php">Calculator</a></th><th width=20%><a href="friends.php">Friends</a></th></tr>
+
+</table>
+
+<p>
+<hr>
+<b>
+WARNING : Your email is empty if you lose your password or account then i can't help you!<br>
+<a href="preference.php">Please click here to insert an email address.</a><br>
+This will allow account recovery.
+</b>
+<hr>
+<p>
+<hr>
+<b>Please always include this information when you contact Admin Corbainius</b><br>
+<a href="mailto:markdavidtaylor@rocketmail.com?subject=MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1">>>MID:55,Game:Lol1,Server:m6,Username:corbtest1,Charname:Ctest1<<</a>
+<hr><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0047</b> seconds.</font></body></html>
 

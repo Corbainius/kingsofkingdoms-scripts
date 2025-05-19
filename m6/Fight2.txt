@@ -1,0 +1,761 @@
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 6,015,845,203,922.</td> <td valign=top>Gold : 1,983,898,594,574.</td><td valign=top>Freeplay : 49,848,435.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>456,429,205<br>12,916,048,133<br>11,084,386,336<br>686,078,814<br>2,655,795,881 <br>2,401,980,470<br>5,245,904,651<br>13,372,477,338<br>3,341,874,695<br>7,481,628,375</td>
+<td valign=top align=right width=20%> Max<br>1,166,429,937<br>33,007,671,386<br>28,326,758,923<br>1,753,312,143<br>6,787,032,442 <br>6,004,951,174<br>13,114,761,627<br>34,174,101,324<br>8,540,344,585<br>19,119,712,801</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>34,178,060,069,669<br>34,178,127,779,953<br>34,178,436,237,915<br>34,179,166,004,314<br>34,180,497,639,907<br>8,203,826,809,309<br>8,204,164,457,927<br>106,992,582,238,038<br>62,098,181,444,403<br>16,051,299,294,317</a></td><td align=right valign=top width=20%><a name=monster>Max<br>102,534,225,349,195<br>170,891,203,152,135<br>128,170,264,396,922<br>85,449,363,258,534<br>73,245,954,822,618<br>20,509,567,023,272<br>20,510,411,144,817<br>273,425,428,501,330<br>158,695,318,081,152<br>41,019,978,168,089</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 102,557,066,285,133</td><td>Exp : 512,665,258,521,328</td><td>Gold : 170,888,419,507,109</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 182.276.502.047.066!<font size=-1>Your countered for 7.116.953.821.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +75.60%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0149</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 5,198.</td> <td valign=top>Exp : 7,417,820,313,617.</td> <td valign=top>Gold : 2,451,223,632,746.</td><td valign=top>Freeplay : 49,844,367.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>456,429,205<br>12,916,048,133<br>11,084,386,336<br>686,078,814<br>2,655,795,881 <br>2,401,980,470<br>5,245,904,651<br>13,372,477,338<br>3,341,874,695<br>7,481,628,375</td>
+<td valign=top align=right width=20%> Max<br>1,166,429,937<br>33,007,671,386<br>28,326,758,923<br>1,753,312,143<br>6,787,032,442 <br>6,004,951,174<br>13,114,761,627<br>34,174,101,324<br>8,540,344,585<br>19,119,712,801</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>7,792,019,814<br>7,792,035,251<br>7,792,105,574<br>7,792,271,949<br>7,792,575,539<br>1,870,333,802<br>1,870,410,781<br>24,392,499,723<br>14,157,335,415<br>3,659,424,844</a></td><td align=right valign=top width=20%><a name=monster>Max<br>23,376,069,734<br>38,960,304,896<br>29,220,653,184<br>19,481,010,048<br>16,698,839,259<br>4,675,834,506<br>4,676,026,952<br>62,336,374,630<br>36,179,849,307<br>9,351,861,458</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 23,381,277,082</td><td>Exp : 116,879,010,816</td><td>Gold : 38,959,670,272</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 13.403.480.558!<font size=-1>His countered for 15.074.937.211.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 2.012.487.890!<font size=-1>His countered for 18.089.924.654.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 10.388.493.116!<font size=-1>His countered for 18.089.924.654.</font></font><br><br><b>Killing spree of 2!</b><br><b>You have slain Chaoslord Post Mortem. You win 303,901,012,000 exp and 101,300,337,325 gold.<br>Your freeplay bonus was 450%!.</b><br><br> Bonus gold and exp gain from power z +75.60%<p style="color:DodgerBlue;">Currently fought 397 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0095</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 7,618.</td> <td valign=top>Exp : 9,930,537,371,392.</td> <td valign=top>Gold : 3,260,748,864,054.</td><td valign=top>Freeplay : 49,843,882.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>695,319,132<br>29,970,542,378<br>25,720,333,883<br>1,044,999,109<br>4,045,882,165 <br>5,401,426,995<br>11,793,002,039<br>30,665,861,509<br>5,090,881,274<br>16,820,640,755</td>
+<td valign=top align=right width=20%> Max<br>1,776,926,284<br>76,591,369,426<br>65,729,727,855<br>2,670,552,698<br>10,339,474,396 <br>13,503,567,486<br>29,482,505,098<br>78,368,295,710<br>13,010,027,094<br>42,986,072,584</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>15,584,039,629<br>15,584,070,502<br>15,584,211,149<br>15,584,543,898<br>15,585,151,078<br>3,740,667,605<br>3,740,821,561<br>48,784,999,447<br>28,314,670,831<br>7,318,849,689</a></td><td align=right valign=top width=20%><a name=monster>Max<br>46,752,139,469<br>77,920,609,792<br>58,441,306,368<br>38,962,020,096<br>33,397,678,519<br>9,351,669,012<br>9,352,053,903<br>124,672,749,261<br>72,359,698,615<br>18,703,722,916</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 46,762,554,163</td><td>Exp : 233,758,021,632</td><td>Gold : 77,919,340,544</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 1.197.443.861!<font size=-1>His countered for 30.149.874.423.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 17.718.775.795!<font size=-1>His countered for 42.564.528.597.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +74.94%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0055</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,504.</td> <td valign=top>Exp : 14,111,943,296,457.</td> <td valign=top>Gold : 4,641,635,361,176.</td><td valign=top>Freeplay : 49,843,532.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>782,846,428<br>37,989,755,169<br>32,602,319,129<br>1,176,502,535<br>4,555,198,441 <br>6,799,501,613<br>14,844,399,635<br>38,772,601,596<br>5,731,700,976<br>21,173,386,259</td>
+<td valign=top align=right width=20%> Max<br>2,000,607,102<br>97,084,908,770<br>83,317,019,661<br>3,006,616,937<br>11,641,060,151 <br>16,998,754,034<br>37,110,999,089<br>99,085,515,872<br>14,647,677,088<br>54,109,753,122</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>15,584,039,629<br>15,584,070,502<br>15,584,211,149<br>15,584,543,898<br>15,585,151,078<br>3,740,667,605<br>3,740,821,561<br>48,784,999,447<br>28,314,670,831<br>7,318,849,689</a></td><td align=right valign=top width=20%><a name=monster>Max<br>46,752,139,469<br>77,920,609,792<br>58,441,306,368<br>38,962,020,096<br>33,397,678,519<br>9,351,669,012<br>9,352,053,903<br>124,672,749,261<br>72,359,698,615<br>18,703,722,916</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 46,762,554,163</td><td>Exp : 233,758,021,632</td><td>Gold : 77,919,340,544</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 25.748.598.113!<font size=-1>His countered for 36.179.849.307.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 516.130.478!<font size=-1>His countered for 42.564.528.597.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 28.210.839.883!<font size=-1>His countered for 42.564.528.597.</font></font><br><br><b>Killing spree of 6!</b><br><b>You have slain Chaoslord Post Mortem. You win 2,027,710,582,827 exp and 675,903,527,580 gold.<br>Your freeplay bonus was 669%!.</b><br><br> Bonus gold and exp gain from power z +74.80%<p style="color:DodgerBlue;">Currently fought 106 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 38:18.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0050</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,704.</td> <td valign=top>Exp : 17,760,656,237,785.</td> <td valign=top>Gold : 5,854,816,024,448.</td><td valign=top>Freeplay : 49,843,408.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>802,589,432<br>39,929,848,538<br>34,267,282,298<br>1,206,164,876<br>4,670,081,851 <br>7,137,308,597<br>15,581,671,381<br>40,732,437,970<br>5,876,246,727<br>22,225,093,940</td>
+<td valign=top align=right width=20%> Max<br>2,051,061,437<br>102,042,924,080<br>87,571,924,612<br>3,082,420,679<br>11,934,651,026 <br>17,843,271,492<br>38,954,178,452<br>104,093,985,517<br>15,017,071,704<br>56,797,449,944</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>31,168,079,258<br>31,168,141,005<br>31,168,422,298<br>31,169,087,795<br>31,170,302,157<br>7,481,335,210<br>7,481,643,123<br>97,569,998,893<br>56,629,341,661<br>14,637,699,377</a></td><td align=right valign=top width=20%><a name=monster>Max<br>93,504,278,938<br>155,841,219,584<br>116,882,612,736<br>77,924,040,192<br>66,795,357,038<br>18,703,338,025<br>18,704,107,807<br>249,345,498,522<br>144,719,397,230<br>37,407,445,832</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 93,525,108,326</td><td>Exp : 467,516,043,264</td><td>Gold : 155,838,681,088</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +74.77%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0176</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 8,704.</td> <td valign=top>Exp : 49,531,419,403,834.</td> <td valign=top>Gold : 16,445,070,413,965.</td><td valign=top>Freeplay : 49,841,710.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>802,589,432<br>39,929,848,538<br>34,267,282,298<br>1,206,164,876<br>4,670,081,851 <br>7,137,308,597<br>15,581,671,381<br>40,732,437,970<br>5,876,246,727<br>22,225,093,940</td>
+<td valign=top align=right width=20%> Max<br>2,051,061,437<br>102,042,924,080<br>87,571,924,612<br>3,082,420,679<br>11,934,651,026 <br>17,843,271,492<br>38,954,178,452<br>104,093,985,517<br>15,017,071,704<br>56,797,449,944</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>16,157,053,524<br>16,157,085,533<br>16,157,231,350<br>16,157,576,334<br>16,158,205,841<br>3,878,209,254<br>3,878,368,872<br>50,578,788,683<br>29,355,780,851<br>7,587,958,512</a></td><td align=right valign=top width=20%><a name=monster>Max<br>48,471,181,910<br>80,785,694,403<br>60,590,151,044<br>40,394,625,468<br>34,625,687,065<br>9,695,523,136<br>9,695,922,179<br>129,256,876,313<br>75,020,312,533<br>19,391,445,315</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 48,481,979,546</td><td>Exp : 242,353,135,456</td><td>Gold : 80,784,378,485</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 427.752.629!<font size=-1>His countered for 46.887.695.333.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 7.816.450.265!<font size=-1>His countered for 50.013.541.689.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 7.350.808.230!<font size=-1>His countered for 57.707.932.718.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 22.508.295.011!<font size=-1>His countered for 46.887.695.333.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 11.218.214.497!<font size=-1>His countered for 50.013.541.689.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Chaoslord Post Mortem. You win 367,746,647,747 exp and 122,582,215,921 gold.<br>Your freeplay bonus was 776%!.</b><br><br> Bonus gold and exp gain from power z +74.77%<p style="color:DodgerBlue;">Currently fought 217 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 38:18.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0043</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 15,147.</td> <td valign=top>Exp : 120,904,787,309,710.</td> <td valign=top>Gold : 39,928,972,774,016.</td><td valign=top>Freeplay : 49,841,478.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>1,438,643,816<br>128,283,428,667<br>110,091,188,052<br>2,161,778,635<br>8,371,246,384 <br>22,401,111,342<br>48,892,315,176<br>129,722,072,483<br>10,533,025,020<br>69,743,584,581</td>
+<td valign=top align=right width=20%> Max<br>3,676,533,398<br>327,835,357,546<br>281,344,086,081<br>5,524,544,201<br>21,393,180,554 <br>56,002,778,354<br>122,230,787,941<br>331,511,890,944<br>26,917,724,755<br>178,233,566,295</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>57,449,185,889<br>57,449,299,702<br>57,449,818,182<br>57,451,044,831<br>57,453,283,150<br>13,789,640,793<br>13,790,208,340<br>179,841,592,332<br>104,379,533,593<br>26,980,293,061</a></td><td align=right valign=top width=20%><a name=monster>Max<br>172,347,633,542<br>287,247,446,949<br>215,438,715,064<br>143,630,046,408<br>123,117,592,562<br>34,474,101,983<br>34,475,520,849<br>459,595,080,492<br>266,747,638,970<br>68,949,622,832</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 172,386,026,394</td><td>Exp : 861,728,303,936</td><td>Gold : 287,242,767,979</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 149.237.223.896!<font size=-1>His countered for 127.022.685.224.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 27.262.896.882!<font size=-1>His countered for 156.910.375.865.</font></font><br><br><b>Killing spree of 5!</b><br><b>You have slain Chaoslord Post Mortem. You win 6,770,024,798,521 exp and 2,256,674,932,840 gold.<br>Your freeplay bonus was 857%!.</b><br><br> Bonus gold and exp gain from power z +74.25%<p style="color:DodgerBlue;">Currently fought 274 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 38:18.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0269</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 26,918.</td> <td valign=top>Exp : 418,338,516,429,990.</td> <td valign=top>Gold : 137,270,765,002,130.</td><td valign=top>Freeplay : 49,841,281.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>2,600,521,617<br>419,137,809,607<br>359,698,675,788<br>3,907,380,208<br>15,132,148,669 <br>72,233,199,192<br>157,631,724,804<br>421,738,331,224<br>19,039,528,877<br>224,867,909,315</td>
+<td valign=top align=right width=20%> Max<br>6,645,776,021<br>1,071,129,725,030<br>919,229,749,404<br>9,985,525,027<br>38,671,038,192 <br>180,582,997,979<br>394,079,312,010<br>1,077,775,501,050<br>48,656,563,219<br>574,662,309,989</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>159,580,129,678<br>159,580,445,823<br>159,581,886,038<br>159,585,293,377<br>159,591,510,891<br>38,304,331,592<br>38,305,908,101<br>499,557,029,082<br>289,941,436,919<br>74,944,815,992</a></td><td align=right valign=top width=20%><a name=monster>Max<br>478,740,599,798<br>797,904,863,656<br>598,437,341,724<br>398,969,995,428<br>341,991,293,397<br>95,760,828,981<br>95,764,770,252<br>1,276,645,463,454<br>740,961,288,825<br>191,525,599,233</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 478,847,245,978</td><td>Exp : 2,393,675,599,776</td><td>Gold : 797,891,866,592</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 224.545.079.217!<font size=-1>His countered for 673.601.171.659.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 101.581.268.613!<font size=-1>His countered for 411.645.160.458.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 112.272.539.608!<font size=-1>His countered for 336.800.585.829.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 44.913.557.975!<font size=-1>His countered for 493.974.192.550.</font></font><br><br><b>Killing spree of 6!</b><br><b>You have slain Chaoslord Post Mortem. You win 19,444,305,632,133 exp and 6,481,435,210,684 gold.<br>Your freeplay bonus was 531%!.</b><br><br> Bonus gold and exp gain from power z +73.94%<p style="color:DodgerBlue;">Currently fought 329 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 38:18.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0226</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 45,649.</td> <td valign=top>Exp : 1,219,845,752,694,800.</td> <td valign=top>Gold : 396,115,644,382,020.</td><td valign=top>Freeplay : 49,841,018.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>4,449,457,609<br>1,226,973,250,419<br>1,052,972,657,889<br>6,685,208,826<br>25,891,004,849 <br>210,013,716,549<br>458,268,985,889<br>1,231,422,708,028<br>32,576,213,675<br>653,754,959,723</td>
+<td valign=top align=right width=20%> Max<br>11,370,833,640<br>3,135,597,624,975<br>2,690,929,540,732<br>17,084,418,841<br>66,165,886,897 <br>525,034,291,372<br>1,145,672,464,722<br>3,146,968,458,615<br>83,250,305,739<br>1,670,706,756,094</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>510,656,536,115<br>510,657,547,779<br>510,662,156,469<br>510,673,059,954<br>510,692,956,005<br>122,573,890,174<br>122,578,935,003<br>1,598,582,872,297<br>927,812,818,247<br>239,823,468,069</a></td><td align=right valign=top width=20%><a name=monster>Max<br>1,531,970,282,789<br>2,553,296,169,425<br>1,914,999,947,818<br>1,276,704,288,246<br>1,094,372,398,490<br>306,434,725,434<br>306,447,337,507<br>4,085,266,452,214<br>2,371,076,686,736<br>612,882,062,942</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 1,532,311,550,643</td><td>Exp : 7,659,763,736,432</td><td>Gold : 2,553,254,578,811</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 1.961.430.115.247!<font size=-1>His countered for 1.185.538.343.368.</font></font><br><br><b>Killing spree of 7!</b><br><b>You have slain Chaoslord Post Mortem. You win 82,886,814,042,825 exp and 27,628,938,014,275 gold.<br>Your freeplay bonus was 819%!.</b><br><br> Bonus gold and exp gain from power z +73.78%<p style="color:DodgerBlue;">Currently fought 399 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 38:18.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0075</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 54,355.</td> <td valign=top>Exp : 2,685,163,736,096,400.</td> <td valign=top>Gold : 879,057,462,954,970.</td><td valign=top>Freeplay : 49,840,818.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>5,308,938,142<br>1,746,758,332,876<br>1,499,045,528,360<br>7,976,485,608<br>30,892,274,545 <br>298,505,032,624<br>651,353,333,625<br>1,752,067,271,018<br>38,868,760,153<br>929,209,473,333</td>
+<td valign=top align=right width=20%> Max<br>13,567,283,413<br>4,463,936,991,373<br>3,830,893,295,228<br>20,384,347,678<br>78,946,906,676 <br>746,262,581,561<br>1,628,383,334,063<br>4,477,504,274,786<br>99,331,254,353<br>2,374,645,915,624</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>744,537,063,688<br>744,538,538,693<br>744,545,258,162<br>744,561,155,440<br>744,590,163,875<br>178,712,692,036<br>178,720,047,395<br>2,330,733,308,256<br>1,352,750,787,457<br>349,662,538,500</a></td><td align=right valign=top width=20%><a name=monster>Max<br>2,233,612,174,402<br>3,722,704,985,177<br>2,792,069,301,526<br>1,861,434,437,322<br>1,595,594,601,318<br>446,781,730,089<br>446,800,118,488<br>5,956,317,159,579<br>3,457,029,038,640<br>893,581,848,577</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 2,234,109,742,822</td><td>Exp : 11,167,933,038,224</td><td>Gold : 3,722,644,346,075</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 26.169.300.904!<font size=-1>His countered for 1.920.571.688.133.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 300.536.684.923!<font size=-1>His countered for 1.646.204.304.114.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 1.164.670.845.816!<font size=-1>His countered for 2.033.546.493.317.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.74%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0296</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 54,355.</td> <td valign=top>Exp : 4,330,306,898,355,900.</td> <td valign=top>Gold : 1,427,438,517,041,600.</td><td valign=top>Freeplay : 49,840,571.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>5,308,938,142<br>1,746,758,332,876<br>1,499,045,528,360<br>7,976,485,608<br>30,892,274,545 <br>298,505,032,624<br>651,353,333,625<br>1,752,067,271,018<br>38,868,760,153<br>929,209,473,333</td>
+<td valign=top align=right width=20%> Max<br>13,567,283,413<br>4,463,936,991,373<br>3,830,893,295,228<br>20,384,347,678<br>78,946,906,676 <br>746,262,581,561<br>1,628,383,334,063<br>4,477,504,274,786<br>99,331,254,353<br>2,374,645,915,624</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>791,355,206,374<br>791,356,774,131<br>791,363,916,134<br>791,380,813,069<br>791,411,645,619<br>189,950,542,673<br>189,958,360,553<br>2,477,294,990,556<br>1,437,814,758,715<br>371,650,094,819</a></td><td align=right valign=top width=20%><a name=monster>Max<br>2,374,066,664,294<br>3,956,796,935,296<br>2,967,640,814,784<br>1,978,485,565,248<br>1,695,929,130,459<br>474,876,356,682<br>474,895,901,384<br>6,330,863,599,590<br>3,674,414,695,707<br>949,772,258,066</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 2,374,595,520,922</td><td>Exp : 11,870,197,449,216</td><td>Gold : 3,956,732,483,072</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 688.493.665.040!<font size=-1>His countered for 2.296.509.184.817.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 1.264.314.867.708!<font size=-1>His countered for 1.933.902.471.425.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 348.830.374.603!<font size=-1>His countered for 2.449.609.797.138.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 401.544.789.539!<font size=-1>His countered for 1.837.207.347.854.</font></font><br><br><b>Killing spree of 7!</b><br><b>You have slain Chaoslord Post Mortem. You win 115,652,125,094,247 exp and 38,550,708,364,717 gold.<br>Your freeplay bonus was 588%!.</b><br><br> Bonus gold and exp gain from power z +73.74%<p style="color:DodgerBlue;">Currently fought 530 of 600<br>Average over last <b>600</b> Fights 0 Exp and 0 Gold in 38:18.<span style="color: #06c200"><br> Per <b>Fight</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Second</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>60 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Minute</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>3600 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Hour</b> 0 Exp and 0 Gold.</span><span style="color: #06c200"><br> Per <b>86,400 Fights</b> 0 Exp and 0 Gold.</span><span style="color: #efdd00"> Per <b>Day</b> 0 Exp and 0 Gold.</span></p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0390</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 67,267.</td> <td valign=top>Exp : 8,420,136,318,508,400.</td> <td valign=top>Gold : 2,778,201,553,868,800.</td><td valign=top>Freeplay : 49,831,577.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>6,583,680,733<br>2,686,281,598,444<br>2,305,332,307,437<br>9,891,648,452<br>38,309,931,227 <br>458,321,639,932<br>1,000,063,255,137<br>2,692,865,279,177<br>48,201,579,679<br>1,426,681,185,759</td>
+<td valign=top align=right width=20%> Max<br>16,824,958,216<br>6,864,940,370,312<br>5,891,403,504,931<br>25,278,651,659<br>97,903,136,298 <br>1,145,804,099,829<br>2,500,158,137,843<br>6,881,765,328,528<br>123,181,787,957<br>3,645,962,237,672</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,025,596,139,093<br>1,025,598,170,905<br>1,025,607,426,939<br>1,025,629,325,362<br>1,025,669,284,339<br>246,175,853,289<br>246,185,985,260<br>3,210,573,655,474<br>1,863,407,548,709<br>481,658,425,028</a></td><td align=right valign=top width=20%><a name=monster>Max<br>3,076,789,771,819<br>5,128,007,786,295<br>3,846,061,714,562<br>2,564,116,771,614<br>2,197,923,706,527<br>615,439,633,222<br>615,464,963,150<br>8,204,797,558,114<br>4,762,040,478,141<br>1,230,904,596,373</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 3,077,475,169,869</td><td>Exp : 15,383,772,768,688</td><td>Gold : 5,127,924,256,229</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 1.655.525.286.919!<font size=-1>His countered for 2.645.578.043.412.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 361.065.126.462!<font size=-1>His countered for 2.506.337.093.758.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 2.787.328.543.571!<font size=-1>His countered for 2.506.337.093.758.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Chaoslord Post Mortem. You win 22,641,836,760,958 exp and 7,547,278,920,319 gold.<br>Your freeplay bonus was 708%!.</b><br><br> Bonus gold and exp gain from power z +73.71%<p style="color:DodgerBlue;">Currently fought 65 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0162</b> seconds.</font></body></html>
+
+Fight2
+
+content
+
+<!DOCTYPE html><html>
+<head>
+<style type="text/css">
+<!--
+body, html, form, table {
+	margin:0;
+	color:#FFFFFF;
+	background:#000000;
+	font-family: Verdana, Arial, Monaco;
+	font-weight: normal;
+	font-size: 10pt;
+	border:none;
+	scrollbar-face-color: #000000;
+	scrollbar-shadow-color: #000000;
+	scrollbar-highlight-color: #012345;
+	scrollbar-3dlight-color: #000000;
+	scrollbar-darkshadow-color: #000000;
+	scrollbar-track-color: #012345;
+	scrollbar-arrow-color: #012345;
+	}
+
+a {text-decoration: none; color:#FFF888;} 
+a:hover {text-decoration: underline; color:#FF1234} 
+
+body { color:#FFFFFF; background: #000000; font-family: Verdana, Arial, Monaco; font-weight: normal; font-size: 10pt;}
+
+table {border-color:#000000;}
+tr {font-family: Verdana, Arial, Monaco; text-decoration: none;font-size: 10pt;}
+th {color:#FFFFFF; background-color: #012345; font-weight: bold;}
+td {text-decoration: none; font-size: 10pt;}
+hr {color:#012345;size:1;}
+input {height:25; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345; }
+select {width:100%; color:#FFFFFF; background-color:#012345; border-color:#000000;}
+textarea {height:150; width:100%; color:#FFFFFF; background-color:#012345; border-color:#012345;}
+-->
+</style><title>kingsofkingdoms.com a lordoflords tribute</title>
+<meta http-equiv="Page-Enter" content="Alpha(opacity=100)">
+</head>
+<body bgcolor=#000000 text=#FFFFFF rightmargin=0 leftmargin=0 topmargin=0 bottommargin=0>
+<center>
+<table width=100% cellpadding=0 cellspacing=1 border=0><tr bgcolor=#012345>
+<td valign=top>Level : 76,767.</td> <td valign=top>Exp : 10,374,166,733,719,000.</td> <td valign=top>Gold : 3,417,542,603,418,400.</td><td valign=top>Freeplay : 49,831,384.</td></tr></table><table border=0 width=100%><tr><th colspan=6>King Ctest1 vs <a name=monster>Chaoslord Post Mortem</a></th></tr>
+<tr><td valign=top width=20%> <br>Weapon damage<br>Attack spell<br>Heal spell<br>Magic Shield<br>Defence<br>Attack Rating<br>Magic Rating<br>Special Damage<br>Special Shield<br>Special Rating</td>
+<td valign=top align=right width=20%> Min<br>7,521,475,372<br>3,506,051,355,922<br>3,008,848,166,558<br>11,300,583,267<br>43,766,906,408 <br>597,700,454,625<br>1,304,177,160,213<br>3,513,572,831,293<br>55,067,489,675<br>1,860,532,853,762</td>
+<td valign=top align=right width=20%> Max<br>19,221,543,994<br>8,959,907,072,882<br>7,689,276,976,289<br>28,879,262,071<br>111,848,736,504 <br>1,494,251,136,563<br>3,260,442,900,533<br>8,979,128,616,876<br>140,727,998,576<br>4,754,694,037,096</td>
+<td align=right valign=top width=20%><a name=monster>Min<br>1,495,319,736,542<br>1,495,322,698,926<br>1,495,336,194,229<br>1,495,368,122,141<br>1,495,426,382,352<br>358,924,529,892<br>358,939,302,312<br>4,681,018,160,716<br>2,716,849,233,921<br>702,258,249,386</a></td><td align=right valign=top width=20%><a name=monster>Max<br>4,485,961,184,549<br>7,476,638,181,159<br>5,607,560,101,418<br>3,738,483,667,446<br>3,204,573,976,547<br>897,311,324,730<br>897,348,255,779<br>11,962,599,365,708<br>6,943,057,643,993<br>1,794,659,580,510</a></td></tr></table>
+<table border=0 width=100%>
+<tr><th colspan=4>Monster Stats</th></tr>
+<tr><td>Level : 208</td><td>Life : 4,486,960,495,283</td><td>Exp : 22,429,549,182,832</td><td>Gold : 7,476,516,394,277</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 1.333.629.015.714!<font size=-1>His countered for 3.155.935.292.724.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 2.567.610.985.485!<font size=-1>His countered for 4.339.411.027.496.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 3.625.352.934.067!<font size=-1>His countered for 3.857.254.246.663.</font></font><br><br><b>Killing spree of 3!</b><br><b>You have slain Chaoslord Post Mortem. You win 98,914,311,896,280 exp and 32,971,437,298,775 gold.<br>Your freeplay bonus was 705%!.</b><br><br> Bonus gold and exp gain from power z +73.69%<p style="color:DodgerBlue;">Currently fought 122 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0311</b> seconds.</font></body></html>
+
