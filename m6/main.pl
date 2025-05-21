@@ -197,17 +197,11 @@ my $cpm;
 my $cpmtest;
 my $died;
 my $aa;
+my $firstlogin = 1;
+my $namefix = '';
 
 if($debug == 1){
 	s1();debug("Debug mode active.");nl();
-}elsif($debug != 1){
-	my @files_to_delete = ('TESTINFO1.txt','TESTINFO2.txt','LowFight.txt','LowFight2.txt','LowFight3.txt','Autolevelup.txt','CPMlevel.txt','Fight.txt','Fightlevel.txt','Fight2.txt','Fight3.txt','Levelup.txt','CheckShop.txt','MaxShops.txt','MaxWD.txt','MaxAS.txt','MaxHS.txt','MaxHE.txt','MaxSH.txt','MaxAM.txt','MaxRI.txt','MaxAR.txt','MaxBE.txt','MaxPA.txt','MaxHA.txt','MaxFE.txt','MyLevel.txt','Charname.txt','Loginrecord.txt','cpmready.txt',);
-
-	foreach my $file (@files_to_delete) {
-		if (-e $file) {
-			unlink($file) or warn "Could not delete $file: $!\n";
-		}
-	}
 }
 
 if($chartype == 7 or $chartype == 8 or $chartype == 9 or $chartype == 10 or $chartype == 11 or $chartype == 12){
@@ -323,6 +317,72 @@ sub reset{
 #bold, faint, italic, underline, underscore, blink, reverse, concealed
 
 
+#---------------------
+# MAIN
+#---------------------
+
+# create a new browser
+$mech = WWW::Mechanize->new(autocheck => 0, stack_depth => 1, onerror => \&Carp::croak);
+$mech->agent_alias( 'Windows Mozilla' );
+
+#Login
+open(LOGINS, "m6logins.txt")
+	or die "failed to open Logins file!!!!";
+	@logins = <LOGINS>;
+close(LOGINS);
+
+if ($trigger == 1){
+	if ($ARGV[1] >= 1 && $ARGV[1] <= 999999){
+		my $logintakeone = $username - 1;
+		@users = split(/ /, $logins[$logintakeone]);
+		$username = $users[0];
+		$password = $users[1];
+		chomp ($username, $password);
+	}
+}
+
+if($username eq ""){
+	s1(); print"No logins found.";
+	sleep($stime);
+	goto RETRY;
+}
+
+&login;
+
+my $levels = 9999999;
+
+until($levels == 0){
+	START:
+	$levels--;
+	&Charname;
+	&MyLevel;
+	if($avlevs > $MyLev){&Autolevelup};
+	&CheckShop;
+	&Cpmready;
+	GOTO:
+	if($cpmready == 0){
+		nl(); s1(); general("Low Level Fight mode");nl();
+	}else{
+		nl(); s1(); general("High Level Fight mode");nl();
+	}
+	if($cpmready == 0){
+		&leveltestfight;
+		&LowFight;	
+	}else{
+		#then cpm level subroutine
+		&CPMlevel;
+		&Fight;
+	}
+}
+
+goto RETRY;
+
+
+#&leveltestworld; Written but not used yet
+
+#seperate the output and error streams
+#open STDOUT, '>>', 'output.txt' or die $!;
+#open STDERR, '>>', 'Errorlog.txt' or die $!;
 
 sub leveltestworld {
 	$level = 0;
@@ -405,7 +465,7 @@ sub leveltestworld {
 	$won = 1;
 
 	s1(); general("Basic level test starting at level ".$filelevel); nl();
-
+	$levmulti = 0;
 	while($won == 1){
 		if(!$levmulti and $filelevel != 1){
 			$levmulti = $filelevel;}
@@ -430,7 +490,7 @@ sub leveltestworld {
 		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$b = $1;
 
-		$filename = "TESTINFO1.txt";
+		$filename = $namefix."-TESTINFO1.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";		
@@ -505,7 +565,7 @@ sub leveltestworld {
 		$b =~ m/(<tr><td>Level.*<form method=post)/s;
 		$b = $1;
 
-		$filename = "TESTINFO1.txt";
+		$filename = $namefix."-TESTINFO1.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";		
@@ -550,7 +610,7 @@ sub leveltestworld {
 			$a = $mech->content();
 			$b = $a;
 
-			$filename = "TESTINFO2.txt";
+			$filename = $namefix."-TESTINFO2.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";		
@@ -755,7 +815,7 @@ sub leveltestfight {
 	$won = 1;
 
 	s1(); general("Basic level test starting at level ".$filelevel); nl();
-
+	$levmulti = 0;
 	while($won == 1){
 		if(!$levmulti and $filelevel != 1){
 			$levmulti = $filelevel;}
@@ -783,7 +843,7 @@ sub leveltestfight {
 		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$b = $1;
 
-		$filename = "TESTINFO1.txt";
+		$filename = $namefix."-TESTINFO1.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";		
@@ -858,7 +918,7 @@ sub leveltestfight {
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 
-		$filename = "TESTINFO2.txt";
+		$filename = $namefix."-TESTINFO2.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";		
@@ -903,7 +963,7 @@ sub leveltestfight {
 			$a = $mech->content();
 			$b = $a;
 
-			$filename = "TESTINFO2.txt";
+			$filename = $namefix."-TESTINFO2.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";		
@@ -1057,7 +1117,7 @@ sub LowFight {
 		}
 	}
 	
-	$filename = "LowFight.txt";
+	$filename = $namefix."-LowFight.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -1084,7 +1144,7 @@ sub LowFight {
 	$mech->click_button(value => $fmodeval);
 	$a = $mech->content();
 
-	$filename = "LowFight2.txt";
+	$filename = $namefix."-LowFight2.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -1129,7 +1189,7 @@ sub LowFight {
 		$mech->reload();
 		$a = $mech->content();
 
-		$filename = "LowFight3.txt";
+		$filename = $namefix."-LowFight3.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -1177,9 +1237,10 @@ sub LowFight {
 		}
 	#LOGGED OUT
 		if ($a =~ m/logged/) {
-			s1(); infoformat("LOGGED OUT! sleeping for 5 seconds before restart!");
+			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
 			sleep(5);
-			goto START;
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
 		}
 		if ($antal <= 0) {
 			sleep(3);
@@ -1196,6 +1257,13 @@ sub LowFight {
 		$happened = 1;}
 		if($b =~ m/(The battle tied)/){$output = $1;$happened = 2;}
 		if($b =~ m/jail time.*?!/){$output = $1;$happened = 3;}
+		if($b =~ m/logged/){$output = "You were logged back in.";$happened = 4;}
+		if($b =~ m/(Stun time .*!<br>Please)/){
+			$c = $1;
+			$c =~ s/<br>Please//g;
+			$output = $c;
+			$happened = 5;#
+		}
 
 		if($happened == 1){
 			s1(); won("$antal: [$Hour:$Minute:$Second]: " . $output);
@@ -1206,15 +1274,26 @@ sub LowFight {
 		}elsif($happened == 3){
 			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
 			$happened = 0;
+		}elsif($happened == 4){
+			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
+		}elsif($happened == 5){
+			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
 		}else{
 			s1(); errorformat($antal.":"."[".$Hour.":".$Minute.":".$Second."] : Something isn't right with output in lowfight");
 		}
-		
-		$persist++;
-	# level up if necessary
-		if (($b =~ m/(Level up.*HERE!)/) and ($indefcont != 1) and ($persist == 10)) {
-			$persist = 0;
-			&Levelup; 
+
+		if (($b =~ m/(Level up.*HERE!)/) and ($indefcont != 1)) {
+			if($persist == 100){
+				$persist = 0;
+				&Levelup;
+			}else{
+				$persist++;
+				if($debug == 1){
+					s1(); debug("Skipping levelup 100 times. persist = ".$persist);
+				}
+			}
 		}
 	}
 }
@@ -1246,7 +1325,7 @@ sub Autolevelup {
 		}
 	}
 
-	$filename = "Autolevelup.txt";
+	$filename = $namefix."-Autolevelup.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -1613,6 +1692,7 @@ sub CPMlevel {
 
 	s1(); general("Basic CPM level test starting at level ".$filelevel); nl();
 
+	$levmulti = 0;
 	while($won == 1){
 		if(!$levmulti and $filelevel != 201){
 			$levmulti = $filelevel;}
@@ -1649,7 +1729,7 @@ sub CPMlevel {
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 
-			$filename = "cpmINFO1.txt";
+			$filename = $namefix."-cpmINFO1.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";		
@@ -1676,7 +1756,7 @@ sub CPMlevel {
 		$c =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$c = $1;
 
-			$filename = "cpmINFO2.txt";
+			$filename = $namefix."-cpmINFO2.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";
@@ -1759,7 +1839,7 @@ sub CPMlevel {
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 
-			$filename = "cpmINFO3.txt";
+			$filename = $namefix."-cpmINFO3.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";		
@@ -1819,7 +1899,7 @@ sub CPMlevel {
 			$a = $mech->content();
 			$b = $a;
 
-			$filename = "cpmINFO3.txt";
+			$filename = $namefix."-cpmINFO3.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";		
@@ -1987,7 +2067,7 @@ sub Fight {
 		}
 	}
 
-	$filename = "Fight.txt";
+	$filename = $namefix."-Fight.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -2013,7 +2093,7 @@ sub Fight {
 	$mech->click();
 	$cpm = $mech->content();
 
-	$filename = "Fightlevel.txt";
+	$filename = $namefix."-Fightlevel.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -2043,7 +2123,7 @@ sub Fight {
 	$mech->click_button(value => $fmodeval);
 	$a = $mech->content();
 
-	$filename = "Fight2.txt";
+	$filename = $namefix."-Fight2.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -2088,7 +2168,7 @@ sub Fight {
 		$mech->reload();
 		$a = $mech->content();
 
-		$filename = "Fight3.txt";
+		$filename = $namefix."-Fight3.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2138,9 +2218,10 @@ sub Fight {
 	#LOGGED OUT
 
 		if ($a =~ m/logged/) {
-			s1(); infoformat("LOGGED OUT! sleeping for 5 seconds before restart!");
+			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
 			sleep(5);
-			goto START;
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
 		}
 		if ($antal <= 0) {
 			sleep(3);
@@ -2157,6 +2238,13 @@ sub Fight {
 		$happened = 1;}
 		if($b =~ m/(The battle tied)/){$output = $1;$happened = 2;}
 		if($b =~ m/jail time.*?!/){$output = $1;$happened = 3;}
+		if($b =~ m/logged/){$output = "You were logged back in.";$happened = 4;}
+		if($b =~ m/(Stun time .*!<br>Please)/){
+			$c = $1;
+			$c =~ s/<br>Please//g;
+			$output = $c;
+			$happened = 5;#
+		}
 
 		if($happened == 1){
 			s1(); won("$antal: [$Hour:$Minute:$Second]: " . $output);
@@ -2167,10 +2255,16 @@ sub Fight {
 		}elsif($happened == 3){
 			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
 			$happened = 0;
+		}elsif($happened == 4){
+			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
+		}elsif($happened == 5){
+			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
 		}else{
 			s1(); errorformat($antal.":"."[".$Hour.":".$Minute.":".$Second."] : Something isn't right with output in lowfight");
 		}
-	#level up if necessary
+
 		if (($b =~ m/(Level up.*HERE!)/) and ($indefcont != 1)) {
 			if($persist == 100){
 				$persist = 0;
@@ -2178,7 +2272,7 @@ sub Fight {
 			}else{
 				$persist++;
 				if($debug == 1){
-					s1(); debug("Skipping levelup 100 times. perssist = ".$persist);
+					s1(); debug("Skipping levelup 100 times. persist = ".$persist);
 				}
 			}
 		}
@@ -2199,7 +2293,7 @@ sub Levelup{
 			$a = $mech->content();
 		}
 
-		$filename = "Levelup.txt";
+		$filename = $namefix."-Levelup.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2439,7 +2533,7 @@ sub CheckShop{
 		}
 	}
 
-	$filename = "CheckShop.txt";
+	$filename = $namefix."-CheckShop.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -2489,7 +2583,7 @@ sub MaxShops{
 		}
 	}
 
-	$filename = "MaxShops.txt";
+	$filename = $namefix."-MaxShops.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -2611,7 +2705,7 @@ sub MaxWD{
 		sleep($stime);
 		$a = $mech->content();
 		$b = $a;			
-		$filename = "MaxWD.txt";
+		$filename = $namefix."-MaxWD.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2662,7 +2756,7 @@ sub MaxAS{
 		$a = $mech->content();
 		$b = $a;
 
-		$filename = "MaxAS.txt";
+		$filename = $namefix."-MaxAS.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2713,7 +2807,7 @@ sub MaxHS{
 		$a = $mech->content();
 		$b = $a;
 
-		$filename = "MaxHS.txt";
+		$filename = $namefix."-MaxHS.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2765,7 +2859,7 @@ sub MaxHE{
 		$a = $mech->content();
 		$b = $a;		
 
-		$filename = "MaxHE.txt";
+		$filename = $namefix."-MaxHE.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2815,7 +2909,7 @@ sub MaxSH{
 		$a = $mech->content();
 		$b = $a;
 
-		$filename = "MaxSH.txt";
+		$filename = $namefix."-MaxSH.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2866,7 +2960,7 @@ sub MaxAM{
 		$a = $mech->content();
 		$b = $a;		
 
-		$filename = "MaxAM.txt";
+		$filename = $namefix."-MaxAM.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2917,7 +3011,7 @@ sub MaxRI{
 		$a = $mech->content();
 		$b = $a;		
 		
-		$filename = "MaxRI.txt";
+		$filename = $namefix."-MaxRI.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -2968,7 +3062,7 @@ sub MaxAR{
 		$a = $mech->content();
 		$b = $a;	
 
-		$filename = "MaxAR.txt";	
+		$filename = $namefix."-MaxAR.txt";	
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -3019,7 +3113,7 @@ sub MaxBE{
 		$a = $mech->content();
 		$b = $a;
 
-		$filename = "MaxBE.txt";		
+		$filename = $namefix."-MaxBE.txt";		
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -3070,7 +3164,7 @@ sub MaxPA{
 		$a = $mech->content();
 		$b = $a;
 
-		$filename = "MaxPA.txt";
+		$filename = $namefix."-MaxPA.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -3121,7 +3215,7 @@ sub MaxHA{
 		$a = $mech->content();
 		$b = $a;
 
-		$filename = "MaxHA.txt";
+		$filename = $namefix."-MaxHA.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -3172,7 +3266,7 @@ sub MaxFE{
 		$a = $mech->content();
 		$b = $a;
 
-		$filename = "MaxFE.txt";
+		$filename = $namefix."-MaxFE.txt";
 		if($debug == 1){
 			open(FILE, ">>".$filename)
 			or die "failed to open file!!!!";
@@ -3235,7 +3329,7 @@ sub Charname{
 		}
 	}
 
-	$filename = "Charname.txt";
+	$filename = $username."-Charname.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -3243,8 +3337,7 @@ sub Charname{
 		print FILE "content\n\n";
 		print FILE "$a\n\n";
 		close(FILE);
-		
-		s1(); debug("Charname");
+		nl(); s1(); debug("Charname");
 	}elsif($debug != 1){
 		if(-e $filename){
 			unlink($filename)or die "Can't delete $filename: $!\n";
@@ -3277,8 +3370,8 @@ sub Charname{
 	$title = $1;
 	$name = $2;
 	$title =~ s/ //sgi;
-	$name =~ s/ //sgi;
-	
+	$name =~ s/ //sgi;	
+	$namefix = $title." ".$name;
 	nl(); s1(); general("Successfully logged into $title $name at $Hour:$Minute:$Second");nl();
 
 	#title updater thread
@@ -3425,6 +3518,19 @@ sub Charname{
 	
 	if($debug == 1){
 		s1(); debug($levelfilename);
+	}elsif($debug != 1 and $firstlogin == 1){
+		my @files_to_delete = ($namefix.'-cpmINFO1.txt',$namefix.'-cpmINFO2.txt',$namefix.'-cpmINFO3.txt',$namefix.'-TESTINFO1.txt',$namefix.'-TESTINFO2.txt',$namefix.'-LowFight.txt',$namefix.'-LowFight2.txt',$namefix.'-LowFight3.txt',$namefix.'-Autolevelup.txt',$namefix.'-CPMlevel.txt',$namefix.'-Fight.txt',$namefix.'-Fightlevel.txt',$namefix.'-Fight2.txt',$namefix.'-Fight3.txt',$namefix.'-Levelup.txt',$namefix.'-CheckShop.txt',$namefix.'-MaxShops.txt',$namefix.'-MaxWD.txt',$namefix.'-MaxAS.txt',$namefix.'-MaxHS.txt',$namefix.'-MaxHE.txt',$namefix.'-MaxSH.txt',$namefix.'-MaxAM.txt',$namefix.'-MaxRI.txt',$namefix.'-MaxAR.txt',$namefix.'-MaxBE.txt',$namefix.'-MaxPA.txt',$namefix.'-MaxHA.txt',$namefix.'-MaxFE.txt',$namefix.'-MyLevel.txt',$namefix.'-cpmready.txt',$username.'-Charname.txt',$username.'-Loginrecord.txt');
+
+		#foreach my $file (@files_to_delete) {
+		#	s1(); debug("Filename = ".$file);
+		#}
+
+		foreach my $file (@files_to_delete) {
+			if (-e $file) {
+				unlink($file) or warn "Could not delete $file: $!\n";
+			}
+		}
+		$firstlogin = 0;
 	}
 }
 
@@ -3451,7 +3557,7 @@ sub MyLevel{
 		}
 	}
 
-	$filename = "MyLevel.txt";
+	$filename = $namefix."-MyLevel.txt";
 	if($debug == 1){
 		open(FILE, ">>".$filename)
 		or die "failed to open file!!!!";
@@ -3500,6 +3606,7 @@ sub Cpmready{
 	nl();s1(); general("Chaoslord Post Mortem readiness check."); nl();
 
 	$won = 1;
+	$levmulti = 0;
 	while($won == 1){
 		$parsed = 0;
 		while ($parsed == 0){
@@ -3528,7 +3635,7 @@ sub Cpmready{
 		$mech->field("Difficulty", $level);
 		$mech->click_button(value => "Level");
 		$a = $mech->content();
-			$filename = "cpmready.txt";
+			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";
@@ -3563,7 +3670,7 @@ sub Cpmready{
 		$mech->click_button(value => $fmodeval);
 		$b = $mech->content();
 
-			$filename = "cpmready.txt";
+			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";
@@ -3610,7 +3717,7 @@ sub Cpmready{
 		$mech->reload();
 		$c = $mech->content();
 		
-			$filename = "cpmready.txt";
+			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";
@@ -3634,7 +3741,7 @@ sub Cpmready{
 		$a =~ m/(<td valign=top>Level.*<\/font><\/body><\/html>)/s;
 		$a = $1;
 
-			$filename = "cpmready.txt";
+			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";		
@@ -3682,7 +3789,7 @@ sub Cpmready{
 			$a =~ m/(<td valign=top>Level.*<\/font><\/body><\/html>)/s;
 			$a = $1;
 
-			$filename = "cpmready.txt";
+			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
 				or die "failed to open file!!!!";	
@@ -3802,149 +3909,86 @@ sub Cpmready{
 	return($cpmready);
 }
 
-#---------------------
-# MAIN
-#---------------------
-
-# create a new browser
-$mech = WWW::Mechanize->new(autocheck => 0, stack_depth => 1, onerror => \&Carp::croak);
-$mech->agent_alias( 'Windows Mozilla' );
-
-#Login
-open(LOGINS, "m6logins.txt")
-	or die "failed to open Logins file!!!!";
-	@logins = <LOGINS>;
-close(LOGINS);
-
-if ($trigger == 1){
-	if ($ARGV[1] >= 1 && $ARGV[1] <= 999999){
-		my $logintakeone = $username - 1;
-		@users = split(/ /, $logins[$logintakeone]);
-		$username = $users[0];
-		$password = $users[1];
-		chomp ($username, $password);
-	}
-}
-
-if($username eq ""){
-	s1(); print"No logins found.";
+sub login{
+	RETRY:
+	if($trycounter == 0){$trycounter = 1;}
+	nl();s1(); infoformat("Connection attempt ".$trycounter);nl();
+	$parsed = 0; 
+	while ($parsed == 0){
 	sleep($stime);
-	goto RETRY;
-}
-RETRY:
-if($trycounter == 0){$trycounter = 1;}
-nl();s1(); infoformat("Connection attempt ".$trycounter);nl();
-$parsed = 0; 
-while ($parsed == 0){
-sleep($stime);
-$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."login.php");
-$a = $mech->content();
-$b = $mech->success();
-$c = $mech->response();
-$d = $mech->status();
+	$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."login.php");
+	$a = $mech->content();
+	$b = $mech->success();
+	$c = $mech->response();
+	$d = $mech->status();
 
-				$filename = "Loginrecord.txt";
-				if($debug == 1){
-					open(FILE, ">>".$filename)
-					or die "failed to open file!!!!";
-					print FILE "all errors and returns from login\n\n";
-					print FILE "content\n\n";
-					print FILE "$a\n\n";
-					print FILE "sucess\n\n";
-					print FILE "$b\n\n";
-					print FILE "response\n\n";
-					print FILE "$c\n\n";
-					print FILE "status\n\n";
-					print FILE "$d\n\n";
-					close(FILE);
+					$filename = $username."-Loginrecord.txt";
+					if($debug == 1){
+						open(FILE, ">>".$filename)
+						or die "failed to open file!!!!";
+						print FILE "all errors and returns from login\n\n";
+						print FILE "content\n\n";
+						print FILE "$a\n\n";
+						print FILE "sucess\n\n";
+						print FILE "$b\n\n";
+						print FILE "response\n\n";
+						print FILE "$c\n\n";
+						print FILE "status\n\n";
+						print FILE "$d\n\n";
+						close(FILE);
 
-					s1(); debug("login"); nl();
-					if($requests==1){
-						$mech->add_handler("request_preprepare",  sub {s1(); nl();nl();infoformat("PREPREPARE");nl(); warnformat(shift->dump); return });
-						$mech->add_handler("request_prepare",  sub {s1(); nl();nl();infoformat("PREPARE");nl(); warnformat(shift->dump); return });
-						$mech->add_handler("response_header",  sub {s1();nl();nl();infoformat("RESPONSE HEADER");nl(); warnformat(shift->dump); return });
-						$mech->add_handler("request_send",  sub {s1(); nl();nl();infoformat("REQUEST");nl(); warnformat(shift->dump); return });
-						$mech->add_handler("response_done", sub {s1(); nl();nl();infoformat("RESPONSE");nl(); warnformat(shift->dump); return });
-					}
-				}elsif($debug != 1){
-					if(-e $filename){
-						unlink($filename)or die "Can't delete $filename: $!\n";
-						$filename = "";
+						s1(); debug("login"); nl();
+						if($requests==1){
+							$mech->add_handler("request_preprepare",  sub {s1(); nl();nl();infoformat("PREPREPARE");nl(); warnformat(shift->dump); return });
+							$mech->add_handler("request_prepare",  sub {s1(); nl();nl();infoformat("PREPARE");nl(); warnformat(shift->dump); return });
+							$mech->add_handler("response_header",  sub {s1();nl();nl();infoformat("RESPONSE HEADER");nl(); warnformat(shift->dump); return });
+							$mech->add_handler("request_send",  sub {s1(); nl();nl();infoformat("REQUEST");nl(); warnformat(shift->dump); return });
+							$mech->add_handler("response_done", sub {s1(); nl();nl();infoformat("RESPONSE");nl(); warnformat(shift->dump); return });
+						}
+					}elsif($debug != 1){
+						if(-e $filename){
+							unlink($filename)or die "Can't delete $filename: $!\n";
+							$filename = "";
+						}else{
+							$filename = "";
+						}
 					}else{
-						$filename = "";
+						warnformat("error in debug.");
 					}
-				}else{
-					warnformat("error in debug.");
-				}
 
-s1(); infoformat("SUCCESS: $b");
-s1(); infoformat("STATUS: $d");nl();
-	if($d == 200){
-		if($a =~ m/Enter Lol!/){
-			$parsed = 1;
-		}else{
-			$parsed = 0;
-			sleep(10);
+	s1(); infoformat("SUCCESS: $b");
+	s1(); infoformat("STATUS: $d");
+		if($d == 200){
+			if($a =~ m/Enter Lol!/){
+				$parsed = 1;
+			}else{
+				$parsed = 0;
+				sleep(10);
+				goto RETRY;
+			}
+		}elsif(($d == 500) || ($d == 523)){
+			s1(); errorformat("Trouble Connecting to internet....Probably");
+			#change back to 30 after test
+			sleep(3);
+			$trycounter++;
 			goto RETRY;
 		}
-	}elsif(($d == 500) || ($d == 523)){
-		s1(); errorformat("Trouble Connecting to internet....Probably");
-		#change back to 30 after test
-		sleep(3);
-		$trycounter++;
+	}
+	if($a =~ m/Username/){
+		$mech->form_number(0);
+		$mech->field("Username", $username);
+		$mech->field("Password", $password);
+		$mech->click_button('value' => 'Enter Lol!');
+		$a = $mech->content();
+		($Second, $Minute, $Hour, $Day, $Month, $Year, $WeekDay, $DayOfYear, $IsDST) = localtime(time);
+		#s1(); general("[$Hour:$Minute:$Second] - logged in Successfully to : ");
+		if($a =~ m/Login failed/){
+			s1(); errorformat("Login failed.");
+			sleep(30);
+			goto RETRY;
+		}
+	}else{
+		sleep(5);
 		goto RETRY;
 	}
 }
-if($a =~ m/Username/){
-	$mech->form_number(0);
-	$mech->field("Username", $username);
-	$mech->field("Password", $password);
-	$mech->click_button('value' => 'Enter Lol!');
-	$a = $mech->content();
-	($Second, $Minute, $Hour, $Day, $Month, $Year, $WeekDay, $DayOfYear, $IsDST) = localtime(time);
-	#s1(); general("[$Hour:$Minute:$Second] - logged in Successfully to : ");
-	if($a =~ m/Login failed/){
-		s1(); errorformat("Login failed.");
-		sleep(30);
-		goto RETRY;
-	}
-}else{
-	sleep(5);
-	goto RETRY;
-}
-
-
-my $levels = 9999999;
-
-until($levels == 0){
-	START:
-	$levels--;
-	&Charname;
-	&MyLevel;
-	if($avlevs > $MyLev){&Autolevelup};
-	&CheckShop;
-	&Cpmready;
-	GOTO:
-	if($cpmready == 0){
-		nl(); s1(); general("Low Level Fight mode");nl();
-	}else{
-		nl(); s1(); general("High Level Fight mode");nl();
-	}
-	if($cpmready == 0){
-		&leveltestfight;
-		&LowFight;	
-	}else{
-		#then cpm level subroutine
-		&CPMlevel;
-		&Fight;
-	}
-}
-
-goto RETRY;
-
-
-#&leveltestworld; Written but not used yet
-
-#seperate the output and error streams
-#open STDOUT, '>>', 'output.txt' or die $!;
-#open STDERR, '>>', 'Errorlog.txt' or die $!;

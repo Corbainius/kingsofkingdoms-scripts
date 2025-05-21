@@ -15,6 +15,6 @@ echo off
 :: If using chartype 13 or above you can use the 6 arguments after the max level to set a leveling ratio for your char for custom builds. You have 100 points to place as you see fit that must total 100 across the 6 arguments to create a ratio for leveling. You MUST use whole numbers. example: 20 20 20 10 20 10
 ::
 :: change the entries after main.pl then run the .bat file. 
-cmd /k perl -w main.pl 2 2 1 1.5 1.1 1 13 1 100000 10 20 20 10 20 20
+cmd /k perl -w main.pl 2 2 1 1.5 1.1 1 14 1 100000000000000 50 25 0 0 25 0
 perl -e sleep(2)
 goto START
