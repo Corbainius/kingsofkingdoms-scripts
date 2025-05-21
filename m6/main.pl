@@ -195,6 +195,8 @@ my $happened;
 my $eighttwice = 0;
 my $cpm;
 my $cpmtest;
+my $died;
+my $aa;
 
 if($debug == 1){
 	s1();debug("Debug mode active.");nl();
@@ -272,10 +274,10 @@ sub nl {
 	print "\n";
 }
 sub errorformat {
-	print color('RED ON_YELLOW')," ", @_," ", color('reset');print "\n";
+	print color('RED ON_BLUE')," ", @_," ", color('reset');print "\n";
 }
 sub warnformat {
-	print color('YELLOW ON_BLUE')," ", @_," ", color('reset');print "\n";
+	print color('RED ON_YELLOW')," ", @_," ", color('reset');print "\n";
 }
 sub infoformat {
 	print color('YELLOW ON_BLUE')," ", @_," ", color('reset');print "\n";
@@ -336,11 +338,20 @@ sub leveltestworld {
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
 		$a = $mech->content();
-		if ($a =~ m/Thief/){
-		$parsed = 1;
-		}else{
-			sleep(10);
-			goto RETRY;
+		if($a =~ m/Town/){
+			$parsed = 1;
+		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
 		}
 	}
 
@@ -412,9 +423,9 @@ sub leveltestworld {
 		$mech->click();
 		$a = $mech->content();
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
-		$a = $1;
-		$mech->click_button(value => $fmodeval);
+		$a = $1;		
 		sleep($loopwait); 
+		$mech->click_button(value => $fmodeval);
 		$b = $mech->content();
 		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$b = $1;
@@ -485,12 +496,11 @@ sub leveltestworld {
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
-		sleep($stime);
 		$a = $mech->content();
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
-		$a = $1;
-		$mech->click_button(value => $fmodeval);
+		$a = $1;		
 		sleep($loopwait); 
+		$mech->click_button(value => $fmodeval);
 		$b = $mech->content();
 		$b =~ m/(<tr><td>Level.*<form method=post)/s;
 		$b = $1;
@@ -679,11 +689,20 @@ sub leveltestfight {
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
-		if ($a =~ m/Skeleton/){
+		if($a =~ m/Skeleton/){
 			$parsed = 1;
-		}else{
-			sleep(10);
-			goto RETRY;
+		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
 		}
 	}
 
@@ -758,8 +777,8 @@ sub leveltestfight {
 		$a = $mech->content();
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
-		$mech->click_button(value => $fmodeval);
 		sleep($loopwait); 
+		$mech->click_button(value => $fmodeval);
 		$b = $mech->content();
 		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$b = $1;
@@ -830,7 +849,6 @@ sub leveltestfight {
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
-		sleep($stime);
 		$a = $mech->content();
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
@@ -1022,11 +1040,20 @@ sub LowFight {
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
-		if ($a =~ m/Skeleton/){
+		if($a =~ m/Skeleton/){
 			$parsed = 1;
-		}else{
-			sleep(10);
-			goto RETRY;
+		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
 		}
 	}
 	
@@ -1053,6 +1080,7 @@ sub LowFight {
 	$mech->form_number(2);
 	$mech->field("Difficulty", $newlevel);
 	$mech->click();
+	sleep($loopwait);
 	$mech->click_button(value => $fmodeval);
 	$a = $mech->content();
 
@@ -1196,14 +1224,25 @@ sub Autolevelup {
 		s1(); debug("Arrived at Autolevelup");
 	}
 
-	$parsed = 0; while ($parsed == 0) {sleep($stime);
-	$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."stats.php");
-	$a = $mech->content();
-	if ($a =~ m/Parsed/){
-		$parsed = 1;
-	}else{
-			sleep(10);
-			goto RETRY;
+	$parsed = 0; 
+	while ($parsed == 0) {
+		sleep($stime);
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."stats.php");
+		$a = $mech->content();
+		if($a =~ m/Parsed/){
+			$parsed = 1;
+		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
 		}
 	}
 
@@ -1503,11 +1542,20 @@ sub CPMlevel {
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
-		if ($a =~ m/Skeleton/){
+		if($a =~ m/Skeleton/){
 			$parsed = 1;
-		}else{
-			sleep(10);
-			goto RETRY;
+		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
 		}
 	}
 
@@ -1621,8 +1669,8 @@ sub CPMlevel {
 			}else{
 				warnformat("error in debug.");
 			}
-		sleep($loopwait); 
 		$mech->select("Monster", $cpm);
+		sleep($loopwait); 
 		$mech->click_button(value => $fmodeval);
 		$c = $mech->content();
 		$c =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
@@ -1667,13 +1715,12 @@ sub CPMlevel {
 			s1(); lost("You lost at level ".$level);
 			s1(); general("Waiting 5 seconds before continuing");
 			$won = 0;
-			$lost++;
 			$level = $level;
 			if($debug == 1){
 				s1(); debug("levmulti = ".$levmulti);
 			}
 			sleep(6);
-
+			$lost++;
 		}
 	}
 
@@ -1743,22 +1790,30 @@ sub CPMlevel {
 		if ($c =~ m/You win/) {
 			$won++;
 			$reps++; 
+			$died = 0;
 			s1(); won("Test fight ".$reps." You won at level ".$level)
 		}
 		if ($c =~ m/battle tied/) {
 			$tied++;
 			$reps++;
+			$died = 0;
 			s1(); draw("Test fight ".$reps." You tied at level ".$level);
 		}
 		if ($c =~ m/stunned/) {
 			$lost++;
 			$reps++;
+			$died = 1;
 			s1(); lost("Test fight ".$reps." You lost at level ".$level);
 			s1(); general("Waiting 5 seconds before continuing");
 			sleep(6);
 		}
 		
 		until($reps == 10){
+			if($died == 1){
+				last();
+			}else{
+				$died = 0;
+			}
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
@@ -1915,11 +1970,20 @@ sub Fight {
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
-		if ($a =~ m/Skeleton/){
+		if($a =~ m/Skeleton/){
 			$parsed = 1;
-		}else{
-			sleep(10);
-			goto RETRY;
+		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
 		}
 	}
 
@@ -2108,7 +2172,15 @@ sub Fight {
 		}
 	#level up if necessary
 		if (($b =~ m/(Level up.*HERE!)/) and ($indefcont != 1)) {
-			&Levelup; 
+			if($persist == 100){
+				$persist = 0;
+				&Levelup;
+			}else{
+				$persist++;
+				if($debug == 1){
+					s1(); debug("Skipping levelup 100 times. perssist = ".$persist);
+				}
+			}
 		}
 	}
 }
@@ -2353,6 +2425,18 @@ sub CheckShop{
 		if($a =~ m/Parsed/){
 			$parsed = 1;
 		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
+		}
 	}
 
 	$filename = "CheckShop.txt";
@@ -2390,6 +2474,18 @@ sub MaxShops{
 		$a = $mech->content();
 		if($a =~ m/Parsed/){
 			$parsed = 1;
+		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
 		}
 	}
 
@@ -3125,6 +3221,18 @@ sub Charname{
 		if($a =~ m/Parsed/){
 			$parsed = 1;
 		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
+		}
 	}
 
 	$filename = "Charname.txt";
@@ -3329,6 +3437,18 @@ sub MyLevel{
 		if($a =~ m/Parsed/){
 			$parsed = 1;
 		}
+		$aa = $a;
+		if($aa =~ m/(Stun time .*!<br>Please)/){
+			$aa = $1;
+			$aa =~ s/<br>Please//g;			
+			s4(); warnformat($aa);nl();
+			$aa =~ s/Stun time //g;
+			$aa =~ s/!//g;
+			$aa = $aa + 2;
+			s4(); general("Please wait for the stun time to end.");nl();
+			sleep($aa);
+			$parsed = 0;
+		}
 	}
 
 	$filename = "MyLevel.txt";
@@ -3377,7 +3497,7 @@ sub Cpmready{
 		s1(); debug("Arrived at cpmready");
 	}
 
-	nl();s1(); general("Testing Chaoslord Post Mortem readiness."); nl();
+	nl();s1(); general("Chaoslord Post Mortem readiness check."); nl();
 
 	$won = 1;
 	while($won == 1){
@@ -3386,11 +3506,20 @@ sub Cpmready{
 			sleep($stime);
 			$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 			$a = $mech->content();
-			if ($a =~ m/Skeleton/){
+			if($a =~ m/Skeleton/){
 				$parsed = 1;
-			}else{
-				sleep(10);
-				goto RETRY;
+			}
+			$aa = $a;
+			if($aa =~ m/(Stun time .*!<br>Please)/){
+				$aa = $1;
+				$aa =~ s/<br>Please//g;			
+				s4(); warnformat($aa);nl();
+				$aa =~ s/Stun time //g;
+				$aa =~ s/!//g;
+				$aa = $aa + 2;
+				s4(); general("Please wait for the stun time to end.");nl();
+				sleep($aa);
+				$parsed = 0;
 			}
 		}
 
@@ -3470,7 +3599,7 @@ sub Cpmready{
 		$won = 0;
 	}
 
-	nl();s1(); general("Testing If Chaoslord Post Mortem ready."); nl();
+	nl();s1(); general("Beginning CPM Test."); nl();
 
 	until ($cpmtest == 1){
 		$reps = 0;

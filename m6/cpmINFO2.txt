@@ -109,3 +109,366 @@ THIS IS C
 <tr><td>Level : 208</td><td>Life : 8,973,920,990,566</td><td>Exp : 44,859,098,365,664</td><td>Gold : 14,953,032,788,555</td></tr>
 </table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 1.652.482.060.498!<font size=-1>His countered for 7.714.508.493.326.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 109.580.361.833!<font size=-1>His countered for 9.257.410.191.991.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 14.895.753.783.574!<font size=-1>Your countered for 57.495.423.560.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.68%<br><font size=1>Lol Version 2.5.
 Parsed in <b>0.0051</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 4,486,960,495,283</td><td>Exp : 22,429,549,182,832</td><td>Gold : 7,476,516,394,277</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 4.649.890.168.796!<font size=-1>His countered for 3.155.935.292.724.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Chaoslord Post Mortem. You win 25,264,644,199,540 exp and 8,421,548,066,517 gold.<br>Your freeplay bonus was 190%!.</b><br><br> Bonus gold and exp gain from power z +73.68%<p style="color:DodgerBlue;">Currently fought 23 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0042</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 8,973,920,990,566</td><td>Exp : 44,859,098,365,664</td><td>Gold : 14,953,032,788,555</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 1.650.931.233.901!<font size=-1>His countered for 5.554.446.115.195.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.68%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0081</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 17,947,841,981,133</td><td>Exp : 89,718,196,731,328</td><td>Gold : 29,906,065,577,109</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell got contravented! </font><br><font color="#88FF88">He heal totally!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell got contravented! </font><br><font color="#88FF88">He heal totally!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell got contravented! </font><br><font color="#88FF88">He heal totally!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 31.813.326.750.104!<font size=-1>Your countered for 86.938.225.116.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.67%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0106</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 35,895,683,962,266</td><td>Exp : 179,436,393,462,656</td><td>Gold : 59,812,131,154,219</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 59.698.835.640.333!<font size=-1>Your countered for 114.161.188.205.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.67%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0054</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 71,791,367,924,531</td><td>Exp : 358,872,786,925,312</td><td>Gold : 119,624,262,308,437</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 112.455.982.447.870!<font size=-1>Your countered for 133.188.052.906.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.67%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0064</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 143,582,735,849,062</td><td>Exp : 717,745,573,850,624</td><td>Gold : 239,248,524,616,875</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 166.363.347.800.469!<font size=-1>Your countered for 72.817.287.635.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.66%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0042</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 287,165,471,698,125</td><td>Exp : 1,435,491,147,701,248</td><td>Gold : 478,497,049,233,749</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 425.266.961.740.136!<font size=-1>Your countered for 69.904.596.129.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.66%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0149</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 574,330,943,396,250</td><td>Exp : 2,870,982,295,402,496</td><td>Gold : 956,994,098,467,499</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 1.020.708.851.617.266!<font size=-1>Your countered for 99.627.589.771.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.66%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0048</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 1,148,661,886,792,499</td><td>Exp : 5,741,964,590,804,992</td><td>Gold : 1,913,988,196,934,997</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 1.458.225.270.594.274!<font size=-1>Your countered for 72.556.844.351.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.66%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0164</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 2,297,323,773,584,998</td><td>Exp : 11,483,929,181,609,984</td><td>Gold : 3,827,976,393,869,994</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 2.449.838.530.085.900!<font size=-1>Your countered for 101.820.010.990.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.66%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0174</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 4,594,647,547,169,997</td><td>Exp : 22,967,858,363,219,968</td><td>Gold : 7,655,952,787,739,989</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 6.805.221.978.368.317!<font size=-1>Your countered for 167.883.011.931.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.62%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0157</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 9,189,295,094,339,994</td><td>Exp : 45,935,716,726,439,936</td><td>Gold : 15,311,905,575,479,978</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 16.332.745.399.899.072!<font size=-1>Your countered for 190.267.413.522.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.62%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0104</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 16,838,954,380,288</td><td>Exp : 84,175,057,002,880</td><td>Gold : 28,058,352,334,293</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 11.822.716.920.103!<font size=-1>His countered for 21.713.628.310.638.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 16.165.442.582.231!<font size=-1>His countered for 17.370.902.648.511.</font></font><br><br><b>Killing spree of 2!</b><br><b>You have slain Chaoslord Post Mortem. You win 268,989,812,158,403 exp and 89,663,270,719,457 gold.<br>Your freeplay bonus was 897%!.</b><br><br> Bonus gold and exp gain from power z +73.62%<p style="color:DodgerBlue;">Currently fought 20 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0045</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 33,677,908,760,576</td><td>Exp : 168,350,114,005,760</td><td>Gold : 56,116,704,668,587</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 87.115.709.240!<font size=-1>His countered for 30.654.534.085.607.</font></font><br><font color="#888888">He special ability for 64.004.577.198.823!<font size=-1>Your countered for 129.727.781.947.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.62%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0343</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 67,355,817,521,152</td><td>Exp : 336,700,228,011,520</td><td>Gold : 112,233,409,337,173</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 89.637.815.857.139!<font size=-1>Your countered for 150.211.115.938.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.62%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0050</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 17,676,859,813,837</td><td>Exp : 88,363,603,158,368</td><td>Gold : 29,454,534,386,123</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 17.446.394.232.238!<font size=-1>His countered for 16.089.950.998.504.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 4.541.458.598.266!<font size=-1>His countered for 13.025.198.427.360.</font></font><br><br><b>Killing spree of 3!</b><br><b>You have slain Chaoslord Post Mortem. You win 270,127,534,855,137 exp and 90,042,511,618,369 gold.<br>Your freeplay bonus was 29%!.</b><br><br> Bonus gold and exp gain from power z +73.62%<p style="color:DodgerBlue;">Currently fought 110 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0100</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 35,353,719,627,674</td><td>Exp : 176,727,206,316,736</td><td>Gold : 58,909,068,772,245</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 15.007.646.395.850!<font size=-1>His countered for 21.882.333.357.965.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 4.591.762.548.625!<font size=-1>His countered for 23.785.144.954.310.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.62%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0050</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 70,707,439,255,347</td><td>Exp : 353,454,412,633,472</td><td>Gold : 117,818,137,544,491</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 125.538.593.640.821!<font size=-1>Your countered for 135.905.295.373.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.62%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0045</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 15,975,895,534,618</td><td>Exp : 79,860,773,236,176</td><td>Gold : 26,620,257,745,392</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 11.896.328.021.143!<font size=-1>His countered for 16.480.579.481.793.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 5.434.006.075.493!<font size=-1>His countered for 13.010.983.801.415.</font></font><br><br><b>Killing spree of 8!</b><br><b>You have slain Chaoslord Post Mortem. You win 789,365,178,872,600 exp and 263,121,726,290,834 gold.<br>Your freeplay bonus was 353%!.</b><br><br> Bonus gold and exp gain from power z +73.62%<p style="color:DodgerBlue;">Currently fought 281 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0070</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 31,951,791,069,235</td><td>Exp : 159,721,546,472,352</td><td>Gold : 53,240,515,490,784</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 3.992.595.483.636!<font size=-1>His countered for 20.600.724.352.241.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 5.749.261.186.199!<font size=-1>His countered for 20.600.724.352.241.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 4.833.222.528.946!<font size=-1>His countered for 23.543.684.973.989.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 5.988.893.225.455!<font size=-1>His countered for 30.901.086.528.361.</font></font><br><font color="#888888">He special ability for 77.273.987.610.095!<font size=-1>Your countered for 167.883.011.931.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.62%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0053</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 15,975,895,534,618</td><td>Exp : 79,860,773,236,176</td><td>Gold : 26,620,257,745,392</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 3.656.038.280.246!<font size=-1>His countered for 24.720.869.222.689.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 10.140.925.442.606!<font size=-1>His countered for 20.600.724.352.241.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 5.952.745.418.512!<font size=-1>His countered for 14.541.687.778.052.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Chaoslord Post Mortem. You win 115,510,622,408,811 exp and 38,503,540,802,932 gold.<br>Your freeplay bonus was 670%!.</b><br><br> Bonus gold and exp gain from power z +73.62%<p style="color:DodgerBlue;">Currently fought 306 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0143</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 31,951,791,069,235</td><td>Exp : 159,721,546,472,352</td><td>Gold : 53,240,515,490,784</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 2.635.258.702.380!<font size=-1>His countered for 30.901.086.528.361.</font></font><br><font color="#888888">He special ability for 77.273.987.610.095!<font size=-1>Your countered for 167.883.011.931.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.62%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0057</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 63,903,582,138,470</td><td>Exp : 319,443,092,944,704</td><td>Gold : 106,481,030,981,568</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 2.586.892.651.411!<font size=-1>His countered for 52.043.935.205.661.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 6.435.075.831.225!<font size=-1>His countered for 42.992.816.039.459.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 18.298.126.032.962!<font size=-1>His countered for 76.064.212.992.889.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.59%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0062</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 15,975,895,534,618</td><td>Exp : 79,860,773,236,176</td><td>Gold : 26,620,257,745,392</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 80.628.522.791.024!<font size=-1>His countered for 13.733.816.234.827.</font></font><br><br><b>Killing spree of 1!</b><br><b>You have slain Chaoslord Post Mortem. You win 110,271,755,684,517 exp and 36,757,251,894,835 gold.<br>Your freeplay bonus was 571%!.</b><br><br> Bonus gold and exp gain from power z +73.59%<p style="color:DodgerBlue;">Currently fought 363 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0089</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 15,975,895,534,618</td><td>Exp : 79,860,773,236,176</td><td>Gold : 26,620,257,745,392</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 40.127.443.977.223!<font size=-1>His countered for 11.771.842.486.995.</font></font><br><br><b>Killing spree of 4!</b><br><b>You have slain Chaoslord Post Mortem. You win 454,290,670,579,785 exp and 151,430,223,526,576 gold.<br>Your freeplay bonus was 633%!.</b><br><br> Bonus gold and exp gain from power z +73.59%<p style="color:DodgerBlue;">Currently fought 17 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0057</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 31,951,791,069,235</td><td>Exp : 159,721,546,472,352</td><td>Gold : 53,240,515,490,784</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 120.670.088.424.948!<font size=-1>His countered for 44.947.034.950.343.</font></font><br><br><b>Killing spree of 3!</b><br><b>You have slain Chaoslord Post Mortem. You win 783,689,739,921,233 exp and 261,229,913,307,061 gold.<br>Your freeplay bonus was 953%!.</b><br><br> Bonus gold and exp gain from power z +73.58%<p style="color:DodgerBlue;">Currently fought 61 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0147</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 63,903,582,138,470</td><td>Exp : 319,443,092,944,704</td><td>Gold : 106,481,030,981,568</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 159.497.610.893.905!<font size=-1>His countered for 44.947.034.950.343.</font></font><br><br><b>Killing spree of 6!</b><br><b>You have slain Chaoslord Post Mortem. You win 2,281,462,569,811,048 exp and 760,487,523,270,373 gold.<br>Your freeplay bonus was 286%!.</b><br><br> Bonus gold and exp gain from power z +73.58%<p style="color:DodgerBlue;">Currently fought 105 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0136</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 63,903,582,138,470</td><td>Exp : 319,443,092,944,704</td><td>Gold : 106,481,030,981,568</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 79.287.981.662.574!<font size=-1>His countered for 65.922.317.927.170.</font></font><br><br><b>Killing spree of 7!</b><br><b>You have slain Chaoslord Post Mortem. You win 3,402,452,271,572,588 exp and 1,134,150,757,190,898 gold.<br>Your freeplay bonus was 782%!.</b><br><br> Bonus gold and exp gain from power z +73.58%<p style="color:DodgerBlue;">Currently fought 149 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0328</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 63,903,582,138,470</td><td>Exp : 319,443,092,944,704</td><td>Gold : 106,481,030,981,568</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 67.149.544.383.669!<font size=-1>His countered for 42.992.816.039.459.</font></font><br><br><b>Killing spree of 2!</b><br><b>You have slain Chaoslord Post Mortem. You win 1,038,743,753,431,379 exp and 346,247,917,810,471 gold.<br>Your freeplay bonus was 939%!.</b><br><br> Bonus gold and exp gain from power z +73.58%<p style="color:DodgerBlue;">Currently fought 207 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0052</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 127,807,164,276,941</td><td>Exp : 638,886,185,889,408</td><td>Gold : 212,962,061,963,136</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 24.156.728.344.210!<font size=-1>His countered for 85.985.632.078.918.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 56.951.428.421.848!<font size=-1>His countered for 79.106.781.512.604.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.58%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0073</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 255,614,328,553,882</td><td>Exp : 1,277,772,371,778,816</td><td>Gold : 425,924,123,926,272</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.57%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0064</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 163,593,170,347,187</td><td>Exp : 817,774,318,301,872</td><td>Gold : 272,591,439,433,957</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 79.111.912.920.690!<font size=-1>His countered for 120.543.667.120.397.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 34.509.114.046.806!<font size=-1>His countered for 101.256.680.381.133.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 71.893.987.597.512!<font size=-1>His countered for 210.951.417.460.695.</font></font><br><br><b>Killing spree of 5!</b><br><b>You have slain Chaoslord Post Mortem. You win 6,449,513,457,007,415 exp and 2,149,837,819,002,498 gold.<br>Your freeplay bonus was 866%!.</b><br><br> Bonus gold and exp gain from power z +73.57%<p style="color:DodgerBlue;">Currently fought 313 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0223</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 327,186,340,694,374</td><td>Exp : 1,635,548,636,603,744</td><td>Gold : 545,182,878,867,915</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 62.722.186.838.352!<font size=-1>His countered for 220.123.218.219.855.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 1.892.218.132.737!<font size=-1>His countered for 337.522.267.937.111.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.57%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0044</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 654,372,681,388,749</td><td>Exp : 3,271,097,273,207,488</td><td>Gold : 1,090,365,757,735,829</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 1.452.941.320.470.836!<font size=-1>Your countered for 900.731.319.443.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.57%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0451</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 1,177,870,827,226,778</td><td>Exp : 5,887,975,095,407,776</td><td>Gold : 1,962,658,365,135,925</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">He special ability for 2.415.051.530.467.902!<font size=-1>Your countered for 562.957.074.652.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.57%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0043</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 142,442,689,570,278</td><td>Exp : 712,046,677,212,784</td><td>Gold : 237,348,892,404,261</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 52.392.268.938.540!<font size=-1>His countered for 122.452.085.287.722.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 30.862.018.856.429!<font size=-1>His countered for 116.007.238.693.631.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 115.796.132.498.637!<font size=-1>His countered for 100.188.069.780.864.</font></font><br><br><b>Killing spree of 4!</b><br><b>You have slain Chaoslord Post Mortem. You win 2,906,859,355,053,453 exp and 968,953,118,351,151 gold.<br>Your freeplay bonus was 31%!.</b><br><br> Bonus gold and exp gain from power z +73.57%<p style="color:DodgerBlue;">Currently fought 491 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0053</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 284,885,379,140,557</td><td>Exp : 1,424,093,354,425,568</td><td>Gold : 474,697,784,808,523</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">He special ability for 632.510.620.611.369!<font size=-1>Your countered for 428.919.675.925.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.57%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0052</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 207,681,441,869,670</td><td>Exp : 1,038,164,057,756,704</td><td>Gold : 346,054,685,918,901</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 12.430.513.793.258!<font size=-1>His countered for 321.363.253.365.970.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 37.512.365.862.134!<font size=-1>His countered for 146.074.206.075.441.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 105.058.942.279.389!<font size=-1>His countered for 139.723.153.637.378.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 62.954.081.629.038!<font size=-1>His countered for 153.030.120.650.462.</font></font><br><br><b>Killing spree of 8!</b><br><b>You have slain Chaoslord Post Mortem. You win 8,984,687,021,449,584 exp and 2,994,895,673,816,528 gold.<br>Your freeplay bonus was 123%!.</b><br><br> Bonus gold and exp gain from power z +73.57%<p style="color:DodgerBlue;">Currently fought 545 of 600</p>        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0053</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 415,362,883,739,341</td><td>Exp : 2,076,328,115,513,408</td><td>Gold : 692,109,371,837,803</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">Your heal spell got contravented! </font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities fails!</font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 48.887.017.203.183!<font size=-1>His countered for 257.090.602.692.776.</font></font><br><font color="#888888">He special ability for 1.006.189.269.161.794!<font size=-1>Your countered for 529.841.952.613.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.57%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0059</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 207,681,441,869,670</td><td>Exp : 1,038,164,057,756,704</td><td>Gold : 346,054,685,918,901</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 35.238.377.314.754!<font size=-1>His countered for 247.202.502.589.208.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 14.638.168.765.654!<font size=-1>His countered for 267.802.711.138.308.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 15.236.914.941.074!<font size=-1>His countered for 229.545.180.975.693.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.57%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0051</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 166,145,153,859,251</td><td>Exp : 830,531,248,022,512</td><td>Gold : 276,843,749,340,837</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 37.216.400.548.796!<font size=-1>His countered for 122.424.096.788.225.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 56.804.256.034.912!<font size=-1>His countered for 102.836.241.302.109.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 40.758.459.017.979!<font size=-1>His countered for 142.828.112.919.596.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 30.539.926.537.372!<font size=-1>His countered for 214.242.169.379.395.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.57%        <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+        Level up      <a href="stats.php">HERE!</a>
+     <img src="https://kingsofkingdoms.com/images/emotions/star.gif" border="0">
+     <br><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0036</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 166,145,153,859,251</td><td>Exp : 830,531,248,022,512</td><td>Gold : 276,843,749,340,837</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 144.875.731.952.993!<font size=-1>His countered for 128.545.301.627.637.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 99.501.366.430.565!<font size=-1>His countered for 111.778.523.154.467.</font></font><br><br><b>Killing spree of 8!</b><br><b>You have slain Chaoslord Post Mortem. You win 9,814,000,176,632,924 exp and 3,271,333,392,211,014 gold.<br>Your freeplay bonus was 716%!.</b><br><br> Bonus gold and exp gain from power z +73.57%<p style="color:DodgerBlue;">Currently fought 166 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0289</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 332,290,307,718,502</td><td>Exp : 1,661,062,496,045,024</td><td>Gold : 553,687,498,681,675</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 123.831.852.142.603!<font size=-1>His countered for 233.718.730.232.067.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 2.799.345.943.500!<font size=-1>His countered for 270.621.687.637.130.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">You special ability for 45.661.654.602.968!<font size=-1>His countered for 244.848.193.576.451.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.57%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0106</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 664,580,615,437,005</td><td>Exp : 3,322,124,992,090,048</td><td>Gold : 1,107,374,997,363,349</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">He special ability for 1.362.416.865.151.336!<font size=-1>Your countered for 525.934.416.355.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.57%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0083</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 203,434,782,885,811</td><td>Exp : 1,016,935,734,788,112</td><td>Gold : 338,978,578,262,704</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 49.424.423.201.989!<font size=-1>His countered for 185.171.785.175.430.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 143.260.337.544.482!<font size=-1>His countered for 242.147.719.075.562.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 179.836.032.143.424!<font size=-1>His countered for 157.396.017.399.115.</font></font><br><br><b>Killing spree of 8!</b><br><b>You have slain Chaoslord Post Mortem. You win 9,797,294,460,379,956 exp and 3,265,764,820,126,620 gold.<br>Your freeplay bonus was 306%!.</b><br><br> Bonus gold and exp gain from power z +73.57%<p style="color:DodgerBlue;">Currently fought 493 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0120</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 406,869,565,771,622</td><td>Exp : 2,033,871,469,576,224</td><td>Gold : 677,957,156,525,408</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 175.910.528.551.011!<font size=-1>His countered for 273.732.204.172.374.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 2.602.835.359.453!<font size=-1>His countered for 314.792.034.798.231.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 4</b><br><font color="#888888">You special ability for 59.912.248.275.631!<font size=-1>His countered for 299.801.937.903.077.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 5</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>The battle tied.</b><br><br> Bonus gold and exp gain from power z +73.57%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0173</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 203,434,782,885,811</td><td>Exp : 1,016,935,734,788,112</td><td>Gold : 338,978,578,262,704</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 92.543.416.730.376!<font size=-1>His countered for 224.851.453.427.308.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 97.730.106.291.231!<font size=-1>His countered for 136.866.102.086.187.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 21.658.188.160.104!<font size=-1>His countered for 262.326.695.665.192.</font></font><br><br><b>Killing spree of 6!</b><br><b>You have slain Chaoslord Post Mortem. You win 6,758,961,667,695,694 exp and 2,252,987,222,565,209 gold.<br>Your freeplay bonus was 162%!.</b><br><br> Bonus gold and exp gain from power z +73.57%<p style="color:DodgerBlue;">Currently fought 565 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0253</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 203,434,782,885,811</td><td>Exp : 1,016,935,734,788,112</td><td>Gold : 338,978,578,262,704</td></tr>
+</table><b>Round 1</b><br><font color="#888888">Your special abilities countered! </font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 2</b><br><font color="#888888">You special ability for 159.998.852.758.568!<font size=-1>His countered for 157.396.017.399.115.</font></font><br><font color="#888888">His special abilities fails!</font><br><font color="#88FF88">You heal totally!</font><br><font color="#88FF88">His heal spell fizzles!</font><br><b>Round 3</b><br><font color="#888888">You special ability for 134.862.732.751.401!<font size=-1>His countered for 224.851.453.427.308.</font></font><br><br><b>Killing spree of 3!</b><br><b>You have slain Chaoslord Post Mortem. You win 3,836,491,753,061,624 exp and 1,278,830,584,353,862 gold.<br>Your freeplay bonus was 386%!.</b><br><br> Bonus gold and exp gain from power z +73.57%<p style="color:DodgerBlue;">Currently fought 597 of 600</p><br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0268</b> seconds.</font></body></html>
+
+THIS IS C
+THIS IS C
+<tr><td>Level : 208</td><td>Life : 406,869,565,771,622</td><td>Exp : 2,033,871,469,576,224</td><td>Gold : 677,957,156,525,408</td></tr>
+</table><b>Round 1</b><br><font color="#888888">You special ability for 2.602.835.359.453!<font size=-1>His countered for 314.792.034.798.231.</font></font><br><font color="#888888">He special ability for 903.459.623.898.903!<font size=-1>Your countered for 496.334.435.219.</font></font><br><b>You have been slain by Chaoslord Post Mortem. You were stunned for 5 seconds.</b><br><br> Bonus gold and exp gain from power z +73.57%<br><font size=1>Lol Version 2.5.
+Parsed in <b>0.0075</b> seconds.</font></body></html>
