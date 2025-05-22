@@ -1233,7 +1233,7 @@ sub LowFight {
 			
 	#KILLED
 		if($a =~ m/(been.*slain)/) {
-			s1(); lost( "You were slain!");exit(0);
+			s1(); lost( "You were slain!");
 		}
 	#LOGGED OUT
 		if ($a =~ m/logged/) {
@@ -1262,7 +1262,11 @@ sub LowFight {
 			$c = $1;
 			$c =~ s/<br>Please//g;
 			$output = $c;
-			$happened = 5;#
+			$happened = 5;
+		}
+		if($b =~ m/(stunned for .* seconds.)/){
+			$output = $1;
+			$happened = 6;
 		}
 
 		if($happened == 1){
@@ -1278,6 +1282,9 @@ sub LowFight {
 			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
 			$happened = 0;
 		}elsif($happened == 5){
+			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
+		}elsif($happened == 6){
 			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
 			$happened = 0;
 		}else{
@@ -2213,8 +2220,8 @@ sub Fight {
 	#KILLED
 		if($a =~ m/(been.*slain)/) {
 			s1();  lost( "You were slain!");
-			exit(0);
 		}
+		
 	#LOGGED OUT
 
 		if ($a =~ m/logged/) {
@@ -2243,7 +2250,11 @@ sub Fight {
 			$c = $1;
 			$c =~ s/<br>Please//g;
 			$output = $c;
-			$happened = 5;#
+			$happened = 5;
+		}
+		if($b =~ m/(stunned for .* seconds.)/){
+			$output = $1;
+			$happened = 6;
 		}
 
 		if($happened == 1){
@@ -2259,6 +2270,9 @@ sub Fight {
 			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
 			$happened = 0;
 		}elsif($happened == 5){
+			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
+			$happened = 0;
+		}elsif($happened == 6){
 			s1(); warnformat("$antal: [$Hour:$Minute:$Second]: " . $output);
 			$happened = 0;
 		}else{
