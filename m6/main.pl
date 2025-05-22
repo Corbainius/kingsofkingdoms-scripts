@@ -10,7 +10,6 @@ use Math::Round;
 use Time::HiRes qw(sleep);
 use WWW::Mechanize;
 use POSIX qw(strftime);
-use feature 'try';
 use Cwd qw();
 use Term::ANSIColor;
 use threads;
