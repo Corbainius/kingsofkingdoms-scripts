@@ -10,9 +10,11 @@ use Math::Round;
 use Time::HiRes qw(sleep);
 use WWW::Mechanize;
 use POSIX qw(strftime);
+use feature 'try';
 use Cwd qw();
 use Term::ANSIColor;
 use threads;
+use threads::shared;
 
 logo("                                           
         www.kingsofkingdoms.com            
@@ -198,6 +200,7 @@ my $died;
 my $aa;
 my $firstlogin = 1;
 my $namefix = '';
+my $timer :shared;
 
 if($debug == 1){
 	s1();debug("Debug mode active.");nl();
@@ -265,6 +268,9 @@ sub s4 {
 }
 sub nl {
 	print "\n";
+}
+sub timer{
+	print color('GREEN'),"Your script has been up for : ", $timer," ", color('reset');print "\n";
 }
 sub errorformat {
 	print color('RED ON_BLUE')," ", @_," ", color('reset');print "\n";
@@ -354,9 +360,11 @@ until($levels == 0){
 	START:
 	$levels--;
 	&Charname;
+	s1(); timer(); nl();
 	&MyLevel;
 	if($avlevs > $MyLev){&Autolevelup};
 	&CheckShop;
+	s1(); timer(); nl();
 	&Cpmready;
 	GOTO:
 	if($cpmready == 0){
@@ -365,11 +373,14 @@ until($levels == 0){
 		nl(); s1(); general("High Level Fight mode");nl();
 	}
 	if($cpmready == 0){
+		s1(); timer(); nl();
 		&leveltestfight;
+		s1(); timer(); nl();
 		&LowFight;	
 	}else{
-		#then cpm level subroutine
+		s1(); timer(); nl();
 		&CPMlevel;
+		s1(); timer(); nl();
 		&Fight;
 	}
 }
@@ -536,6 +547,14 @@ sub leveltestworld {
 			}
 			sleep(6);
 		}
+		if($b =~ m/jail time.*?!/){my $jailing = $1; 
+			$jailing =~ s/jail time //g;
+			$jailing =~ s/!//g;
+			s4(); warnformat($1);nl();
+			s4(); general("Please wait for the jail time to end.");nl();
+			sleep($jailing);
+			$parsed = 0;
+		}
 	}
 	
 	nl();s1(); general("Advanced level test starting at level ".$level); nl();
@@ -549,7 +568,7 @@ sub leveltestworld {
 		$won = 0;
 		$tied = 0;
 		$lost = 0;
-		sleep($stime);
+		sleep($loopwait);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
 		$a = $mech->content();
 		$mech->form_number(2);
@@ -588,22 +607,38 @@ sub leveltestworld {
 		if ($b =~ m/You win/) {
 			$won++;
 			$reps++; 
+			$died = 0;
 			s1(); won("Test fight ".$reps." You won at level ".$level);
 		}
 		if ($b =~ m/battle tied/) {
 			$tied++;
 			$reps++;
+			$died = 0;
 			s1(); draw("Test fight ".$reps." You tied at level ".$level);
 		}
 		if ($b =~ m/stunned/) {
 			$lost++;
 			$reps++;
+			$died = 1;
 			s1(); lost("Test fight ".$reps." You lost at level ".$level);
 			nl(); s1(); general("Waiting 5 seconds before continuing");
 			sleep(6);
 		}
-		
+		if($b =~ m/jail time.*?!/){my $jailing = $1; 
+			$jailing =~ s/jail time //g;
+			$jailing =~ s/!//g;
+			s4(); warnformat($1);nl();
+			s4(); general("Please wait for the jail time to end.");nl();
+			sleep($jailing);
+			$parsed = 0;
+		}
+
 		until($reps == 10){
+			if($died == 1){
+				last();
+			}else{
+				$died = 0;
+			}
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
@@ -649,6 +684,14 @@ sub leveltestworld {
 				s1(); general("Waiting 5 seconds before continuing");
 				sleep(6);
 				last;
+			}
+			if($b =~ m/jail time.*?!/){my $jailing = $1; 
+				$jailing =~ s/jail time //g;
+				$jailing =~ s/!//g;
+				s4(); warnformat($1);nl();
+				s4(); general("Please wait for the jail time to end.");nl();
+				sleep($jailing);
+				$parsed = 0;
 			}
 		}
 
@@ -830,6 +873,20 @@ sub leveltestfight {
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
+		
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
+			sleep(5);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			until($a =~ m/Skeleton/){
+				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+				$a = $mech->content();
+				s1(); infoformat("still logged out, trying again.");
+				sleep($stime);
+			}
+		}
+
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
@@ -889,6 +946,14 @@ sub leveltestfight {
 			}
 			sleep(6);
 		}
+		if($b =~ m/jail time.*?!/){my $jailing = $1; 
+			$jailing =~ s/jail time //g;
+			$jailing =~ s/!//g;
+			s4(); warnformat($1);nl();
+			s4(); general("Please wait for the jail time to end.");nl();
+			sleep($jailing);
+			$parsed = 0;
+		}
 	}
 
 	nl();s1(); general("Advanced level test starting at level ".$level); nl();
@@ -905,6 +970,20 @@ sub leveltestfight {
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
+			sleep(5);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			until($a =~ m/Skeleton/){
+				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+				$a = $mech->content();
+				s1(); infoformat("still logged out, trying again.");
+				sleep($stime);
+			}
+		} 
+
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
@@ -940,23 +1019,40 @@ sub leveltestfight {
 
 		if ($b =~ m/You win/) {
 			$won++;
-			$reps++; 
+			$reps++;
+			$died = 0; 
 			s1(); won("Test fight ".$reps." You won at level ".$level)
 		}
 		if ($b =~ m/battle tied/) {
 			$tied++;
 			$reps++;
+			$died = 0;
 			s1(); draw("Test fight ".$reps." You tied at level ".$level);
 		}
 		if ($b =~ m/stunned/) {
 			$lost++;
 			$reps++;
+			$died = 1;
 			s1(); lost("Test fight ".$reps." You lost at level ".$level);
 			s1(); general("Waiting 5 seconds before continuing");
 			sleep(6);
+		}		
+		if($b =~ m/jail time.*?!/){
+			my $jailing = $1; 
+			$jailing =~ s/jail time //g;
+			$jailing =~ s/!//g;
+			s4(); warnformat($1);nl();
+			s4(); general("Please wait for the jail time to end.");nl();
+			sleep($jailing);
+			$parsed = 0;
 		}
 		
 		until($reps == 10){
+			if($died == 1){
+				last();
+			}else{
+				$died = 0;
+			}
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
@@ -1002,6 +1098,14 @@ sub leveltestfight {
 				s1(); general("Waiting 5 seconds before continuing");
 				sleep(6);
 				last;
+			}
+			if($b =~ m/jail time.*?!/){my $jailing = $1; 
+				$jailing =~ s/jail time //g;
+				$jailing =~ s/!//g;
+				s4(); warnformat($1);nl();
+				s4(); general("Please wait for the jail time to end.");nl();
+				sleep($jailing);
+				$parsed = 0;
 			}
 		}
 
@@ -1714,6 +1818,20 @@ sub CPMlevel {
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
+		
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
+			sleep(5);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			until($a =~ m/Skeleton/){
+				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+				$a = $mech->content();
+				s1(); infoformat("still logged out, trying again.");
+				sleep($stime);
+			}
+		}
+
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click_button(value => "Level");
@@ -1808,6 +1926,14 @@ sub CPMlevel {
 			sleep(6);
 			$lost++;
 		}
+		if($b =~ m/jail time .*?!<br>/){my $jailing = $1; 
+			$jailing =~ s/jail time //g;
+			$jailing =~ s/!<br>//g;
+			s4(); warnformat($1);nl();
+			s4(); general("Please wait for the jail time to end.");nl();
+			sleep($jailing);
+			$parsed = 0;
+		}
 	}
 
 	nl();s1(); general("Advanced CPM level test starting at level ".$level); nl();
@@ -1824,6 +1950,21 @@ sub CPMlevel {
 		sleep($loopwait);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
+
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
+			sleep(5);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			until($a =~ m/Skeleton/){
+				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+				$a = $mech->content();
+				s1(); infoformat("still logged out, trying again.");
+				sleep($stime);
+			}
+		}
+		
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click_button(value => "Level");
@@ -1892,6 +2033,14 @@ sub CPMlevel {
 			s1(); lost("Test fight ".$reps." You lost at level ".$level);
 			s1(); general("Waiting 5 seconds before continuing");
 			sleep(6);
+		}		
+		if($b =~ m/jail time .*?!<br>/){my $jailing = $1; 
+			$jailing =~ s/jail time //g;
+			$jailing =~ s/!<br>//g;
+			s4(); warnformat($1);nl();
+			s4(); general("Please wait for the jail time to end.");nl();
+			sleep($jailing);
+			$parsed = 0;
 		}
 		
 		until($reps == 10){
@@ -1946,6 +2095,14 @@ sub CPMlevel {
 				sleep(6);
 				last;
 			}
+			if($b =~ m/jail time .*?!<br>/){my $jailing = $1; 
+				$jailing =~ s/jail time //g;
+				$jailing =~ s/!<br>//g;
+				s4(); warnformat($1);nl();
+				s4(); general("Please wait for the jail time to end.");nl();
+				sleep($jailing);
+				$parsed = 0;
+			}
 		}
 
 		nl(); 
@@ -1956,8 +2113,6 @@ sub CPMlevel {
 			$i++;
 		}
 		nl(); 
-
-			DEATHSKIP:
 
 		if($tietrig !=1){
 			if($outcomes[0] >=8){ 
@@ -2046,7 +2201,6 @@ sub CPMlevel {
 		}
 		$setlev = 0;
 	}
-
 	return($newlevel);
 }
 
@@ -2243,9 +2397,15 @@ sub Fight {
 		if($b =~ m/(You win .*? exp)/){$output = $1;
 		$happened = 1;}
 		if($b =~ m/(The battle tied)/){$output = $1;$happened = 2;}
-		if($b =~ m/jail time.*?!/){$output = $1;$happened = 3;}
+		if($b =~ m/(jail time .*?!<br>)/){
+			$c = $1;
+			$c =~ s/<br>//g;
+			$c =~ s/jail/Stun/g;
+			$output = $c;
+			$happened = 3;
+		}
 		if($b =~ m/logged/){$output = "You were logged back in.";$happened = 4;}
-		if($b =~ m/(Stun time .*!<br>Please)/){
+		if($b =~ m/(Stun time .*?!<br>Please)/){
 			$c = $1;
 			$c =~ s/<br>Please//g;
 			$output = $c;
@@ -3384,16 +3544,25 @@ sub Charname{
 	$name = $2;
 	$title =~ s/ //sgi;
 	$name =~ s/ //sgi;	
-	$namefix = $title." ".$name;
+	#$namefix = $title." ".$name;
+	#files without titles because titles can change
+	$namefix = $name;
 	nl(); s1(); general("Successfully logged into $title $name at $Hour:$Minute:$Second");nl();
 
 	#title updater thread
 	sub update_title {
 		my ($title, $name) = @_;
+		my $secondss = 0;
+
 		while (1) {
-			my ($Second, $Minute, $Hour) = localtime(time);
-			title("$title $name @ $Hour:$Minute:$Second");
+		my $hourss   = int($secondss / 3600);
+		my $minutess = int(($secondss % 3600) / 60);
+		my $secss    = $secondss % 60;
+		$timer = sprintf("%02d:%02d:%02d", $hourss, $minutess, $secss);
+		my ($Second, $Minute, $Hour) = localtime(time);
+			title("$name | $timer-$Hour:$Minute:$Second");
 			sleep(1); 
+			$secondss++;
 		}
 	}
 	sub title {
@@ -3530,7 +3699,7 @@ sub Charname{
 	}
 	
 	if($debug == 1){
-		s1(); debug($levelfilename);
+		s1(); debug($levelfilename); nl();
 	}elsif($debug != 1 and $firstlogin == 1){
 		my @files_to_delete = ($namefix.'-cpmINFO1.txt',$namefix.'-cpmINFO2.txt',$namefix.'-cpmINFO3.txt',$namefix.'-TESTINFO1.txt',$namefix.'-TESTINFO2.txt',$namefix.'-LowFight.txt',$namefix.'-LowFight2.txt',$namefix.'-LowFight3.txt',$namefix.'-Autolevelup.txt',$namefix.'-CPMlevel.txt',$namefix.'-Fight.txt',$namefix.'-Fightlevel.txt',$namefix.'-Fight2.txt',$namefix.'-Fight3.txt',$namefix.'-Levelup.txt',$namefix.'-CheckShop.txt',$namefix.'-MaxShops.txt',$namefix.'-MaxWD.txt',$namefix.'-MaxAS.txt',$namefix.'-MaxHS.txt',$namefix.'-MaxHE.txt',$namefix.'-MaxSH.txt',$namefix.'-MaxAM.txt',$namefix.'-MaxRI.txt',$namefix.'-MaxAR.txt',$namefix.'-MaxBE.txt',$namefix.'-MaxPA.txt',$namefix.'-MaxHA.txt',$namefix.'-MaxFE.txt',$namefix.'-MyLevel.txt',$namefix.'-cpmready.txt',$username.'-Charname.txt',$username.'-Loginrecord.txt');
 
@@ -3716,6 +3885,20 @@ sub Cpmready{
 		}else{
 			$cpmtest = 0
 		}
+		if ($b =~ m/logged/) {
+			s1(); infoformat("still logged out, trying again.");
+			sleep(5);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			until($a =~ m/Skeleton/){
+				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+				$a = $mech->content();
+				s1(); infoformat("still logged out, trying again.");
+				sleep($stime);
+			}
+			s1(); general("We're restarting Chaoslord post mortem readiness test. ");nl();
+			Cpmready();
+		}
 		$won = 0;
 	}
 
@@ -3793,15 +3976,39 @@ sub Cpmready{
 			sleep(6);
 			$reps = 10;
 		}
-		
+		if ($b =~ m/logged/) {
+			s1(); infoformat("still logged out, trying again.");
+			sleep(5);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			until($a =~ m/Skeleton/){
+				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+				$a = $mech->content();
+				s1(); infoformat("still logged out, trying again.");
+				sleep($stime);
+			}			
+			s1(); general("We're restarting Chaoslord post mortem readiness test. ");nl();
+			Cpmready();
+		}
+
+		$reps = 0;
 		until($reps == 10){
 			sleep($loopwait); 
 			$mech->reload();
-			$a = $mech->content();
+			if($mech->content()){
+				$a = $mech->content();
+			}else{
+				$a = "not found";
+				s1(); general("No content found, retrying . . .");
+				sleep(1);
+				$mech->reload();
+				$a = $mech->content();
+			}
 			$b = $a;
-			$a =~ m/(<td valign=top>Level.*<\/font><\/body><\/html>)/s;
-			$a = $1;
-
+			if ($a =~ m/<td valign=top>Level.*<\/font><\/body><\/html>/){
+				$a =~ m/(<td valign=top>Level.*<\/font><\/body><\/html>)/s;
+				$a = $1;
+			}
 			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
@@ -3843,6 +4050,22 @@ sub Cpmready{
 				s1(); general("Waiting 5 seconds before continuing");
 				sleep(6);
 				last;
+			}			
+			if ($b =~ m/logged/) {
+				s1(); infoformat("Logged out, trying again.");
+				sleep(1);
+				my $relogin_thread = threads->create(\&login);
+				$relogin_thread->join();
+				until($a =~ m/Skeleton/){
+					$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
+					$a = $mech->content();
+					if($a =~ m/Skeleton/){		
+						nl();s1(); infoformat("Successfully relogged.");nl();
+					}
+					sleep($stime);
+				}			
+				s1(); general("We're restarting Chaoslord post mortem readiness test. ");nl();
+				Cpmready();
 			}
 		}
 
