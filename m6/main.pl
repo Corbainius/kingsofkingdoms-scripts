@@ -201,6 +201,8 @@ my $aa;
 my $firstlogin = 1;
 my $namefix = '';
 my $timer :shared;
+my $seconds2 :shared = 0;
+my $firsttitle = 0;
 
 if($debug == 1){
 	s1();debug("Debug mode active.");nl();
@@ -360,6 +362,7 @@ until($levels == 0){
 	START:
 	$levels--;
 	&Charname;
+	sleep(1.5);
 	s1(); timer(); nl();
 	&MyLevel;
 	if($avlevs > $MyLev){&Autolevelup};
@@ -395,6 +398,7 @@ goto RETRY;
 #open STDERR, '>>', 'Errorlog.txt' or die $!;
 
 sub leveltestworld {
+	LeveltestworldTop:
 	$level = 0;
 	$newlevel = 0;
 	$levmulti = 0;
@@ -492,11 +496,28 @@ sub leveltestworld {
 		$mech->field("Difficulty", $level);
 		$mech->click();
 		$a = $mech->content();
+
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto LeveltestworldTop;
+		}
+
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;		
 		sleep($loopwait); 
 		$mech->click_button(value => $fmodeval);
 		$b = $mech->content();
+
+		if ($b =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+		}
+
 		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$b = $1;
 
@@ -564,22 +585,55 @@ sub leveltestworld {
 	}
 	
 	until ($setlev == 1){
+		LeveltestworldSetLev:
 		$reps = 0;
 		$won = 0;
 		$tied = 0;
 		$lost = 0;
 		sleep($loopwait);
-		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");		
 		$a = $mech->content();
+
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			until($a =~ m/Skeleton/){
+				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."world_control.php");
+				$a = $mech->content();
+				s1(); infoformat("still logged out, trying again.");
+				sleep($stime);
+			}
+		}
+
 		$mech->form_number(2);
 		$mech->field("Difficulty", $level);
 		$mech->click();
 		$a = $mech->content();
+
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto LeveltestworldSetLev;
+		}
+
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;		
 		sleep($loopwait); 
 		$mech->click_button(value => $fmodeval);
 		$b = $mech->content();
+		
+		if ($b =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto LeveltestworldSetLev;
+		}
+
 		$b =~ m/(<tr><td>Level.*<form method=post)/s;
 		$b = $1;
 
@@ -642,6 +696,8 @@ sub leveltestworld {
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
+
+
 			$b = $a;
 
 			$filename = $namefix."-TESTINFO2.txt";
@@ -778,6 +834,7 @@ sub leveltestworld {
 }
 
 sub leveltestfight {
+	LeveltestfightTop:
 	$level = 0;
 	$newlevel = 0;
 	$levmulti = 0;
@@ -875,8 +932,8 @@ sub leveltestfight {
 		$a = $mech->content();
 		
 		if ($a =~ m/logged/) {
-			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
-			sleep(5);
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
 			my $relogin_thread = threads->create(\&login);
 			$relogin_thread->join();
 			until($a =~ m/Skeleton/){
@@ -891,11 +948,29 @@ sub leveltestfight {
 		$mech->field("Difficulty", $level);
 		$mech->click();
 		$a = $mech->content();
+		
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto LeveltestfightTop;
+		}
+
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
 		sleep($loopwait); 
 		$mech->click_button(value => $fmodeval);
 		$b = $mech->content();
+		
+		if ($b =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto LeveltestfightTop;	
+		}
+
 		$b =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$b = $1;
 
@@ -963,6 +1038,7 @@ sub leveltestfight {
 	}
 	
 	until ($setlev == 1){
+		LeveltestfightSetLev:
 		$reps = 0;
 		$won = 0;
 		$tied = 0;
@@ -972,8 +1048,8 @@ sub leveltestfight {
 		$a = $mech->content();
 				
 		if ($a =~ m/logged/) {
-			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
-			sleep(5);
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
 			my $relogin_thread = threads->create(\&login);
 			$relogin_thread->join();
 			until($a =~ m/Skeleton/){
@@ -988,11 +1064,28 @@ sub leveltestfight {
 		$mech->field("Difficulty", $level);
 		$mech->click();
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+		}
+
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
 		$mech->click_button(value => $fmodeval);
 		sleep($loopwait); 
 		$b = $mech->content();
+				
+		if ($b =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto LeveltestfightSetLev;
+		}
+
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 
@@ -1048,6 +1141,7 @@ sub leveltestfight {
 		}
 		
 		until($reps == 10){
+			LeveltestfightReps:
 			if($died == 1){
 				last();
 			}else{
@@ -1056,6 +1150,15 @@ sub leveltestfight {
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
+					
+			if ($a =~ m/logged/) {
+				s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+				sleep(2);
+				my $relogin_thread = threads->create(\&login);
+				$relogin_thread->join();
+				goto LeveltestfightReps;
+			}
+
 			$b = $a;
 
 			$filename = $namefix."-TESTINFO2.txt";
@@ -1193,6 +1296,7 @@ sub leveltestfight {
 }
 
 sub LowFight {
+	LowfightTop:
 	if($debug == 1){
 		s1(); debug("Arrived at LowFight");
 	}
@@ -1246,6 +1350,14 @@ sub LowFight {
 	sleep($loopwait);
 	$mech->click_button(value => $fmodeval);
 	$a = $mech->content();
+			
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto LowfightTop;
+		}
 
 	$filename = $namefix."-LowFight2.txt";
 	if($debug == 1){
@@ -1285,12 +1397,21 @@ sub LowFight {
  	#REPEAT:
 
 	while($antal > 0) {
+		LowfightAntal:
 		sleep($loopwait); 
 		$antal = $antal -1;
 		my $retries = 0;
 		retry:
 		$mech->reload();
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto LowfightAntal;	
+		}
 
 		$filename = $namefix."-LowFight3.txt";
 		if($debug == 1){
@@ -1340,8 +1461,8 @@ sub LowFight {
 		}
 	#LOGGED OUT
 		if ($a =~ m/logged/) {
-			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
-			sleep(5);
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
 			my $relogin_thread = threads->create(\&login);
 			$relogin_thread->join();
 		}
@@ -1409,6 +1530,7 @@ sub LowFight {
 }
 
 sub Autolevelup {
+	AutolevelupTop:
 	if($debug == 1){
 		s1(); debug("Arrived at Autolevelup");
 	}
@@ -1456,7 +1578,16 @@ sub Autolevelup {
 			warnformat("error in debug.");
 		}
 	$a = $mech->content();
-	$b = $mech->content();
+					
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto AutolevelupTop;
+		}
+
+	$b = $a;
 	
 		$avlevs = $a;
 		$avlevs =~ m/(You have .* levels available)/;
@@ -1633,8 +1764,17 @@ sub Autolevelup {
 		sleep($stime);
 		$mech->click_button('value' => 'Level Up!!!');
 		$a = $mech->content();
-		$b = $mech->content();
-		$c = $mech->content();
+						
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto AutolevelupTop;	
+		}
+
+		$b = $a;
+		$c = $a;
 		$b =~ m/(Level : .*Exp :)/;
 		$b = $1;
 		$b =~ s/<\/td> .*//si;
@@ -1722,6 +1862,7 @@ sub Autolevelup {
 }
 
 sub CPMlevel {
+	CpmlevelTop:
 	if($debug == 1){
 		s1(); debug("Arrived at cpmlevel");
 	}
@@ -1820,8 +1961,8 @@ sub CPMlevel {
 		$a = $mech->content();
 		
 		if ($a =~ m/logged/) {
-			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
-			sleep(5);
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
 			my $relogin_thread = threads->create(\&login);
 			$relogin_thread->join();
 			until($a =~ m/Skeleton/){
@@ -1836,6 +1977,14 @@ sub CPMlevel {
 		$mech->field("Difficulty", $level);
 		$mech->click_button(value => "Level");
 		$a = $mech->content();
+						
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmlevelTop;
+		}
 
 		$cpm = $a;
 		$cpm =~ m/(<option>208.*<\/option><option>209)/;
@@ -1850,6 +1999,15 @@ sub CPMlevel {
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
 		$b = $mech->content();
+								
+		if ($b =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmlevelTop;
+		}
+
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 
@@ -1877,6 +2035,15 @@ sub CPMlevel {
 		sleep($loopwait); 
 		$mech->click_button(value => $fmodeval);
 		$c = $mech->content();
+								
+		if ($c =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmlevelTop;
+		}
+
 		$c =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$c = $1;
 
@@ -1950,11 +2117,10 @@ sub CPMlevel {
 		sleep($loopwait);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
 		$a = $mech->content();
-
 				
 		if ($a =~ m/logged/) {
-			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
-			sleep(5);
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
 			my $relogin_thread = threads->create(\&login);
 			$relogin_thread->join();
 			until($a =~ m/Skeleton/){
@@ -1969,7 +2135,15 @@ sub CPMlevel {
 		$mech->field("Difficulty", $level);
 		$mech->click_button(value => "Level");
 		$a = $mech->content();
-		
+								
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmlevelTop;
+		}
+
 		$cpm = $a;
 		$cpm =~ m/(<option>208.*<\/option><option>209)/;
 		$cpm = $1;
@@ -1982,7 +2156,16 @@ sub CPMlevel {
 
 		$a =~ m/(<select name="Monster">.*<\/form><form method=post>)/s;
 		$a = $1;
-		$b = $mech->content();
+		$b = $mech->content();	
+
+		if ($b =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmlevelTop;	
+		}
+
 		$b =~ m/(<td valign=top>Level.*<form method=post)/s;
 		$b = $1;
 
@@ -2011,6 +2194,15 @@ sub CPMlevel {
 		$mech->select("Monster", $cpm);
 		$mech->click_button(value => $fmodeval);
 		$c = $mech->content();
+								
+		if ($c =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmlevelTop;
+		}
+
 		$c =~ m/(<tr><td>Level : .*.<\/font><\/body><\/html>)/s;
 		$c = $1;
 
@@ -2044,6 +2236,7 @@ sub CPMlevel {
 		}
 		
 		until($reps == 10){
+			CpmlevelReps:
 			if($died == 1){
 				last();
 			}else{
@@ -2052,6 +2245,15 @@ sub CPMlevel {
 			sleep($loopwait); 
 			$mech->reload();
 			$a = $mech->content();
+										
+			if ($a =~ m/logged/) {
+				s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+				sleep(2);
+				my $relogin_thread = threads->create(\&login);
+				$relogin_thread->join();
+				goto CpmlevelReps;		
+			}
+
 			$b = $a;
 
 			$filename = $namefix."-cpmINFO3.txt";
@@ -2205,11 +2407,20 @@ sub CPMlevel {
 }
 
 sub Fight {
+	FightTop:
 	$parsed = 0;
 	while ($parsed == 0){
 		sleep($stime);
 		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
-		$a = $mech->content();
+		$a = $mech->content();	
+
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+		}
+
 		if($a =~ m/Skeleton/){
 			$parsed = 1;
 		}
@@ -2252,6 +2463,14 @@ sub Fight {
 	$mech->field("Difficulty", $level);
 	$mech->click();
 	$cpm = $mech->content();
+	
+	if ($cpm =~ m/logged/) {
+		s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+		sleep(2);
+		my $relogin_thread = threads->create(\&login);
+		$relogin_thread->join();
+		goto FightTop;
+	}
 
 	$filename = $namefix."-Fightlevel.txt";
 	if($debug == 1){
@@ -2282,6 +2501,15 @@ sub Fight {
 	$mech->select("Monster", $cpm);
 	$mech->click_button(value => $fmodeval);
 	$a = $mech->content();
+
+	if ($a =~ m/logged/) {
+		s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+		sleep(2);
+		my $relogin_thread = threads->create(\&login);
+		$relogin_thread->join();
+		goto FightTop;
+	}
+
 
 	$filename = $namefix."-Fight2.txt";
 	if($debug == 1){
@@ -2321,12 +2549,21 @@ sub Fight {
 
 	#REPEAT:
 	while($antal > 0) {
+		FightAntal:
 		sleep($loopwait);
 		$antal = $antal -1;
 		my $retries = 0;
 		retry:
 		$mech->reload();
 		$a = $mech->content();
+		
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto FightAntal;
+		}
 
 		$filename = $namefix."-Fight3.txt";
 		if($debug == 1){
@@ -2378,8 +2615,8 @@ sub Fight {
 	#LOGGED OUT
 
 		if ($a =~ m/logged/) {
-			s1(); infoformat("LOGGED OUT! Login will start in 5 seconds.");
-			sleep(5);
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
 			my $relogin_thread = threads->create(\&login);
 			$relogin_thread->join();
 		}
@@ -2464,6 +2701,18 @@ sub Levelup{
 			sleep($stime);
 			$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."stats.php");
 			$a = $mech->content();
+		}
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			until($a =~ m/Natural Stats/){
+				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."stats.php");
+				$a = $mech->content();
+				s1(); infoformat("still logged out, trying again.");
+				sleep($stime);
+			}
 		}
 
 		$filename = $namefix."-Levelup.txt";
@@ -2734,6 +2983,7 @@ sub CheckShop{
 }
 
 sub MaxShops{
+	MaxShopsTop:
 	$parsed = 0; 
 	while (!$parsed){
 		sleep($stime);
@@ -2877,6 +3127,15 @@ sub MaxWD{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+		
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;			
 		$filename = $namefix."-MaxWD.txt";
 		if($debug == 1){
@@ -2918,7 +3177,7 @@ sub MaxWD{
 	return();
 }
 
-sub MaxAS{	
+sub MaxAS{
 	$Sname = "Attackspell";
     my ($shop2) = @_;
 	if($$shop2 =~ "Maxed"){$proceed = 0;s1(); general($Sname." Maxed");}else{$proceed = 1;}
@@ -2927,6 +3186,15 @@ sub MaxAS{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;
 
 		$filename = $namefix."-MaxAS.txt";
@@ -2978,6 +3246,15 @@ sub MaxHS{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;
 
 		$filename = $namefix."-MaxHS.txt";
@@ -3030,6 +3307,15 @@ sub MaxHE{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;		
 
 		$filename = $namefix."-MaxHE.txt";
@@ -3079,7 +3365,16 @@ sub MaxSH{
 		$mech->form_number(5);
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
-		$a = $mech->content();
+		$a = $mech->content();	
+
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;
 
 		$filename = $namefix."-MaxSH.txt";
@@ -3131,6 +3426,15 @@ sub MaxAM{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;		
 
 		$filename = $namefix."-MaxAM.txt";
@@ -3182,6 +3486,15 @@ sub MaxRI{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;		
 		
 		$filename = $namefix."-MaxRI.txt";
@@ -3233,6 +3546,15 @@ sub MaxAR{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;	
 
 		$filename = $namefix."-MaxAR.txt";	
@@ -3284,6 +3606,15 @@ sub MaxBE{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;
 
 		$filename = $namefix."-MaxBE.txt";		
@@ -3335,6 +3666,15 @@ sub MaxPA{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;
 
 		$filename = $namefix."-MaxPA.txt";
@@ -3386,6 +3726,15 @@ sub MaxHA{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;
 
 		$filename = $namefix."-MaxHA.txt";
@@ -3437,6 +3786,15 @@ sub MaxFE{
 		$mech->click_button('name' => $Sname);
 		sleep($stime);
 		$a = $mech->content();
+				
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MaxShopsTop;
+		}
+
 		$b = $a;
 
 		$filename = $namefix."-MaxFE.txt";
@@ -3480,6 +3838,8 @@ sub MaxFE{
 }
 
 sub Charname{
+	CharnameTop:
+	sleep(0.5);
 	$parsed = 0; 
 	while (!$parsed){
 		sleep($stime);
@@ -3523,8 +3883,17 @@ sub Charname{
 	}
 
 	$a = $mech->content();
-	$b = $mech->content();
-	$c = $mech->content();
+			
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CharnameTop;
+		}
+
+	$b = $a;
+	$c = $a;
 	
 	if($a =~m/(You have .* levels)/){
 		$avlevs = $a;
@@ -3548,31 +3917,6 @@ sub Charname{
 	#files without titles because titles can change
 	$namefix = $name;
 	nl(); s1(); general("Successfully logged into $title $name at $Hour:$Minute:$Second");nl();
-
-	#title updater thread
-	sub update_title {
-		my ($title, $name) = @_;
-		my $secondss = 0;
-
-		while (1) {
-		my $hourss   = int($secondss / 3600);
-		my $minutess = int(($secondss % 3600) / 60);
-		my $secss    = $secondss % 60;
-		$timer = sprintf("%02d:%02d:%02d", $hourss, $minutess, $secss);
-		my ($Second, $Minute, $Hour) = localtime(time);
-			title("$name | $timer-$Hour:$Minute:$Second");
-			sleep(1); 
-			$secondss++;
-		}
-	}
-	sub title {
-		my ($new_title) = @_;
-		print "\033]0;$new_title\007";
-		STDOUT->flush(); 
-	}
-	my $title_thread = threads->create(\&update_title, $title, $name);
-	$title_thread->detach();
-	#title updater thread
 
 	$b =~ m/(You need.*exp )/;
 	$b = $1;
@@ -3712,11 +4056,47 @@ sub Charname{
 				unlink($file) or warn "Could not delete $file: $!\n";
 			}
 		}
+		$firsttitle = 1;
 		$firstlogin = 0;
 	}
+	if($debug == 1 and $firstlogin == 1){ 		
+		$firsttitle = 1;
+		$firstlogin = 0;
+	}
+	
+	#title updater thread
+	
+	sub update_title {
+		my ($title, $name) = @_;
+
+		while (1) {			
+			sleep(1); 
+			$seconds2++;
+			my $hours2   = int($seconds2 / 3600);
+			my $minutes2 = int(($seconds2 % 3600) / 60);
+			my $secs2    = $seconds2 % 60;
+			$timer = sprintf("%02d:%02d:%02d", $hours2, $minutes2, $secs2);
+			my ($Second, $Minute, $Hour) = localtime(time);
+			title("$name | $timer-$Hour:$Minute:$Second");
+		}
+	}
+
+	sub title {
+		my ($new_title) = @_;
+		print "\033]0;$new_title\007";
+		STDOUT->flush(); 
+	}
+
+	if($firsttitle == 1){
+		my $title_thread = threads->create(\&update_title, $title, $name);
+		$title_thread->detach();
+		$firsttitle = 0;
+	}
+	#title updater thread
 }
 
 sub MyLevel{
+	MyLevelTop:
 	$parsed = 0; 
 	while (!$parsed){
 		sleep($stime);
@@ -3761,6 +4141,15 @@ sub MyLevel{
 	}
 
 	$a = $mech->content();
+			
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto MyLevelTop;
+		}
+
 	$a =~ s/<.*?>//sg;
     $a =~ m/(Level : .* Exp)/s;
 	$a = $1;
@@ -3781,14 +4170,19 @@ sub MyLevel{
 }	
 
 sub Cpmready{
+	CpmreadyTop:
 	if($debug == 1){
 		s1(); debug("Arrived at cpmready");
 	}
 
 	nl();s1(); general("Chaoslord Post Mortem readiness check."); nl();
 
+	$eighttwice = 0;
+	$cpmtest = 0;
+	$cpmready = 0;
 	$won = 1;
 	$levmulti = 0;
+	$reps = 0;
 	while($won == 1){
 		$parsed = 0;
 		while ($parsed == 0){
@@ -3817,6 +4211,15 @@ sub Cpmready{
 		$mech->field("Difficulty", $level);
 		$mech->click_button(value => "Level");
 		$a = $mech->content();
+					
+		if ($a =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmreadyTop;
+		}
+
 			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
 				open(FILE, ">>".$filename)
@@ -3851,6 +4254,14 @@ sub Cpmready{
 		$mech->select("Monster", $cpm);
 		$mech->click_button(value => $fmodeval);
 		$b = $mech->content();
+					
+		if ($b =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmreadyTop;
+		}
 
 			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
@@ -3910,8 +4321,17 @@ sub Cpmready{
 		$tied = 0;
 		$lost = 0;
 		sleep($stime);
+		CpmtestReload:
 		$mech->reload();
 		$c = $mech->content();
+							
+		if ($c =~ m/logged/) {
+			s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+			sleep(2);
+			my $relogin_thread = threads->create(\&login);
+			$relogin_thread->join();
+			goto CpmtestReload;
+		}
 		
 			$filename = $namefix."-cpmready.txt";
 			if($debug == 1){
@@ -3977,33 +4397,27 @@ sub Cpmready{
 			$reps = 10;
 		}
 		if ($b =~ m/logged/) {
-			s1(); infoformat("still logged out, trying again.");
-			sleep(5);
+			s1(); infoformat("Logged out, trying again.");
+			sleep(2);
 			my $relogin_thread = threads->create(\&login);
 			$relogin_thread->join();
-			until($a =~ m/Skeleton/){
-				$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
-				$a = $mech->content();
-				s1(); infoformat("still logged out, trying again.");
-				sleep($stime);
-			}			
 			s1(); general("We're restarting Chaoslord post mortem readiness test. ");nl();
-			Cpmready();
 		}
 
-		$reps = 0;
-		until($reps == 10){
+		until($reps >= 10){
+			CpmRepsTop:
 			sleep($loopwait); 
 			$mech->reload();
-			if($mech->content()){
-				$a = $mech->content();
-			}else{
-				$a = "not found";
-				s1(); general("No content found, retrying . . .");
-				sleep(1);
-				$mech->reload();
-				$a = $mech->content();
+			$a = $mech->content();
+						
+			if ($a =~ m/logged/) {
+				s1(); infoformat("LOGGED OUT! Login will start in 2 seconds.");
+				sleep(2);
+				my $relogin_thread = threads->create(\&login);
+				$relogin_thread->join();
+				goto CpmRepsTop;
 			}
+
 			$b = $a;
 			if ($a =~ m/<td valign=top>Level.*<\/font><\/body><\/html>/){
 				$a =~ m/(<td valign=top>Level.*<\/font><\/body><\/html>)/s;
@@ -4053,19 +4467,10 @@ sub Cpmready{
 			}			
 			if ($b =~ m/logged/) {
 				s1(); infoformat("Logged out, trying again.");
-				sleep(1);
+				sleep(2);
 				my $relogin_thread = threads->create(\&login);
 				$relogin_thread->join();
-				until($a =~ m/Skeleton/){
-					$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."fight_control.php");
-					$a = $mech->content();
-					if($a =~ m/Skeleton/){		
-						nl();s1(); infoformat("Successfully relogged.");nl();
-					}
-					sleep($stime);
-				}			
 				s1(); general("We're restarting Chaoslord post mortem readiness test. ");nl();
-				Cpmready();
 			}
 		}
 
@@ -4094,11 +4499,13 @@ sub Cpmready{
 				s1(); general("Won 8 or more times."); nl();
 				$eighttwice++;
 				if($eighttwice == 2){
-					$cpmtest = 1;
 					s1(); general("You are Chaoslord Post Mortem ready..."); 
 					$eighttwice = 0;
 					$cpmready = 1;	
 					$cpmtest = 1;
+					$won = 0;
+					$reps = 10;
+					last();
 				}elsif($eighttwice == 1){
 					s1(); general("Trying again for accuracy."); nl();
 				}
@@ -4151,12 +4558,12 @@ sub login{
 	nl();s1(); infoformat("Connection attempt ".$trycounter);nl();
 	$parsed = 0; 
 	while ($parsed == 0){
-	sleep($stime);
-	$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."login.php");
-	$a = $mech->content();
-	$b = $mech->success();
-	$c = $mech->response();
-	$d = $mech->status();
+		sleep($stime);
+		$mech->get("https://www.kingsofkingdoms.com/".$URLSERVER."login.php");
+		$a = $mech->content();
+		$b = $mech->success();
+		$c = $mech->response();
+		$d = $mech->status();
 
 					$filename = $username."-Loginrecord.txt";
 					if($debug == 1){
